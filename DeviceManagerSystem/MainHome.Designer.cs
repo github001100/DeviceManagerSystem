@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.检修计划修订ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检修计划修订ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.检修计划修订零部件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.记事本ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.计算器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +59,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.开启自动切换ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,6 +91,8 @@
             // 
             // 系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem
             // 
+            this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开启自动切换ToolStripMenuItem});
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.Name = "系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem";
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.Size = new System.Drawing.Size(106, 31);
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.Text = "系统设置";
@@ -222,6 +227,13 @@
             this.检修计划修订零部件ToolStripMenuItem.Text = "检修计划修订--零部件";
             this.检修计划修订零部件ToolStripMenuItem.Click += new System.EventHandler(this.检修计划修订零部件ToolStripMenuItem_Click);
             // 
+            // 测试ToolStripMenuItem
+            // 
+            this.测试ToolStripMenuItem.Name = "测试ToolStripMenuItem";
+            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(282, 32);
+            this.测试ToolStripMenuItem.Text = "测试";
+            this.测试ToolStripMenuItem.Click += new System.EventHandler(this.测试ToolStripMenuItem_Click);
+            // 
             // 工具ToolStripMenuItem
             // 
             this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -234,14 +246,14 @@
             // 记事本ToolStripMenuItem
             // 
             this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.记事本ToolStripMenuItem.Text = "记事本";
             this.记事本ToolStripMenuItem.Click += new System.EventHandler(this.记事本ToolStripMenuItem_Click);
             // 
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.计算器ToolStripMenuItem.Text = "计算器";
             this.计算器ToolStripMenuItem.Click += new System.EventHandler(this.计算器ToolStripMenuItem_Click);
             // 
@@ -256,7 +268,7 @@
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(138, 32);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
@@ -311,12 +323,17 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // 测试ToolStripMenuItem
+            // timer1
             // 
-            this.测试ToolStripMenuItem.Name = "测试ToolStripMenuItem";
-            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(282, 32);
-            this.测试ToolStripMenuItem.Text = "测试";
-            this.测试ToolStripMenuItem.Click += new System.EventHandler(this.测试ToolStripMenuItem_Click);
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // 开启自动切换ToolStripMenuItem
+            // 
+            this.开启自动切换ToolStripMenuItem.Name = "开启自动切换ToolStripMenuItem";
+            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.开启自动切换ToolStripMenuItem.Text = "开启自动切换";
+            this.开启自动切换ToolStripMenuItem.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem_Click);
             // 
             // MainHome
             // 
@@ -379,5 +396,7 @@
         private System.Windows.Forms.ToolStripMenuItem 记事本ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 计算器ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 测试ToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem 开启自动切换ToolStripMenuItem;
     }
 }

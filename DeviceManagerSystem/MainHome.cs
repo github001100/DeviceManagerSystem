@@ -175,8 +175,11 @@ namespace DeviceManagerSystem
             }
             return week;
         }
+        System.Reflection.FieldInfo[] _List;
         private void MainHome_Load(object sender, EventArgs e)
         {
+           _List = this.GetType().GetFields(System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+
             SetLanguage();
             AddUserControl(UserAbout);//UserAbout  ucfl
             try
@@ -370,37 +373,129 @@ namespace DeviceManagerSystem
         }
         private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Thread thread = new Thread(new ThreadStart(new Action(delegate
-            //{
-            //while (true)
+            
+            MessageBox.Show(Post("x", "http://localhost:8099/UserLogin/CheckUserLogin"),"CAYA");
+        }
+        private void OnFind(ToolStripItem tsi)
+        {
+            //textBox1.Text += tsi.Text + "\r\n";
+        }
+        string[] item = { "整体检修进度ToolStripMenuItem", "轴承检修进度ToolStripMenuItem", "零部件检修进度ToolStripMenuItem", "轮轴组装检修进度ToolStripMenuItem", "轮轴组装检修进度ToolStripMenuItem", "检修计划监控ToolStripMenuItem" };
+        private void EnumChildMenu(ToolStripItem tsi)
+        {
+            //OnFind(tsi);
+            if (tsi is ToolStripMenuItem)
             {
-                for (int i = 0; i < 105; i++)
+                ToolStripMenuItem tsmi = tsi as ToolStripMenuItem;
+                foreach (ToolStripItem item in tsmi.DropDownItems)
                 {
-                    switch (i)
+                    switch ((item as ToolStripMenuItem).Name)
                     {
-                        case 0:
-                        case 3:
-                        case 5:
-                        case 100:
-                            AddUserControl(UserAbout);
-                            break;
-                        case 2:
-                        case 4:
-                        case 8:
-                        case 88:
-                            AddUserControl(UserJXJHJK);
-                            break;
-                        default:
-                            break;
-                    }
+                        case "整体检修进度ToolStripMenuItem":
+                            //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                            //MessageBox.Show(_Menu.Name);
+                            整体检修进度ToolStripMenuItem_Click(this, null);
 
+                            break;
+                        case "轴承检修进度ToolStripMenuItem":
+                            //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                            //MessageBox.Show(_Menu.Name);
+                            轴承检修进度ToolStripMenuItem_Click(this, null);
+
+                            break;
+                        case "零部件检修进度ToolStripMenuItem":
+                            //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                            //MessageBox.Show(_Menu.Name);
+                            零部件检修进度ToolStripMenuItem_Click(this, null);
+
+                            break;
+                        case "轮轴组装检修进度ToolStripMenuItem":
+                            //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                            //MessageBox.Show(_Menu.Name);
+                            轮轴组装检修进度ToolStripMenuItem_Click(this, null);
+
+                            break;
+                        case "检修计划监控ToolStripMenuItem":
+                            //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                            //MessageBox.Show(_Menu.Name);
+                            检修计划监控ToolStripMenuItem_Click(this, null);
+
+                            break;
+
+                    }
+                    EnumChildMenu(item);
                 }
             }
+        }
+        public void Lun() {
 
-            //})));
-            //thread.IsBackground = true;
-            //thread.Start();
-            //MessageBox.Show(Post("x", "http://localhost:8099/UserLogin/CheckUserLogin"),"CAYA");
+            EnumChildMenu(this.可视化管理ToolStripMenuItem);
+        }
+        int i = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //Lun();
+         
+            i++;
+
+            switch (i)
+            {
+                case 5:
+                    //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                    //MessageBox.Show(_Menu.Name);
+                    整体检修进度ToolStripMenuItem_Click(this, null);
+
+                    break;
+                case 1:
+                    //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                    //MessageBox.Show(_Menu.Name);
+                    轴承检修进度ToolStripMenuItem_Click(this, null);
+
+                    break;
+                case 2:
+                    //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                    //MessageBox.Show(_Menu.Name);
+                    零部件检修进度ToolStripMenuItem_Click(this, null);
+
+                    break;
+                case 3:
+                    //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                    //MessageBox.Show(_Menu.Name);
+                    轮轴组装检修进度ToolStripMenuItem_Click(this, null);
+
+                    break;
+                case 4:
+                    //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                    //MessageBox.Show(_Menu.Name);
+                    检修计划监控ToolStripMenuItem_Click(this, null);
+
+                    break;
+
+            }
+
+            //当i=4时，i变为0，然后重新开始；
+
+            if (i == 6)
+            {
+
+                i = 0;
+
+            }
+        }
+        private void 开启自动切换ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (开启自动切换ToolStripMenuItem.Text == "开启自动切换")
+            {
+                timer1.Enabled = true;
+                timer1.Interval = 5000;
+                开启自动切换ToolStripMenuItem.Text = "关闭自动切换";
+            }
+            else
+            {
+                timer1.Enabled = false;
+                开启自动切换ToolStripMenuItem.Text = "开启自动切换";
+
+            }
         }
     }
 }
