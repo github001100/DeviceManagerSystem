@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C3C28B2-399A-425F-AFE0-C6DBB307FF35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeviceManagerSystem</RootNamespace>
+    <AssemblyName>DeviceManagerSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CAYALogo02.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HslCommunication">
+      <HintPath>bin\Debug\DLL\HslCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\TestControls.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="Controls\CircleProgramBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UserLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserLine.Designer.cs">
+      <DependentUpon>UserLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalData.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LineBlue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineBlue.Designer.cs">
+      <DependentUpon>LineBlue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHome.Designer.cs">
+      <DependentUpon>MainHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <DependentUpon>Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyCircle.Designer.cs">
+      <DependentUpon>MyCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\DataGridViewProgressBarColumn .cs" />
+    <Compile Include="Others\FrmTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\FrmTips.Designer.cs">
+      <DependentUpon>FrmTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\FrmTransparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\FrmTransparent.Designer.cs">
+      <DependentUpon>FrmTransparent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TPM\UserAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserAbout.Designer.cs">
+      <DependentUpon>UserAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserJXJHJK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserJXJHJK.Designer.cs">
+      <DependentUpon>UserJXJHJK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserJXJHXD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserJXJHXD.Designer.cs">
+      <DependentUpon>UserJXJHXD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserJXJHXD_LBJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserJXJHXD_LBJ.Designer.cs">
+      <DependentUpon>UserJXJHXD_LBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserLBJJXJD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserLBJJXJD.Designer.cs">
+      <DependentUpon>UserLBJJXJD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserLDJC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserLDJC.Designer.cs">
+      <DependentUpon>UserLDJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserLZZZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserLZZZ.Designer.cs">
+      <DependentUpon>UserLZZZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserZCJC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserZCJC.Designer.cs">
+      <DependentUpon>UserZCJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPM\UserZTJXJD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPM\UserZTJXJD.Designer.cs">
+      <DependentUpon>UserZTJXJD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCArrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCArrow.Designer.cs">
+      <DependentUpon>UCArrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMain.Designer.cs">
+      <DependentUpon>UserMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\UserLine.resx">
+      <DependentUpon>UserLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineBlue.resx">
+      <DependentUpon>LineBlue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainHome.resx">
+      <DependentUpon>MainHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.resx">
+      <DependentUpon>Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCircle.resx">
+      <DependentUpon>MyCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\FrmTips.resx">
+      <DependentUpon>FrmTips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\FrmTransparent.resx">
+      <DependentUpon>FrmTransparent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TPM\UserAbout.resx">
+      <DependentUpon>UserAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserJXJHJK.resx">
+      <DependentUpon>UserJXJHJK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserJXJHXD.resx">
+      <DependentUpon>UserJXJHXD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserJXJHXD_LBJ.resx">
+      <DependentUpon>UserJXJHXD_LBJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserLBJJXJD.resx">
+      <DependentUpon>UserLBJJXJD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserLDJC.resx">
+      <DependentUpon>UserLDJC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserLZZZ.resx">
+      <DependentUpon>UserLZZZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserZCJC.resx">
+      <DependentUpon>UserZCJC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPM\UserZTJXJD.resx">
+      <DependentUpon>UserZTJXJD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMain.resx">
+      <DependentUpon>UserMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\CLDPicMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\pics\轮轴.png" />
+    <None Include="bin\Debug\images\pics\CAYAInfo.png" />
+    <None Include="bin\Debug\images\pics\XiAnPicTitle.png" />
+    <None Include="bin\Debug\images\pics\XiAnPicMain.png" />
+    <None Include="bin\Debug\images\pics\CLDPicContent2.png" />
+    <None Include="bin\x86\Release\images\CLDPicContentLz2.png" />
+    <Content Include="CAYALogo02.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMES.Controller.SYS\CMES.Controller.SYS.csproj">
+      <Project>{39fa5591-365f-4781-a933-46e0f2c4fc78}</Project>
+      <Name>CMES.Controller.SYS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMES.Entity.SYS\CMES.Entity.SYS.csproj">
+      <Project>{ddb23bba-4211-4004-b6c0-67eeffb78559}</Project>
+      <Name>CMES.Entity.SYS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMES.Utility\CMES.Utility.csproj">
+      <Project>{a8312d5d-7f91-4a1f-9a60-baeb954f20c5}</Project>
+      <Name>CMES.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
