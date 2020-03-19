@@ -50,7 +50,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1052, 676);
+            this.groupBox1.Size = new System.Drawing.Size(1148, 760);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "轮轴车间检修计划监控";
@@ -60,9 +60,9 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(3, 27);
+            this.groupBox2.Location = new System.Drawing.Point(3, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1046, 646);
+            this.groupBox2.Size = new System.Drawing.Size(1142, 727);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "检修任务计划监控表";
@@ -85,64 +85,72 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowTemplate.Height = 55;
-            this.dataGridView1.Size = new System.Drawing.Size(1040, 613);
+            this.dataGridView1.Size = new System.Drawing.Size(1136, 694);
             this.dataGridView1.TabIndex = 0;
             // 
             // 序号
             // 
             this.序号.HeaderText = "序号";
+            this.序号.MinimumWidth = 6;
             this.序号.Name = "序号";
             this.序号.ReadOnly = true;
             // 
             // 检修日期
             // 
             this.检修日期.HeaderText = "检修日期";
+            this.检修日期.MinimumWidth = 6;
             this.检修日期.Name = "检修日期";
             this.检修日期.ReadOnly = true;
             // 
             // 工班组
             // 
             this.工班组.HeaderText = "工班组";
+            this.工班组.MinimumWidth = 6;
             this.工班组.Name = "工班组";
             this.工班组.ReadOnly = true;
             // 
             // 检修工序
             // 
             this.检修工序.HeaderText = "检修工序";
+            this.检修工序.MinimumWidth = 6;
             this.检修工序.Name = "检修工序";
             this.检修工序.ReadOnly = true;
             // 
             // 任务计划
             // 
             this.任务计划.HeaderText = "任务计划";
+            this.任务计划.MinimumWidth = 6;
             this.任务计划.Name = "任务计划";
             this.任务计划.ReadOnly = true;
             // 
             // 检修数量
             // 
             this.检修数量.HeaderText = "检修数量";
+            this.检修数量.MinimumWidth = 6;
             this.检修数量.Name = "检修数量";
             this.检修数量.ReadOnly = true;
             // 
             // 新增数量
             // 
             this.新增数量.HeaderText = "新增数量";
+            this.新增数量.MinimumWidth = 6;
             this.新增数量.Name = "新增数量";
             this.新增数量.ReadOnly = true;
             // 
             // UserJXJHJK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "UserJXJHJK";
-            this.Size = new System.Drawing.Size(1052, 676);
+            this.Size = new System.Drawing.Size(1148, 760);
             this.Load += new System.EventHandler(this.UserJXJHJK_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

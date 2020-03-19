@@ -7,14 +7,13 @@ using System.Xml.Linq;
 using CMES.Utility;
 namespace CMES.NET
 {
-    public  class HttpHelper
+    public class HttpHelper
     {
         public static HttpClient client = new HttpClient();
         public static System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
         public static string mearResult = "";
 
-
-        public static string GetTest(string localUrl,bool isCreate)
+        public static string GetTest(string localUrl, bool isCreate)
         {
             string urls = GetUrl(localUrl) + "Values/";
             //HttpClient client = new HttpClient();
@@ -26,23 +25,24 @@ namespace CMES.NET
                 //需要测试的代码
                 watch.Stop();  //停止监视
                 TimeSpan timespan = watch.Elapsed;  //获取当前实例测量得出的总时间
-                ErrorLogMsg.CreateErrLog("连接响应时间","0XX0", timespan.TotalMilliseconds.ToString());
+                ErrorLogMsg.CreateErrLog("连接响应时间", "0XX0", timespan.TotalMilliseconds.ToString());
                 return response.StatusCode.ToString();
             }
             catch (Exception e)
             {
-                if (isCreate) {
+                if (isCreate)
+                {
                     ErrorLogMsg.CreateErrLog("连接失败", e.Source, e.Message);
                 }
                 return null;
             }
-            
+
         }
         /// <summary>
         /// 获取Tocken
         /// </summary>
         /// <returns></returns>
-        public static string GetToken(string localUrl, string username,string password)
+        public static string GetToken(string localUrl, string username, string password)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace CMES.NET
         /// 获取Tocken
         /// </summary>
         /// <returns></returns>
-        public static string GetDeviceToken(string localUrl, string devicecpu,string devicedisk)
+        public static string GetDeviceToken(string localUrl, string devicecpu, string devicedisk)
         {
             try
             {
@@ -101,19 +101,19 @@ namespace CMES.NET
         {
             try
             {
-                string requstUrl = GetUrl(localUrl) + pageCode ;
+                string requstUrl = GetUrl(localUrl) + pageCode;
                 //HttpClient client = new HttpClient();      
                 if (token != null && !token.Equals(string.Empty))
                 {
                     client.DefaultRequestHeaders.Add("Authorization", "JWT " + token);
-                }                
+                }
                 HttpResponseMessage response = client.GetAsync(requstUrl).Result;
                 string result = response.Content.ReadAsStringAsync().Result;
                 return result;
             }
             catch (Exception e)
             {
-                ErrorLogMsg.CreateErrLog("获取连接异常","0H01",e.Message);
+                ErrorLogMsg.CreateErrLog("获取连接异常", "0H01", e.Message);
                 return "";
             }
         }
@@ -165,9 +165,11 @@ namespace CMES.NET
                 return "";
             }
         }
-        public static string GetUrl(string LoclUrl) {
+        public static string GetUrl(string LoclUrl)
+        {
             XElement xe = XElement.Load(XMLUtil.ConfigFileName);
-            if (LoclUrl.Equals(string.Empty)) {
+            if (LoclUrl.Equals(string.Empty))
+            {
                 LoclUrl = "LoadUrl";
             }
             return XMLUtil.GetElementValue(xe, LoclUrl, "http://localhost:8000/api/");
@@ -220,7 +222,7 @@ namespace CMES.NET
         /// <param name="pageCode"></param>
         /// <param name="paraList"></param>
         /// <returns></returns>
-        public static string DOPOST(string localUrl,string pageCode, List<KeyValuePair<String, String>> paraList)
+        public static string DOPOST(string localUrl, string pageCode, List<KeyValuePair<String, String>> paraList)
         {
             try
             {
@@ -245,7 +247,7 @@ namespace CMES.NET
             }
         }
         /// <summary>
-        /// 异步请求改造 2019 4.19 by Fu/Chen
+        /// 异步请求改造 2019 4.19 by Fu
         /// </summary>
         /// <param name="pageCode"></param>
         /// <param name="paraList"></param>
@@ -261,7 +263,7 @@ namespace CMES.NET
                 //创建HttpClient（注意传入HttpClientHandler）  
                 using (var http = new HttpClient(handler))
                 {
-                  
+
                     try
                     {
                         //使用FormUrlEncodedContent做HttpContent  
@@ -274,19 +276,19 @@ namespace CMES.NET
                         //await异步读取最后的JSON（注意此时gzip已经被自动解压缩了，因为上面的AutomaticDecompression = DecompressionMethods.GZip）  
                         mearResult = await response.Content.ReadAsStringAsync();//测量结果响应
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
-                        Console.WriteLine("服务错误："+ex.Message);
+                        Console.WriteLine("服务错误：" + ex.Message);
                     }
                     finally
                     {
 
                     }
-                   
+
                 }
             }
         }
-        public static string DOPUT(string localUrl,string pageCode, string id, List<KeyValuePair<String, String>> paraList)
+        public static string DOPUT(string localUrl, string pageCode, string id, List<KeyValuePair<String, String>> paraList)
         {
             try
             {

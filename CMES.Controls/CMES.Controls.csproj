@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{39FA5591-365F-4781-A933-46E0F2C4FC78}</ProjectGuid>
+    <ProjectGuid>{A329A86B-2A8E-4FDD-B1FB-D73720375069}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CMES.Controller.SYS</RootNamespace>
-    <AssemblyName>CMES.Controller.SYS</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>CMES.Controls</RootNamespace>
+    <AssemblyName>CMES.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,15 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DeviceManagerSystem\bin\x86\Release\Lib\Newtonsoft.json\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite">
-      <HintPath>..\Lib\SQLite\System.Data.SQLite.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,30 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseNodeController.cs" />
-    <Compile Include="FrequencyServer.cs" />
+    <Compile Include="CircleProgramBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewProgressBarColumn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserLogin.cs" />
-    <Compile Include="UserRoleServer.cs" />
-    <Compile Include="UserSynchronization.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CMES.Data\CMES.Data.csproj">
-      <Project>{a92b20f6-5468-42e4-a327-1e390740f1c3}</Project>
-      <Name>CMES.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CMES.Entity.SYS\CMES.Entity.SYS.csproj">
-      <Project>{ddb23bba-4211-4004-b6c0-67eeffb78559}</Project>
-      <Name>CMES.Entity.SYS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CMES.NET\CMES.NET.csproj">
-      <Project>{456F47CD-4443-4F79-AA70-75EF2BC0841B}</Project>
-      <Name>CMES.NET</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CMES.Utility\CMES.Utility.csproj">
-      <Project>{A8312D5D-7F91-4A1F-9A60-BAEB954F20C5}</Project>
-      <Name>CMES.Utility</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

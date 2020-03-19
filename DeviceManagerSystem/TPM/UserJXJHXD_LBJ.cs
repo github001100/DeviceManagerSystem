@@ -25,6 +25,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Turquoise;
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
@@ -44,6 +46,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.Turquoise;
+            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView2.Columns)
             {
@@ -53,7 +57,7 @@ namespace DeviceManagerSystem.TPM
             }
             int index1 = this.dataGridView2.Rows.Add();
             this.dataGridView2.Rows[index1].Cells[0].Value = "轮对";
-            this.dataGridView2.Rows[index].Cells[1].Value = "2020/02/20";
+            this.dataGridView2.Rows[index1].Cells[1].Value = "2020/02/20";
             this.dataGridView2.Rows[index1].Cells[2].Value = "24";
             this.dataGridView2.Rows[index1].Cells[3].Value = "24";
             this.dataGridView2.Rows[index1].Cells[4].Value = "0";
@@ -62,6 +66,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView3.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView3.EnableHeadersVisualStyles = false;
             dataGridView3.ColumnHeadersDefaultCellStyle.BackColor = Color.Turquoise;
+            dataGridView3.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView3.Columns)
             {
@@ -80,6 +86,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView4.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView4.EnableHeadersVisualStyles = false;
             dataGridView4.ColumnHeadersDefaultCellStyle.BackColor = Color.Turquoise;
+            dataGridView4.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView4.Columns)
             {
@@ -98,6 +106,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView5.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView5.EnableHeadersVisualStyles = false;
             dataGridView5.ColumnHeadersDefaultCellStyle.BackColor = Color.Turquoise;
+            dataGridView5.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView5.Columns)
             {
@@ -118,11 +128,46 @@ namespace DeviceManagerSystem.TPM
             dataGridView4.Rows[0].Selected = false;
             dataGridView5.Rows[0].Selected = false;
 
-
         }
         private void UserJXJHXD_LBJ_Load(object sender, EventArgs e)
         {
             InitDataTable();
+            //this.Font = new Font("微软雅黑", 12);
+            this.groupBox1.Font = new Font("微软雅黑", 14);
+            this.groupBox2.Font = new Font("微软雅黑", 14);
+            this.groupBox3.Font = new Font("微软雅黑", 14);
+            this.groupBox4.Font = new Font("微软雅黑", 14);
+            this.groupBox5.Font = new Font("微软雅黑", 14);
+
         }
+
+        //public override Font Font
+        //{
+        //    get
+        //    {
+        //        return base.Font;
+        //    }
+        //    set
+        //    {
+        //        foreach (Control var in base.Controls)
+        //        {
+        //            SetControlFont(var, value);
+        //        }
+
+        //        base.Font = value;
+        //    }
+        //}
+        //private void SetControlFont(Control c, Font f)
+        //{
+        //    c.Font = f;
+        //    if (c.Controls.Count > 0)
+        //    {
+        //        foreach (Control var in c.Controls)
+        //        {
+        //            SetControlFont(var, f);
+
+        //        }
+        //    }
+        //}
     }
 }

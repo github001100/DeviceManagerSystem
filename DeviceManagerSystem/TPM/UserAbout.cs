@@ -36,6 +36,9 @@ namespace DeviceManagerSystem.TPM
         public UserAbout()
         {
             InitializeComponent();
+            this.pictureBox1.Parent = this.pictureBox2;
+
+            this.pictureBox1.BackColor = Color.Transparent;
         }
 
         private void UserAbout_Load(object sender, EventArgs e)

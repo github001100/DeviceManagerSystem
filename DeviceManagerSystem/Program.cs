@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.ApplicationServices;
 using DeviceManagerSystem.Others;
+using CMES.Data;
+
 namespace DeviceManagerSystem
 {
     public class AppContainer : WindowsFormsApplicationBase
@@ -18,7 +20,9 @@ namespace DeviceManagerSystem
 
         protected override void OnCreateMainForm()
         {
-            MainForm = new LoginForm();//MainHome
+            DatabaseSQLite dbsqlite = new DatabaseSQLite();
+            dbsqlite.Open();
+            MainForm = new LoginForm(dbsqlite);//MainHome
         }
     }
     static class Program

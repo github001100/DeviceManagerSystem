@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DeviceManagerSystem</RootNamespace>
-    <AssemblyName>DeviceManagerSystem</AssemblyName>
+    <AssemblyName>XL-MIS</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -50,7 +50,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
@@ -321,6 +321,14 @@
     <ProjectReference Include="..\CMES.Controller.SYS\CMES.Controller.SYS.csproj">
       <Project>{39fa5591-365f-4781-a933-46e0f2c4fc78}</Project>
       <Name>CMES.Controller.SYS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMES.Controls\CMES.Controls.csproj">
+      <Project>{a329a86b-2a8e-4fdd-b1fb-d73720375069}</Project>
+      <Name>CMES.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMES.Data\CMES.Data.csproj">
+      <Project>{a92b20f6-5468-42e4-a327-1e390740f1c3}</Project>
+      <Name>CMES.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\CMES.Entity.SYS\CMES.Entity.SYS.csproj">
       <Project>{ddb23bba-4211-4004-b6c0-67eeffb78559}</Project>

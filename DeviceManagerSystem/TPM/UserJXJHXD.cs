@@ -47,6 +47,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 18);
+
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
                 item.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -61,7 +63,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index].Cells[4].Value = "A2";
             this.dataGridView1.Rows[index].Cells[5].Value = "待检...";
             this.dataGridView1.Rows[index].Cells[6].Value = PressImg;
-            this.dataGridView1.Rows[index].Cells[7].Value = 33;
+            this.dataGridView1.Rows[index].Cells[7].Value = 33;//PressImg
 
             int index1 = this.dataGridView1.Rows.Add();
             this.dataGridView1.Rows[index1].Cells[0].Value = "2";
@@ -80,6 +82,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
+            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 18);
+
             foreach (DataGridViewColumn item in this.dataGridView2.Columns)
             {
                 item.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -133,6 +137,8 @@ namespace DeviceManagerSystem.TPM
         }
         private void UserJXJHXD_Load(object sender, EventArgs e)
         {
+            this.Font = new Font("微软雅黑", 18);
+
             InitDataTable();
             Thread thread = new Thread(new ThreadStart(new Action(delegate
             {
@@ -168,7 +174,34 @@ namespace DeviceManagerSystem.TPM
             thread.IsBackground = true;
             thread.Start();
         }
+        public override Font Font
+        {
+            get
+            {
+                return base.Font;
+            }
+            set
+            {
+                foreach (Control var in base.Controls)
+                {
+                    SetControlFont(var, value);
+                }
 
+                base.Font = value;
+            }
+        }
+        private void SetControlFont(Control c, Font f)
+        {
+            c.Font = f;
+            if (c.Controls.Count > 0)
+            {
+                foreach (Control var in c.Controls)
+                {
+                    SetControlFont(var, f);
+
+                }
+            }
+        }
         private void dataGridView1_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             if (dataGridView1.Rows[e.RowIndex].IsNewRow) return;

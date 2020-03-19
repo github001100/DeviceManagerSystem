@@ -11,9 +11,16 @@ using System.Runtime.InteropServices;
 
 namespace DeviceManagerSystem
 {
+    /// <summary>
+    /// 设备监控主界面UserMain
+    /// @洛阳开远
+    /// @2020.03.14
+    /// @FSJ
+    /// </summary>
     public partial class UserMain : UserControl
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
+        public static Color Opc ;
         [DllImport("user32")]
         private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
 
@@ -282,46 +289,50 @@ namespace DeviceManagerSystem
         private void label51_DoubleClick(object sender, EventArgs e)
         {
             //调用示例
-            FindChks(this);
-            foreach (MyCircle myCircle in MyCircles)
-            {
+            //FindChks(this);
+            //foreach (MyCircle myCircle in MyCircles)
+            //{
+            //    myCircle.BorderColor = Color.YellowGreen;
+            //    myCircle.ButtonCenterColorStart = Color.YellowGreen;
+            //    myCircle.ButtonCenterColorEnd = Color.YellowGreen;
+            //    myCircle.FocusBorderColor = Color.YellowGreen;
 
-                myCircle.BorderColor = Color.YellowGreen;
-                myCircle.ButtonCenterColorStart = Color.YellowGreen;
-                myCircle.ButtonCenterColorEnd = Color.YellowGreen;
-                myCircle.FocusBorderColor = Color.YellowGreen;
+            //}
+            Opc = Color.YellowGreen;
 
-            }
         }
 
         private void label56_DoubleClick(object sender, EventArgs e)
         {
             //调用示例
-            FindChks(this);
-            foreach (MyCircle myCircle in MyCircles)
-            {
+            //FindChks(this);
+            //foreach (MyCircle myCircle in MyCircles)
+            //{
+            //    myCircle.BorderColor = Color.Red;
+            //    myCircle.ButtonCenterColorStart = Color.Red;
+            //    myCircle.ButtonCenterColorEnd = Color.Red;
+            //    myCircle.FocusBorderColor = Color.Red;
 
-                myCircle.BorderColor = Color.Red;
-                myCircle.ButtonCenterColorStart = Color.Red;
-                myCircle.ButtonCenterColorEnd = Color.Red;
-                myCircle.FocusBorderColor = Color.Red;
+            //}
+            Opc = Color.Red;
 
-            }
-           
         }
 
         private void label50_DoubleClick(object sender, EventArgs e)
         {
             //调用示例
-            FindChks(this);
-            foreach (MyCircle myCircle in MyCircles)
-            {
-                myCircle.BorderColor = Color.Gray;
-                myCircle.ButtonCenterColorStart = Color.Gray;
-                myCircle.ButtonCenterColorEnd = Color.Gray;
-                myCircle.FocusBorderColor = Color.Gray;
+            //FindChks(this);
+            //foreach (MyCircle myCircle in MyCircles)
+            //{
 
-            }
+            //    myCircle.BorderColor = Color.Gray;
+            //    myCircle.ButtonCenterColorStart = Color.Gray;
+            //    myCircle.ButtonCenterColorEnd = Color.Gray;
+            //    myCircle.FocusBorderColor = Color.Gray;
+
+            //}
+            Opc = Color.Gray;
+
         }
 
     }

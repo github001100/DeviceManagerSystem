@@ -181,6 +181,8 @@ namespace DeviceManagerSystem.TPM
         }
         private void UserZCJC_Load(object sender, EventArgs e)
         {
+            this.Font = new Font("微软雅黑", 16);
+
             InitDataTable();
             //添加的两组Test数据
             List<String> txData2 = new List<String>() { "轴承打码", "轴承除锈", "外观检查", "滚子探伤", "内圈探伤", "外圈探伤", "轴承清洗", "尺寸测量1", "尺寸测量2", "轴承入库", "轴承报废" };
@@ -201,7 +203,8 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineColor = Color.Blue;
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineWidth = 3;
             chart1.ChartAreas[0].BackColor = System.Drawing.Color.Transparent; //设置区域内背景透明
-
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 14);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 14);
             chart1.ChartAreas[0].AxisY.Minimum = 0;//设定y轴的最小值
             //chart1.ChartAreas[0].AxisY.Maximum = 1000;//设定y轴的最大值
             chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = false;   //设置是否交错显示,比如数据多的时间分成两行来显示 
@@ -229,7 +232,34 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
 
         }
+        public override Font Font
+        {
+            get
+            {
+                return base.Font;
+            }
+            set
+            {
+                foreach (Control var in base.Controls)
+                {
+                    SetControlFont(var, value);
+                }
 
+                base.Font = value;
+            }
+        }
+        private void SetControlFont(Control c, Font f)
+        {
+            c.Font = f;
+            if (c.Controls.Count > 0)
+            {
+                foreach (Control var in c.Controls)
+                {
+                    SetControlFont(var, f);
+
+                }
+            }
+        }
         private void UserZCJC_SizeChanged(object sender, EventArgs e)
         {
             //asc.controlAutoSize(this);

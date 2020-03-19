@@ -167,6 +167,7 @@
             // button9
             // 
             this.button9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button9.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button9.Location = new System.Drawing.Point(857, 0);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(120, 50);
@@ -177,6 +178,7 @@
             // button10
             // 
             this.button10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button10.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button10.Location = new System.Drawing.Point(977, 0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(120, 50);
@@ -186,35 +188,39 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(329, 13);
+            this.textBox9.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox9.Location = new System.Drawing.Point(382, 8);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 31);
+            this.textBox9.Size = new System.Drawing.Size(100, 38);
             this.textBox9.TabIndex = 4;
             this.textBox9.Text = "24";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(118, 14);
+            this.textBox10.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox10.Location = new System.Drawing.Point(147, 9);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 31);
+            this.textBox10.Size = new System.Drawing.Size(100, 38);
             this.textBox10.TabIndex = 4;
             this.textBox10.Text = "8";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(233, 14);
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(258, 14);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 31);
+            this.label9.Size = new System.Drawing.Size(118, 31);
             this.label9.TabIndex = 3;
             this.label9.Text = "分解数量:";
             // 
             // label10
             // 
-            this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(22, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 31);
+            this.label10.Size = new System.Drawing.Size(119, 31);
             this.label10.TabIndex = 3;
             this.label10.Text = "增加数量:";
             // 
@@ -235,6 +241,7 @@
             this.dataGridView5.Location = new System.Drawing.Point(3, 75);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.ReadOnly = true;
+            this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 44;
             this.dataGridView5.Size = new System.Drawing.Size(1097, 88);
             this.dataGridView5.TabIndex = 0;
@@ -242,36 +249,42 @@
             // 项目4
             // 
             this.项目4.HeaderText = "项目";
+            this.项目4.MinimumWidth = 6;
             this.项目4.Name = "项目4";
             this.项目4.ReadOnly = true;
             // 
             // 检修日期4
             // 
             this.检修日期4.HeaderText = "检修日期";
+            this.检修日期4.MinimumWidth = 6;
             this.检修日期4.Name = "检修日期4";
             this.检修日期4.ReadOnly = true;
             // 
             // 检修总数4
             // 
             this.检修总数4.HeaderText = "检修总数";
+            this.检修总数4.MinimumWidth = 6;
             this.检修总数4.Name = "检修总数4";
             this.检修总数4.ReadOnly = true;
             // 
             // 检修前盖
             // 
             this.检修前盖.HeaderText = "检修前盖";
+            this.检修前盖.MinimumWidth = 6;
             this.检修前盖.Name = "检修前盖";
             this.检修前盖.ReadOnly = true;
             // 
             // 新前盖
             // 
             this.新前盖.HeaderText = "新前盖";
+            this.新前盖.MinimumWidth = 6;
             this.新前盖.Name = "新前盖";
             this.新前盖.ReadOnly = true;
             // 
             // 备用4
             // 
             this.备用4.HeaderText = "备用";
+            this.备用4.MinimumWidth = 6;
             this.备用4.Name = "备用4";
             this.备用4.ReadOnly = true;
             // 
@@ -305,6 +318,7 @@
             // button7
             // 
             this.button7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button7.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7.Location = new System.Drawing.Point(857, 0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(120, 50);
@@ -315,6 +329,7 @@
             // button8
             // 
             this.button8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button8.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button8.Location = new System.Drawing.Point(977, 0);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(120, 50);
@@ -324,35 +339,39 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(329, 13);
+            this.textBox7.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox7.Location = new System.Drawing.Point(382, 8);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 31);
+            this.textBox7.Size = new System.Drawing.Size(100, 38);
             this.textBox7.TabIndex = 4;
             this.textBox7.Text = "24";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(118, 14);
+            this.textBox8.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox8.Location = new System.Drawing.Point(147, 9);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 31);
+            this.textBox8.Size = new System.Drawing.Size(100, 38);
             this.textBox8.TabIndex = 4;
             this.textBox8.Text = "8";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(233, 14);
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(258, 14);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 31);
+            this.label7.Size = new System.Drawing.Size(118, 31);
             this.label7.TabIndex = 3;
             this.label7.Text = "分解数量:";
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(22, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 31);
+            this.label8.Size = new System.Drawing.Size(119, 31);
             this.label8.TabIndex = 3;
             this.label8.Text = "增加数量:";
             // 
@@ -373,6 +392,7 @@
             this.dataGridView4.Location = new System.Drawing.Point(3, 73);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 44;
             this.dataGridView4.Size = new System.Drawing.Size(1097, 88);
             this.dataGridView4.TabIndex = 0;
@@ -380,36 +400,42 @@
             // 项目3
             // 
             this.项目3.HeaderText = "项目";
+            this.项目3.MinimumWidth = 6;
             this.项目3.Name = "项目3";
             this.项目3.ReadOnly = true;
             // 
             // 检修日期3
             // 
             this.检修日期3.HeaderText = "检修日期";
+            this.检修日期3.MinimumWidth = 6;
             this.检修日期3.Name = "检修日期3";
             this.检修日期3.ReadOnly = true;
             // 
             // 检修总数3
             // 
             this.检修总数3.HeaderText = "检修总数";
+            this.检修总数3.MinimumWidth = 6;
             this.检修总数3.Name = "检修总数3";
             this.检修总数3.ReadOnly = true;
             // 
             // 检修防尘挡圈
             // 
             this.检修防尘挡圈.HeaderText = "检修防尘挡圈";
+            this.检修防尘挡圈.MinimumWidth = 6;
             this.检修防尘挡圈.Name = "检修防尘挡圈";
             this.检修防尘挡圈.ReadOnly = true;
             // 
             // 新防尘挡圈
             // 
             this.新防尘挡圈.HeaderText = "新防尘挡圈";
+            this.新防尘挡圈.MinimumWidth = 6;
             this.新防尘挡圈.Name = "新防尘挡圈";
             this.新防尘挡圈.ReadOnly = true;
             // 
             // 备用3
             // 
             this.备用3.HeaderText = "备用";
+            this.备用3.MinimumWidth = 6;
             this.备用3.Name = "备用3";
             this.备用3.ReadOnly = true;
             // 
@@ -443,6 +469,7 @@
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button5.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button5.Location = new System.Drawing.Point(857, 0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(120, 50);
@@ -453,6 +480,7 @@
             // button6
             // 
             this.button6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button6.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button6.Location = new System.Drawing.Point(977, 0);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(120, 50);
@@ -462,35 +490,39 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(329, 13);
+            this.textBox5.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox5.Location = new System.Drawing.Point(382, 8);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 31);
+            this.textBox5.Size = new System.Drawing.Size(100, 38);
             this.textBox5.TabIndex = 4;
             this.textBox5.Text = "24";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(118, 14);
+            this.textBox6.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox6.Location = new System.Drawing.Point(147, 9);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 31);
+            this.textBox6.Size = new System.Drawing.Size(100, 38);
             this.textBox6.TabIndex = 4;
             this.textBox6.Text = "8";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(233, 14);
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(258, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 31);
+            this.label5.Size = new System.Drawing.Size(118, 31);
             this.label5.TabIndex = 3;
             this.label5.Text = "分解数量:";
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(22, 15);
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(22, 14);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 31);
+            this.label6.Size = new System.Drawing.Size(119, 31);
             this.label6.TabIndex = 3;
             this.label6.Text = "增加数量:";
             // 
@@ -511,6 +543,7 @@
             this.dataGridView3.Location = new System.Drawing.Point(3, 75);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 44;
             this.dataGridView3.Size = new System.Drawing.Size(1097, 88);
             this.dataGridView3.TabIndex = 0;
@@ -518,36 +551,42 @@
             // 项目2
             // 
             this.项目2.HeaderText = "项目";
+            this.项目2.MinimumWidth = 6;
             this.项目2.Name = "项目2";
             this.项目2.ReadOnly = true;
             // 
             // 检修日期2
             // 
             this.检修日期2.HeaderText = "检修日期";
+            this.检修日期2.MinimumWidth = 6;
             this.检修日期2.Name = "检修日期2";
             this.检修日期2.ReadOnly = true;
             // 
             // 检修总数2
             // 
             this.检修总数2.HeaderText = "检修总数";
+            this.检修总数2.MinimumWidth = 6;
             this.检修总数2.Name = "检修总数2";
             this.检修总数2.ReadOnly = true;
             // 
             // 检修轴箱
             // 
             this.检修轴箱.HeaderText = "检修轴箱";
+            this.检修轴箱.MinimumWidth = 6;
             this.检修轴箱.Name = "检修轴箱";
             this.检修轴箱.ReadOnly = true;
             // 
             // 新轴箱
             // 
             this.新轴箱.HeaderText = "新轴箱";
+            this.新轴箱.MinimumWidth = 6;
             this.新轴箱.Name = "新轴箱";
             this.新轴箱.ReadOnly = true;
             // 
             // 备用2
             // 
             this.备用2.HeaderText = "备用";
+            this.备用2.MinimumWidth = 6;
             this.备用2.Name = "备用2";
             this.备用2.ReadOnly = true;
             // 
@@ -581,6 +620,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.Location = new System.Drawing.Point(857, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 50);
@@ -591,6 +631,7 @@
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button4.Location = new System.Drawing.Point(977, 0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 50);
@@ -600,35 +641,39 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(329, 13);
+            this.textBox3.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox3.Location = new System.Drawing.Point(382, 13);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 31);
+            this.textBox3.Size = new System.Drawing.Size(100, 38);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "24";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 14);
+            this.textBox4.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox4.Location = new System.Drawing.Point(147, 14);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 31);
+            this.textBox4.Size = new System.Drawing.Size(100, 38);
             this.textBox4.TabIndex = 4;
             this.textBox4.Text = "8";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(233, 14);
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(258, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 31);
+            this.label3.Size = new System.Drawing.Size(118, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "分解数量:";
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(22, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 31);
+            this.label4.Size = new System.Drawing.Size(119, 31);
             this.label4.TabIndex = 3;
             this.label4.Text = "增加数量:";
             // 
@@ -649,6 +694,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 78);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 44;
             this.dataGridView2.Size = new System.Drawing.Size(1097, 90);
             this.dataGridView2.TabIndex = 0;
@@ -656,36 +702,42 @@
             // 项目1
             // 
             this.项目1.HeaderText = "项目";
+            this.项目1.MinimumWidth = 6;
             this.项目1.Name = "项目1";
             this.项目1.ReadOnly = true;
             // 
             // 检修日期1
             // 
             this.检修日期1.HeaderText = "检修日期";
+            this.检修日期1.MinimumWidth = 6;
             this.检修日期1.Name = "检修日期1";
             this.检修日期1.ReadOnly = true;
             // 
             // 检修总数1
             // 
             this.检修总数1.HeaderText = "检修总数";
+            this.检修总数1.MinimumWidth = 6;
             this.检修总数1.Name = "检修总数1";
             this.检修总数1.ReadOnly = true;
             // 
             // 检修轴承1
             // 
             this.检修轴承1.HeaderText = "检修轴承";
+            this.检修轴承1.MinimumWidth = 6;
             this.检修轴承1.Name = "检修轴承1";
             this.检修轴承1.ReadOnly = true;
             // 
             // 新轴承
             // 
             this.新轴承.HeaderText = "新轴承";
+            this.新轴承.MinimumWidth = 6;
             this.新轴承.Name = "新轴承";
             this.新轴承.ReadOnly = true;
             // 
             // 备用1
             // 
             this.备用1.HeaderText = "备用";
+            this.备用1.MinimumWidth = 6;
             this.备用1.Name = "备用1";
             this.备用1.ReadOnly = true;
             // 
@@ -719,6 +771,7 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.Location = new System.Drawing.Point(857, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 50);
@@ -729,6 +782,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(977, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 50);
@@ -738,35 +792,39 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(329, 13);
+            this.textBox2.Font = new System.Drawing.Font("微软雅黑", 14F);
+            this.textBox2.Location = new System.Drawing.Point(382, 15);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 31);
+            this.textBox2.Size = new System.Drawing.Size(100, 38);
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "24";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 14);
+            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 14F);
+            this.textBox1.Location = new System.Drawing.Point(147, 15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
+            this.textBox1.Size = new System.Drawing.Size(100, 38);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "8";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(233, 14);
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(258, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 31);
+            this.label2.Size = new System.Drawing.Size(118, 31);
             this.label2.TabIndex = 3;
             this.label2.Text = "分解数量:";
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(22, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 31);
+            this.label1.Size = new System.Drawing.Size(119, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "增加数量:";
             // 
@@ -787,6 +845,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 44;
             this.dataGridView1.Size = new System.Drawing.Size(1097, 88);
             this.dataGridView1.TabIndex = 0;
@@ -794,36 +853,42 @@
             // 项目
             // 
             this.项目.HeaderText = "项目";
+            this.项目.MinimumWidth = 6;
             this.项目.Name = "项目";
             this.项目.ReadOnly = true;
             // 
             // 检修日期
             // 
             this.检修日期.HeaderText = "检修日期";
+            this.检修日期.MinimumWidth = 6;
             this.检修日期.Name = "检修日期";
             this.检修日期.ReadOnly = true;
             // 
             // 检修总数
             // 
             this.检修总数.HeaderText = "检修总数";
+            this.检修总数.MinimumWidth = 6;
             this.检修总数.Name = "检修总数";
             this.检修总数.ReadOnly = true;
             // 
             // 检修轮对
             // 
             this.检修轮对.HeaderText = "检修轮对";
+            this.检修轮对.MinimumWidth = 6;
             this.检修轮对.Name = "检修轮对";
             this.检修轮对.ReadOnly = true;
             // 
             // 新组装
             // 
             this.新组装.HeaderText = "新组装";
+            this.新组装.MinimumWidth = 6;
             this.新组装.Name = "新组装";
             this.新组装.ReadOnly = true;
             // 
             // 备用
             // 
             this.备用.HeaderText = "备用";
+            this.备用.MinimumWidth = 6;
             this.备用.Name = "备用";
             this.备用.ReadOnly = true;
             // 

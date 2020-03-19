@@ -127,8 +127,38 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.Rows[index7].DefaultCellStyle.BackColor = Color.LightGray;
 
         }
+        public override Font Font
+        {
+            get
+            {
+                return base.Font;
+            }
+            set
+            {
+                foreach (Control var in base.Controls)
+                {
+                    SetControlFont(var, value);
+                }
+
+                base.Font = value;
+            }
+        }
+        private void SetControlFont(Control c, Font f)
+        {
+            c.Font = f;
+            if (c.Controls.Count > 0)
+            {
+                foreach (Control var in c.Controls)
+                {
+                    SetControlFont(var, f);
+
+                }
+            }
+        }
         private void UserZTJXJD_Load(object sender, EventArgs e)
         {
+            this.Font = new Font("微软雅黑", 18);
+
             InitDataTable(); 
             //添加的两组Test数据
             List<String> txData2 = new List<String>() { "轮轴拆分", "轮对", "轴承", "轴箱", "前盖", "防尘挡圈", "轮轴组装" };
@@ -140,7 +170,9 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[0].MajorTickMark.Enabled = false; // x轴上突出的小点
             chart1.ChartAreas[0].Axes[1].MajorTickMark.Enabled = false; //
             chart1.ChartAreas[0].Axes[1].InterlacedColor = Color.LightGray; //显示交错带颜色
-         
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 12);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 12);
+
             chart1.ChartAreas[0].Axes[0].LabelStyle.Format = "# (%)"; //设置X轴显示样式
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineDashStyle = ChartDashStyle.Dash; //网格类型 短横线
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineColor = Color.Blue;

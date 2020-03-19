@@ -189,6 +189,8 @@ namespace DeviceManagerSystem
         {
             base.OnMouseClick(e);
             buttonClicked = !buttonClicked;
+           
+            //MessageBox.Show(this.Name);
         }
         /// <summary>
         /// Raises the <see cref="E:System.Windows.Forms.Control.MouseUp"/> event.
@@ -365,5 +367,15 @@ namespace DeviceManagerSystem
         }
 
         #endregion
+
+        private void MyCircle_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            //base.OnMouseDoubleClick(e);
+            buttonClicked = !buttonClicked;
+            this.BorderColor = UserMain.Opc;
+            this.ButtonCenterColorStart = UserMain.Opc;
+            this.ButtonCenterColorEnd = UserMain.Opc;
+            this.FocusBorderColor = UserMain.Opc;
+        }
     }
 }

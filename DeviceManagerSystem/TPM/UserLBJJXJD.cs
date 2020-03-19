@@ -129,8 +129,38 @@ namespace DeviceManagerSystem.TPM
             dataGridView2.Rows[index6].DefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE); 
 
         }
+        public override Font Font
+        {
+            get
+            {
+                return base.Font;
+            }
+            set
+            {
+                foreach (Control var in base.Controls)
+                {
+                    SetControlFont(var, value);
+                }
+
+                base.Font = value;
+            }
+        }
+        private void SetControlFont(Control c, Font f)
+        {
+            c.Font = f;
+            if (c.Controls.Count > 0)
+            {
+                foreach (Control var in c.Controls)
+                {
+                    SetControlFont(var, f);
+
+                }
+            }
+        }
         private void UserLBJJXJD_Load(object sender, EventArgs e)
         {
+            this.Font = new Font("微软雅黑", 16);
+
             InitDataTable();
             //添加的两组Test数据
             List<String> txData2 = new List<String>() { "除锈清洗", "二维码喷码", "外观检查", "尺寸测量", "管理入库" };
@@ -151,17 +181,18 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineWidth = 3;
             chart1.ChartAreas[0].BackColor = System.Drawing.Color.Transparent; //设置区域内背景透明
             chart1.Series[0].Points.DataBindXY(txData2, tyData2); //添加数据
-
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 14);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 14);
             chart1.Series[0].XValueType = ChartValueType.String; //设置X轴上的值类型
             chart1.Series[0].Label = "#VAL"; //设置显示X Y的值
             chart1.Series[0].ToolTip = "#VALX(套)\r#VAL"; //鼠标移动到对应点显示数值
             //柱状图其他设置
             //chart1.Series[0]["DrawingStyle"] = "Emboss";   //设置柱状平面形状
-            chart1.Series[0]["PointWidth"] = "0.5"; //设置柱状大小
+            chart1.Series[0]["PointWidth"] = "1.0"; //设置柱状大小
 
             //chart1.Series.Add(new Series()); //添加一个图表序列
             chart1.Series[1].Points.DataBindXY(txData2, tyData3); //添加数据
-            chart1.Series[1]["PointWidth"] = "0.5"; //设置柱状大小
+            chart1.Series[1]["PointWidth"] = "1.0"; //设置柱状大小
 
             Thread thread = new Thread(new ThreadStart(new Action(delegate
             {

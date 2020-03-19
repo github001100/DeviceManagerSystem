@@ -25,6 +25,7 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 18);
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
@@ -95,6 +96,36 @@ namespace DeviceManagerSystem.TPM
         private void UserJXJHJK_Load(object sender, EventArgs e)
         {
             InitDataTable();
+            this.Font = new Font("微软雅黑", 18);
         }
+        public override Font Font
+        {
+            get
+            {
+                return base.Font;
+            }
+            set
+            {
+                foreach (Control var in base.Controls)
+                {
+                    SetControlFont(var, value);
+                }
+
+                base.Font = value;
+            }
+        }
+        private void SetControlFont(Control c, Font f)
+        {
+            c.Font = f;
+            if (c.Controls.Count > 0)
+            {
+                foreach (Control var in c.Controls)
+                {
+                    SetControlFont(var, f);
+
+                }
+            }
+        }
+
     }
 }

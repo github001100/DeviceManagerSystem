@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("DeviceManagerSystem")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("XL-铁路客车轮轴智能检修管理系统")]
+[assembly: AssemblyDescription("铁路客车轮轴智能检修管理系统")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DeviceManagerSystem")]
+[assembly: AssemblyCompany("洛阳开远智能精机有限公司")]
+[assembly: AssemblyProduct("铁路客车轮轴智能检修管理系统")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: 
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("10.10.1.101")]
+[assembly: AssemblyFileVersion("10.10.1.201")]

@@ -1,23 +1,26 @@
 ﻿using DeviceManagerSystem.TPM;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DeviceManagerSystem
 {
+    /// <summary>
+    /// MainHome首页面
+    /// @洛阳开远
+    /// @2020.03.14
+    /// @FSJ
+    /// </summary>
     public partial class MainHome : Form
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
+        int interval = 5;
         //------------------------------------------------------  控件大小随窗体大小变化
         private float X;
         private float Y;
@@ -113,18 +116,20 @@ namespace DeviceManagerSystem
             base.WndProc(ref m);
         }
 
-        public MainHome()
+        public MainHome(CMES.Data.DatabaseSQLite dbsqlite)
         {
             InitializeComponent();
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;//设置该属性 为false
-
-            asc.controllInitializeSize(this);
+            #region 窗体缩放
+            GetAllInitInfo(this.Controls[0]);
+            #endregion
+            //asc.controllInitializeSize(this);
             //this.label1.Parent = this.pictureBox1;
             //this.label1.BackColor = Color.Transparent;
             label1.Left = (this.ClientRectangle.Width - label1.Width) / 2;
             label1.BringToFront();
-            this.label2.Parent = this.pictureBox1;
-            this.label2.BackColor = Color.Transparent;
+            //this.label2.Parent = this.pictureBox1;
+            //this.label2.BackColor = Color.Transparent;
             new Thread(() =>
             {
                 while (true)
@@ -178,8 +183,9 @@ namespace DeviceManagerSystem
         System.Reflection.FieldInfo[] _List;
         private void MainHome_Load(object sender, EventArgs e)
         {
-           _List = this.GetType().GetFields(System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-
+            _List = this.GetType().GetFields(System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            interval = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["Interval"]) * 1000;
+            timer1.Interval = Convert.ToInt32(interval);
             SetLanguage();
             AddUserControl(UserAbout);//UserAbout  ucfl
             try
@@ -205,8 +211,14 @@ namespace DeviceManagerSystem
         private void MainHome_SizeChanged(object sender, EventArgs e)
         {
             //asc.controlAutoSize(this);
+            if (ControlsInfo.Count > 0)//如果字典中有数据，即窗体改变
+            {
+                ControlsChaneInit(this.Controls[0]);//表示pannel控件
+                ControlsChange(this.Controls[0]);
 
+            }
         }
+        #region 自定义窗体显示界面
         UserMain ucfl = new UserMain();
         UserZCJC UserZCJC = new UserZCJC();
         UserZTJXJD UserZTJXJD = new UserZTJXJD();
@@ -217,7 +229,7 @@ namespace DeviceManagerSystem
         UserJXJHXD UserJXJHXD = new UserJXJHXD();
         UserJXJHXD_LBJ UserJXJHXD_LBJ = new UserJXJHXD_LBJ();
         UserAbout UserAbout = new UserAbout();
-
+        #endregion
         delegate void addDelegate();
         addDelegate d;
         private void AddUserControl(UserControl user)
@@ -373,8 +385,8 @@ namespace DeviceManagerSystem
         }
         private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            MessageBox.Show(Post("x", "http://localhost:8099/UserLogin/CheckUserLogin"),"CAYA");
+
+            MessageBox.Show(Post("x", "http://localhost:8099/UserLogin/CheckUserLogin"), "CAYA");
         }
         private void OnFind(ToolStripItem tsi)
         {
@@ -427,7 +439,8 @@ namespace DeviceManagerSystem
                 }
             }
         }
-        public void Lun() {
+        public void Lun()
+        {
 
             EnumChildMenu(this.可视化管理ToolStripMenuItem);
         }
@@ -435,7 +448,7 @@ namespace DeviceManagerSystem
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Lun();
-         
+
             i++;
 
             switch (i)
@@ -470,12 +483,20 @@ namespace DeviceManagerSystem
                     检修计划监控ToolStripMenuItem_Click(this, null);
 
                     break;
+                case 6:
+                    //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
+                    //MessageBox.Show(_Menu.Name);
+                    设备可视化大屏ToolStripMenuItem_Click(this, null);
 
+                    break;
+                default:
+                    设备可视化大屏ToolStripMenuItem_Click(this, null);
+                    break;
             }
 
             //当i=4时，i变为0，然后重新开始；
 
-            if (i == 6)
+            if (i == 7)
             {
 
                 i = 0;
@@ -487,7 +508,7 @@ namespace DeviceManagerSystem
             if (开启自动切换ToolStripMenuItem.Text == "开启自动切换")
             {
                 timer1.Enabled = true;
-                timer1.Interval = 5000;
+                timer1.Interval = interval;
                 开启自动切换ToolStripMenuItem.Text = "关闭自动切换";
             }
             else
@@ -496,6 +517,77 @@ namespace DeviceManagerSystem
                 开启自动切换ToolStripMenuItem.Text = "开启自动切换";
 
             }
+        }
+        #region 控件缩放
+        double formWidth;//窗体原始宽度
+        double formHeight;//窗体原始高度
+        double scaleX;//水平缩放比例
+        double scaleY;//垂直缩放比例
+        Dictionary<string, string> ControlsInfo = new Dictionary<string, string>();//控件中心Left,Top,控件Width,控件Height,控件字体Size
+
+        #endregion
+        protected void GetAllInitInfo(Control ctrlContainer)
+        {
+            if (ctrlContainer.Parent == this)//获取窗体的高度和宽度
+            {
+                formWidth = Convert.ToDouble(ctrlContainer.Width);
+                formHeight = Convert.ToDouble(ctrlContainer.Height);
+            }
+            foreach (Control item in ctrlContainer.Controls)
+            {
+                if (item.Name.Trim() != "")
+                {
+                    //添加信息：键值：控件名，内容：据左边距离，距顶部距离，控件宽度，控件高度，控件字体。
+                    ControlsInfo.Add(item.Name, (item.Left + item.Width / 2) + "," + (item.Top + item.Height / 2) + "," + item.Width + "," + item.Height + "," + item.Font.Size);
+                }
+                if ((item as UserControl) == null && item.Controls.Count > 0)
+                {
+                    GetAllInitInfo(item);
+                }
+            }
+
+        }
+        private void ControlsChaneInit(Control ctrlContainer)
+        {
+            scaleX = (Convert.ToDouble(ctrlContainer.Width) / formWidth);
+            scaleY = (Convert.ToDouble(ctrlContainer.Height) / formHeight);
+        }
+        /// <summary>
+        /// 改变控件大小
+        /// </summary>
+        /// <param name="ctrlContainer"></param>
+        private void ControlsChange(Control ctrlContainer)
+        {
+            double[] pos = new double[5];//pos数组保存当前控件中心Left,Top,控件Width,控件Height,控件字体Size
+            foreach (Control item in ctrlContainer.Controls)//遍历控件
+            {
+                if (item.Name.Trim() != "")//如果控件名不是空，则执行
+                {
+                    if ((item as UserControl) == null && item.Controls.Count > 0)//如果不是自定义控件
+                    {
+                        ControlsChange(item);//循环执行
+                    }
+                    string[] strs = ControlsInfo[item.Name].Split(',');//从字典中查出的数据，以‘，’分割成字符串组
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        pos[i] = Convert.ToDouble(strs[i]);//添加到临时数组
+                    }
+                    double itemWidth = pos[2] * scaleX;     //计算控件宽度，double类型
+                    double itemHeight = pos[3] * scaleY;    //计算控件高度
+                    item.Left = Convert.ToInt32(pos[0] * scaleX - itemWidth / 2);//计算控件距离左边距离
+                    item.Top = Convert.ToInt32(pos[1] * scaleY - itemHeight / 2);//计算控件距离顶部距离
+                    item.Width = Convert.ToInt32(itemWidth);//控件宽度，int类型
+                    item.Height = Convert.ToInt32(itemHeight);//控件高度
+                    item.Font = new Font(item.Font.Name, float.Parse((pos[4] * Math.Min(scaleX, scaleY)).ToString()));//字体
+
+                }
+            }
+
+        }
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
         }
     }
 }

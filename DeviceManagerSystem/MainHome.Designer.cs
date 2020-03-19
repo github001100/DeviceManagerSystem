@@ -32,7 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开启自动切换ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检修信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,15 +57,12 @@
             this.计算器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.开启自动切换ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,20 +73,32 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 87);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1451, 545);
+            this.panel1.Size = new System.Drawing.Size(1262, 588);
             this.panel1.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(325, 59);
+            this.label1.Location = new System.Drawing.Point(191, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(705, 27);
+            this.label1.Size = new System.Drawing.Size(525, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "铁路客车 ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::DeviceManagerSystem.Properties.Resources.XiAnPicTitle;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1262, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // 系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem
             // 
@@ -96,6 +107,13 @@
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.Name = "系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem";
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.Size = new System.Drawing.Size(106, 31);
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem.Text = "系统设置";
+            // 
+            // 开启自动切换ToolStripMenuItem
+            // 
+            this.开启自动切换ToolStripMenuItem.Name = "开启自动切换ToolStripMenuItem";
+            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.开启自动切换ToolStripMenuItem.Text = "开启自动切换";
+            this.开启自动切换ToolStripMenuItem.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem_Click);
             // 
             // 检修信息ToolStripMenuItem
             // 
@@ -246,21 +264,22 @@
             // 记事本ToolStripMenuItem
             // 
             this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.记事本ToolStripMenuItem.Text = "记事本";
             this.记事本ToolStripMenuItem.Click += new System.EventHandler(this.记事本ToolStripMenuItem_Click);
             // 
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.计算器ToolStripMenuItem.Text = "计算器";
             this.计算器ToolStripMenuItem.Click += new System.EventHandler(this.计算器ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.关于ToolStripMenuItem});
+            this.关于ToolStripMenuItem,
+            this.退出ToolStripMenuItem});
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(66, 31);
             this.帮助ToolStripMenuItem.Text = "帮助";
@@ -268,12 +287,20 @@
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(138, 32);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -286,62 +313,34 @@
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1451, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1262, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(72, 0);
+            this.label2.Location = new System.Drawing.Point(778, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 27);
+            this.label2.Size = new System.Drawing.Size(484, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "2020-3-2 ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(1036, 59);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(415, 27);
-            this.panel2.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::DeviceManagerSystem.Properties.Resources.XiAnPicTitle;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1451, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // timer1
             // 
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // 开启自动切换ToolStripMenuItem
-            // 
-            this.开启自动切换ToolStripMenuItem.Name = "开启自动切换ToolStripMenuItem";
-            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
-            this.开启自动切换ToolStripMenuItem.Text = "开启自动切换";
-            this.开启自动切换ToolStripMenuItem.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem_Click);
-            // 
             // MainHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1451, 632);
+            this.ClientSize = new System.Drawing.Size(1262, 675);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -352,14 +351,12 @@
             this.Name = "MainHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "工业4.0";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainHome_FormClosing);
             this.Load += new System.EventHandler(this.MainHome_Load);
             this.SizeChanged += new System.EventHandler(this.MainHome_SizeChanged);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,36 +364,36 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem 系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开启自动切换ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 检修信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 数据报表ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 数据分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 可视化管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 检修进度监控ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 设备可视化大屏ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tPM设备管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 整体检修进度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 轮对检修进度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 轴承检修进度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 零部件检修进度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 轮轴组装检修进度ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 检修进度监控ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 检修计划监控ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 检修计划修订ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 工具ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 设备可视化大屏ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 检修计划修订ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 检修计划修订零部件ToolStripMenuItem;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 测试ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 工具ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 记事本ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 计算器ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 测试ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ToolStripMenuItem 开启自动切换ToolStripMenuItem;
     }
 }

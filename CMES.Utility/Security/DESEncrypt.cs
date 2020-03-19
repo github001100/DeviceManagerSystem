@@ -12,7 +12,7 @@ namespace CMES.Util
     /// 版本：2.0
     /// <author>
     ///		<name>CAYA</name>
-    ///		<date>2018.09.27</date>
+    ///		<date>2020.2.27</date>
     /// </author>
     /// </summary>
     public class DESEncrypt

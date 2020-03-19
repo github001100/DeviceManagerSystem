@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "MyCircle";
             this.Size = new System.Drawing.Size(169, 164);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.MyCircle_MouseDoubleClick);
             this.ResumeLayout(false);
 
         }

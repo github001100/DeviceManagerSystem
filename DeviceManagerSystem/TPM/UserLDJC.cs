@@ -133,8 +133,38 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.Rows[0].Selected = false;
 
         }
+        public override Font Font
+        {
+            get
+            {
+                return base.Font;
+            }
+            set
+            {
+                foreach (Control var in base.Controls)
+                {
+                    SetControlFont(var, value);
+                }
+
+                base.Font = value;
+            }
+        }
+        private void SetControlFont(Control c, Font f)
+        {
+            c.Font = f;
+            if (c.Controls.Count > 0)
+            {
+                foreach (Control var in c.Controls)
+                {
+                    SetControlFont(var, f);
+
+                }
+            }
+        }
         private void UserLDJC_Load(object sender, EventArgs e)
         {
+            this.Font = new Font("微软雅黑", 16);
+
             InitDataTable();
             //添加的两组Test数据
             List<String> txData2 = new List<String>() { "收入","磁粉探伤","微机探","轮轴超探","镟修","轮辋超探","动平衡检测","支出测量","入库","支出"  };
@@ -155,7 +185,8 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineColor = Color.Blue;
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineWidth = 3;
             chart1.ChartAreas[0].BackColor = System.Drawing.Color.Transparent; //设置区域内背景透明
-
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 14);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 14);
             chart1.ChartAreas[0].AxisY.Minimum = 0;//设定y轴的最小值
             //chart1.ChartAreas[0].AxisY.Maximum = 1000;//设定y轴的最大值
             chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = false;   //设置是否交错显示,比如数据多的时间分成两行来显示 
