@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -37,6 +38,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.序号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.检修单位 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.工序 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +49,14 @@
             this.不合格数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.开工时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.合格率 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.工作时长 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.工作进度 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Others = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UpdateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OverhaulDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WorkGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -115,6 +124,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -125,7 +135,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 55;
+            this.dataGridView1.ColumnHeadersHeight = 38;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.序号,
             this.检修单位,
@@ -137,18 +147,34 @@
             this.不合格数,
             this.开工时间,
             this.合格率,
-            this.工作时长});
+            this.工作进度,
+            this.Others,
+            this.UpdateTime,
+            this.SerialNumber,
+            this.OverhaulDate,
+            this.WorkGroup,
+            this.NewCount,
+            this.DepartCount});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 42;
+            this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1357, 176);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // 序号
             // 
+            this.序号.DataPropertyName = "id";
             this.序号.HeaderText = "序号";
             this.序号.MinimumWidth = 6;
             this.序号.Name = "序号";
@@ -156,6 +182,7 @@
             // 
             // 检修单位
             // 
+            this.检修单位.DataPropertyName = "OverhaulCompany";
             this.检修单位.HeaderText = "检修单位";
             this.检修单位.MinimumWidth = 6;
             this.检修单位.Name = "检修单位";
@@ -163,6 +190,7 @@
             // 
             // 工序
             // 
+            this.工序.DataPropertyName = "ProcedureName";
             this.工序.HeaderText = "工序";
             this.工序.MinimumWidth = 6;
             this.工序.Name = "工序";
@@ -170,6 +198,7 @@
             // 
             // 零件名称
             // 
+            this.零件名称.DataPropertyName = "PartsName";
             this.零件名称.HeaderText = "零件名称";
             this.零件名称.MinimumWidth = 6;
             this.零件名称.Name = "零件名称";
@@ -177,6 +206,7 @@
             // 
             // 任务计划数
             // 
+            this.任务计划数.DataPropertyName = "TaskPlans";
             this.任务计划数.HeaderText = "任务计划数";
             this.任务计划数.MinimumWidth = 6;
             this.任务计划数.Name = "任务计划数";
@@ -184,6 +214,7 @@
             // 
             // 待检修数
             // 
+            this.待检修数.DataPropertyName = "OverhaulQuantity";
             this.待检修数.HeaderText = "待检修数";
             this.待检修数.MinimumWidth = 6;
             this.待检修数.Name = "待检修数";
@@ -191,6 +222,7 @@
             // 
             // 合格数
             // 
+            this.合格数.DataPropertyName = "QualifiedQuantity";
             this.合格数.HeaderText = "合格数";
             this.合格数.MinimumWidth = 6;
             this.合格数.Name = "合格数";
@@ -198,6 +230,7 @@
             // 
             // 不合格数
             // 
+            this.不合格数.DataPropertyName = "UnqualifiedQuantity";
             this.不合格数.HeaderText = "不合格数";
             this.不合格数.MinimumWidth = 6;
             this.不合格数.Name = "不合格数";
@@ -205,6 +238,7 @@
             // 
             // 开工时间
             // 
+            this.开工时间.DataPropertyName = "StartTime";
             this.开工时间.HeaderText = "开工时间";
             this.开工时间.MinimumWidth = 6;
             this.开工时间.Name = "开工时间";
@@ -212,17 +246,82 @@
             // 
             // 合格率
             // 
+            this.合格率.DataPropertyName = "PassRate";
             this.合格率.HeaderText = "合格率";
             this.合格率.MinimumWidth = 6;
             this.合格率.Name = "合格率";
             this.合格率.ReadOnly = true;
             // 
-            // 工作时长
+            // 工作进度
             // 
-            this.工作时长.HeaderText = "工作时长";
-            this.工作时长.MinimumWidth = 6;
-            this.工作时长.Name = "工作时长";
-            this.工作时长.ReadOnly = true;
+            this.工作进度.DataPropertyName = "SpeedOfProgress";
+            this.工作进度.HeaderText = "工作进度";
+            this.工作进度.MinimumWidth = 6;
+            this.工作进度.Name = "工作进度";
+            this.工作进度.ReadOnly = true;
+            // 
+            // Others
+            // 
+            this.Others.DataPropertyName = "Others";
+            this.Others.HeaderText = "Others";
+            this.Others.MinimumWidth = 6;
+            this.Others.Name = "Others";
+            this.Others.ReadOnly = true;
+            this.Others.Visible = false;
+            // 
+            // UpdateTime
+            // 
+            this.UpdateTime.DataPropertyName = "UpdateTime";
+            this.UpdateTime.HeaderText = "UpdateTime";
+            this.UpdateTime.MinimumWidth = 6;
+            this.UpdateTime.Name = "UpdateTime";
+            this.UpdateTime.ReadOnly = true;
+            this.UpdateTime.Visible = false;
+            // 
+            // SerialNumber
+            // 
+            this.SerialNumber.DataPropertyName = "SerialNumber";
+            this.SerialNumber.HeaderText = "SerialNumber";
+            this.SerialNumber.MinimumWidth = 6;
+            this.SerialNumber.Name = "SerialNumber";
+            this.SerialNumber.ReadOnly = true;
+            this.SerialNumber.Visible = false;
+            // 
+            // OverhaulDate
+            // 
+            this.OverhaulDate.DataPropertyName = "OverhaulDate";
+            this.OverhaulDate.HeaderText = "OverhaulDate";
+            this.OverhaulDate.MinimumWidth = 6;
+            this.OverhaulDate.Name = "OverhaulDate";
+            this.OverhaulDate.ReadOnly = true;
+            this.OverhaulDate.Visible = false;
+            // 
+            // WorkGroup
+            // 
+            this.WorkGroup.DataPropertyName = "WorkGroup";
+            this.WorkGroup.HeaderText = "WorkGroup";
+            this.WorkGroup.MinimumWidth = 6;
+            this.WorkGroup.Name = "WorkGroup";
+            this.WorkGroup.ReadOnly = true;
+            this.WorkGroup.Visible = false;
+            // 
+            // NewCount
+            // 
+            this.NewCount.DataPropertyName = "NewCount";
+            this.NewCount.HeaderText = "NewCount";
+            this.NewCount.MinimumWidth = 6;
+            this.NewCount.Name = "NewCount";
+            this.NewCount.ReadOnly = true;
+            this.NewCount.Visible = false;
+            // 
+            // DepartCount
+            // 
+            this.DepartCount.DataPropertyName = "DepartCount";
+            this.DepartCount.HeaderText = "DepartCount";
+            this.DepartCount.MinimumWidth = 6;
+            this.DepartCount.Name = "DepartCount";
+            this.DepartCount.ReadOnly = true;
+            this.DepartCount.Visible = false;
             // 
             // UserZTJXJD
             // 
@@ -250,6 +349,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
         private System.Windows.Forms.DataGridViewTextBoxColumn 检修单位;
         private System.Windows.Forms.DataGridViewTextBoxColumn 工序;
@@ -260,7 +361,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 不合格数;
         private System.Windows.Forms.DataGridViewTextBoxColumn 开工时间;
         private System.Windows.Forms.DataGridViewTextBoxColumn 合格率;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 工作时长;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 工作进度;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Others;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UpdateTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SerialNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OverhaulDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WorkGroup;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NewCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartCount;
     }
 }

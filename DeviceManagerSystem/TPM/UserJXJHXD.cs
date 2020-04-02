@@ -14,14 +14,18 @@ namespace DeviceManagerSystem.TPM
 {
     public partial class UserJXJHXD : UserControl
     {
+        AutoSizeFormClass asc = new AutoSizeFormClass();
+
         /// <summary>
         /// 轮轴车间检修作业计划修订
         /// </summary>
         public UserJXJHXD()
         {
             InitializeComponent();
+            asc.controllInitializeSize(this);
+
         }
-       
+
         public int Press { get; set; }
 
         //进度条图片属性
@@ -47,7 +51,7 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 18);
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
 
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
@@ -82,7 +86,7 @@ namespace DeviceManagerSystem.TPM
             dataGridView2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 18);
+            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
 
             foreach (DataGridViewColumn item in this.dataGridView2.Columns)
             {
@@ -137,7 +141,7 @@ namespace DeviceManagerSystem.TPM
         }
         private void UserJXJHXD_Load(object sender, EventArgs e)
         {
-            this.Font = new Font("微软雅黑", 18);
+            this.Font = new Font("微软雅黑", 10);
 
             InitDataTable();
             Thread thread = new Thread(new ThreadStart(new Action(delegate
@@ -220,6 +224,12 @@ namespace DeviceManagerSystem.TPM
         private void dataGridView2_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             //if (dataGridView2.Rows[e.RowIndex].IsNewRow) return;
+
+        }
+
+        private void UserJXJHXD_SizeChanged(object sender, EventArgs e)
+        {
+            //asc.controlAutoSize(this);
 
         }
     }

@@ -33,7 +33,7 @@ namespace DeviceManagerSystem.TPM
             dataGridView2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
 
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView2.Columns)
@@ -57,7 +57,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 14);
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
+            dataGridView1.Columns[1].Width = 180;
 
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
@@ -206,10 +207,10 @@ namespace DeviceManagerSystem.TPM
         //}
         private void UserLZZZ_Load(object sender, EventArgs e)
         {
-            this.groupBox2.Font = new Font("微软雅黑", 14);
-            this.groupBox3.Font = new Font("微软雅黑", 14);
-            this.groupBox1.Font = new Font("微软雅黑", 14);
-            this.groupBox4.Font = new Font("微软雅黑", 14);
+            this.groupBox2.Font = new Font("微软雅黑", 10);
+            this.groupBox3.Font = new Font("微软雅黑", 10);
+            this.groupBox1.Font = new Font("微软雅黑", 10);
+            //this.groupBox4.Font = new Font("微软雅黑", 10);
 
             InitDataTable();
             Thread thread = new Thread(new ThreadStart(new Action(delegate

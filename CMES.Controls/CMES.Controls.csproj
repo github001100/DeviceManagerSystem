@@ -47,7 +47,18 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataGridViewProgressBarColumn.cs" />
+    <Compile Include="MyCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyCircle.designer.cs">
+      <DependentUpon>MyCircle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyCircle.resx">
+      <DependentUpon>MyCircle.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

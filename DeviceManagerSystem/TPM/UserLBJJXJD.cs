@@ -71,14 +71,14 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index].Cells[4].Value = "2";
             this.dataGridView1.Rows[index].Cells[5].Value = "90.0%"; 
             int index2 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index2].Cells[0].Value = "防尘挡圈";//56,35,20,1,95.2%
+            this.dataGridView1.Rows[index2].Cells[0].Value = "防尘挡圈";
             this.dataGridView1.Rows[index2].Cells[1].Value = "56";
             this.dataGridView1.Rows[index2].Cells[2].Value = "35";
             this.dataGridView1.Rows[index2].Cells[3].Value = "20";
             this.dataGridView1.Rows[index2].Cells[4].Value = "2";
             this.dataGridView1.Rows[index2].Cells[5].Value = "95.0%"; 
             int index3 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index3].Cells[0].Value = "端盖";//52,28,24,0,100.0%
+            this.dataGridView1.Rows[index3].Cells[0].Value = "端盖";
             this.dataGridView1.Rows[index3].Cells[1].Value = "52";
             this.dataGridView1.Rows[index3].Cells[2].Value = "28";
             this.dataGridView1.Rows[index3].Cells[3].Value = "24";
@@ -159,7 +159,7 @@ namespace DeviceManagerSystem.TPM
         }
         private void UserLBJJXJD_Load(object sender, EventArgs e)
         {
-            this.Font = new Font("微软雅黑", 16);
+            this.Font = new Font("微软雅黑", 10);
 
             InitDataTable();
             //添加的两组Test数据
@@ -181,8 +181,8 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineWidth = 3;
             chart1.ChartAreas[0].BackColor = System.Drawing.Color.Transparent; //设置区域内背景透明
             chart1.Series[0].Points.DataBindXY(txData2, tyData2); //添加数据
-            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 14);
-            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 14);
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 10);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 10);
             chart1.Series[0].XValueType = ChartValueType.String; //设置X轴上的值类型
             chart1.Series[0].Label = "#VAL"; //设置显示X Y的值
             chart1.Series[0].ToolTip = "#VALX(套)\r#VAL"; //鼠标移动到对应点显示数值

@@ -22,7 +22,7 @@ namespace DeviceManagerSystem
         {
             DatabaseSQLite dbsqlite = new DatabaseSQLite();
             dbsqlite.Open();
-            MainForm = new LoginForm(dbsqlite);//MainHome
+            MainForm = new UserLoginForm(dbsqlite);//MainHome  LoginForm
         }
     }
     static class Program

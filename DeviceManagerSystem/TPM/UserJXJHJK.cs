@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CMES.Controller.SYS;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.Threading;
 
 namespace DeviceManagerSystem.TPM
 {
     public partial class UserJXJHJK : UserControl
     {
+        ZtjkController ztjk = new ZtjkController();//整体检修 业务逻辑2.0
+
         /// <summary>
         /// 检修任务计划监控
         /// </summary>
@@ -19,13 +25,54 @@ namespace DeviceManagerSystem.TPM
         {
             InitializeComponent();
         }
+        string jsonStr2 = "";
+        public void RefreshList()
+        {
+
+            this.dataGridView1.Rows[2].Cells["检修工序"].Value = "轮轴拆分";
+            this.dataGridView1.Rows[3].Cells["检修工序"].Value = "轮轴组装";
+            //this.dataGridView1.Rows[0].Cells["新增数量"].Value = Convert.ToInt32(SysVar.lz_SN_1);
+            //this.dataGridView1.Rows[0].Cells["任务计划"].Value = Convert.ToInt32(SysVar.lz_SN_1) + Convert.ToInt32(this.dataGridView1.Rows[0].Cells["检修数量"].Value)+"";
+        }
+        public void SetTable()
+        {
+            try
+            {
+                //轮轴检修计划表
+                //JObject jsonobj2 = null;
+                jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL","ALL");
+                JObject o2 = JObject.Parse(jsonStr2);
+                JArray json2 = (JArray)o2["data"];
+                //ds = JsonToDataSet("date:{"+ json2 + "}");
+                dynamic model = JsonConvert.DeserializeObject(jsonStr2);
+                //this.dataGridView1.DataSource = null;
+                this.dataGridView1.DataSource = model.data;
+             
+                this.dataGridView1.Refresh();
+                this.dataGridView1.Update();
+                this.dataGridView1.EndEdit();
+                //DataTable dt = new DataTable();
+                //this.dataGridView1.DataSource = ds.Tables["ds"];
+
+                RefreshList();
+            }
+            catch (Exception ex)
+            {
+                timer1.Enabled = false;
+
+                //throw;
+            }
+
+        }
+        CancellationTokenSource cancelltokenSource = new CancellationTokenSource();
+
         public void InitDataTable()
         {
             //列标题居中
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 18);
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
@@ -95,8 +142,19 @@ namespace DeviceManagerSystem.TPM
         }
         private void UserJXJHJK_Load(object sender, EventArgs e)
         {
+
             InitDataTable();
-            this.Font = new Font("微软雅黑", 18);
+            this.Font = new Font("微软雅黑", 10);
+            Task.Factory.StartNew(() =>
+            {
+                while (!cancelltokenSource.IsCancellationRequested)
+                {
+                   
+                    Task.Delay(5000).Wait();
+                }
+            }, cancelltokenSource.Token);
+            timer1.Enabled = true;
+
         }
         public override Font Font
         {
@@ -127,5 +185,9 @@ namespace DeviceManagerSystem.TPM
             }
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            SetTable();
+        }
     }
 }

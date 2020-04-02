@@ -60,18 +60,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1024, 626);
+            this.panel1.Size = new System.Drawing.Size(885, 549);
             this.panel1.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Red;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(989, 0);
+            this.label4.Location = new System.Drawing.Point(836, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 35);
+            this.label4.Size = new System.Drawing.Size(49, 51);
             this.label4.TabIndex = 13;
             this.label4.Text = "X";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,7 +82,7 @@
             this.loginName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.loginName.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.loginName.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.loginName.Location = new System.Drawing.Point(403, 549);
+            this.loginName.Location = new System.Drawing.Point(339, 453);
             this.loginName.Name = "loginName";
             this.loginName.Size = new System.Drawing.Size(128, 38);
             this.loginName.TabIndex = 12;
@@ -91,26 +91,30 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 600);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 520);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1024, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(885, 29);
             this.statusStrip1.TabIndex = 14;
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.AutoSize = false;
+            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(820, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(680, 23);
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(39, 20);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(44, 23);
             this.toolStripStatusLabel2.Text = "时间";
             this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -118,7 +122,7 @@
             // 
             this.loginPWD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.loginPWD.Font = new System.Drawing.Font("微软雅黑", 14F);
-            this.loginPWD.Location = new System.Drawing.Point(612, 549);
+            this.loginPWD.Location = new System.Drawing.Point(548, 453);
             this.loginPWD.Name = "loginPWD";
             this.loginPWD.PasswordChar = '●';
             this.loginPWD.Size = new System.Drawing.Size(128, 38);
@@ -130,7 +134,7 @@
             // 
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.Font = new System.Drawing.Font("微软雅黑", 14F);
-            this.btn_login.Location = new System.Drawing.Point(749, 549);
+            this.btn_login.Location = new System.Drawing.Point(685, 453);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(119, 38);
             this.btn_login.TabIndex = 10;
@@ -144,15 +148,15 @@
             this.label3.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1024, 35);
+            this.label3.Size = new System.Drawing.Size(885, 63);
             this.label3.TabIndex = 7;
             this.label3.Text = "铁路客车轮毂智能检修系统";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label2.Location = new System.Drawing.Point(537, 549);
+            this.label2.Location = new System.Drawing.Point(473, 453);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 38);
             this.label2.TabIndex = 8;
@@ -163,7 +167,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label1.Location = new System.Drawing.Point(328, 549);
+            this.label1.Location = new System.Drawing.Point(264, 453);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 38);
             this.label1.TabIndex = 9;
@@ -176,7 +180,7 @@
             this.pictureBox1.Image = global::DeviceManagerSystem.Properties.Resources.CLDPicContent2;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1024, 626);
+            this.pictureBox1.Size = new System.Drawing.Size(885, 549);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -185,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 626);
+            this.ClientSize = new System.Drawing.Size(885, 549);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

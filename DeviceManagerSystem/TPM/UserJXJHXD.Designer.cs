@@ -86,9 +86,9 @@
             // 
             this.groupBox4.Controls.Add(this.dataGridView2);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(3, 286);
+            this.groupBox4.Location = new System.Drawing.Point(3, 274);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1237, 328);
+            this.groupBox4.Size = new System.Drawing.Size(1237, 340);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "组装轮轴车辆信息";
@@ -111,9 +111,10 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 27);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 40;
-            this.dataGridView2.Size = new System.Drawing.Size(1231, 298);
+            this.dataGridView2.RowTemplate.Height = 30;
+            this.dataGridView2.Size = new System.Drawing.Size(1231, 310);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridView2_DataError);
             this.dataGridView2.DragEnter += new System.Windows.Forms.DragEventHandler(this.dataGridView2_DragEnter);
@@ -162,7 +163,7 @@
             // 
             // 进度2
             // 
-            this.进度2.HeaderText = "进度";
+            this.进度2.HeaderText = "实时进度指示";
             this.进度2.MinimumWidth = 6;
             this.进度2.Name = "进度2";
             this.进度2.ReadOnly = true;
@@ -171,9 +172,9 @@
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox3.Location = new System.Drawing.Point(3, 164);
+            this.groupBox3.Location = new System.Drawing.Point(3, 131);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1237, 122);
+            this.groupBox3.Size = new System.Drawing.Size(1237, 143);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "拆分轮轴车辆信息";
@@ -182,6 +183,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -197,9 +199,10 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 39;
-            this.dataGridView1.Size = new System.Drawing.Size(1231, 92);
+            this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(1231, 113);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridView1_DataError);
             // 
@@ -258,7 +261,7 @@
             // 
             // 进度1
             // 
-            this.进度1.HeaderText = "进度";
+            this.进度1.HeaderText = "实时进度指示";
             this.进度1.MinimumWidth = 6;
             this.进度1.Name = "进度1";
             this.进度1.ReadOnly = true;
@@ -269,7 +272,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(3, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1237, 137);
+            this.groupBox2.Size = new System.Drawing.Size(1237, 104);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "修车计划录入";
@@ -290,7 +293,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1231, 107);
+            this.panel1.Size = new System.Drawing.Size(1231, 74);
             this.panel1.TabIndex = 0;
             // 
             // comboBox3
@@ -299,9 +302,9 @@
             this.comboBox3.Items.AddRange(new object[] {
             "拆分",
             "组装"});
-            this.comboBox3.Location = new System.Drawing.Point(850, 37);
+            this.comboBox3.Location = new System.Drawing.Point(913, 20);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(79, 32);
+            this.comboBox3.Size = new System.Drawing.Size(101, 32);
             this.comboBox3.TabIndex = 7;
             this.comboBox3.Text = "拆分";
             // 
@@ -311,35 +314,35 @@
             this.comboBox2.Items.AddRange(new object[] {
             "A2",
             "A3"});
-            this.comboBox2.Location = new System.Drawing.Point(688, 37);
+            this.comboBox2.Location = new System.Drawing.Point(724, 20);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(76, 32);
+            this.comboBox2.Size = new System.Drawing.Size(101, 32);
             this.comboBox2.TabIndex = 7;
             this.comboBox2.Text = "A2";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(505, 37);
+            this.comboBox1.Location = new System.Drawing.Point(512, 28);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(99, 32);
+            this.comboBox1.Size = new System.Drawing.Size(117, 32);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "573";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1105, 37);
+            this.button2.Location = new System.Drawing.Point(1135, 23);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 50);
+            this.button2.Size = new System.Drawing.Size(83, 41);
             this.button2.TabIndex = 6;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(999, 37);
+            this.button1.Location = new System.Drawing.Point(1051, 23);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 50);
+            this.button1.Size = new System.Drawing.Size(83, 41);
             this.button1.TabIndex = 6;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = true;
@@ -347,47 +350,49 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 37);
+            this.textBox1.Location = new System.Drawing.Point(184, 28);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 31);
+            this.textBox1.Size = new System.Drawing.Size(168, 31);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "YW25T35226";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(770, 37);
+            this.label4.Location = new System.Drawing.Point(836, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 38);
+            this.label4.Size = new System.Drawing.Size(71, 45);
             this.label4.TabIndex = 4;
             this.label4.Text = "模式:";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(610, 37);
+            this.label3.Location = new System.Drawing.Point(658, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 38);
+            this.label3.Size = new System.Drawing.Size(60, 45);
             this.label3.TabIndex = 4;
             this.label3.Text = "修程:";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(379, 37);
+            this.label2.Location = new System.Drawing.Point(371, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 38);
+            this.label2.Size = new System.Drawing.Size(135, 42);
             this.label2.TabIndex = 4;
             this.label2.Text = "收入来源:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(12, 37);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 38);
+            this.label1.Size = new System.Drawing.Size(166, 45);
             this.label1.TabIndex = 4;
             this.label1.Text = "车种车型车号:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserJXJHXD
             // 
@@ -400,6 +405,7 @@
             this.Name = "UserJXJHXD";
             this.Size = new System.Drawing.Size(1243, 617);
             this.Load += new System.EventHandler(this.UserJXJHXD_Load);
+            this.SizeChanged += new System.EventHandler(this.UserJXJHXD_SizeChanged);
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -432,15 +438,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Others.DataGridViewProgressBarColumn dataGridViewProgressBarColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 收入日期;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 车种车型车号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 收入来源;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 修程;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 检修状态;
-        private System.Windows.Forms.DataGridViewImageColumn 进度;
-        //private Others.DataGridViewProgressBarColumn 进度1;
-        private CMES.Controls.DataGridViewProgressBarColumn 进度1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 序号1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 组装日期;
         private System.Windows.Forms.DataGridViewTextBoxColumn 车种车型车号1;
@@ -448,5 +445,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 修程1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 工作状态;
         private CMES.Controls.DataGridViewProgressBarColumn 进度2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 收入日期;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 车种车型车号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 收入来源;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 修程;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 检修状态;
+        private System.Windows.Forms.DataGridViewImageColumn 进度;
+        private CMES.Controls.DataGridViewProgressBarColumn 进度1;
     }
 }

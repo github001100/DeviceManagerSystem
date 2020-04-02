@@ -1,4 +1,8 @@
-﻿using DeviceManagerSystem.TPM;
+﻿using CMES.Controller.SYS;
+using CMES.Data;
+using CMES.Entity.SYS;
+using DeviceManagerSystem.TPM;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,13 +16,17 @@ using System.Windows.Forms;
 namespace DeviceManagerSystem
 {
     /// <summary>
-    /// MainHome首页面
+    /// MainHome    主窗体 
     /// @洛阳开远
     /// @2020.03.14
     /// @FSJ
     /// </summary>
     public partial class MainHome : Form
     {
+        LdkpController ldkp = new LdkpController();
+        ZtjkController ztjk = new ZtjkController();
+
+        private static MainHome frm = null;
         AutoSizeFormClass asc = new AutoSizeFormClass();
         int interval = 5;
         //------------------------------------------------------  控件大小随窗体大小变化
@@ -34,7 +42,14 @@ namespace DeviceManagerSystem
                     setTag(con);
             }
         }
-
+        public static MainHome CreateInstrance(DatabaseSQLite dbsqlite)
+        {
+            if (frm == null)
+            {
+                frm = new MainHome(dbsqlite);
+            }
+            return frm;
+        }
         private void setControls(float newx, float newy, Control cons)
         {
             try
@@ -119,6 +134,7 @@ namespace DeviceManagerSystem
         public MainHome(CMES.Data.DatabaseSQLite dbsqlite)
         {
             InitializeComponent();
+
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;//设置该属性 为false
             #region 窗体缩放
             GetAllInitInfo(this.Controls[0]);
@@ -137,7 +153,7 @@ namespace DeviceManagerSystem
                     try
                     {
                         label2.BeginInvoke(new MethodInvoker(() =>
-                            label2.Text = "" + DateTime.Now.ToString() + "    " + GetWeek()));
+                            label2.Text = "" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "    " + GetWeek()));//24h
                     }
                     catch { }
                     Thread.Sleep(1000);
@@ -205,7 +221,6 @@ namespace DeviceManagerSystem
 
                 //throw;
             }
-
         }
 
         private void MainHome_SizeChanged(object sender, EventArgs e)
@@ -383,10 +398,85 @@ namespace DeviceManagerSystem
 
             return result;
         }
+        /// <summary>
+        /// Post http://localhost:53097/api/Ldkp/PostLdkpInfo
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public string PostTest(string str, string api)
+        {
+            //DataContractJsonSerializer serializer = new DataContractJsonSerializer();
+            string result = "";
+            HttpWebRequest req = (System.Net.HttpWebRequest)System.Net.WebRequest.Create("http://localhost:8077/api/Ldkp/PostLdkpInfo");//设备状态接口
+            req.Method = "POST";
+            //req.Headers.Add("id", "272");
+
+            req.ContentType = "application/json";
+            //req.ContentType = "application/x-www-form-urlencoded";
+
+            byte[] data = Encoding.UTF8.GetBytes(str);//把字符串转换为字节
+
+            req.ContentLength = data.Length; //请求长度
+            try
+            {
+                using (Stream reqStream = req.GetRequestStream()) //获取
+                {
+                    reqStream.Write(data, 0, data.Length);//向当前流中写入字节
+
+                    reqStream.Close(); //关闭当前流
+                }
+                HttpWebResponse resp = (HttpWebResponse)req.GetResponse(); //响应结果
+                Stream stream = resp.GetResponseStream();
+                //获取响应内容
+                using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                {
+                    result = reader.ReadToEnd();
+                }
+                MessageBox.Show(result);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("服务未响应");
+            }
+            finally
+            {
+
+            }
+
+            return result;
+        }
         private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //ldkpApi ldkpApi = new ldkpApi();
 
-            MessageBox.Show(Post("x", "http://localhost:8099/UserLogin/CheckUserLogin"), "CAYA");
+            //1轮对
+            //JObject jsonobj = null;
+            //string  jsonStr = ldkp.GetLdkpInfoToJson("272");
+            //JObject o = JObject.Parse(jsonStr);
+
+            //JArray json = (JArray)o["data"];
+            //for (int j = 0; j < json.Count; j++)
+            //{
+            //    jsonobj = (JObject)json[j];
+            //    Console.WriteLine(jsonobj["id"].ToString() + "|" + jsonobj["lz_QRcode"].ToString());
+            //    MessageBox.Show(jsonobj["id"].ToString() + "|" + jsonobj["lz_QRcode"].ToString(), json.Count+"共");
+
+            //}
+            //2整体检修
+            JObject jsonobj2 = null;
+            string jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");//轮对检修
+            JObject o2 = JObject.Parse(jsonStr2);
+
+            JArray json2 = (JArray)o2["data"];
+            for (int j = 0; j < json2.Count; j++)
+            {
+                jsonobj2 = (JObject)json2[j];
+                MessageBox.Show(jsonobj2["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+
+            }
+            //PostTest("", "");//请求方式二 Http  Post To Json
+            //MessageBox.Show(Post("x", "http://localhost:8099/UserLogin/CheckUserLogin"), "CAYA");
         }
         private void OnFind(ToolStripItem tsi)
         {

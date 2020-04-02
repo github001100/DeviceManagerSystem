@@ -26,7 +26,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -53,10 +53,12 @@
   <ItemGroup>
     <Compile Include="BaseNodeController.cs" />
     <Compile Include="FrequencyServer.cs" />
+    <Compile Include="LdkpController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserLogin.cs" />
     <Compile Include="UserRoleServer.cs" />
     <Compile Include="UserSynchronization.cs" />
+    <Compile Include="ZtjkController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CMES.Data\CMES.Data.csproj">

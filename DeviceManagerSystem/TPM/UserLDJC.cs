@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using CMES.Controller.SYS;
+using Newtonsoft.Json.Linq;
+using System.Threading;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -16,6 +19,7 @@ namespace DeviceManagerSystem.TPM
         public UserLDJC()
         {
             InitializeComponent();
+            dataGridView1.Columns[1].Width = 100;
         }
         /// <summary>
         /// 初始化DataTable
@@ -161,13 +165,46 @@ namespace DeviceManagerSystem.TPM
                 }
             }
         }
+        ZtjkController ztjk = new ZtjkController();
+
+        public void Test()
+        {
+       
+            JObject jsonobj2 = null;
+            string jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("轮对检修", "轮对");
+            JObject o2 = JObject.Parse(jsonStr2);
+
+            JArray json2 = (JArray)o2["data"];
+            for (int j = 0; j < json2.Count; j++)
+            {
+                jsonobj2 = (JObject)json2[j];
+                //MessageBox.Show(jsonobj2["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+                textBox1.Text = jsonobj2["TaskPlans"].ToString();
+                textBox2.Text = Convert.ToInt32(jsonobj2["TaskPlans"]) - (Convert.ToInt32(jsonobj2["QualifiedQuantity"]) + Convert.ToInt32(jsonobj2["UnqualifiedQuantity"]))+"";//待检数
+                textBox3.Text = jsonobj2["QualifiedQuantity"].ToString();
+                textBox4.Text = jsonobj2["UnqualifiedQuantity"].ToString();
+                textBox5.Text = Convert.ToDouble(jsonobj2["PassRate"])/10+"%";
+            }
+        }
+        CancellationTokenSource cancelltokenSource = new CancellationTokenSource();
+
         private void UserLDJC_Load(object sender, EventArgs e)
         {
-            this.Font = new Font("微软雅黑", 16);
+            this.Font = new Font("微软雅黑", 10);
+
+            //开启设备连接线程
+            Task.Factory.StartNew(() =>
+            {
+                while (!cancelltokenSource.IsCancellationRequested)
+                {
+                    Test();
+                    Task.Delay(1000).Wait();
+                }
+            }, cancelltokenSource.Token);
 
             InitDataTable();
             //添加的两组Test数据
-            List<String> txData2 = new List<String>() { "收入","磁粉探伤","微机探","轮轴超探","镟修","轮辋超探","动平衡检测","支出测量","入库","支出"  };
+            List<String> txData2 = new List<String>() { "收入", "磁粉探伤", "微机探", "轮轴超探", "镟修", "轮辋超探", "动平衡检测", "支出测量", "入库", "支出" };
             List<int> tyData2 = new List<int>() { 87, 96, 87, 84, 95, 74, 89, 87, 58, 78 };
             List<int> txData3 = new List<int>() { 2012 };
             List<int> tyData3 = new List<int>() { 7 };
@@ -185,8 +222,8 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineColor = Color.Blue;
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineWidth = 3;
             chart1.ChartAreas[0].BackColor = System.Drawing.Color.Transparent; //设置区域内背景透明
-            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 14);
-            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 14);
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 10);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 10);
             chart1.ChartAreas[0].AxisY.Minimum = 0;//设定y轴的最小值
             //chart1.ChartAreas[0].AxisY.Maximum = 1000;//设定y轴的最大值
             chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = false;   //设置是否交错显示,比如数据多的时间分成两行来显示 
@@ -210,7 +247,7 @@ namespace DeviceManagerSystem.TPM
             //List<double> y = 读取数据库得到温度列表;
             //this.chart1.Series[0].ChartType=SeriesChartType.Line; 
             //this.chart1.Series[0].Points.DataBindXY(x,y);
-          
+
         }
     }
 }

@@ -48,6 +48,8 @@
             this.运行时长 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrowLine37 = new TestControls.ArrowLine(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.arrowLine17 = new TestControls.ArrowLine(this.components);
+            this.arrowLine14 = new TestControls.ArrowLine(this.components);
             this.arrowLine34 = new TestControls.ArrowLine(this.components);
             this.arrowLine75 = new TestControls.ArrowLine(this.components);
             this.arrowLine59 = new TestControls.ArrowLine(this.components);
@@ -79,7 +81,6 @@
             this.arrowLine62 = new TestControls.ArrowLine(this.components);
             this.arrowLine50 = new TestControls.ArrowLine(this.components);
             this.arrowLine51 = new TestControls.ArrowLine(this.components);
-            this.arrowLine14 = new TestControls.ArrowLine(this.components);
             this.arrowLine25 = new TestControls.ArrowLine(this.components);
             this.arrowLine44 = new TestControls.ArrowLine(this.components);
             this.arrowLine40 = new TestControls.ArrowLine(this.components);
@@ -97,7 +98,6 @@
             this.arrowLine20 = new TestControls.ArrowLine(this.components);
             this.arrowLine22 = new TestControls.ArrowLine(this.components);
             this.arrowLine31 = new TestControls.ArrowLine(this.components);
-            this.arrowLine17 = new TestControls.ArrowLine(this.components);
             this.arrowLine6 = new TestControls.ArrowLine(this.components);
             this.arrowLine32 = new TestControls.ArrowLine(this.components);
             this.arrowLine30 = new TestControls.ArrowLine(this.components);
@@ -145,254 +145,257 @@
             this.label50 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
+            this.myCircle57 = new CMES.Controls.MyCircle();
             this.label92 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.label82 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.myCircle50 = new CMES.Controls.MyCircle();
+            this.label82 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label65 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.myCircle38 = new CMES.Controls.MyCircle();
+            this.label65 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
+            this.myCircle61 = new CMES.Controls.MyCircle();
             this.label88 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.myCircle46 = new CMES.Controls.MyCircle();
+            this.label78 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.myCircle34 = new CMES.Controls.MyCircle();
+            this.label61 = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
+            this.myCircle58 = new CMES.Controls.MyCircle();
             this.label91 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.label81 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.myCircle49 = new CMES.Controls.MyCircle();
+            this.label81 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.myCircle42 = new CMES.Controls.MyCircle();
             this.label72 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label64 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.myCircle37 = new CMES.Controls.MyCircle();
+            this.label64 = new System.Windows.Forms.Label();
             this.panel62 = new System.Windows.Forms.Panel();
-            this.label164 = new System.Windows.Forms.Label();
             this.label165 = new System.Windows.Forms.Label();
+            this.myCircle4 = new CMES.Controls.MyCircle();
+            this.label164 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
-            this.label162 = new System.Windows.Forms.Label();
             this.label163 = new System.Windows.Forms.Label();
+            this.myCircle5 = new CMES.Controls.MyCircle();
+            this.label162 = new System.Windows.Forms.Label();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.myCircle63 = new CMES.Controls.MyCircle();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel49 = new System.Windows.Forms.Panel();
+            this.myCircle10 = new CMES.Controls.MyCircle();
             this.label138 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.label152 = new System.Windows.Forms.Label();
             this.label153 = new System.Windows.Forms.Label();
+            this.myCircle8 = new CMES.Controls.MyCircle();
+            this.label152 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.label130 = new System.Windows.Forms.Label();
             this.label131 = new System.Windows.Forms.Label();
+            this.myCircle12 = new CMES.Controls.MyCircle();
+            this.label130 = new System.Windows.Forms.Label();
             this.panel60 = new System.Windows.Forms.Panel();
-            this.label160 = new System.Windows.Forms.Label();
             this.label161 = new System.Windows.Forms.Label();
+            this.myCircle6 = new CMES.Controls.MyCircle();
+            this.label160 = new System.Windows.Forms.Label();
             this.panel55 = new System.Windows.Forms.Panel();
-            this.label150 = new System.Windows.Forms.Label();
             this.label151 = new System.Windows.Forms.Label();
+            this.myCircle7 = new CMES.Controls.MyCircle();
+            this.label150 = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
-            this.label136 = new System.Windows.Forms.Label();
             this.label137 = new System.Windows.Forms.Label();
+            this.myCircle11 = new CMES.Controls.MyCircle();
+            this.label136 = new System.Windows.Forms.Label();
             this.panel54 = new System.Windows.Forms.Panel();
-            this.label148 = new System.Windows.Forms.Label();
             this.label149 = new System.Windows.Forms.Label();
+            this.myCircle9 = new CMES.Controls.MyCircle();
+            this.label148 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.label126 = new System.Windows.Forms.Label();
             this.label127 = new System.Windows.Forms.Label();
+            this.myCircle13 = new CMES.Controls.MyCircle();
+            this.label126 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.label87 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
+            this.myCircle62 = new CMES.Controls.MyCircle();
+            this.label87 = new System.Windows.Forms.Label();
             this.panel57 = new System.Windows.Forms.Panel();
+            this.myCircle54 = new CMES.Controls.MyCircle();
             this.label154 = new System.Windows.Forms.Label();
             this.label155 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
+            this.myCircle55 = new CMES.Controls.MyCircle();
             this.label95 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel42 = new System.Windows.Forms.Panel();
+            this.myCircle53 = new CMES.Controls.MyCircle();
             this.label94 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.panel53 = new System.Windows.Forms.Panel();
-            this.label146 = new System.Windows.Forms.Label();
             this.label147 = new System.Windows.Forms.Label();
+            this.myCircle24 = new CMES.Controls.MyCircle();
+            this.label146 = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.label134 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
+            this.myCircle20 = new CMES.Controls.MyCircle();
+            this.label134 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
-            this.label144 = new System.Windows.Forms.Label();
             this.label145 = new System.Windows.Forms.Label();
+            this.myCircle22 = new CMES.Controls.MyCircle();
+            this.label144 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.label128 = new System.Windows.Forms.Label();
             this.label129 = new System.Windows.Forms.Label();
+            this.myCircle18 = new CMES.Controls.MyCircle();
+            this.label128 = new System.Windows.Forms.Label();
             this.panel58 = new System.Windows.Forms.Panel();
-            this.label156 = new System.Windows.Forms.Label();
             this.label157 = new System.Windows.Forms.Label();
+            this.myCircle25 = new CMES.Controls.MyCircle();
+            this.label156 = new System.Windows.Forms.Label();
             this.panel51 = new System.Windows.Forms.Panel();
-            this.label142 = new System.Windows.Forms.Label();
             this.label143 = new System.Windows.Forms.Label();
+            this.myCircle23 = new CMES.Controls.MyCircle();
+            this.label142 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
-            this.label132 = new System.Windows.Forms.Label();
             this.label133 = new System.Windows.Forms.Label();
+            this.myCircle19 = new CMES.Controls.MyCircle();
+            this.label132 = new System.Windows.Forms.Label();
             this.panel50 = new System.Windows.Forms.Panel();
-            this.label140 = new System.Windows.Forms.Label();
             this.label141 = new System.Windows.Forms.Label();
+            this.myCircle21 = new CMES.Controls.MyCircle();
+            this.label140 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.label124 = new System.Windows.Forms.Label();
             this.label125 = new System.Windows.Forms.Label();
+            this.myCircle17 = new CMES.Controls.MyCircle();
+            this.label124 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.label77 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.myCircle45 = new CMES.Controls.MyCircle();
+            this.label77 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.label84 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.myCircle52 = new CMES.Controls.MyCircle();
+            this.label84 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
+            this.myCircle59 = new CMES.Controls.MyCircle();
             this.label90 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.myCircle44 = new CMES.Controls.MyCircle();
             this.label74 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.label80 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.myCircle48 = new CMES.Controls.MyCircle();
+            this.label80 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.myCircle33 = new CMES.Controls.MyCircle();
+            this.label60 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.myCircle15 = new CMES.Controls.MyCircle();
             this.label122 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label120 = new System.Windows.Forms.Label();
             this.label121 = new System.Windows.Forms.Label();
+            this.myCircle14 = new CMES.Controls.MyCircle();
+            this.label120 = new System.Windows.Forms.Label();
             this.panel40 = new System.Windows.Forms.Panel();
+            this.myCircle32 = new CMES.Controls.MyCircle();
             this.label86 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label114 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
+            this.myCircle16 = new CMES.Controls.MyCircle();
+            this.label114 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.label76 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.myCircle31 = new CMES.Controls.MyCircle();
+            this.label76 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.myCircle40 = new CMES.Controls.MyCircle();
+            this.label67 = new System.Windows.Forms.Label();
             this.panel39 = new System.Windows.Forms.Panel();
+            this.myCircle56 = new CMES.Controls.MyCircle();
             this.label93 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label69 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.myCircle30 = new CMES.Controls.MyCircle();
+            this.label69 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
+            this.myCircle51 = new CMES.Controls.MyCircle();
             this.label83 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label63 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.myCircle36 = new CMES.Controls.MyCircle();
+            this.label63 = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
+            this.myCircle60 = new CMES.Controls.MyCircle();
             this.label89 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.myCircle43 = new CMES.Controls.MyCircle();
             this.label73 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.myCircle47 = new CMES.Controls.MyCircle();
+            this.label79 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label59 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.myCircle1 = new CMES.Controls.MyCircle();
+            this.label59 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
+            this.myCircle29 = new CMES.Controls.MyCircle();
             this.label85 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.myCircle41 = new CMES.Controls.MyCircle();
             this.label71 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.label75 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.myCircle28 = new CMES.Controls.MyCircle();
+            this.label75 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label66 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.myCircle39 = new CMES.Controls.MyCircle();
+            this.label66 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.myCircle27 = new CMES.Controls.MyCircle();
             this.label68 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.myCircle35 = new CMES.Controls.MyCircle();
+            this.label62 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label58 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.myCircle26 = new CMES.Controls.MyCircle();
+            this.label58 = new System.Windows.Forms.Label();
             this.panel64 = new System.Windows.Forms.Panel();
-            this.label168 = new System.Windows.Forms.Label();
             this.label169 = new System.Windows.Forms.Label();
+            this.myCircle2 = new CMES.Controls.MyCircle();
+            this.label168 = new System.Windows.Forms.Label();
             this.panel63 = new System.Windows.Forms.Panel();
-            this.label166 = new System.Windows.Forms.Label();
             this.label167 = new System.Windows.Forms.Label();
-            this.myCircle57 = new DeviceManagerSystem.MyCircle();
-            this.myCircle50 = new DeviceManagerSystem.MyCircle();
-            this.myCircle38 = new DeviceManagerSystem.MyCircle();
-            this.myCircle61 = new DeviceManagerSystem.MyCircle();
-            this.myCircle46 = new DeviceManagerSystem.MyCircle();
-            this.myCircle34 = new DeviceManagerSystem.MyCircle();
-            this.myCircle58 = new DeviceManagerSystem.MyCircle();
-            this.myCircle49 = new DeviceManagerSystem.MyCircle();
-            this.myCircle42 = new DeviceManagerSystem.MyCircle();
-            this.myCircle37 = new DeviceManagerSystem.MyCircle();
-            this.myCircle4 = new DeviceManagerSystem.MyCircle();
-            this.myCircle5 = new DeviceManagerSystem.MyCircle();
-            this.myCircle10 = new DeviceManagerSystem.MyCircle();
-            this.myCircle8 = new DeviceManagerSystem.MyCircle();
-            this.myCircle12 = new DeviceManagerSystem.MyCircle();
-            this.myCircle6 = new DeviceManagerSystem.MyCircle();
-            this.myCircle7 = new DeviceManagerSystem.MyCircle();
-            this.myCircle11 = new DeviceManagerSystem.MyCircle();
-            this.myCircle9 = new DeviceManagerSystem.MyCircle();
-            this.myCircle13 = new DeviceManagerSystem.MyCircle();
-            this.myCircle62 = new DeviceManagerSystem.MyCircle();
-            this.myCircle54 = new DeviceManagerSystem.MyCircle();
-            this.myCircle55 = new DeviceManagerSystem.MyCircle();
-            this.myCircle53 = new DeviceManagerSystem.MyCircle();
-            this.myCircle24 = new DeviceManagerSystem.MyCircle();
-            this.myCircle20 = new DeviceManagerSystem.MyCircle();
-            this.myCircle22 = new DeviceManagerSystem.MyCircle();
-            this.myCircle18 = new DeviceManagerSystem.MyCircle();
-            this.myCircle25 = new DeviceManagerSystem.MyCircle();
-            this.myCircle23 = new DeviceManagerSystem.MyCircle();
-            this.myCircle19 = new DeviceManagerSystem.MyCircle();
-            this.myCircle21 = new DeviceManagerSystem.MyCircle();
-            this.myCircle17 = new DeviceManagerSystem.MyCircle();
-            this.myCircle45 = new DeviceManagerSystem.MyCircle();
-            this.myCircle52 = new DeviceManagerSystem.MyCircle();
-            this.myCircle59 = new DeviceManagerSystem.MyCircle();
-            this.myCircle44 = new DeviceManagerSystem.MyCircle();
-            this.myCircle48 = new DeviceManagerSystem.MyCircle();
-            this.myCircle33 = new DeviceManagerSystem.MyCircle();
-            this.myCircle15 = new DeviceManagerSystem.MyCircle();
-            this.myCircle14 = new DeviceManagerSystem.MyCircle();
-            this.myCircle32 = new DeviceManagerSystem.MyCircle();
-            this.myCircle16 = new DeviceManagerSystem.MyCircle();
-            this.myCircle31 = new DeviceManagerSystem.MyCircle();
-            this.myCircle40 = new DeviceManagerSystem.MyCircle();
-            this.myCircle56 = new DeviceManagerSystem.MyCircle();
-            this.myCircle30 = new DeviceManagerSystem.MyCircle();
-            this.myCircle51 = new DeviceManagerSystem.MyCircle();
-            this.myCircle36 = new DeviceManagerSystem.MyCircle();
-            this.myCircle60 = new DeviceManagerSystem.MyCircle();
-            this.myCircle43 = new DeviceManagerSystem.MyCircle();
-            this.myCircle47 = new DeviceManagerSystem.MyCircle();
-            this.myCircle1 = new DeviceManagerSystem.MyCircle();
-            this.myCircle29 = new DeviceManagerSystem.MyCircle();
-            this.myCircle41 = new DeviceManagerSystem.MyCircle();
-            this.myCircle28 = new DeviceManagerSystem.MyCircle();
-            this.myCircle39 = new DeviceManagerSystem.MyCircle();
-            this.myCircle27 = new DeviceManagerSystem.MyCircle();
-            this.myCircle35 = new DeviceManagerSystem.MyCircle();
-            this.myCircle26 = new DeviceManagerSystem.MyCircle();
-            this.myCircle2 = new DeviceManagerSystem.MyCircle();
-            this.myCircle3 = new DeviceManagerSystem.MyCircle();
+            this.myCircle3 = new CMES.Controls.MyCircle();
+            this.label166 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -411,6 +414,7 @@
             this.panel7.SuspendLayout();
             this.panel62.SuspendLayout();
             this.panel61.SuspendLayout();
+            this.panel59.SuspendLayout();
             this.panel49.SuspendLayout();
             this.panel56.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -477,7 +481,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1466, 884);
+            this.panel1.Size = new System.Drawing.Size(1462, 869);
             this.panel1.TabIndex = 0;
             // 
             // arrowLine42
@@ -533,34 +537,40 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(839, 664);
+            this.dataGridView2.Location = new System.Drawing.Point(885, 664);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 27;
-            this.dataGridView2.Size = new System.Drawing.Size(518, 200);
+            this.dataGridView2.Size = new System.Drawing.Size(472, 200);
             this.dataGridView2.TabIndex = 88;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "检修计划";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "总数";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "待检数";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "完工数";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
@@ -582,55 +592,65 @@
             this.dataGridView1.Location = new System.Drawing.Point(27, 664);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(801, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(852, 200);
             this.dataGridView1.TabIndex = 88;
             // 
             // 设备分布
             // 
             this.设备分布.HeaderText = "设备分布";
+            this.设备分布.MinimumWidth = 6;
             this.设备分布.Name = "设备分布";
             this.设备分布.ReadOnly = true;
             // 
             // 总数
             // 
             this.总数.HeaderText = "总数";
+            this.总数.MinimumWidth = 6;
             this.总数.Name = "总数";
             this.总数.ReadOnly = true;
             // 
             // 开机数
             // 
             this.开机数.HeaderText = "开机数";
+            this.开机数.MinimumWidth = 6;
             this.开机数.Name = "开机数";
             this.开机数.ReadOnly = true;
             // 
             // 停机数
             // 
             this.停机数.HeaderText = "停机数";
+            this.停机数.MinimumWidth = 6;
             this.停机数.Name = "停机数";
             this.停机数.ReadOnly = true;
             // 
             // 故障数
             // 
             this.故障数.HeaderText = "故障数";
+            this.故障数.MinimumWidth = 6;
             this.故障数.Name = "故障数";
             this.故障数.ReadOnly = true;
             // 
             // 维修数
             // 
             this.维修数.HeaderText = "维修数";
+            this.维修数.MinimumWidth = 6;
             this.维修数.Name = "维修数";
             this.维修数.ReadOnly = true;
             // 
             // 保养数
             // 
             this.保养数.HeaderText = "保养数";
+            this.保养数.MinimumWidth = 6;
             this.保养数.Name = "保养数";
             this.保养数.ReadOnly = true;
             // 
             // 运行时长
             // 
             this.运行时长.HeaderText = "运行时长";
+            this.运行时长.MinimumWidth = 6;
             this.运行时长.Name = "运行时长";
             this.运行时长.ReadOnly = true;
             // 
@@ -750,6 +770,7 @@
             this.groupBox1.Controls.Add(this.panel7);
             this.groupBox1.Controls.Add(this.panel62);
             this.groupBox1.Controls.Add(this.panel61);
+            this.groupBox1.Controls.Add(this.panel59);
             this.groupBox1.Controls.Add(this.panel49);
             this.groupBox1.Controls.Add(this.panel56);
             this.groupBox1.Controls.Add(this.panel24);
@@ -804,6 +825,48 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "轮轴检修车间设备运行状态监控";
+            // 
+            // arrowLine17
+            // 
+            this.arrowLine17.AntiAlias = false;
+            this.arrowLine17.ArrowBodyWidth = 8F;
+            this.arrowLine17.ArrowLength = 8F;
+            this.arrowLine17.ArrowStyle = TestControls.ArrowStyleType.None;
+            this.arrowLine17.BackColor = System.Drawing.Color.White;
+            this.arrowLine17.BowHeight = 2F;
+            this.arrowLine17.BowWidth = 2F;
+            this.arrowLine17.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine17.FrameEnabled = false;
+            this.arrowLine17.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine17.LinearGradientUsingClient = true;
+            this.arrowLine17.Location = new System.Drawing.Point(499, 60);
+            this.arrowLine17.Name = "arrowLine17";
+            this.arrowLine17.NormalEndColor = System.Drawing.Color.Blue;
+            this.arrowLine17.NormalStartColor = System.Drawing.Color.Blue;
+            this.arrowLine17.Size = new System.Drawing.Size(4, 116);
+            this.arrowLine17.TabIndex = 94;
+            this.arrowLine17.Text = "arrowLine1";
+            // 
+            // arrowLine14
+            // 
+            this.arrowLine14.AntiAlias = false;
+            this.arrowLine14.ArrowBodyWidth = 8F;
+            this.arrowLine14.ArrowLength = 8F;
+            this.arrowLine14.ArrowStyle = TestControls.ArrowStyleType.None;
+            this.arrowLine14.BackColor = System.Drawing.Color.White;
+            this.arrowLine14.BowHeight = 2F;
+            this.arrowLine14.BowWidth = 2F;
+            this.arrowLine14.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine14.FrameEnabled = false;
+            this.arrowLine14.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine14.LinearGradientUsingClient = true;
+            this.arrowLine14.Location = new System.Drawing.Point(109, 56);
+            this.arrowLine14.Name = "arrowLine14";
+            this.arrowLine14.NormalEndColor = System.Drawing.Color.Blue;
+            this.arrowLine14.NormalStartColor = System.Drawing.Color.Blue;
+            this.arrowLine14.Size = new System.Drawing.Size(4, 226);
+            this.arrowLine14.TabIndex = 94;
+            this.arrowLine14.Text = "arrowLine1";
             // 
             // arrowLine34
             // 
@@ -1456,27 +1519,6 @@
             this.arrowLine51.TabIndex = 94;
             this.arrowLine51.Text = "arrowLine1";
             // 
-            // arrowLine14
-            // 
-            this.arrowLine14.AntiAlias = false;
-            this.arrowLine14.ArrowBodyWidth = 8F;
-            this.arrowLine14.ArrowLength = 8F;
-            this.arrowLine14.ArrowStyle = TestControls.ArrowStyleType.None;
-            this.arrowLine14.BackColor = System.Drawing.Color.White;
-            this.arrowLine14.BowHeight = 2F;
-            this.arrowLine14.BowWidth = 2F;
-            this.arrowLine14.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine14.FrameEnabled = false;
-            this.arrowLine14.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine14.LinearGradientUsingClient = true;
-            this.arrowLine14.Location = new System.Drawing.Point(109, 56);
-            this.arrowLine14.Name = "arrowLine14";
-            this.arrowLine14.NormalEndColor = System.Drawing.Color.Blue;
-            this.arrowLine14.NormalStartColor = System.Drawing.Color.Blue;
-            this.arrowLine14.Size = new System.Drawing.Size(4, 226);
-            this.arrowLine14.TabIndex = 94;
-            this.arrowLine14.Text = "arrowLine1";
-            // 
             // arrowLine25
             // 
             this.arrowLine25.AntiAlias = false;
@@ -1833,27 +1875,6 @@
             this.arrowLine31.Size = new System.Drawing.Size(4, 252);
             this.arrowLine31.TabIndex = 94;
             this.arrowLine31.Text = "arrowLine1";
-            // 
-            // arrowLine17
-            // 
-            this.arrowLine17.AntiAlias = false;
-            this.arrowLine17.ArrowBodyWidth = 8F;
-            this.arrowLine17.ArrowLength = 8F;
-            this.arrowLine17.ArrowStyle = TestControls.ArrowStyleType.None;
-            this.arrowLine17.BackColor = System.Drawing.Color.White;
-            this.arrowLine17.BowHeight = 2F;
-            this.arrowLine17.BowWidth = 2F;
-            this.arrowLine17.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine17.FrameEnabled = false;
-            this.arrowLine17.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine17.LinearGradientUsingClient = true;
-            this.arrowLine17.Location = new System.Drawing.Point(499, 60);
-            this.arrowLine17.Name = "arrowLine17";
-            this.arrowLine17.NormalEndColor = System.Drawing.Color.Blue;
-            this.arrowLine17.NormalStartColor = System.Drawing.Color.Blue;
-            this.arrowLine17.Size = new System.Drawing.Size(4, 116);
-            this.arrowLine17.TabIndex = 94;
-            this.arrowLine17.Text = "arrowLine1";
             // 
             // arrowLine6
             // 
@@ -2471,9 +2492,10 @@
             this.groupBox2.Controls.Add(this.label52);
             this.groupBox2.Controls.Add(this.label50);
             this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Font = new System.Drawing.Font("宋体", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.Location = new System.Drawing.Point(1272, 26);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(180, 262);
+            this.groupBox2.Size = new System.Drawing.Size(180, 250);
             this.groupBox2.TabIndex = 87;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "状态指示";
@@ -2630,11 +2652,27 @@
             this.panel47.Size = new System.Drawing.Size(75, 82);
             this.panel47.TabIndex = 43;
             // 
+            // myCircle57
+            // 
+            this.myCircle57.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle57.BorderTransparent = 255;
+            this.myCircle57.BorderWidth = 0;
+            this.myCircle57.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle57.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle57.DistanceToBorder = 4;
+            this.myCircle57.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle57.IconColor = System.Drawing.Color.Red;
+            this.myCircle57.IsShowIcon = false;
+            this.myCircle57.Location = new System.Drawing.Point(40, 37);
+            this.myCircle57.Name = "myCircle57";
+            this.myCircle57.Size = new System.Drawing.Size(25, 35);
+            this.myCircle57.TabIndex = 1;
+            // 
             // label92
             // 
             this.label92.Location = new System.Drawing.Point(3, 54);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(44, 26);
+            this.label92.Size = new System.Drawing.Size(31, 20);
             this.label92.TabIndex = 0;
             this.label92.Text = "40#";
             // 
@@ -2642,7 +2680,7 @@
             // 
             this.label47.Location = new System.Drawing.Point(5, 3);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(71, 46);
+            this.label47.Size = new System.Drawing.Size(65, 27);
             this.label47.TabIndex = 0;
             this.label47.Text = "滚子探伤";
             // 
@@ -2650,57 +2688,89 @@
             // 
             this.panel35.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel35.Controls.Add(this.label35);
             this.panel35.Controls.Add(this.myCircle50);
             this.panel35.Controls.Add(this.label82);
-            this.panel35.Controls.Add(this.label35);
             this.panel35.Location = new System.Drawing.Point(863, 232);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(75, 82);
             this.panel35.TabIndex = 66;
             // 
-            // label82
-            // 
-            this.label82.Location = new System.Drawing.Point(3, 54);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(44, 26);
-            this.label82.TabIndex = 0;
-            this.label82.Text = "38#";
-            // 
             // label35
             // 
             this.label35.Location = new System.Drawing.Point(4, 1);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(71, 46);
+            this.label35.Size = new System.Drawing.Size(65, 39);
             this.label35.TabIndex = 0;
             this.label35.Text = "外观检查";
+            // 
+            // myCircle50
+            // 
+            this.myCircle50.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle50.BorderTransparent = 255;
+            this.myCircle50.BorderWidth = 0;
+            this.myCircle50.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle50.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle50.DistanceToBorder = 4;
+            this.myCircle50.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle50.IconColor = System.Drawing.Color.Red;
+            this.myCircle50.IsShowIcon = false;
+            this.myCircle50.Location = new System.Drawing.Point(40, 37);
+            this.myCircle50.Name = "myCircle50";
+            this.myCircle50.Size = new System.Drawing.Size(25, 35);
+            this.myCircle50.TabIndex = 1;
+            // 
+            // label82
+            // 
+            this.label82.Location = new System.Drawing.Point(3, 54);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(31, 20);
+            this.label82.TabIndex = 0;
+            this.label82.Text = "38#";
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.myCircle38);
             this.panel8.Controls.Add(this.label65);
-            this.panel8.Controls.Add(this.label8);
             this.panel8.Location = new System.Drawing.Point(904, 21);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(75, 82);
             this.panel8.TabIndex = 68;
             // 
-            // label65
-            // 
-            this.label65.Location = new System.Drawing.Point(3, 54);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(44, 26);
-            this.label65.TabIndex = 0;
-            this.label65.Text = "19#";
-            // 
             // label8
             // 
             this.label8.Location = new System.Drawing.Point(4, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 46);
+            this.label8.Size = new System.Drawing.Size(65, 27);
             this.label8.TabIndex = 0;
             this.label8.Text = "轮轴超探";
+            // 
+            // myCircle38
+            // 
+            this.myCircle38.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle38.BorderTransparent = 255;
+            this.myCircle38.BorderWidth = 0;
+            this.myCircle38.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle38.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle38.DistanceToBorder = 4;
+            this.myCircle38.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle38.IconColor = System.Drawing.Color.Red;
+            this.myCircle38.IsShowIcon = false;
+            this.myCircle38.Location = new System.Drawing.Point(40, 37);
+            this.myCircle38.Name = "myCircle38";
+            this.myCircle38.Size = new System.Drawing.Size(25, 35);
+            this.myCircle38.TabIndex = 1;
+            // 
+            // label65
+            // 
+            this.label65.Location = new System.Drawing.Point(3, 54);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(31, 20);
+            this.label65.TabIndex = 0;
+            this.label65.Text = "19#";
             // 
             // panel46
             // 
@@ -2714,11 +2784,27 @@
             this.panel46.Size = new System.Drawing.Size(75, 82);
             this.panel46.TabIndex = 69;
             // 
+            // myCircle61
+            // 
+            this.myCircle61.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle61.BorderTransparent = 255;
+            this.myCircle61.BorderWidth = 0;
+            this.myCircle61.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle61.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle61.DistanceToBorder = 4;
+            this.myCircle61.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle61.IconColor = System.Drawing.Color.Red;
+            this.myCircle61.IsShowIcon = false;
+            this.myCircle61.Location = new System.Drawing.Point(40, 37);
+            this.myCircle61.Name = "myCircle61";
+            this.myCircle61.Size = new System.Drawing.Size(25, 35);
+            this.myCircle61.TabIndex = 1;
+            // 
             // label88
             // 
             this.label88.Location = new System.Drawing.Point(3, 54);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(44, 26);
+            this.label88.Size = new System.Drawing.Size(31, 20);
             this.label88.TabIndex = 0;
             this.label88.Text = "62#";
             // 
@@ -2726,7 +2812,7 @@
             // 
             this.label46.Location = new System.Drawing.Point(5, 3);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(71, 46);
+            this.label46.Size = new System.Drawing.Size(65, 27);
             this.label46.TabIndex = 0;
             this.label46.Text = "轴箱喷码";
             // 
@@ -2734,57 +2820,89 @@
             // 
             this.panel34.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel34.Controls.Add(this.label34);
             this.panel34.Controls.Add(this.myCircle46);
             this.panel34.Controls.Add(this.label78);
-            this.panel34.Controls.Add(this.label34);
             this.panel34.Location = new System.Drawing.Point(407, 233);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(75, 82);
             this.panel34.TabIndex = 70;
             // 
-            // label78
-            // 
-            this.label78.Location = new System.Drawing.Point(3, 54);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(44, 26);
-            this.label78.TabIndex = 0;
-            this.label78.Text = "34#";
-            // 
             // label34
             // 
             this.label34.Location = new System.Drawing.Point(4, 1);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(71, 46);
+            this.label34.Size = new System.Drawing.Size(65, 39);
             this.label34.TabIndex = 0;
             this.label34.Text = "轴承信息录入打码";
+            // 
+            // myCircle46
+            // 
+            this.myCircle46.BorderColor = System.Drawing.Color.Red;
+            this.myCircle46.BorderTransparent = 255;
+            this.myCircle46.BorderWidth = 0;
+            this.myCircle46.ButtonCenterColorEnd = System.Drawing.Color.Red;
+            this.myCircle46.ButtonCenterColorStart = System.Drawing.Color.Red;
+            this.myCircle46.DistanceToBorder = 4;
+            this.myCircle46.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle46.IconColor = System.Drawing.Color.Red;
+            this.myCircle46.IsShowIcon = false;
+            this.myCircle46.Location = new System.Drawing.Point(40, 37);
+            this.myCircle46.Name = "myCircle46";
+            this.myCircle46.Size = new System.Drawing.Size(25, 35);
+            this.myCircle46.TabIndex = 1;
+            // 
+            // label78
+            // 
+            this.label78.Location = new System.Drawing.Point(3, 54);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(31, 20);
+            this.label78.TabIndex = 0;
+            this.label78.Text = "34#";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.myCircle34);
             this.panel4.Controls.Add(this.label61);
-            this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(403, 21);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(75, 82);
             this.panel4.TabIndex = 72;
             // 
-            // label61
-            // 
-            this.label61.Location = new System.Drawing.Point(3, 54);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(44, 26);
-            this.label61.TabIndex = 0;
-            this.label61.Text = "13#";
-            // 
             // label4
             // 
             this.label4.Location = new System.Drawing.Point(4, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 46);
+            this.label4.Size = new System.Drawing.Size(65, 38);
             this.label4.TabIndex = 0;
             this.label4.Text = "轮位差测量";
+            // 
+            // myCircle34
+            // 
+            this.myCircle34.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle34.BorderTransparent = 255;
+            this.myCircle34.BorderWidth = 0;
+            this.myCircle34.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle34.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle34.DistanceToBorder = 4;
+            this.myCircle34.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle34.IconColor = System.Drawing.Color.Red;
+            this.myCircle34.IsShowIcon = false;
+            this.myCircle34.Location = new System.Drawing.Point(40, 37);
+            this.myCircle34.Name = "myCircle34";
+            this.myCircle34.Size = new System.Drawing.Size(25, 35);
+            this.myCircle34.TabIndex = 1;
+            // 
+            // label61
+            // 
+            this.label61.Location = new System.Drawing.Point(3, 54);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(31, 20);
+            this.label61.TabIndex = 0;
+            this.label61.Text = "13#";
             // 
             // panel44
             // 
@@ -2798,11 +2916,27 @@
             this.panel44.Size = new System.Drawing.Size(75, 82);
             this.panel44.TabIndex = 73;
             // 
+            // myCircle58
+            // 
+            this.myCircle58.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle58.BorderTransparent = 255;
+            this.myCircle58.BorderWidth = 0;
+            this.myCircle58.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle58.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle58.DistanceToBorder = 4;
+            this.myCircle58.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle58.IconColor = System.Drawing.Color.Red;
+            this.myCircle58.IsShowIcon = false;
+            this.myCircle58.Location = new System.Drawing.Point(40, 37);
+            this.myCircle58.Name = "myCircle58";
+            this.myCircle58.Size = new System.Drawing.Size(25, 35);
+            this.myCircle58.TabIndex = 1;
+            // 
             // label91
             // 
             this.label91.Location = new System.Drawing.Point(3, 54);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(44, 26);
+            this.label91.Size = new System.Drawing.Size(31, 20);
             this.label91.TabIndex = 0;
             this.label91.Text = "39#";
             // 
@@ -2810,7 +2944,7 @@
             // 
             this.label44.Location = new System.Drawing.Point(5, 3);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(71, 46);
+            this.label44.Size = new System.Drawing.Size(65, 27);
             this.label44.TabIndex = 0;
             this.label44.Text = "滚子探伤";
             // 
@@ -2818,29 +2952,45 @@
             // 
             this.panel32.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel32.Controls.Add(this.label32);
             this.panel32.Controls.Add(this.myCircle49);
             this.panel32.Controls.Add(this.label81);
-            this.panel32.Controls.Add(this.label32);
             this.panel32.Location = new System.Drawing.Point(750, 233);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(75, 82);
             this.panel32.TabIndex = 74;
             // 
-            // label81
-            // 
-            this.label81.Location = new System.Drawing.Point(3, 54);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(44, 26);
-            this.label81.TabIndex = 0;
-            this.label81.Text = "37#";
-            // 
             // label32
             // 
             this.label32.Location = new System.Drawing.Point(4, 1);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(71, 46);
+            this.label32.Size = new System.Drawing.Size(65, 39);
             this.label32.TabIndex = 0;
             this.label32.Text = "滚子抛光";
+            // 
+            // myCircle49
+            // 
+            this.myCircle49.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle49.BorderTransparent = 255;
+            this.myCircle49.BorderWidth = 0;
+            this.myCircle49.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle49.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle49.DistanceToBorder = 4;
+            this.myCircle49.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle49.IconColor = System.Drawing.Color.Red;
+            this.myCircle49.IsShowIcon = false;
+            this.myCircle49.Location = new System.Drawing.Point(40, 37);
+            this.myCircle49.Name = "myCircle49";
+            this.myCircle49.Size = new System.Drawing.Size(25, 35);
+            this.myCircle49.TabIndex = 1;
+            // 
+            // label81
+            // 
+            this.label81.Location = new System.Drawing.Point(3, 54);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(31, 20);
+            this.label81.TabIndex = 0;
+            this.label81.Text = "37#";
             // 
             // panel20
             // 
@@ -2854,11 +3004,27 @@
             this.panel20.Size = new System.Drawing.Size(75, 82);
             this.panel20.TabIndex = 75;
             // 
+            // myCircle42
+            // 
+            this.myCircle42.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle42.BorderTransparent = 255;
+            this.myCircle42.BorderWidth = 0;
+            this.myCircle42.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle42.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle42.DistanceToBorder = 4;
+            this.myCircle42.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle42.IconColor = System.Drawing.Color.Red;
+            this.myCircle42.IsShowIcon = false;
+            this.myCircle42.Location = new System.Drawing.Point(40, 37);
+            this.myCircle42.Name = "myCircle42";
+            this.myCircle42.Size = new System.Drawing.Size(25, 35);
+            this.myCircle42.TabIndex = 1;
+            // 
             // label72
             // 
             this.label72.Location = new System.Drawing.Point(3, 54);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(44, 26);
+            this.label72.Size = new System.Drawing.Size(31, 20);
             this.label72.TabIndex = 0;
             this.label72.Text = "18#";
             // 
@@ -2866,7 +3032,7 @@
             // 
             this.label20.Location = new System.Drawing.Point(4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(71, 46);
+            this.label20.Size = new System.Drawing.Size(65, 39);
             this.label20.TabIndex = 0;
             this.label20.Text = "轮轴磁粉探伤核查";
             // 
@@ -2874,85 +3040,177 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.myCircle37);
             this.panel7.Controls.Add(this.label64);
-            this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(782, 21);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(75, 82);
             this.panel7.TabIndex = 76;
             // 
-            // label64
-            // 
-            this.label64.Location = new System.Drawing.Point(3, 54);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(44, 26);
-            this.label64.TabIndex = 0;
-            this.label64.Text = "17#";
-            // 
             // label7
             // 
             this.label7.Location = new System.Drawing.Point(4, 3);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 46);
+            this.label7.Size = new System.Drawing.Size(65, 39);
             this.label7.TabIndex = 0;
             this.label7.Text = "轮轴磁粉探伤";
+            // 
+            // myCircle37
+            // 
+            this.myCircle37.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle37.BorderTransparent = 255;
+            this.myCircle37.BorderWidth = 0;
+            this.myCircle37.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle37.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle37.DistanceToBorder = 4;
+            this.myCircle37.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle37.IconColor = System.Drawing.Color.Red;
+            this.myCircle37.IsShowIcon = false;
+            this.myCircle37.Location = new System.Drawing.Point(40, 37);
+            this.myCircle37.Name = "myCircle37";
+            this.myCircle37.Size = new System.Drawing.Size(25, 35);
+            this.myCircle37.TabIndex = 1;
+            // 
+            // label64
+            // 
+            this.label64.Location = new System.Drawing.Point(3, 54);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(31, 20);
+            this.label64.TabIndex = 0;
+            this.label64.Text = "17#";
             // 
             // panel62
             // 
             this.panel62.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel62.Controls.Add(this.label165);
             this.panel62.Controls.Add(this.myCircle4);
             this.panel62.Controls.Add(this.label164);
-            this.panel62.Controls.Add(this.label165);
             this.panel62.Location = new System.Drawing.Point(1369, 557);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(75, 82);
             this.panel62.TabIndex = 77;
             // 
-            // label164
-            // 
-            this.label164.Location = new System.Drawing.Point(3, 54);
-            this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(44, 26);
-            this.label164.TabIndex = 0;
-            this.label164.Text = "30#";
-            // 
             // label165
             // 
             this.label165.Location = new System.Drawing.Point(5, 3);
             this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(71, 46);
+            this.label165.Size = new System.Drawing.Size(65, 39);
             this.label165.TabIndex = 0;
             this.label165.Text = "动平衡";
+            // 
+            // myCircle4
+            // 
+            this.myCircle4.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle4.BorderTransparent = 255;
+            this.myCircle4.BorderWidth = 0;
+            this.myCircle4.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle4.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle4.DistanceToBorder = 4;
+            this.myCircle4.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle4.IconColor = System.Drawing.Color.Red;
+            this.myCircle4.IsShowIcon = false;
+            this.myCircle4.Location = new System.Drawing.Point(40, 37);
+            this.myCircle4.Name = "myCircle4";
+            this.myCircle4.Size = new System.Drawing.Size(25, 35);
+            this.myCircle4.TabIndex = 2;
+            // 
+            // label164
+            // 
+            this.label164.Location = new System.Drawing.Point(3, 54);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(31, 20);
+            this.label164.TabIndex = 0;
+            this.label164.Text = "30#";
             // 
             // panel61
             // 
             this.panel61.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel61.Controls.Add(this.label163);
             this.panel61.Controls.Add(this.myCircle5);
             this.panel61.Controls.Add(this.label162);
-            this.panel61.Controls.Add(this.label163);
             this.panel61.Location = new System.Drawing.Point(1265, 557);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(75, 82);
             this.panel61.TabIndex = 77;
             // 
-            // label162
-            // 
-            this.label162.Location = new System.Drawing.Point(3, 54);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(44, 26);
-            this.label162.TabIndex = 0;
-            this.label162.Text = "29#";
-            // 
             // label163
             // 
             this.label163.Location = new System.Drawing.Point(5, 3);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(71, 46);
+            this.label163.Size = new System.Drawing.Size(65, 39);
             this.label163.TabIndex = 0;
             this.label163.Text = "动平衡";
+            // 
+            // myCircle5
+            // 
+            this.myCircle5.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle5.BorderTransparent = 255;
+            this.myCircle5.BorderWidth = 0;
+            this.myCircle5.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle5.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle5.DistanceToBorder = 4;
+            this.myCircle5.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle5.IconColor = System.Drawing.Color.Red;
+            this.myCircle5.IsShowIcon = false;
+            this.myCircle5.Location = new System.Drawing.Point(40, 37);
+            this.myCircle5.Name = "myCircle5";
+            this.myCircle5.Size = new System.Drawing.Size(25, 35);
+            this.myCircle5.TabIndex = 2;
+            // 
+            // label162
+            // 
+            this.label162.Location = new System.Drawing.Point(3, 54);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(31, 20);
+            this.label162.TabIndex = 0;
+            this.label162.Text = "29#";
+            // 
+            // panel59
+            // 
+            this.panel59.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel59.Controls.Add(this.label19);
+            this.panel59.Controls.Add(this.myCircle63);
+            this.panel59.Controls.Add(this.label17);
+            this.panel59.Location = new System.Drawing.Point(709, 555);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(75, 82);
+            this.panel59.TabIndex = 77;
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(5, 3);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(65, 39);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "轴箱注脂";
+            // 
+            // myCircle63
+            // 
+            this.myCircle63.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle63.BorderTransparent = 255;
+            this.myCircle63.BorderWidth = 0;
+            this.myCircle63.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle63.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle63.DistanceToBorder = 4;
+            this.myCircle63.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle63.IconColor = System.Drawing.Color.Red;
+            this.myCircle63.IsShowIcon = false;
+            this.myCircle63.Location = new System.Drawing.Point(40, 37);
+            this.myCircle63.Name = "myCircle63";
+            this.myCircle63.Size = new System.Drawing.Size(25, 35);
+            this.myCircle63.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(3, 54);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(31, 20);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "54#";
             // 
             // panel49
             // 
@@ -2965,6 +3223,22 @@
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(75, 82);
             this.panel49.TabIndex = 77;
+            // 
+            // myCircle10
+            // 
+            this.myCircle10.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle10.BorderTransparent = 255;
+            this.myCircle10.BorderWidth = 0;
+            this.myCircle10.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle10.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle10.DistanceToBorder = 4;
+            this.myCircle10.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle10.IconColor = System.Drawing.Color.Red;
+            this.myCircle10.IsShowIcon = false;
+            this.myCircle10.Location = new System.Drawing.Point(40, 33);
+            this.myCircle10.Name = "myCircle10";
+            this.myCircle10.Size = new System.Drawing.Size(30, 41);
+            this.myCircle10.TabIndex = 2;
             // 
             // label138
             // 
@@ -2986,225 +3260,353 @@
             // 
             this.panel56.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel56.Controls.Add(this.label153);
             this.panel56.Controls.Add(this.myCircle8);
             this.panel56.Controls.Add(this.label152);
-            this.panel56.Controls.Add(this.label153);
             this.panel56.Location = new System.Drawing.Point(930, 555);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(75, 82);
             this.panel56.TabIndex = 77;
             // 
-            // label152
-            // 
-            this.label152.Location = new System.Drawing.Point(3, 54);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(44, 26);
-            this.label152.TabIndex = 0;
-            this.label152.Text = "52#";
-            // 
             // label153
             // 
             this.label153.Location = new System.Drawing.Point(5, 3);
             this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(71, 46);
+            this.label153.Size = new System.Drawing.Size(65, 39);
             this.label153.TabIndex = 0;
             this.label153.Text = "轴箱尺寸测量";
+            // 
+            // myCircle8
+            // 
+            this.myCircle8.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle8.BorderTransparent = 255;
+            this.myCircle8.BorderWidth = 0;
+            this.myCircle8.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle8.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle8.DistanceToBorder = 4;
+            this.myCircle8.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle8.IconColor = System.Drawing.Color.Red;
+            this.myCircle8.IsShowIcon = false;
+            this.myCircle8.Location = new System.Drawing.Point(40, 37);
+            this.myCircle8.Name = "myCircle8";
+            this.myCircle8.Size = new System.Drawing.Size(25, 35);
+            this.myCircle8.TabIndex = 2;
+            // 
+            // label152
+            // 
+            this.label152.Location = new System.Drawing.Point(3, 54);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(31, 20);
+            this.label152.TabIndex = 0;
+            this.label152.Text = "52#";
             // 
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel24.Controls.Add(this.label131);
             this.panel24.Controls.Add(this.myCircle12);
             this.panel24.Controls.Add(this.label130);
-            this.panel24.Controls.Add(this.label131);
             this.panel24.Location = new System.Drawing.Point(453, 557);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(75, 82);
             this.panel24.TabIndex = 77;
             // 
-            // label130
-            // 
-            this.label130.Location = new System.Drawing.Point(3, 54);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(44, 26);
-            this.label130.TabIndex = 0;
-            this.label130.Text = "56#";
-            // 
             // label131
             // 
             this.label131.Location = new System.Drawing.Point(5, 3);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(71, 46);
+            this.label131.Size = new System.Drawing.Size(65, 39);
             this.label131.TabIndex = 0;
             this.label131.Text = "磨合试验";
+            // 
+            // myCircle12
+            // 
+            this.myCircle12.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle12.BorderTransparent = 255;
+            this.myCircle12.BorderWidth = 0;
+            this.myCircle12.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle12.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle12.DistanceToBorder = 4;
+            this.myCircle12.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle12.IconColor = System.Drawing.Color.Red;
+            this.myCircle12.IsShowIcon = false;
+            this.myCircle12.Location = new System.Drawing.Point(40, 37);
+            this.myCircle12.Name = "myCircle12";
+            this.myCircle12.Size = new System.Drawing.Size(25, 35);
+            this.myCircle12.TabIndex = 2;
+            // 
+            // label130
+            // 
+            this.label130.Location = new System.Drawing.Point(3, 54);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(31, 20);
+            this.label130.TabIndex = 0;
+            this.label130.Text = "56#";
             // 
             // panel60
             // 
             this.panel60.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel60.Controls.Add(this.label161);
             this.panel60.Controls.Add(this.myCircle6);
             this.panel60.Controls.Add(this.label160);
-            this.panel60.Controls.Add(this.label161);
             this.panel60.Location = new System.Drawing.Point(1154, 557);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(75, 82);
             this.panel60.TabIndex = 77;
             // 
-            // label160
-            // 
-            this.label160.Location = new System.Drawing.Point(3, 54);
-            this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(44, 26);
-            this.label160.TabIndex = 0;
-            this.label160.Text = "44#";
-            // 
             // label161
             // 
             this.label161.Location = new System.Drawing.Point(5, 3);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(71, 46);
+            this.label161.Size = new System.Drawing.Size(65, 39);
             this.label161.TabIndex = 0;
             this.label161.Text = "降等级测量";
+            // 
+            // myCircle6
+            // 
+            this.myCircle6.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle6.BorderTransparent = 255;
+            this.myCircle6.BorderWidth = 0;
+            this.myCircle6.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle6.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle6.DistanceToBorder = 4;
+            this.myCircle6.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle6.IconColor = System.Drawing.Color.Red;
+            this.myCircle6.IsShowIcon = false;
+            this.myCircle6.Location = new System.Drawing.Point(40, 37);
+            this.myCircle6.Name = "myCircle6";
+            this.myCircle6.Size = new System.Drawing.Size(25, 35);
+            this.myCircle6.TabIndex = 2;
+            // 
+            // label160
+            // 
+            this.label160.Location = new System.Drawing.Point(3, 54);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(31, 20);
+            this.label160.TabIndex = 0;
+            this.label160.Text = "44#";
             // 
             // panel55
             // 
             this.panel55.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel55.Controls.Add(this.label151);
             this.panel55.Controls.Add(this.myCircle7);
             this.panel55.Controls.Add(this.label150);
-            this.panel55.Controls.Add(this.label151);
             this.panel55.Location = new System.Drawing.Point(1043, 556);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(75, 82);
             this.panel55.TabIndex = 77;
             // 
-            // label150
-            // 
-            this.label150.Location = new System.Drawing.Point(3, 54);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(44, 26);
-            this.label150.TabIndex = 0;
-            this.label150.Text = "51#";
-            // 
             // label151
             // 
             this.label151.Location = new System.Drawing.Point(5, 3);
             this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(71, 46);
+            this.label151.Size = new System.Drawing.Size(65, 39);
             this.label151.TabIndex = 0;
             this.label151.Text = "轴颈防尘板座测量";
+            // 
+            // myCircle7
+            // 
+            this.myCircle7.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle7.BorderTransparent = 255;
+            this.myCircle7.BorderWidth = 0;
+            this.myCircle7.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle7.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle7.DistanceToBorder = 4;
+            this.myCircle7.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle7.IconColor = System.Drawing.Color.Red;
+            this.myCircle7.IsShowIcon = false;
+            this.myCircle7.Location = new System.Drawing.Point(40, 37);
+            this.myCircle7.Name = "myCircle7";
+            this.myCircle7.Size = new System.Drawing.Size(25, 35);
+            this.myCircle7.TabIndex = 2;
+            // 
+            // label150
+            // 
+            this.label150.Location = new System.Drawing.Point(3, 54);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(31, 20);
+            this.label150.TabIndex = 0;
+            this.label150.Text = "51#";
             // 
             // panel48
             // 
             this.panel48.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel48.Controls.Add(this.label137);
             this.panel48.Controls.Add(this.myCircle11);
             this.panel48.Controls.Add(this.label136);
-            this.panel48.Controls.Add(this.label137);
             this.panel48.Location = new System.Drawing.Point(581, 556);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(75, 82);
             this.panel48.TabIndex = 77;
             // 
-            // label136
-            // 
-            this.label136.Location = new System.Drawing.Point(3, 54);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(44, 26);
-            this.label136.TabIndex = 0;
-            this.label136.Text = "55#";
-            // 
             // label137
             // 
             this.label137.Location = new System.Drawing.Point(5, 3);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(71, 46);
+            this.label137.Size = new System.Drawing.Size(65, 39);
             this.label137.TabIndex = 0;
             this.label137.Text = "轮轴组装扭矩测量";
+            // 
+            // myCircle11
+            // 
+            this.myCircle11.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle11.BorderTransparent = 255;
+            this.myCircle11.BorderWidth = 0;
+            this.myCircle11.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle11.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle11.DistanceToBorder = 4;
+            this.myCircle11.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle11.IconColor = System.Drawing.Color.Red;
+            this.myCircle11.IsShowIcon = false;
+            this.myCircle11.Location = new System.Drawing.Point(40, 37);
+            this.myCircle11.Name = "myCircle11";
+            this.myCircle11.Size = new System.Drawing.Size(25, 35);
+            this.myCircle11.TabIndex = 2;
+            // 
+            // label136
+            // 
+            this.label136.Location = new System.Drawing.Point(3, 54);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(31, 20);
+            this.label136.TabIndex = 0;
+            this.label136.Text = "55#";
             // 
             // panel54
             // 
             this.panel54.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel54.Controls.Add(this.label149);
             this.panel54.Controls.Add(this.myCircle9);
             this.panel54.Controls.Add(this.label148);
-            this.panel54.Controls.Add(this.label149);
             this.panel54.Location = new System.Drawing.Point(820, 556);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(75, 82);
             this.panel54.TabIndex = 77;
             // 
-            // label148
-            // 
-            this.label148.Location = new System.Drawing.Point(3, 54);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(44, 26);
-            this.label148.TabIndex = 0;
-            this.label148.Text = "53#";
-            // 
             // label149
             // 
             this.label149.Location = new System.Drawing.Point(5, 3);
             this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(71, 46);
+            this.label149.Size = new System.Drawing.Size(65, 39);
             this.label149.TabIndex = 0;
             this.label149.Text = "轮轴组装手动测量";
+            // 
+            // myCircle9
+            // 
+            this.myCircle9.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle9.BorderTransparent = 255;
+            this.myCircle9.BorderWidth = 0;
+            this.myCircle9.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle9.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle9.DistanceToBorder = 4;
+            this.myCircle9.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle9.IconColor = System.Drawing.Color.Red;
+            this.myCircle9.IsShowIcon = false;
+            this.myCircle9.Location = new System.Drawing.Point(40, 37);
+            this.myCircle9.Name = "myCircle9";
+            this.myCircle9.Size = new System.Drawing.Size(25, 35);
+            this.myCircle9.TabIndex = 2;
+            // 
+            // label148
+            // 
+            this.label148.Location = new System.Drawing.Point(3, 54);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(31, 20);
+            this.label148.TabIndex = 0;
+            this.label148.Text = "53#";
             // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel22.Controls.Add(this.label127);
             this.panel22.Controls.Add(this.myCircle13);
             this.panel22.Controls.Add(this.label126);
-            this.panel22.Controls.Add(this.label127);
             this.panel22.Location = new System.Drawing.Point(293, 557);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(75, 82);
             this.panel22.TabIndex = 77;
             // 
-            // label126
-            // 
-            this.label126.Location = new System.Drawing.Point(3, 54);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(44, 26);
-            this.label126.TabIndex = 0;
-            this.label126.Text = "59#";
-            // 
             // label127
             // 
             this.label127.Location = new System.Drawing.Point(5, 3);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(71, 46);
+            this.label127.Size = new System.Drawing.Size(65, 39);
             this.label127.TabIndex = 0;
             this.label127.Text = "轮轴组装自动测量";
+            // 
+            // myCircle13
+            // 
+            this.myCircle13.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle13.BorderTransparent = 255;
+            this.myCircle13.BorderWidth = 0;
+            this.myCircle13.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle13.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle13.DistanceToBorder = 4;
+            this.myCircle13.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle13.IconColor = System.Drawing.Color.Red;
+            this.myCircle13.IsShowIcon = false;
+            this.myCircle13.Location = new System.Drawing.Point(40, 37);
+            this.myCircle13.Name = "myCircle13";
+            this.myCircle13.Size = new System.Drawing.Size(25, 35);
+            this.myCircle13.TabIndex = 2;
+            // 
+            // label126
+            // 
+            this.label126.Location = new System.Drawing.Point(3, 54);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(31, 20);
+            this.label126.TabIndex = 0;
+            this.label126.Text = "59#";
             // 
             // panel43
             // 
             this.panel43.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel43.Controls.Add(this.label43);
             this.panel43.Controls.Add(this.myCircle62);
             this.panel43.Controls.Add(this.label87);
-            this.panel43.Controls.Add(this.label43);
             this.panel43.Location = new System.Drawing.Point(291, 339);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(75, 82);
             this.panel43.TabIndex = 77;
             // 
-            // label87
-            // 
-            this.label87.Location = new System.Drawing.Point(3, 54);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(44, 26);
-            this.label87.TabIndex = 0;
-            this.label87.Text = "61#";
-            // 
             // label43
             // 
             this.label43.Location = new System.Drawing.Point(5, 3);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(71, 46);
+            this.label43.Size = new System.Drawing.Size(65, 39);
             this.label43.TabIndex = 0;
             this.label43.Text = "防尘挡圈喷码";
+            // 
+            // myCircle62
+            // 
+            this.myCircle62.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle62.BorderTransparent = 255;
+            this.myCircle62.BorderWidth = 0;
+            this.myCircle62.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle62.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle62.DistanceToBorder = 4;
+            this.myCircle62.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle62.IconColor = System.Drawing.Color.Red;
+            this.myCircle62.IsShowIcon = false;
+            this.myCircle62.Location = new System.Drawing.Point(40, 37);
+            this.myCircle62.Name = "myCircle62";
+            this.myCircle62.Size = new System.Drawing.Size(25, 35);
+            this.myCircle62.TabIndex = 1;
+            // 
+            // label87
+            // 
+            this.label87.Location = new System.Drawing.Point(3, 54);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(31, 20);
+            this.label87.TabIndex = 0;
+            this.label87.Text = "61#";
             // 
             // panel57
             // 
@@ -3218,11 +3620,27 @@
             this.panel57.Size = new System.Drawing.Size(75, 82);
             this.panel57.TabIndex = 78;
             // 
+            // myCircle54
+            // 
+            this.myCircle54.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle54.BorderTransparent = 255;
+            this.myCircle54.BorderWidth = 0;
+            this.myCircle54.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle54.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle54.DistanceToBorder = 4;
+            this.myCircle54.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle54.IconColor = System.Drawing.Color.Red;
+            this.myCircle54.IsShowIcon = false;
+            this.myCircle54.Location = new System.Drawing.Point(40, 37);
+            this.myCircle54.Name = "myCircle54";
+            this.myCircle54.Size = new System.Drawing.Size(25, 35);
+            this.myCircle54.TabIndex = 1;
+            // 
             // label154
             // 
             this.label154.Location = new System.Drawing.Point(3, 54);
             this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(44, 26);
+            this.label154.Size = new System.Drawing.Size(31, 20);
             this.label154.TabIndex = 0;
             this.label154.Text = "26#";
             // 
@@ -3230,7 +3648,7 @@
             // 
             this.label155.Location = new System.Drawing.Point(1, 3);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(71, 46);
+            this.label155.Size = new System.Drawing.Size(65, 39);
             this.label155.TabIndex = 0;
             this.label155.Text = "轮轴轮辋超探";
             // 
@@ -3246,11 +3664,27 @@
             this.panel33.Size = new System.Drawing.Size(75, 82);
             this.panel33.TabIndex = 78;
             // 
+            // myCircle55
+            // 
+            this.myCircle55.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle55.BorderTransparent = 255;
+            this.myCircle55.BorderWidth = 0;
+            this.myCircle55.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle55.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle55.DistanceToBorder = 4;
+            this.myCircle55.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle55.IconColor = System.Drawing.Color.Red;
+            this.myCircle55.IsShowIcon = false;
+            this.myCircle55.Location = new System.Drawing.Point(40, 37);
+            this.myCircle55.Name = "myCircle55";
+            this.myCircle55.Size = new System.Drawing.Size(25, 35);
+            this.myCircle55.TabIndex = 1;
+            // 
             // label95
             // 
             this.label95.Location = new System.Drawing.Point(3, 54);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(44, 26);
+            this.label95.Size = new System.Drawing.Size(31, 20);
             this.label95.TabIndex = 0;
             this.label95.Text = "27#";
             // 
@@ -3258,7 +3692,7 @@
             // 
             this.label24.Location = new System.Drawing.Point(1, 3);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(71, 46);
+            this.label24.Size = new System.Drawing.Size(65, 39);
             this.label24.TabIndex = 0;
             this.label24.Text = "轮轴轮辋超探";
             // 
@@ -3274,11 +3708,27 @@
             this.panel42.Size = new System.Drawing.Size(75, 82);
             this.panel42.TabIndex = 79;
             // 
+            // myCircle53
+            // 
+            this.myCircle53.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle53.BorderTransparent = 255;
+            this.myCircle53.BorderWidth = 0;
+            this.myCircle53.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle53.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle53.DistanceToBorder = 4;
+            this.myCircle53.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle53.IconColor = System.Drawing.Color.Red;
+            this.myCircle53.IsShowIcon = false;
+            this.myCircle53.Location = new System.Drawing.Point(40, 37);
+            this.myCircle53.Name = "myCircle53";
+            this.myCircle53.Size = new System.Drawing.Size(25, 35);
+            this.myCircle53.TabIndex = 1;
+            // 
             // label94
             // 
             this.label94.Location = new System.Drawing.Point(3, 54);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(44, 26);
+            this.label94.Size = new System.Drawing.Size(31, 20);
             this.label94.TabIndex = 0;
             this.label94.Text = "42#";
             // 
@@ -3286,7 +3736,7 @@
             // 
             this.label42.Location = new System.Drawing.Point(1, 4);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(71, 46);
+            this.label42.Size = new System.Drawing.Size(65, 27);
             this.label42.TabIndex = 0;
             this.label42.Text = "外圈探伤";
             // 
@@ -3294,125 +3744,213 @@
             // 
             this.panel53.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel53.Controls.Add(this.label147);
             this.panel53.Controls.Add(this.myCircle24);
             this.panel53.Controls.Add(this.label146);
-            this.panel53.Controls.Add(this.label147);
             this.panel53.Location = new System.Drawing.Point(1154, 451);
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(75, 82);
             this.panel53.TabIndex = 80;
             // 
-            // label146
-            // 
-            this.label146.Location = new System.Drawing.Point(3, 54);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(44, 26);
-            this.label146.TabIndex = 0;
-            this.label146.Text = "43#";
-            // 
             // label147
             // 
             this.label147.Location = new System.Drawing.Point(4, 1);
             this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(71, 46);
+            this.label147.Size = new System.Drawing.Size(65, 39);
             this.label147.TabIndex = 0;
             this.label147.Text = "轴承清洗";
+            // 
+            // myCircle24
+            // 
+            this.myCircle24.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle24.BorderTransparent = 255;
+            this.myCircle24.BorderWidth = 0;
+            this.myCircle24.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle24.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle24.DistanceToBorder = 4;
+            this.myCircle24.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle24.IconColor = System.Drawing.Color.Red;
+            this.myCircle24.IsShowIcon = false;
+            this.myCircle24.Location = new System.Drawing.Point(40, 37);
+            this.myCircle24.Name = "myCircle24";
+            this.myCircle24.Size = new System.Drawing.Size(25, 35);
+            this.myCircle24.TabIndex = 2;
+            // 
+            // label146
+            // 
+            this.label146.Location = new System.Drawing.Point(3, 54);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(31, 20);
+            this.label146.TabIndex = 0;
+            this.label146.Text = "43#";
             // 
             // panel45
             // 
             this.panel45.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel45.Controls.Add(this.label135);
             this.panel45.Controls.Add(this.myCircle20);
             this.panel45.Controls.Add(this.label134);
-            this.panel45.Controls.Add(this.label135);
             this.panel45.Location = new System.Drawing.Point(708, 451);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(75, 82);
             this.panel45.TabIndex = 80;
             // 
-            // label134
-            // 
-            this.label134.Location = new System.Drawing.Point(3, 54);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(44, 26);
-            this.label134.TabIndex = 0;
-            this.label134.Text = "48#";
-            // 
             // label135
             // 
             this.label135.Location = new System.Drawing.Point(4, 1);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(71, 46);
+            this.label135.Size = new System.Drawing.Size(65, 39);
             this.label135.TabIndex = 0;
             this.label135.Text = "轴承支出选配";
+            // 
+            // myCircle20
+            // 
+            this.myCircle20.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle20.BorderTransparent = 255;
+            this.myCircle20.BorderWidth = 0;
+            this.myCircle20.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle20.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle20.DistanceToBorder = 4;
+            this.myCircle20.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle20.IconColor = System.Drawing.Color.Red;
+            this.myCircle20.IsShowIcon = false;
+            this.myCircle20.Location = new System.Drawing.Point(40, 37);
+            this.myCircle20.Name = "myCircle20";
+            this.myCircle20.Size = new System.Drawing.Size(25, 35);
+            this.myCircle20.TabIndex = 2;
+            // 
+            // label134
+            // 
+            this.label134.Location = new System.Drawing.Point(3, 54);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(31, 20);
+            this.label134.TabIndex = 0;
+            this.label134.Text = "48#";
             // 
             // panel52
             // 
             this.panel52.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel52.Controls.Add(this.label145);
             this.panel52.Controls.Add(this.myCircle22);
             this.panel52.Controls.Add(this.label144);
-            this.panel52.Controls.Add(this.label145);
             this.panel52.Location = new System.Drawing.Point(929, 451);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(75, 82);
             this.panel52.TabIndex = 80;
             // 
-            // label144
-            // 
-            this.label144.Location = new System.Drawing.Point(3, 54);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(44, 26);
-            this.label144.TabIndex = 0;
-            this.label144.Text = "46#";
-            // 
             // label145
             // 
             this.label145.Location = new System.Drawing.Point(4, 1);
             this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(71, 46);
+            this.label145.Size = new System.Drawing.Size(65, 39);
             this.label145.TabIndex = 0;
             this.label145.Text = "游隙外径凸出量";
+            // 
+            // myCircle22
+            // 
+            this.myCircle22.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle22.BorderTransparent = 255;
+            this.myCircle22.BorderWidth = 0;
+            this.myCircle22.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle22.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle22.DistanceToBorder = 4;
+            this.myCircle22.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle22.IconColor = System.Drawing.Color.Red;
+            this.myCircle22.IsShowIcon = false;
+            this.myCircle22.Location = new System.Drawing.Point(40, 37);
+            this.myCircle22.Name = "myCircle22";
+            this.myCircle22.Size = new System.Drawing.Size(25, 35);
+            this.myCircle22.TabIndex = 2;
+            // 
+            // label144
+            // 
+            this.label144.Location = new System.Drawing.Point(3, 54);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(31, 20);
+            this.label144.TabIndex = 0;
+            this.label144.Text = "46#";
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel23.Controls.Add(this.label129);
             this.panel23.Controls.Add(this.myCircle18);
             this.panel23.Controls.Add(this.label128);
-            this.panel23.Controls.Add(this.label129);
             this.panel23.Location = new System.Drawing.Point(452, 451);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(75, 82);
             this.panel23.TabIndex = 80;
             // 
-            // label128
-            // 
-            this.label128.Location = new System.Drawing.Point(3, 54);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(44, 26);
-            this.label128.TabIndex = 0;
-            this.label128.Text = "58#";
-            // 
             // label129
             // 
             this.label129.Location = new System.Drawing.Point(4, 1);
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(71, 46);
+            this.label129.Size = new System.Drawing.Size(65, 39);
             this.label129.TabIndex = 0;
             this.label129.Text = "轮轴综合数据站";
+            // 
+            // myCircle18
+            // 
+            this.myCircle18.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle18.BorderTransparent = 255;
+            this.myCircle18.BorderWidth = 0;
+            this.myCircle18.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle18.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle18.DistanceToBorder = 4;
+            this.myCircle18.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle18.IconColor = System.Drawing.Color.Red;
+            this.myCircle18.IsShowIcon = false;
+            this.myCircle18.Location = new System.Drawing.Point(40, 37);
+            this.myCircle18.Name = "myCircle18";
+            this.myCircle18.Size = new System.Drawing.Size(25, 35);
+            this.myCircle18.TabIndex = 2;
+            // 
+            // label128
+            // 
+            this.label128.Location = new System.Drawing.Point(3, 54);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(31, 20);
+            this.label128.TabIndex = 0;
+            this.label128.Text = "58#";
             // 
             // panel58
             // 
             this.panel58.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel58.Controls.Add(this.label157);
             this.panel58.Controls.Add(this.myCircle25);
             this.panel58.Controls.Add(this.label156);
-            this.panel58.Controls.Add(this.label157);
             this.panel58.Location = new System.Drawing.Point(1265, 451);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(75, 82);
             this.panel58.TabIndex = 80;
+            // 
+            // label157
+            // 
+            this.label157.Location = new System.Drawing.Point(4, 1);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(65, 39);
+            this.label157.TabIndex = 0;
+            this.label157.Text = "轮轴轮辋手动超探";
+            // 
+            // myCircle25
+            // 
+            this.myCircle25.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle25.BorderTransparent = 255;
+            this.myCircle25.BorderWidth = 0;
+            this.myCircle25.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle25.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle25.DistanceToBorder = 4;
+            this.myCircle25.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle25.IconColor = System.Drawing.Color.Red;
+            this.myCircle25.IsShowIcon = false;
+            this.myCircle25.Location = new System.Drawing.Point(40, 37);
+            this.myCircle25.Name = "myCircle25";
+            this.myCircle25.Size = new System.Drawing.Size(25, 35);
+            this.myCircle25.TabIndex = 2;
             // 
             // label156
             // 
@@ -3422,181 +3960,269 @@
             this.label156.TabIndex = 0;
             this.label156.Text = "28#";
             // 
-            // label157
-            // 
-            this.label157.Location = new System.Drawing.Point(4, 1);
-            this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(71, 46);
-            this.label157.TabIndex = 0;
-            this.label157.Text = "轮轴轮辋手动超探";
-            // 
             // panel51
             // 
             this.panel51.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel51.Controls.Add(this.label143);
             this.panel51.Controls.Add(this.myCircle23);
             this.panel51.Controls.Add(this.label142);
-            this.panel51.Controls.Add(this.label143);
             this.panel51.Location = new System.Drawing.Point(1043, 451);
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(75, 82);
             this.panel51.TabIndex = 80;
             // 
-            // label142
-            // 
-            this.label142.Location = new System.Drawing.Point(3, 54);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(44, 26);
-            this.label142.TabIndex = 0;
-            this.label142.Text = "45#";
-            // 
             // label143
             // 
             this.label143.Location = new System.Drawing.Point(4, 1);
             this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(71, 46);
+            this.label143.Size = new System.Drawing.Size(65, 39);
             this.label143.TabIndex = 0;
             this.label143.Text = "内圈滚道内径测量";
+            // 
+            // myCircle23
+            // 
+            this.myCircle23.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle23.BorderTransparent = 255;
+            this.myCircle23.BorderWidth = 0;
+            this.myCircle23.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle23.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle23.DistanceToBorder = 4;
+            this.myCircle23.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle23.IconColor = System.Drawing.Color.Red;
+            this.myCircle23.IsShowIcon = false;
+            this.myCircle23.Location = new System.Drawing.Point(40, 37);
+            this.myCircle23.Name = "myCircle23";
+            this.myCircle23.Size = new System.Drawing.Size(25, 35);
+            this.myCircle23.TabIndex = 2;
+            // 
+            // label142
+            // 
+            this.label142.Location = new System.Drawing.Point(3, 54);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(31, 20);
+            this.label142.TabIndex = 0;
+            this.label142.Text = "45#";
             // 
             // panel36
             // 
             this.panel36.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel36.Controls.Add(this.label133);
             this.panel36.Controls.Add(this.myCircle19);
             this.panel36.Controls.Add(this.label132);
-            this.panel36.Controls.Add(this.label133);
             this.panel36.Location = new System.Drawing.Point(581, 451);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(75, 82);
             this.panel36.TabIndex = 80;
             // 
-            // label132
-            // 
-            this.label132.Location = new System.Drawing.Point(3, 54);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(44, 26);
-            this.label132.TabIndex = 0;
-            this.label132.Text = "57#";
-            // 
             // label133
             // 
             this.label133.Location = new System.Drawing.Point(4, 1);
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(71, 46);
+            this.label133.Size = new System.Drawing.Size(65, 39);
             this.label133.TabIndex = 0;
             this.label133.Text = "磨合试验";
+            // 
+            // myCircle19
+            // 
+            this.myCircle19.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle19.BorderTransparent = 255;
+            this.myCircle19.BorderWidth = 0;
+            this.myCircle19.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle19.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle19.DistanceToBorder = 4;
+            this.myCircle19.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle19.IconColor = System.Drawing.Color.Red;
+            this.myCircle19.IsShowIcon = false;
+            this.myCircle19.Location = new System.Drawing.Point(40, 37);
+            this.myCircle19.Name = "myCircle19";
+            this.myCircle19.Size = new System.Drawing.Size(25, 35);
+            this.myCircle19.TabIndex = 2;
+            // 
+            // label132
+            // 
+            this.label132.Location = new System.Drawing.Point(3, 54);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(31, 20);
+            this.label132.TabIndex = 0;
+            this.label132.Text = "57#";
             // 
             // panel50
             // 
             this.panel50.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel50.Controls.Add(this.label141);
             this.panel50.Controls.Add(this.myCircle21);
             this.panel50.Controls.Add(this.label140);
-            this.panel50.Controls.Add(this.label141);
             this.panel50.Location = new System.Drawing.Point(820, 451);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(75, 82);
             this.panel50.TabIndex = 80;
             // 
-            // label140
-            // 
-            this.label140.Location = new System.Drawing.Point(3, 54);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(44, 26);
-            this.label140.TabIndex = 0;
-            this.label140.Text = "47#";
-            // 
             // label141
             // 
             this.label141.Location = new System.Drawing.Point(4, 1);
             this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(71, 46);
+            this.label141.Size = new System.Drawing.Size(65, 39);
             this.label141.TabIndex = 0;
             this.label141.Text = "轴承入库";
+            // 
+            // myCircle21
+            // 
+            this.myCircle21.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle21.BorderTransparent = 255;
+            this.myCircle21.BorderWidth = 0;
+            this.myCircle21.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle21.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle21.DistanceToBorder = 4;
+            this.myCircle21.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle21.IconColor = System.Drawing.Color.Red;
+            this.myCircle21.IsShowIcon = false;
+            this.myCircle21.Location = new System.Drawing.Point(40, 37);
+            this.myCircle21.Name = "myCircle21";
+            this.myCircle21.Size = new System.Drawing.Size(25, 35);
+            this.myCircle21.TabIndex = 2;
+            // 
+            // label140
+            // 
+            this.label140.Location = new System.Drawing.Point(3, 54);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(31, 20);
+            this.label140.TabIndex = 0;
+            this.label140.Text = "47#";
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.label125);
             this.panel21.Controls.Add(this.myCircle17);
             this.panel21.Controls.Add(this.label124);
-            this.panel21.Controls.Add(this.label125);
             this.panel21.Location = new System.Drawing.Point(293, 451);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(75, 82);
             this.panel21.TabIndex = 80;
             // 
-            // label124
-            // 
-            this.label124.Location = new System.Drawing.Point(3, 54);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(44, 26);
-            this.label124.TabIndex = 0;
-            this.label124.Text = "60#";
-            // 
             // label125
             // 
             this.label125.Location = new System.Drawing.Point(4, 1);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(71, 46);
+            this.label125.Size = new System.Drawing.Size(65, 39);
             this.label125.TabIndex = 0;
             this.label125.Text = "轴箱自动组装注脂";
+            // 
+            // myCircle17
+            // 
+            this.myCircle17.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle17.BorderTransparent = 255;
+            this.myCircle17.BorderWidth = 0;
+            this.myCircle17.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle17.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle17.DistanceToBorder = 4;
+            this.myCircle17.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle17.IconColor = System.Drawing.Color.Red;
+            this.myCircle17.IsShowIcon = false;
+            this.myCircle17.Location = new System.Drawing.Point(40, 37);
+            this.myCircle17.Name = "myCircle17";
+            this.myCircle17.Size = new System.Drawing.Size(25, 35);
+            this.myCircle17.TabIndex = 2;
+            // 
+            // label124
+            // 
+            this.label124.Location = new System.Drawing.Point(3, 54);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(31, 20);
+            this.label124.TabIndex = 0;
+            this.label124.Text = "60#";
             // 
             // panel31
             // 
             this.panel31.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.label31);
             this.panel31.Controls.Add(this.myCircle45);
             this.panel31.Controls.Add(this.label77);
-            this.panel31.Controls.Add(this.label31);
             this.panel31.Location = new System.Drawing.Point(291, 233);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(75, 82);
             this.panel31.TabIndex = 80;
             // 
-            // label77
-            // 
-            this.label77.Location = new System.Drawing.Point(3, 54);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(44, 26);
-            this.label77.TabIndex = 0;
-            this.label77.Text = "33#";
-            // 
             // label31
             // 
             this.label31.Location = new System.Drawing.Point(4, 1);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(71, 46);
+            this.label31.Size = new System.Drawing.Size(65, 39);
             this.label31.TabIndex = 0;
             this.label31.Text = "轴承清洗";
+            // 
+            // myCircle45
+            // 
+            this.myCircle45.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle45.BorderTransparent = 255;
+            this.myCircle45.BorderWidth = 0;
+            this.myCircle45.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle45.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle45.DistanceToBorder = 4;
+            this.myCircle45.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle45.IconColor = System.Drawing.Color.Red;
+            this.myCircle45.IsShowIcon = false;
+            this.myCircle45.Location = new System.Drawing.Point(40, 37);
+            this.myCircle45.Name = "myCircle45";
+            this.myCircle45.Size = new System.Drawing.Size(25, 35);
+            this.myCircle45.TabIndex = 1;
+            // 
+            // label77
+            // 
+            this.label77.Location = new System.Drawing.Point(3, 54);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(31, 20);
+            this.label77.TabIndex = 0;
+            this.label77.Text = "33#";
             // 
             // panel30
             // 
             this.panel30.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel30.Controls.Add(this.label30);
             this.panel30.Controls.Add(this.myCircle52);
             this.panel30.Controls.Add(this.label84);
-            this.panel30.Controls.Add(this.label30);
             this.panel30.Location = new System.Drawing.Point(1153, 233);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(75, 82);
             this.panel30.TabIndex = 82;
             // 
-            // label84
-            // 
-            this.label84.Location = new System.Drawing.Point(3, 54);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(44, 26);
-            this.label84.TabIndex = 0;
-            this.label84.Text = "25#";
-            // 
             // label30
             // 
             this.label30.Location = new System.Drawing.Point(4, 4);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(71, 46);
+            this.label30.Size = new System.Drawing.Size(65, 39);
             this.label30.TabIndex = 0;
             this.label30.Text = "镟修尺寸测量";
+            // 
+            // myCircle52
+            // 
+            this.myCircle52.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle52.BorderTransparent = 255;
+            this.myCircle52.BorderWidth = 0;
+            this.myCircle52.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle52.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle52.DistanceToBorder = 4;
+            this.myCircle52.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle52.IconColor = System.Drawing.Color.Red;
+            this.myCircle52.IsShowIcon = false;
+            this.myCircle52.Location = new System.Drawing.Point(40, 37);
+            this.myCircle52.Name = "myCircle52";
+            this.myCircle52.Size = new System.Drawing.Size(25, 35);
+            this.myCircle52.TabIndex = 1;
+            // 
+            // label84
+            // 
+            this.label84.Location = new System.Drawing.Point(3, 54);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(31, 20);
+            this.label84.TabIndex = 0;
+            this.label84.Text = "25#";
             // 
             // panel41
             // 
@@ -3610,11 +4236,27 @@
             this.panel41.Size = new System.Drawing.Size(75, 82);
             this.panel41.TabIndex = 84;
             // 
+            // myCircle59
+            // 
+            this.myCircle59.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle59.BorderTransparent = 255;
+            this.myCircle59.BorderWidth = 0;
+            this.myCircle59.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle59.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle59.DistanceToBorder = 4;
+            this.myCircle59.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle59.IconColor = System.Drawing.Color.Red;
+            this.myCircle59.IsShowIcon = false;
+            this.myCircle59.Location = new System.Drawing.Point(40, 37);
+            this.myCircle59.Name = "myCircle59";
+            this.myCircle59.Size = new System.Drawing.Size(25, 35);
+            this.myCircle59.TabIndex = 1;
+            // 
             // label90
             // 
             this.label90.Location = new System.Drawing.Point(3, 54);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(44, 26);
+            this.label90.Size = new System.Drawing.Size(31, 20);
             this.label90.TabIndex = 0;
             this.label90.Text = "49#";
             // 
@@ -3622,7 +4264,7 @@
             // 
             this.label41.Location = new System.Drawing.Point(5, 3);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(71, 46);
+            this.label41.Size = new System.Drawing.Size(65, 39);
             this.label41.TabIndex = 0;
             this.label41.Text = "轴承综合数据站";
             // 
@@ -3638,11 +4280,27 @@
             this.panel18.Size = new System.Drawing.Size(75, 82);
             this.panel18.TabIndex = 65;
             // 
+            // myCircle44
+            // 
+            this.myCircle44.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle44.BorderTransparent = 255;
+            this.myCircle44.BorderWidth = 0;
+            this.myCircle44.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle44.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle44.DistanceToBorder = 4;
+            this.myCircle44.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle44.IconColor = System.Drawing.Color.Red;
+            this.myCircle44.IsShowIcon = false;
+            this.myCircle44.Location = new System.Drawing.Point(40, 37);
+            this.myCircle44.Name = "myCircle44";
+            this.myCircle44.Size = new System.Drawing.Size(25, 35);
+            this.myCircle44.TabIndex = 1;
+            // 
             // label74
             // 
             this.label74.Location = new System.Drawing.Point(3, 54);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(44, 26);
+            this.label74.Size = new System.Drawing.Size(31, 20);
             this.label74.TabIndex = 0;
             this.label74.Text = "23#";
             // 
@@ -3650,7 +4308,7 @@
             // 
             this.label18.Location = new System.Drawing.Point(4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(71, 46);
+            this.label18.Size = new System.Drawing.Size(65, 39);
             this.label18.TabIndex = 0;
             this.label18.Text = "镟修尺寸测量";
             // 
@@ -3658,57 +4316,89 @@
             // 
             this.panel29.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel29.Controls.Add(this.label29);
             this.panel29.Controls.Add(this.myCircle48);
             this.panel29.Controls.Add(this.label80);
-            this.panel29.Controls.Add(this.label29);
             this.panel29.Location = new System.Drawing.Point(638, 233);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(75, 82);
             this.panel29.TabIndex = 63;
             // 
-            // label80
-            // 
-            this.label80.Location = new System.Drawing.Point(3, 54);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(44, 26);
-            this.label80.TabIndex = 0;
-            this.label80.Text = "36#";
-            // 
             // label29
             // 
             this.label29.Location = new System.Drawing.Point(4, 1);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(71, 46);
+            this.label29.Size = new System.Drawing.Size(65, 39);
             this.label29.TabIndex = 0;
             this.label29.Text = "外圈抛光";
+            // 
+            // myCircle48
+            // 
+            this.myCircle48.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle48.BorderTransparent = 255;
+            this.myCircle48.BorderWidth = 0;
+            this.myCircle48.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle48.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle48.DistanceToBorder = 4;
+            this.myCircle48.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle48.IconColor = System.Drawing.Color.Red;
+            this.myCircle48.IsShowIcon = false;
+            this.myCircle48.Location = new System.Drawing.Point(40, 37);
+            this.myCircle48.Name = "myCircle48";
+            this.myCircle48.Size = new System.Drawing.Size(25, 35);
+            this.myCircle48.TabIndex = 1;
+            // 
+            // label80
+            // 
+            this.label80.Location = new System.Drawing.Point(3, 54);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(31, 20);
+            this.label80.TabIndex = 0;
+            this.label80.Text = "36#";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.myCircle33);
             this.panel3.Controls.Add(this.label60);
-            this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(279, 21);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(75, 82);
             this.panel3.TabIndex = 62;
             // 
-            // label60
-            // 
-            this.label60.Location = new System.Drawing.Point(3, 54);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(44, 26);
-            this.label60.TabIndex = 0;
-            this.label60.Text = "12#";
-            // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(4, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 46);
+            this.label3.Size = new System.Drawing.Size(65, 39);
             this.label3.TabIndex = 0;
             this.label3.Text = "内圈挡圈拆卸";
+            // 
+            // myCircle33
+            // 
+            this.myCircle33.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle33.BorderTransparent = 255;
+            this.myCircle33.BorderWidth = 0;
+            this.myCircle33.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle33.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle33.DistanceToBorder = 4;
+            this.myCircle33.FocusBorderColor = System.Drawing.Color.Transparent;
+            this.myCircle33.IconColor = System.Drawing.Color.Red;
+            this.myCircle33.IsShowIcon = false;
+            this.myCircle33.Location = new System.Drawing.Point(40, 37);
+            this.myCircle33.Name = "myCircle33";
+            this.myCircle33.Size = new System.Drawing.Size(25, 35);
+            this.myCircle33.TabIndex = 1;
+            // 
+            // label60
+            // 
+            this.label60.Location = new System.Drawing.Point(3, 54);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(31, 20);
+            this.label60.TabIndex = 0;
+            this.label60.Text = "12#";
             // 
             // panel19
             // 
@@ -3722,11 +4412,27 @@
             this.panel19.Size = new System.Drawing.Size(75, 82);
             this.panel19.TabIndex = 52;
             // 
+            // myCircle15
+            // 
+            this.myCircle15.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle15.BorderTransparent = 255;
+            this.myCircle15.BorderWidth = 0;
+            this.myCircle15.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle15.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle15.DistanceToBorder = 4;
+            this.myCircle15.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle15.IconColor = System.Drawing.Color.Red;
+            this.myCircle15.IsShowIcon = false;
+            this.myCircle15.Location = new System.Drawing.Point(40, 37);
+            this.myCircle15.Name = "myCircle15";
+            this.myCircle15.Size = new System.Drawing.Size(25, 35);
+            this.myCircle15.TabIndex = 11;
+            // 
             // label122
             // 
             this.label122.Location = new System.Drawing.Point(3, 54);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(44, 26);
+            this.label122.Size = new System.Drawing.Size(31, 20);
             this.label122.TabIndex = 0;
             this.label122.Text = "11#";
             // 
@@ -3734,7 +4440,7 @@
             // 
             this.label123.Location = new System.Drawing.Point(5, 0);
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(71, 46);
+            this.label123.Size = new System.Drawing.Size(65, 27);
             this.label123.TabIndex = 0;
             this.label123.Text = "轴箱库";
             // 
@@ -3742,29 +4448,45 @@
             // 
             this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.label121);
             this.panel17.Controls.Add(this.myCircle14);
             this.panel17.Controls.Add(this.label120);
-            this.panel17.Controls.Add(this.label121);
             this.panel17.Location = new System.Drawing.Point(156, 557);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(75, 82);
             this.panel17.TabIndex = 52;
             // 
-            // label120
-            // 
-            this.label120.Location = new System.Drawing.Point(3, 54);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(44, 26);
-            this.label120.TabIndex = 0;
-            this.label120.Text = "10#";
-            // 
             // label121
             // 
             this.label121.Location = new System.Drawing.Point(5, 0);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(71, 46);
+            this.label121.Size = new System.Drawing.Size(65, 39);
             this.label121.TabIndex = 0;
             this.label121.Text = "轴箱清洗";
+            // 
+            // myCircle14
+            // 
+            this.myCircle14.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle14.BorderTransparent = 255;
+            this.myCircle14.BorderWidth = 0;
+            this.myCircle14.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle14.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle14.DistanceToBorder = 4;
+            this.myCircle14.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle14.IconColor = System.Drawing.Color.Red;
+            this.myCircle14.IsShowIcon = false;
+            this.myCircle14.Location = new System.Drawing.Point(40, 37);
+            this.myCircle14.Name = "myCircle14";
+            this.myCircle14.Size = new System.Drawing.Size(25, 35);
+            this.myCircle14.TabIndex = 10;
+            // 
+            // label120
+            // 
+            this.label120.Location = new System.Drawing.Point(3, 54);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(31, 20);
+            this.label120.TabIndex = 0;
+            this.label120.Text = "10#";
             // 
             // panel40
             // 
@@ -3778,11 +4500,27 @@
             this.panel40.Size = new System.Drawing.Size(75, 82);
             this.panel40.TabIndex = 52;
             // 
+            // myCircle32
+            // 
+            this.myCircle32.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle32.BorderTransparent = 255;
+            this.myCircle32.BorderWidth = 0;
+            this.myCircle32.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle32.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle32.DistanceToBorder = 4;
+            this.myCircle32.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle32.IconColor = System.Drawing.Color.Red;
+            this.myCircle32.IsShowIcon = false;
+            this.myCircle32.Location = new System.Drawing.Point(40, 37);
+            this.myCircle32.Name = "myCircle32";
+            this.myCircle32.Size = new System.Drawing.Size(25, 35);
+            this.myCircle32.TabIndex = 8;
+            // 
             // label86
             // 
             this.label86.Location = new System.Drawing.Point(3, 54);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(44, 26);
+            this.label86.Size = new System.Drawing.Size(31, 20);
             this.label86.TabIndex = 0;
             this.label86.Text = "08#";
             // 
@@ -3790,7 +4528,7 @@
             // 
             this.label40.Location = new System.Drawing.Point(5, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(71, 46);
+            this.label40.Size = new System.Drawing.Size(65, 27);
             this.label40.TabIndex = 0;
             this.label40.Text = "轴箱除锈";
             // 
@@ -3798,85 +4536,133 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.label119);
             this.panel12.Controls.Add(this.myCircle16);
             this.panel12.Controls.Add(this.label114);
-            this.panel12.Controls.Add(this.label119);
             this.panel12.Location = new System.Drawing.Point(156, 451);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(75, 82);
             this.panel12.TabIndex = 45;
             // 
-            // label114
-            // 
-            this.label114.Location = new System.Drawing.Point(3, 54);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(44, 26);
-            this.label114.TabIndex = 0;
-            this.label114.Text = "09#";
-            // 
             // label119
             // 
             this.label119.Location = new System.Drawing.Point(-1, -1);
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(76, 48);
+            this.label119.Size = new System.Drawing.Size(65, 39);
             this.label119.TabIndex = 0;
             this.label119.Text = "轴箱检修";
+            // 
+            // myCircle16
+            // 
+            this.myCircle16.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle16.BorderTransparent = 255;
+            this.myCircle16.BorderWidth = 0;
+            this.myCircle16.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle16.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle16.DistanceToBorder = 4;
+            this.myCircle16.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle16.IconColor = System.Drawing.Color.Red;
+            this.myCircle16.IsShowIcon = false;
+            this.myCircle16.Location = new System.Drawing.Point(40, 37);
+            this.myCircle16.Name = "myCircle16";
+            this.myCircle16.Size = new System.Drawing.Size(25, 35);
+            this.myCircle16.TabIndex = 9;
+            // 
+            // label114
+            // 
+            this.label114.Location = new System.Drawing.Point(3, 54);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(31, 20);
+            this.label114.TabIndex = 0;
+            this.label114.Text = "09#";
             // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.label28);
             this.panel28.Controls.Add(this.myCircle31);
             this.panel28.Controls.Add(this.label76);
-            this.panel28.Controls.Add(this.label28);
             this.panel28.Location = new System.Drawing.Point(156, 233);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(75, 82);
             this.panel28.TabIndex = 45;
             // 
-            // label76
-            // 
-            this.label76.Location = new System.Drawing.Point(3, 54);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(44, 26);
-            this.label76.TabIndex = 0;
-            this.label76.Text = "07#";
-            // 
             // label28
             // 
             this.label28.Location = new System.Drawing.Point(4, 1);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(71, 46);
+            this.label28.Size = new System.Drawing.Size(65, 39);
             this.label28.TabIndex = 0;
             this.label28.Text = "轴箱轴承拆卸";
+            // 
+            // myCircle31
+            // 
+            this.myCircle31.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle31.BorderTransparent = 255;
+            this.myCircle31.BorderWidth = 0;
+            this.myCircle31.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle31.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle31.DistanceToBorder = 4;
+            this.myCircle31.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle31.IconColor = System.Drawing.Color.Red;
+            this.myCircle31.IsShowIcon = false;
+            this.myCircle31.Location = new System.Drawing.Point(40, 37);
+            this.myCircle31.Name = "myCircle31";
+            this.myCircle31.Size = new System.Drawing.Size(25, 35);
+            this.myCircle31.TabIndex = 7;
+            // 
+            // label76
+            // 
+            this.label76.Location = new System.Drawing.Point(3, 54);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(31, 20);
+            this.label76.TabIndex = 0;
+            this.label76.Text = "07#";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.label10);
             this.panel10.Controls.Add(this.myCircle40);
             this.panel10.Controls.Add(this.label67);
-            this.panel10.Controls.Add(this.label10);
             this.panel10.Location = new System.Drawing.Point(1153, 21);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(75, 82);
             this.panel10.TabIndex = 46;
             // 
-            // label67
-            // 
-            this.label67.Location = new System.Drawing.Point(3, 54);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(44, 26);
-            this.label67.TabIndex = 0;
-            this.label67.Text = "21#";
-            // 
             // label10
             // 
             this.label10.Location = new System.Drawing.Point(4, 3);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 46);
+            this.label10.Size = new System.Drawing.Size(65, 39);
             this.label10.TabIndex = 0;
             this.label10.Text = "镟修尺寸测量";
+            // 
+            // myCircle40
+            // 
+            this.myCircle40.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle40.BorderTransparent = 255;
+            this.myCircle40.BorderWidth = 0;
+            this.myCircle40.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle40.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle40.DistanceToBorder = 4;
+            this.myCircle40.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle40.IconColor = System.Drawing.Color.Red;
+            this.myCircle40.IsShowIcon = false;
+            this.myCircle40.Location = new System.Drawing.Point(40, 37);
+            this.myCircle40.Name = "myCircle40";
+            this.myCircle40.Size = new System.Drawing.Size(25, 35);
+            this.myCircle40.TabIndex = 1;
+            // 
+            // label67
+            // 
+            this.label67.Location = new System.Drawing.Point(3, 54);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(31, 20);
+            this.label67.TabIndex = 0;
+            this.label67.Text = "21#";
             // 
             // panel39
             // 
@@ -3890,11 +4676,27 @@
             this.panel39.Size = new System.Drawing.Size(75, 82);
             this.panel39.TabIndex = 48;
             // 
+            // myCircle56
+            // 
+            this.myCircle56.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle56.BorderTransparent = 255;
+            this.myCircle56.BorderWidth = 0;
+            this.myCircle56.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle56.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle56.DistanceToBorder = 4;
+            this.myCircle56.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle56.IconColor = System.Drawing.Color.Red;
+            this.myCircle56.IsShowIcon = false;
+            this.myCircle56.Location = new System.Drawing.Point(40, 37);
+            this.myCircle56.Name = "myCircle56";
+            this.myCircle56.Size = new System.Drawing.Size(25, 35);
+            this.myCircle56.TabIndex = 1;
+            // 
             // label93
             // 
             this.label93.Location = new System.Drawing.Point(3, 54);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(44, 26);
+            this.label93.Size = new System.Drawing.Size(31, 20);
             this.label93.TabIndex = 0;
             this.label93.Text = "41#";
             // 
@@ -3902,7 +4704,7 @@
             // 
             this.label39.Location = new System.Drawing.Point(5, 3);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(71, 46);
+            this.label39.Size = new System.Drawing.Size(65, 27);
             this.label39.TabIndex = 0;
             this.label39.Text = "内圈探伤";
             // 
@@ -3910,29 +4712,45 @@
             // 
             this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.label16);
             this.panel16.Controls.Add(this.myCircle30);
             this.panel16.Controls.Add(this.label69);
-            this.panel16.Controls.Add(this.label16);
             this.panel16.Location = new System.Drawing.Point(156, 127);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(75, 82);
             this.panel16.TabIndex = 49;
             // 
-            // label69
-            // 
-            this.label69.Location = new System.Drawing.Point(3, 54);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(44, 26);
-            this.label69.TabIndex = 0;
-            this.label69.Text = "06#";
-            // 
             // label16
             // 
             this.label16.Location = new System.Drawing.Point(4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 46);
+            this.label16.Size = new System.Drawing.Size(65, 39);
             this.label16.TabIndex = 0;
             this.label16.Text = "轴箱轴承拆卸";
+            // 
+            // myCircle30
+            // 
+            this.myCircle30.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle30.BorderTransparent = 255;
+            this.myCircle30.BorderWidth = 0;
+            this.myCircle30.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle30.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle30.DistanceToBorder = 4;
+            this.myCircle30.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle30.IconColor = System.Drawing.Color.Red;
+            this.myCircle30.IsShowIcon = false;
+            this.myCircle30.Location = new System.Drawing.Point(40, 37);
+            this.myCircle30.Name = "myCircle30";
+            this.myCircle30.Size = new System.Drawing.Size(25, 35);
+            this.myCircle30.TabIndex = 6;
+            // 
+            // label69
+            // 
+            this.label69.Location = new System.Drawing.Point(3, 54);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(31, 20);
+            this.label69.TabIndex = 0;
+            this.label69.Text = "06#";
             // 
             // panel27
             // 
@@ -3946,11 +4764,27 @@
             this.panel27.Size = new System.Drawing.Size(75, 82);
             this.panel27.TabIndex = 50;
             // 
+            // myCircle51
+            // 
+            this.myCircle51.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle51.BorderTransparent = 255;
+            this.myCircle51.BorderWidth = 0;
+            this.myCircle51.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle51.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle51.DistanceToBorder = 4;
+            this.myCircle51.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle51.IconColor = System.Drawing.Color.Red;
+            this.myCircle51.IsShowIcon = false;
+            this.myCircle51.Location = new System.Drawing.Point(40, 37);
+            this.myCircle51.Name = "myCircle51";
+            this.myCircle51.Size = new System.Drawing.Size(25, 35);
+            this.myCircle51.TabIndex = 1;
+            // 
             // label83
             // 
             this.label83.Location = new System.Drawing.Point(3, 54);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(44, 26);
+            this.label83.Size = new System.Drawing.Size(31, 20);
             this.label83.TabIndex = 0;
             this.label83.Text = "24#";
             // 
@@ -3958,7 +4792,7 @@
             // 
             this.label27.Location = new System.Drawing.Point(4, 1);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(71, 46);
+            this.label27.Size = new System.Drawing.Size(65, 39);
             this.label27.TabIndex = 0;
             this.label27.Text = "车轮镟修";
             // 
@@ -3966,29 +4800,45 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.myCircle36);
             this.panel6.Controls.Add(this.label63);
-            this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(651, 21);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(75, 82);
             this.panel6.TabIndex = 51;
             // 
-            // label63
-            // 
-            this.label63.Location = new System.Drawing.Point(3, 54);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(44, 26);
-            this.label63.TabIndex = 0;
-            this.label63.Text = "16#";
-            // 
             // label6
             // 
             this.label6.Location = new System.Drawing.Point(4, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 46);
+            this.label6.Size = new System.Drawing.Size(65, 39);
             this.label6.TabIndex = 0;
             this.label6.Text = "轮轴基础信息核查";
+            // 
+            // myCircle36
+            // 
+            this.myCircle36.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle36.BorderTransparent = 255;
+            this.myCircle36.BorderWidth = 0;
+            this.myCircle36.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle36.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle36.DistanceToBorder = 4;
+            this.myCircle36.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle36.IconColor = System.Drawing.Color.Red;
+            this.myCircle36.IsShowIcon = false;
+            this.myCircle36.Location = new System.Drawing.Point(40, 37);
+            this.myCircle36.Name = "myCircle36";
+            this.myCircle36.Size = new System.Drawing.Size(25, 35);
+            this.myCircle36.TabIndex = 1;
+            // 
+            // label63
+            // 
+            this.label63.Location = new System.Drawing.Point(3, 54);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(31, 20);
+            this.label63.TabIndex = 0;
+            this.label63.Text = "16#";
             // 
             // panel38
             // 
@@ -4002,11 +4852,27 @@
             this.panel38.Size = new System.Drawing.Size(75, 82);
             this.panel38.TabIndex = 53;
             // 
+            // myCircle60
+            // 
+            this.myCircle60.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle60.BorderTransparent = 255;
+            this.myCircle60.BorderWidth = 0;
+            this.myCircle60.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
+            this.myCircle60.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle60.DistanceToBorder = 4;
+            this.myCircle60.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle60.IconColor = System.Drawing.Color.Red;
+            this.myCircle60.IsShowIcon = false;
+            this.myCircle60.Location = new System.Drawing.Point(40, 37);
+            this.myCircle60.Name = "myCircle60";
+            this.myCircle60.Size = new System.Drawing.Size(25, 35);
+            this.myCircle60.TabIndex = 1;
+            // 
             // label89
             // 
             this.label89.Location = new System.Drawing.Point(3, 54);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(44, 26);
+            this.label89.Size = new System.Drawing.Size(31, 20);
             this.label89.TabIndex = 0;
             this.label89.Text = "50#";
             // 
@@ -4014,7 +4880,7 @@
             // 
             this.label38.Location = new System.Drawing.Point(5, 3);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(71, 46);
+            this.label38.Size = new System.Drawing.Size(65, 39);
             this.label38.TabIndex = 0;
             this.label38.Text = "轴承抽检尺寸测量";
             // 
@@ -4030,1140 +4896,6 @@
             this.panel15.Size = new System.Drawing.Size(75, 82);
             this.panel15.TabIndex = 61;
             // 
-            // label73
-            // 
-            this.label73.Location = new System.Drawing.Point(3, 54);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(44, 26);
-            this.label73.TabIndex = 0;
-            this.label73.Text = "22#";
-            // 
-            // label15
-            // 
-            this.label15.Location = new System.Drawing.Point(4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 46);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "车轮镟修";
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.myCircle47);
-            this.panel26.Controls.Add(this.label79);
-            this.panel26.Controls.Add(this.label26);
-            this.panel26.Location = new System.Drawing.Point(521, 233);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(75, 82);
-            this.panel26.TabIndex = 54;
-            // 
-            // label79
-            // 
-            this.label79.Location = new System.Drawing.Point(3, 54);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(44, 26);
-            this.label79.TabIndex = 0;
-            this.label79.Text = "35#";
-            // 
-            // label26
-            // 
-            this.label26.Location = new System.Drawing.Point(4, 1);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(71, 46);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "内圈抛光";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.myCircle1);
-            this.panel2.Controls.Add(this.label59);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(156, 21);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(75, 82);
-            this.panel2.TabIndex = 55;
-            // 
-            // label59
-            // 
-            this.label59.Location = new System.Drawing.Point(3, 54);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(44, 26);
-            this.label59.TabIndex = 0;
-            this.label59.Text = "05#";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(4, 2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 46);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "轮轴信息录入打码";
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.myCircle29);
-            this.panel37.Controls.Add(this.label85);
-            this.panel37.Controls.Add(this.label37);
-            this.panel37.Location = new System.Drawing.Point(24, 339);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(75, 82);
-            this.panel37.TabIndex = 56;
-            // 
-            // label85
-            // 
-            this.label85.Location = new System.Drawing.Point(3, 54);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(44, 26);
-            this.label85.TabIndex = 0;
-            this.label85.Text = "01#";
-            // 
-            // label37
-            // 
-            this.label37.Location = new System.Drawing.Point(5, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(71, 46);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "轮轴抛丸";
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.myCircle41);
-            this.panel14.Controls.Add(this.label71);
-            this.panel14.Controls.Add(this.label70);
-            this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(535, 127);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(75, 82);
-            this.panel14.TabIndex = 57;
-            // 
-            // label71
-            // 
-            this.label71.Location = new System.Drawing.Point(3, 54);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(44, 26);
-            this.label71.TabIndex = 0;
-            this.label71.Text = "15#";
-            // 
-            // label70
-            // 
-            this.label70.Location = new System.Drawing.Point(15, 71);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(33, 16);
-            this.label70.TabIndex = 0;
-            this.label70.Text = "03#";
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(3, 6);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 46);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "轮轴清洗";
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Controls.Add(this.myCircle28);
-            this.panel25.Controls.Add(this.label75);
-            this.panel25.Controls.Add(this.label25);
-            this.panel25.Location = new System.Drawing.Point(24, 233);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(75, 82);
-            this.panel25.TabIndex = 58;
-            // 
-            // label75
-            // 
-            this.label75.Location = new System.Drawing.Point(3, 54);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(44, 26);
-            this.label75.TabIndex = 0;
-            this.label75.Text = "02#";
-            // 
-            // label25
-            // 
-            this.label25.Location = new System.Drawing.Point(3, 1);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 46);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "收入尺寸建档";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.myCircle39);
-            this.panel9.Controls.Add(this.label66);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Location = new System.Drawing.Point(1043, 21);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(75, 82);
-            this.panel9.TabIndex = 59;
-            // 
-            // label66
-            // 
-            this.label66.Location = new System.Drawing.Point(3, 54);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(44, 26);
-            this.label66.TabIndex = 0;
-            this.label66.Text = "20#";
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(4, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 46);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "车轮镟修";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.myCircle27);
-            this.panel13.Controls.Add(this.label68);
-            this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(24, 127);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(75, 82);
-            this.panel13.TabIndex = 60;
-            // 
-            // label68
-            // 
-            this.label68.Location = new System.Drawing.Point(3, 54);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(44, 26);
-            this.label68.TabIndex = 0;
-            this.label68.Text = "03#";
-            // 
-            // label13
-            // 
-            this.label13.Location = new System.Drawing.Point(5, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 46);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "端盖拆分";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.myCircle35);
-            this.panel5.Controls.Add(this.label62);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(535, 21);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(75, 82);
-            this.panel5.TabIndex = 85;
-            // 
-            // label62
-            // 
-            this.label62.Location = new System.Drawing.Point(3, 54);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(44, 26);
-            this.label62.TabIndex = 0;
-            this.label62.Text = "14#";
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(4, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 46);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "轮轴清洗";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.myCircle26);
-            this.panel11.Controls.Add(this.label58);
-            this.panel11.Controls.Add(this.label1);
-            this.panel11.Location = new System.Drawing.Point(24, 21);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(75, 82);
-            this.panel11.TabIndex = 86;
-            // 
-            // label58
-            // 
-            this.label58.Location = new System.Drawing.Point(3, 54);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(44, 26);
-            this.label58.TabIndex = 0;
-            this.label58.Text = "04#";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "端盖清洗";
-            // 
-            // panel64
-            // 
-            this.panel64.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel64.Controls.Add(this.myCircle2);
-            this.panel64.Controls.Add(this.label168);
-            this.panel64.Controls.Add(this.label169);
-            this.panel64.Location = new System.Drawing.Point(1369, 782);
-            this.panel64.Name = "panel64";
-            this.panel64.Size = new System.Drawing.Size(75, 82);
-            this.panel64.TabIndex = 77;
-            // 
-            // label168
-            // 
-            this.label168.Location = new System.Drawing.Point(3, 54);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(44, 26);
-            this.label168.TabIndex = 0;
-            this.label168.Text = "32#";
-            // 
-            // label169
-            // 
-            this.label169.Location = new System.Drawing.Point(5, 3);
-            this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(71, 46);
-            this.label169.TabIndex = 0;
-            this.label169.Text = "防尘挡圈测量选配";
-            // 
-            // panel63
-            // 
-            this.panel63.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel63.Controls.Add(this.myCircle3);
-            this.panel63.Controls.Add(this.label166);
-            this.panel63.Controls.Add(this.label167);
-            this.panel63.Location = new System.Drawing.Point(1369, 675);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(75, 82);
-            this.panel63.TabIndex = 77;
-            // 
-            // label166
-            // 
-            this.label166.Location = new System.Drawing.Point(3, 54);
-            this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(44, 26);
-            this.label166.TabIndex = 0;
-            this.label166.Text = "31#";
-            // 
-            // label167
-            // 
-            this.label167.Location = new System.Drawing.Point(5, 3);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(71, 46);
-            this.label167.TabIndex = 0;
-            this.label167.Text = "轮轴支出测量选配";
-            // 
-            // myCircle57
-            // 
-            this.myCircle57.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle57.BorderTransparent = 255;
-            this.myCircle57.BorderWidth = 0;
-            this.myCircle57.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle57.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle57.DistanceToBorder = 4;
-            this.myCircle57.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle57.IconColor = System.Drawing.Color.Red;
-            this.myCircle57.IsShowIcon = false;
-            this.myCircle57.Location = new System.Drawing.Point(40, 34);
-            this.myCircle57.Name = "myCircle57";
-            this.myCircle57.Size = new System.Drawing.Size(30, 41);
-            this.myCircle57.TabIndex = 1;
-            // 
-            // myCircle50
-            // 
-            this.myCircle50.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle50.BorderTransparent = 255;
-            this.myCircle50.BorderWidth = 0;
-            this.myCircle50.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle50.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle50.DistanceToBorder = 4;
-            this.myCircle50.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle50.IconColor = System.Drawing.Color.Red;
-            this.myCircle50.IsShowIcon = false;
-            this.myCircle50.Location = new System.Drawing.Point(40, 37);
-            this.myCircle50.Name = "myCircle50";
-            this.myCircle50.Size = new System.Drawing.Size(30, 41);
-            this.myCircle50.TabIndex = 1;
-            // 
-            // myCircle38
-            // 
-            this.myCircle38.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle38.BorderTransparent = 255;
-            this.myCircle38.BorderWidth = 0;
-            this.myCircle38.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle38.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle38.DistanceToBorder = 4;
-            this.myCircle38.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle38.IconColor = System.Drawing.Color.Red;
-            this.myCircle38.IsShowIcon = false;
-            this.myCircle38.Location = new System.Drawing.Point(40, 34);
-            this.myCircle38.Name = "myCircle38";
-            this.myCircle38.Size = new System.Drawing.Size(30, 41);
-            this.myCircle38.TabIndex = 1;
-            // 
-            // myCircle61
-            // 
-            this.myCircle61.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle61.BorderTransparent = 255;
-            this.myCircle61.BorderWidth = 0;
-            this.myCircle61.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle61.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle61.DistanceToBorder = 4;
-            this.myCircle61.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle61.IconColor = System.Drawing.Color.Red;
-            this.myCircle61.IsShowIcon = false;
-            this.myCircle61.Location = new System.Drawing.Point(40, 34);
-            this.myCircle61.Name = "myCircle61";
-            this.myCircle61.Size = new System.Drawing.Size(30, 41);
-            this.myCircle61.TabIndex = 1;
-            // 
-            // myCircle46
-            // 
-            this.myCircle46.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle46.BorderTransparent = 255;
-            this.myCircle46.BorderWidth = 0;
-            this.myCircle46.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle46.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle46.DistanceToBorder = 4;
-            this.myCircle46.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle46.IconColor = System.Drawing.Color.Red;
-            this.myCircle46.IsShowIcon = false;
-            this.myCircle46.Location = new System.Drawing.Point(40, 37);
-            this.myCircle46.Name = "myCircle46";
-            this.myCircle46.Size = new System.Drawing.Size(30, 41);
-            this.myCircle46.TabIndex = 1;
-            // 
-            // myCircle34
-            // 
-            this.myCircle34.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle34.BorderTransparent = 255;
-            this.myCircle34.BorderWidth = 0;
-            this.myCircle34.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle34.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle34.DistanceToBorder = 4;
-            this.myCircle34.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle34.IconColor = System.Drawing.Color.Red;
-            this.myCircle34.IsShowIcon = false;
-            this.myCircle34.Location = new System.Drawing.Point(40, 34);
-            this.myCircle34.Name = "myCircle34";
-            this.myCircle34.Size = new System.Drawing.Size(30, 41);
-            this.myCircle34.TabIndex = 1;
-            // 
-            // myCircle58
-            // 
-            this.myCircle58.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle58.BorderTransparent = 255;
-            this.myCircle58.BorderWidth = 0;
-            this.myCircle58.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle58.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle58.DistanceToBorder = 4;
-            this.myCircle58.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle58.IconColor = System.Drawing.Color.Red;
-            this.myCircle58.IsShowIcon = false;
-            this.myCircle58.Location = new System.Drawing.Point(40, 34);
-            this.myCircle58.Name = "myCircle58";
-            this.myCircle58.Size = new System.Drawing.Size(30, 41);
-            this.myCircle58.TabIndex = 1;
-            // 
-            // myCircle49
-            // 
-            this.myCircle49.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle49.BorderTransparent = 255;
-            this.myCircle49.BorderWidth = 0;
-            this.myCircle49.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle49.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle49.DistanceToBorder = 4;
-            this.myCircle49.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle49.IconColor = System.Drawing.Color.Red;
-            this.myCircle49.IsShowIcon = false;
-            this.myCircle49.Location = new System.Drawing.Point(40, 37);
-            this.myCircle49.Name = "myCircle49";
-            this.myCircle49.Size = new System.Drawing.Size(30, 41);
-            this.myCircle49.TabIndex = 1;
-            // 
-            // myCircle42
-            // 
-            this.myCircle42.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle42.BorderTransparent = 255;
-            this.myCircle42.BorderWidth = 0;
-            this.myCircle42.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle42.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle42.DistanceToBorder = 4;
-            this.myCircle42.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle42.IconColor = System.Drawing.Color.Red;
-            this.myCircle42.IsShowIcon = false;
-            this.myCircle42.Location = new System.Drawing.Point(40, 36);
-            this.myCircle42.Name = "myCircle42";
-            this.myCircle42.Size = new System.Drawing.Size(30, 41);
-            this.myCircle42.TabIndex = 1;
-            // 
-            // myCircle37
-            // 
-            this.myCircle37.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle37.BorderTransparent = 255;
-            this.myCircle37.BorderWidth = 0;
-            this.myCircle37.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle37.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle37.DistanceToBorder = 4;
-            this.myCircle37.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle37.IconColor = System.Drawing.Color.Red;
-            this.myCircle37.IsShowIcon = false;
-            this.myCircle37.Location = new System.Drawing.Point(40, 34);
-            this.myCircle37.Name = "myCircle37";
-            this.myCircle37.Size = new System.Drawing.Size(30, 41);
-            this.myCircle37.TabIndex = 1;
-            // 
-            // myCircle4
-            // 
-            this.myCircle4.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle4.BorderTransparent = 255;
-            this.myCircle4.BorderWidth = 0;
-            this.myCircle4.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle4.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle4.DistanceToBorder = 4;
-            this.myCircle4.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle4.IconColor = System.Drawing.Color.Red;
-            this.myCircle4.IsShowIcon = false;
-            this.myCircle4.Location = new System.Drawing.Point(40, 33);
-            this.myCircle4.Name = "myCircle4";
-            this.myCircle4.Size = new System.Drawing.Size(30, 41);
-            this.myCircle4.TabIndex = 2;
-            // 
-            // myCircle5
-            // 
-            this.myCircle5.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle5.BorderTransparent = 255;
-            this.myCircle5.BorderWidth = 0;
-            this.myCircle5.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle5.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle5.DistanceToBorder = 4;
-            this.myCircle5.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle5.IconColor = System.Drawing.Color.Red;
-            this.myCircle5.IsShowIcon = false;
-            this.myCircle5.Location = new System.Drawing.Point(40, 33);
-            this.myCircle5.Name = "myCircle5";
-            this.myCircle5.Size = new System.Drawing.Size(30, 41);
-            this.myCircle5.TabIndex = 2;
-            // 
-            // myCircle10
-            // 
-            this.myCircle10.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle10.BorderTransparent = 255;
-            this.myCircle10.BorderWidth = 0;
-            this.myCircle10.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle10.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle10.DistanceToBorder = 4;
-            this.myCircle10.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle10.IconColor = System.Drawing.Color.Red;
-            this.myCircle10.IsShowIcon = false;
-            this.myCircle10.Location = new System.Drawing.Point(40, 33);
-            this.myCircle10.Name = "myCircle10";
-            this.myCircle10.Size = new System.Drawing.Size(30, 41);
-            this.myCircle10.TabIndex = 2;
-            // 
-            // myCircle8
-            // 
-            this.myCircle8.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle8.BorderTransparent = 255;
-            this.myCircle8.BorderWidth = 0;
-            this.myCircle8.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle8.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle8.DistanceToBorder = 4;
-            this.myCircle8.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle8.IconColor = System.Drawing.Color.Red;
-            this.myCircle8.IsShowIcon = false;
-            this.myCircle8.Location = new System.Drawing.Point(40, 33);
-            this.myCircle8.Name = "myCircle8";
-            this.myCircle8.Size = new System.Drawing.Size(30, 41);
-            this.myCircle8.TabIndex = 2;
-            // 
-            // myCircle12
-            // 
-            this.myCircle12.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle12.BorderTransparent = 255;
-            this.myCircle12.BorderWidth = 0;
-            this.myCircle12.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle12.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle12.DistanceToBorder = 4;
-            this.myCircle12.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle12.IconColor = System.Drawing.Color.Red;
-            this.myCircle12.IsShowIcon = false;
-            this.myCircle12.Location = new System.Drawing.Point(40, 33);
-            this.myCircle12.Name = "myCircle12";
-            this.myCircle12.Size = new System.Drawing.Size(30, 41);
-            this.myCircle12.TabIndex = 2;
-            // 
-            // myCircle6
-            // 
-            this.myCircle6.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle6.BorderTransparent = 255;
-            this.myCircle6.BorderWidth = 0;
-            this.myCircle6.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle6.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle6.DistanceToBorder = 4;
-            this.myCircle6.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle6.IconColor = System.Drawing.Color.Red;
-            this.myCircle6.IsShowIcon = false;
-            this.myCircle6.Location = new System.Drawing.Point(40, 33);
-            this.myCircle6.Name = "myCircle6";
-            this.myCircle6.Size = new System.Drawing.Size(30, 41);
-            this.myCircle6.TabIndex = 2;
-            // 
-            // myCircle7
-            // 
-            this.myCircle7.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle7.BorderTransparent = 255;
-            this.myCircle7.BorderWidth = 0;
-            this.myCircle7.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle7.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle7.DistanceToBorder = 4;
-            this.myCircle7.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle7.IconColor = System.Drawing.Color.Red;
-            this.myCircle7.IsShowIcon = false;
-            this.myCircle7.Location = new System.Drawing.Point(40, 33);
-            this.myCircle7.Name = "myCircle7";
-            this.myCircle7.Size = new System.Drawing.Size(30, 41);
-            this.myCircle7.TabIndex = 2;
-            // 
-            // myCircle11
-            // 
-            this.myCircle11.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle11.BorderTransparent = 255;
-            this.myCircle11.BorderWidth = 0;
-            this.myCircle11.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle11.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle11.DistanceToBorder = 4;
-            this.myCircle11.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle11.IconColor = System.Drawing.Color.Red;
-            this.myCircle11.IsShowIcon = false;
-            this.myCircle11.Location = new System.Drawing.Point(40, 33);
-            this.myCircle11.Name = "myCircle11";
-            this.myCircle11.Size = new System.Drawing.Size(30, 41);
-            this.myCircle11.TabIndex = 2;
-            // 
-            // myCircle9
-            // 
-            this.myCircle9.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle9.BorderTransparent = 255;
-            this.myCircle9.BorderWidth = 0;
-            this.myCircle9.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle9.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle9.DistanceToBorder = 4;
-            this.myCircle9.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle9.IconColor = System.Drawing.Color.Red;
-            this.myCircle9.IsShowIcon = false;
-            this.myCircle9.Location = new System.Drawing.Point(40, 33);
-            this.myCircle9.Name = "myCircle9";
-            this.myCircle9.Size = new System.Drawing.Size(30, 41);
-            this.myCircle9.TabIndex = 2;
-            // 
-            // myCircle13
-            // 
-            this.myCircle13.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle13.BorderTransparent = 255;
-            this.myCircle13.BorderWidth = 0;
-            this.myCircle13.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle13.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle13.DistanceToBorder = 4;
-            this.myCircle13.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle13.IconColor = System.Drawing.Color.Red;
-            this.myCircle13.IsShowIcon = false;
-            this.myCircle13.Location = new System.Drawing.Point(40, 33);
-            this.myCircle13.Name = "myCircle13";
-            this.myCircle13.Size = new System.Drawing.Size(30, 41);
-            this.myCircle13.TabIndex = 2;
-            // 
-            // myCircle62
-            // 
-            this.myCircle62.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle62.BorderTransparent = 255;
-            this.myCircle62.BorderWidth = 0;
-            this.myCircle62.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle62.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle62.DistanceToBorder = 4;
-            this.myCircle62.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle62.IconColor = System.Drawing.Color.Red;
-            this.myCircle62.IsShowIcon = false;
-            this.myCircle62.Location = new System.Drawing.Point(40, 34);
-            this.myCircle62.Name = "myCircle62";
-            this.myCircle62.Size = new System.Drawing.Size(30, 41);
-            this.myCircle62.TabIndex = 1;
-            // 
-            // myCircle54
-            // 
-            this.myCircle54.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle54.BorderTransparent = 255;
-            this.myCircle54.BorderWidth = 0;
-            this.myCircle54.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle54.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle54.DistanceToBorder = 4;
-            this.myCircle54.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle54.IconColor = System.Drawing.Color.Red;
-            this.myCircle54.IsShowIcon = false;
-            this.myCircle54.Location = new System.Drawing.Point(40, 34);
-            this.myCircle54.Name = "myCircle54";
-            this.myCircle54.Size = new System.Drawing.Size(30, 41);
-            this.myCircle54.TabIndex = 1;
-            // 
-            // myCircle55
-            // 
-            this.myCircle55.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle55.BorderTransparent = 255;
-            this.myCircle55.BorderWidth = 0;
-            this.myCircle55.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle55.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle55.DistanceToBorder = 4;
-            this.myCircle55.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle55.IconColor = System.Drawing.Color.Red;
-            this.myCircle55.IsShowIcon = false;
-            this.myCircle55.Location = new System.Drawing.Point(40, 34);
-            this.myCircle55.Name = "myCircle55";
-            this.myCircle55.Size = new System.Drawing.Size(30, 41);
-            this.myCircle55.TabIndex = 1;
-            // 
-            // myCircle53
-            // 
-            this.myCircle53.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle53.BorderTransparent = 255;
-            this.myCircle53.BorderWidth = 0;
-            this.myCircle53.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle53.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle53.DistanceToBorder = 4;
-            this.myCircle53.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle53.IconColor = System.Drawing.Color.Red;
-            this.myCircle53.IsShowIcon = false;
-            this.myCircle53.Location = new System.Drawing.Point(40, 34);
-            this.myCircle53.Name = "myCircle53";
-            this.myCircle53.Size = new System.Drawing.Size(30, 41);
-            this.myCircle53.TabIndex = 1;
-            // 
-            // myCircle24
-            // 
-            this.myCircle24.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle24.BorderTransparent = 255;
-            this.myCircle24.BorderWidth = 0;
-            this.myCircle24.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle24.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle24.DistanceToBorder = 4;
-            this.myCircle24.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle24.IconColor = System.Drawing.Color.Red;
-            this.myCircle24.IsShowIcon = false;
-            this.myCircle24.Location = new System.Drawing.Point(40, 34);
-            this.myCircle24.Name = "myCircle24";
-            this.myCircle24.Size = new System.Drawing.Size(30, 41);
-            this.myCircle24.TabIndex = 2;
-            // 
-            // myCircle20
-            // 
-            this.myCircle20.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle20.BorderTransparent = 255;
-            this.myCircle20.BorderWidth = 0;
-            this.myCircle20.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle20.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle20.DistanceToBorder = 4;
-            this.myCircle20.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle20.IconColor = System.Drawing.Color.Red;
-            this.myCircle20.IsShowIcon = false;
-            this.myCircle20.Location = new System.Drawing.Point(40, 34);
-            this.myCircle20.Name = "myCircle20";
-            this.myCircle20.Size = new System.Drawing.Size(30, 41);
-            this.myCircle20.TabIndex = 2;
-            // 
-            // myCircle22
-            // 
-            this.myCircle22.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle22.BorderTransparent = 255;
-            this.myCircle22.BorderWidth = 0;
-            this.myCircle22.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle22.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle22.DistanceToBorder = 4;
-            this.myCircle22.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle22.IconColor = System.Drawing.Color.Red;
-            this.myCircle22.IsShowIcon = false;
-            this.myCircle22.Location = new System.Drawing.Point(40, 34);
-            this.myCircle22.Name = "myCircle22";
-            this.myCircle22.Size = new System.Drawing.Size(30, 41);
-            this.myCircle22.TabIndex = 2;
-            // 
-            // myCircle18
-            // 
-            this.myCircle18.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle18.BorderTransparent = 255;
-            this.myCircle18.BorderWidth = 0;
-            this.myCircle18.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle18.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle18.DistanceToBorder = 4;
-            this.myCircle18.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle18.IconColor = System.Drawing.Color.Red;
-            this.myCircle18.IsShowIcon = false;
-            this.myCircle18.Location = new System.Drawing.Point(40, 34);
-            this.myCircle18.Name = "myCircle18";
-            this.myCircle18.Size = new System.Drawing.Size(30, 41);
-            this.myCircle18.TabIndex = 2;
-            // 
-            // myCircle25
-            // 
-            this.myCircle25.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle25.BorderTransparent = 255;
-            this.myCircle25.BorderWidth = 0;
-            this.myCircle25.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle25.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle25.DistanceToBorder = 4;
-            this.myCircle25.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle25.IconColor = System.Drawing.Color.Red;
-            this.myCircle25.IsShowIcon = false;
-            this.myCircle25.Location = new System.Drawing.Point(40, 34);
-            this.myCircle25.Name = "myCircle25";
-            this.myCircle25.Size = new System.Drawing.Size(30, 41);
-            this.myCircle25.TabIndex = 2;
-            // 
-            // myCircle23
-            // 
-            this.myCircle23.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle23.BorderTransparent = 255;
-            this.myCircle23.BorderWidth = 0;
-            this.myCircle23.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle23.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle23.DistanceToBorder = 4;
-            this.myCircle23.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle23.IconColor = System.Drawing.Color.Red;
-            this.myCircle23.IsShowIcon = false;
-            this.myCircle23.Location = new System.Drawing.Point(40, 34);
-            this.myCircle23.Name = "myCircle23";
-            this.myCircle23.Size = new System.Drawing.Size(30, 41);
-            this.myCircle23.TabIndex = 2;
-            // 
-            // myCircle19
-            // 
-            this.myCircle19.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle19.BorderTransparent = 255;
-            this.myCircle19.BorderWidth = 0;
-            this.myCircle19.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle19.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle19.DistanceToBorder = 4;
-            this.myCircle19.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle19.IconColor = System.Drawing.Color.Red;
-            this.myCircle19.IsShowIcon = false;
-            this.myCircle19.Location = new System.Drawing.Point(40, 34);
-            this.myCircle19.Name = "myCircle19";
-            this.myCircle19.Size = new System.Drawing.Size(30, 41);
-            this.myCircle19.TabIndex = 2;
-            // 
-            // myCircle21
-            // 
-            this.myCircle21.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle21.BorderTransparent = 255;
-            this.myCircle21.BorderWidth = 0;
-            this.myCircle21.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle21.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle21.DistanceToBorder = 4;
-            this.myCircle21.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle21.IconColor = System.Drawing.Color.Red;
-            this.myCircle21.IsShowIcon = false;
-            this.myCircle21.Location = new System.Drawing.Point(40, 34);
-            this.myCircle21.Name = "myCircle21";
-            this.myCircle21.Size = new System.Drawing.Size(30, 41);
-            this.myCircle21.TabIndex = 2;
-            // 
-            // myCircle17
-            // 
-            this.myCircle17.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle17.BorderTransparent = 255;
-            this.myCircle17.BorderWidth = 0;
-            this.myCircle17.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle17.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle17.DistanceToBorder = 4;
-            this.myCircle17.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle17.IconColor = System.Drawing.Color.Red;
-            this.myCircle17.IsShowIcon = false;
-            this.myCircle17.Location = new System.Drawing.Point(40, 34);
-            this.myCircle17.Name = "myCircle17";
-            this.myCircle17.Size = new System.Drawing.Size(30, 41);
-            this.myCircle17.TabIndex = 2;
-            // 
-            // myCircle45
-            // 
-            this.myCircle45.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle45.BorderTransparent = 255;
-            this.myCircle45.BorderWidth = 0;
-            this.myCircle45.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle45.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle45.DistanceToBorder = 4;
-            this.myCircle45.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle45.IconColor = System.Drawing.Color.Red;
-            this.myCircle45.IsShowIcon = false;
-            this.myCircle45.Location = new System.Drawing.Point(40, 37);
-            this.myCircle45.Name = "myCircle45";
-            this.myCircle45.Size = new System.Drawing.Size(30, 41);
-            this.myCircle45.TabIndex = 1;
-            // 
-            // myCircle52
-            // 
-            this.myCircle52.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle52.BorderTransparent = 255;
-            this.myCircle52.BorderWidth = 0;
-            this.myCircle52.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle52.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle52.DistanceToBorder = 4;
-            this.myCircle52.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle52.IconColor = System.Drawing.Color.Red;
-            this.myCircle52.IsShowIcon = false;
-            this.myCircle52.Location = new System.Drawing.Point(40, 37);
-            this.myCircle52.Name = "myCircle52";
-            this.myCircle52.Size = new System.Drawing.Size(30, 41);
-            this.myCircle52.TabIndex = 1;
-            // 
-            // myCircle59
-            // 
-            this.myCircle59.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle59.BorderTransparent = 255;
-            this.myCircle59.BorderWidth = 0;
-            this.myCircle59.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle59.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle59.DistanceToBorder = 4;
-            this.myCircle59.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle59.IconColor = System.Drawing.Color.Red;
-            this.myCircle59.IsShowIcon = false;
-            this.myCircle59.Location = new System.Drawing.Point(40, 34);
-            this.myCircle59.Name = "myCircle59";
-            this.myCircle59.Size = new System.Drawing.Size(30, 41);
-            this.myCircle59.TabIndex = 1;
-            // 
-            // myCircle44
-            // 
-            this.myCircle44.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle44.BorderTransparent = 255;
-            this.myCircle44.BorderWidth = 0;
-            this.myCircle44.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle44.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle44.DistanceToBorder = 4;
-            this.myCircle44.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle44.IconColor = System.Drawing.Color.Red;
-            this.myCircle44.IsShowIcon = false;
-            this.myCircle44.Location = new System.Drawing.Point(40, 36);
-            this.myCircle44.Name = "myCircle44";
-            this.myCircle44.Size = new System.Drawing.Size(30, 41);
-            this.myCircle44.TabIndex = 1;
-            // 
-            // myCircle48
-            // 
-            this.myCircle48.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle48.BorderTransparent = 255;
-            this.myCircle48.BorderWidth = 0;
-            this.myCircle48.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle48.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle48.DistanceToBorder = 4;
-            this.myCircle48.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle48.IconColor = System.Drawing.Color.Red;
-            this.myCircle48.IsShowIcon = false;
-            this.myCircle48.Location = new System.Drawing.Point(40, 37);
-            this.myCircle48.Name = "myCircle48";
-            this.myCircle48.Size = new System.Drawing.Size(30, 41);
-            this.myCircle48.TabIndex = 1;
-            // 
-            // myCircle33
-            // 
-            this.myCircle33.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle33.BorderTransparent = 255;
-            this.myCircle33.BorderWidth = 0;
-            this.myCircle33.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle33.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle33.DistanceToBorder = 4;
-            this.myCircle33.FocusBorderColor = System.Drawing.Color.Transparent;
-            this.myCircle33.IconColor = System.Drawing.Color.Red;
-            this.myCircle33.IsShowIcon = false;
-            this.myCircle33.Location = new System.Drawing.Point(40, 34);
-            this.myCircle33.Name = "myCircle33";
-            this.myCircle33.Size = new System.Drawing.Size(30, 41);
-            this.myCircle33.TabIndex = 1;
-            // 
-            // myCircle15
-            // 
-            this.myCircle15.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle15.BorderTransparent = 255;
-            this.myCircle15.BorderWidth = 0;
-            this.myCircle15.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle15.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle15.DistanceToBorder = 4;
-            this.myCircle15.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle15.IconColor = System.Drawing.Color.Red;
-            this.myCircle15.IsShowIcon = false;
-            this.myCircle15.Location = new System.Drawing.Point(40, 33);
-            this.myCircle15.Name = "myCircle15";
-            this.myCircle15.Size = new System.Drawing.Size(30, 41);
-            this.myCircle15.TabIndex = 11;
-            // 
-            // myCircle14
-            // 
-            this.myCircle14.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle14.BorderTransparent = 255;
-            this.myCircle14.BorderWidth = 0;
-            this.myCircle14.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle14.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle14.DistanceToBorder = 4;
-            this.myCircle14.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle14.IconColor = System.Drawing.Color.Red;
-            this.myCircle14.IsShowIcon = false;
-            this.myCircle14.Location = new System.Drawing.Point(40, 33);
-            this.myCircle14.Name = "myCircle14";
-            this.myCircle14.Size = new System.Drawing.Size(30, 41);
-            this.myCircle14.TabIndex = 10;
-            // 
-            // myCircle32
-            // 
-            this.myCircle32.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle32.BorderTransparent = 255;
-            this.myCircle32.BorderWidth = 0;
-            this.myCircle32.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle32.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle32.DistanceToBorder = 4;
-            this.myCircle32.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle32.IconColor = System.Drawing.Color.Red;
-            this.myCircle32.IsShowIcon = false;
-            this.myCircle32.Location = new System.Drawing.Point(40, 34);
-            this.myCircle32.Name = "myCircle32";
-            this.myCircle32.Size = new System.Drawing.Size(30, 41);
-            this.myCircle32.TabIndex = 8;
-            // 
-            // myCircle16
-            // 
-            this.myCircle16.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle16.BorderTransparent = 255;
-            this.myCircle16.BorderWidth = 0;
-            this.myCircle16.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle16.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle16.DistanceToBorder = 4;
-            this.myCircle16.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle16.IconColor = System.Drawing.Color.Red;
-            this.myCircle16.IsShowIcon = false;
-            this.myCircle16.Location = new System.Drawing.Point(40, 34);
-            this.myCircle16.Name = "myCircle16";
-            this.myCircle16.Size = new System.Drawing.Size(30, 41);
-            this.myCircle16.TabIndex = 9;
-            // 
-            // myCircle31
-            // 
-            this.myCircle31.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle31.BorderTransparent = 255;
-            this.myCircle31.BorderWidth = 0;
-            this.myCircle31.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle31.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle31.DistanceToBorder = 4;
-            this.myCircle31.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle31.IconColor = System.Drawing.Color.Red;
-            this.myCircle31.IsShowIcon = false;
-            this.myCircle31.Location = new System.Drawing.Point(40, 37);
-            this.myCircle31.Name = "myCircle31";
-            this.myCircle31.Size = new System.Drawing.Size(30, 41);
-            this.myCircle31.TabIndex = 7;
-            // 
-            // myCircle40
-            // 
-            this.myCircle40.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle40.BorderTransparent = 255;
-            this.myCircle40.BorderWidth = 0;
-            this.myCircle40.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle40.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle40.DistanceToBorder = 4;
-            this.myCircle40.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle40.IconColor = System.Drawing.Color.Red;
-            this.myCircle40.IsShowIcon = false;
-            this.myCircle40.Location = new System.Drawing.Point(40, 34);
-            this.myCircle40.Name = "myCircle40";
-            this.myCircle40.Size = new System.Drawing.Size(30, 41);
-            this.myCircle40.TabIndex = 1;
-            // 
-            // myCircle56
-            // 
-            this.myCircle56.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle56.BorderTransparent = 255;
-            this.myCircle56.BorderWidth = 0;
-            this.myCircle56.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle56.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle56.DistanceToBorder = 4;
-            this.myCircle56.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle56.IconColor = System.Drawing.Color.Red;
-            this.myCircle56.IsShowIcon = false;
-            this.myCircle56.Location = new System.Drawing.Point(40, 34);
-            this.myCircle56.Name = "myCircle56";
-            this.myCircle56.Size = new System.Drawing.Size(30, 41);
-            this.myCircle56.TabIndex = 1;
-            // 
-            // myCircle30
-            // 
-            this.myCircle30.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle30.BorderTransparent = 255;
-            this.myCircle30.BorderWidth = 0;
-            this.myCircle30.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle30.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle30.DistanceToBorder = 4;
-            this.myCircle30.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle30.IconColor = System.Drawing.Color.Red;
-            this.myCircle30.IsShowIcon = false;
-            this.myCircle30.Location = new System.Drawing.Point(40, 36);
-            this.myCircle30.Name = "myCircle30";
-            this.myCircle30.Size = new System.Drawing.Size(30, 41);
-            this.myCircle30.TabIndex = 6;
-            // 
-            // myCircle51
-            // 
-            this.myCircle51.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle51.BorderTransparent = 255;
-            this.myCircle51.BorderWidth = 0;
-            this.myCircle51.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle51.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle51.DistanceToBorder = 4;
-            this.myCircle51.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle51.IconColor = System.Drawing.Color.Red;
-            this.myCircle51.IsShowIcon = false;
-            this.myCircle51.Location = new System.Drawing.Point(40, 37);
-            this.myCircle51.Name = "myCircle51";
-            this.myCircle51.Size = new System.Drawing.Size(30, 41);
-            this.myCircle51.TabIndex = 1;
-            // 
-            // myCircle36
-            // 
-            this.myCircle36.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle36.BorderTransparent = 255;
-            this.myCircle36.BorderWidth = 0;
-            this.myCircle36.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle36.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle36.DistanceToBorder = 4;
-            this.myCircle36.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle36.IconColor = System.Drawing.Color.Red;
-            this.myCircle36.IsShowIcon = false;
-            this.myCircle36.Location = new System.Drawing.Point(40, 34);
-            this.myCircle36.Name = "myCircle36";
-            this.myCircle36.Size = new System.Drawing.Size(30, 41);
-            this.myCircle36.TabIndex = 1;
-            // 
-            // myCircle60
-            // 
-            this.myCircle60.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle60.BorderTransparent = 255;
-            this.myCircle60.BorderWidth = 0;
-            this.myCircle60.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle60.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle60.DistanceToBorder = 4;
-            this.myCircle60.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle60.IconColor = System.Drawing.Color.Red;
-            this.myCircle60.IsShowIcon = false;
-            this.myCircle60.Location = new System.Drawing.Point(40, 34);
-            this.myCircle60.Name = "myCircle60";
-            this.myCircle60.Size = new System.Drawing.Size(30, 41);
-            this.myCircle60.TabIndex = 1;
-            // 
             // myCircle43
             // 
             this.myCircle43.BorderColor = System.Drawing.Color.YellowGreen;
@@ -5175,10 +4907,46 @@
             this.myCircle43.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle43.IconColor = System.Drawing.Color.Red;
             this.myCircle43.IsShowIcon = false;
-            this.myCircle43.Location = new System.Drawing.Point(40, 36);
+            this.myCircle43.Location = new System.Drawing.Point(40, 37);
             this.myCircle43.Name = "myCircle43";
-            this.myCircle43.Size = new System.Drawing.Size(30, 41);
+            this.myCircle43.Size = new System.Drawing.Size(25, 35);
             this.myCircle43.TabIndex = 1;
+            // 
+            // label73
+            // 
+            this.label73.Location = new System.Drawing.Point(3, 54);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(31, 20);
+            this.label73.TabIndex = 0;
+            this.label73.Text = "22#";
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 27);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "车轮镟修";
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel26.Controls.Add(this.label26);
+            this.panel26.Controls.Add(this.myCircle47);
+            this.panel26.Controls.Add(this.label79);
+            this.panel26.Location = new System.Drawing.Point(521, 233);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(75, 82);
+            this.panel26.TabIndex = 54;
+            // 
+            // label26
+            // 
+            this.label26.Location = new System.Drawing.Point(4, 1);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 39);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "内圈抛光";
             // 
             // myCircle47
             // 
@@ -5193,8 +4961,36 @@
             this.myCircle47.IsShowIcon = false;
             this.myCircle47.Location = new System.Drawing.Point(40, 37);
             this.myCircle47.Name = "myCircle47";
-            this.myCircle47.Size = new System.Drawing.Size(30, 41);
+            this.myCircle47.Size = new System.Drawing.Size(25, 35);
             this.myCircle47.TabIndex = 1;
+            // 
+            // label79
+            // 
+            this.label79.Location = new System.Drawing.Point(3, 54);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(31, 20);
+            this.label79.TabIndex = 0;
+            this.label79.Text = "35#";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.myCircle1);
+            this.panel2.Controls.Add(this.label59);
+            this.panel2.Location = new System.Drawing.Point(156, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(75, 82);
+            this.panel2.TabIndex = 55;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(4, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 39);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "轮轴信息录入打码";
             // 
             // myCircle1
             // 
@@ -5207,12 +5003,32 @@
             this.myCircle1.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle1.IconColor = System.Drawing.Color.Red;
             this.myCircle1.IsShowIcon = false;
-            this.myCircle1.Location = new System.Drawing.Point(40, 34);
+            this.myCircle1.Location = new System.Drawing.Point(40, 37);
             this.myCircle1.Name = "myCircle1";
-            this.myCircle1.Size = new System.Drawing.Size(30, 41);
+            this.myCircle1.Size = new System.Drawing.Size(25, 35);
             this.myCircle1.TabIndex = 5;
             this.myCircle1.Load += new System.EventHandler(this.myCircle1_Load);
             this.myCircle1.Click += new System.EventHandler(this.myCircle1_Click);
+            // 
+            // label59
+            // 
+            this.label59.Location = new System.Drawing.Point(3, 54);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(31, 20);
+            this.label59.TabIndex = 0;
+            this.label59.Text = "05#";
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel37.Controls.Add(this.myCircle29);
+            this.panel37.Controls.Add(this.label85);
+            this.panel37.Controls.Add(this.label37);
+            this.panel37.Location = new System.Drawing.Point(24, 339);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(75, 82);
+            this.panel37.TabIndex = 56;
             // 
             // myCircle29
             // 
@@ -5225,10 +5041,38 @@
             this.myCircle29.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle29.IconColor = System.Drawing.Color.Red;
             this.myCircle29.IsShowIcon = false;
-            this.myCircle29.Location = new System.Drawing.Point(40, 34);
+            this.myCircle29.Location = new System.Drawing.Point(40, 37);
             this.myCircle29.Name = "myCircle29";
-            this.myCircle29.Size = new System.Drawing.Size(30, 41);
+            this.myCircle29.Size = new System.Drawing.Size(25, 35);
             this.myCircle29.TabIndex = 1;
+            // 
+            // label85
+            // 
+            this.label85.Location = new System.Drawing.Point(3, 54);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(31, 20);
+            this.label85.TabIndex = 0;
+            this.label85.Text = "01#";
+            // 
+            // label37
+            // 
+            this.label37.Location = new System.Drawing.Point(5, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(65, 27);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "轮轴抛丸";
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.myCircle41);
+            this.panel14.Controls.Add(this.label71);
+            this.panel14.Controls.Add(this.label14);
+            this.panel14.Location = new System.Drawing.Point(535, 127);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(75, 82);
+            this.panel14.TabIndex = 57;
             // 
             // myCircle41
             // 
@@ -5241,10 +5085,46 @@
             this.myCircle41.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle41.IconColor = System.Drawing.Color.Red;
             this.myCircle41.IsShowIcon = false;
-            this.myCircle41.Location = new System.Drawing.Point(40, 36);
+            this.myCircle41.Location = new System.Drawing.Point(40, 37);
             this.myCircle41.Name = "myCircle41";
-            this.myCircle41.Size = new System.Drawing.Size(30, 41);
+            this.myCircle41.Size = new System.Drawing.Size(25, 35);
             this.myCircle41.TabIndex = 1;
+            // 
+            // label71
+            // 
+            this.label71.Location = new System.Drawing.Point(3, 54);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(31, 20);
+            this.label71.TabIndex = 0;
+            this.label71.Text = "15#";
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(3, 6);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 27);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "轮轴清洗";
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel25.Controls.Add(this.label25);
+            this.panel25.Controls.Add(this.myCircle28);
+            this.panel25.Controls.Add(this.label75);
+            this.panel25.Location = new System.Drawing.Point(24, 233);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(75, 82);
+            this.panel25.TabIndex = 58;
+            // 
+            // label25
+            // 
+            this.label25.Location = new System.Drawing.Point(3, 1);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(65, 39);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "收入尺寸建档";
             // 
             // myCircle28
             // 
@@ -5259,8 +5139,36 @@
             this.myCircle28.IsShowIcon = false;
             this.myCircle28.Location = new System.Drawing.Point(40, 37);
             this.myCircle28.Name = "myCircle28";
-            this.myCircle28.Size = new System.Drawing.Size(30, 41);
+            this.myCircle28.Size = new System.Drawing.Size(25, 35);
             this.myCircle28.TabIndex = 2;
+            // 
+            // label75
+            // 
+            this.label75.Location = new System.Drawing.Point(3, 54);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(31, 20);
+            this.label75.TabIndex = 0;
+            this.label75.Text = "02#";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.myCircle39);
+            this.panel9.Controls.Add(this.label66);
+            this.panel9.Location = new System.Drawing.Point(1043, 21);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(75, 82);
+            this.panel9.TabIndex = 59;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(4, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 27);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "车轮镟修";
             // 
             // myCircle39
             // 
@@ -5273,10 +5181,30 @@
             this.myCircle39.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle39.IconColor = System.Drawing.Color.Red;
             this.myCircle39.IsShowIcon = false;
-            this.myCircle39.Location = new System.Drawing.Point(40, 34);
+            this.myCircle39.Location = new System.Drawing.Point(40, 37);
             this.myCircle39.Name = "myCircle39";
-            this.myCircle39.Size = new System.Drawing.Size(30, 41);
+            this.myCircle39.Size = new System.Drawing.Size(25, 35);
             this.myCircle39.TabIndex = 1;
+            // 
+            // label66
+            // 
+            this.label66.Location = new System.Drawing.Point(3, 54);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(31, 20);
+            this.label66.TabIndex = 0;
+            this.label66.Text = "20#";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.myCircle27);
+            this.panel13.Controls.Add(this.label68);
+            this.panel13.Controls.Add(this.label13);
+            this.panel13.Location = new System.Drawing.Point(24, 127);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(75, 82);
+            this.panel13.TabIndex = 60;
             // 
             // myCircle27
             // 
@@ -5289,10 +5217,46 @@
             this.myCircle27.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle27.IconColor = System.Drawing.Color.Red;
             this.myCircle27.IsShowIcon = false;
-            this.myCircle27.Location = new System.Drawing.Point(40, 34);
+            this.myCircle27.Location = new System.Drawing.Point(40, 37);
             this.myCircle27.Name = "myCircle27";
-            this.myCircle27.Size = new System.Drawing.Size(30, 41);
+            this.myCircle27.Size = new System.Drawing.Size(25, 35);
             this.myCircle27.TabIndex = 3;
+            // 
+            // label68
+            // 
+            this.label68.Location = new System.Drawing.Point(3, 54);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(31, 20);
+            this.label68.TabIndex = 0;
+            this.label68.Text = "03#";
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(5, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 27);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "端盖拆分";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.myCircle35);
+            this.panel5.Controls.Add(this.label62);
+            this.panel5.Location = new System.Drawing.Point(535, 21);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(75, 82);
+            this.panel5.TabIndex = 85;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(4, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 27);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "轮轴清洗";
             // 
             // myCircle35
             // 
@@ -5305,10 +5269,39 @@
             this.myCircle35.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle35.IconColor = System.Drawing.Color.Red;
             this.myCircle35.IsShowIcon = false;
-            this.myCircle35.Location = new System.Drawing.Point(40, 34);
+            this.myCircle35.Location = new System.Drawing.Point(40, 37);
             this.myCircle35.Name = "myCircle35";
-            this.myCircle35.Size = new System.Drawing.Size(30, 41);
+            this.myCircle35.Size = new System.Drawing.Size(25, 35);
             this.myCircle35.TabIndex = 1;
+            // 
+            // label62
+            // 
+            this.label62.Location = new System.Drawing.Point(3, 54);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(31, 20);
+            this.label62.TabIndex = 0;
+            this.label62.Text = "14#";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label1);
+            this.panel11.Controls.Add(this.myCircle26);
+            this.panel11.Controls.Add(this.label58);
+            this.panel11.Location = new System.Drawing.Point(24, 21);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(75, 82);
+            this.panel11.TabIndex = 86;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 11);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "端盖清洗";
             // 
             // myCircle26
             // 
@@ -5321,10 +5314,38 @@
             this.myCircle26.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle26.IconColor = System.Drawing.Color.Red;
             this.myCircle26.IsShowIcon = false;
-            this.myCircle26.Location = new System.Drawing.Point(40, 35);
+            this.myCircle26.Location = new System.Drawing.Point(40, 37);
             this.myCircle26.Name = "myCircle26";
-            this.myCircle26.Size = new System.Drawing.Size(30, 41);
+            this.myCircle26.Size = new System.Drawing.Size(25, 35);
             this.myCircle26.TabIndex = 4;
+            // 
+            // label58
+            // 
+            this.label58.Location = new System.Drawing.Point(3, 54);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(31, 20);
+            this.label58.TabIndex = 0;
+            this.label58.Text = "04#";
+            // 
+            // panel64
+            // 
+            this.panel64.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel64.Controls.Add(this.label169);
+            this.panel64.Controls.Add(this.myCircle2);
+            this.panel64.Controls.Add(this.label168);
+            this.panel64.Location = new System.Drawing.Point(1369, 782);
+            this.panel64.Name = "panel64";
+            this.panel64.Size = new System.Drawing.Size(75, 82);
+            this.panel64.TabIndex = 77;
+            // 
+            // label169
+            // 
+            this.label169.Location = new System.Drawing.Point(5, 3);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(65, 39);
+            this.label169.TabIndex = 0;
+            this.label169.Text = "防尘挡圈测量选配";
             // 
             // myCircle2
             // 
@@ -5337,10 +5358,38 @@
             this.myCircle2.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle2.IconColor = System.Drawing.Color.Red;
             this.myCircle2.IsShowIcon = false;
-            this.myCircle2.Location = new System.Drawing.Point(40, 33);
+            this.myCircle2.Location = new System.Drawing.Point(40, 37);
             this.myCircle2.Name = "myCircle2";
-            this.myCircle2.Size = new System.Drawing.Size(30, 41);
+            this.myCircle2.Size = new System.Drawing.Size(25, 35);
             this.myCircle2.TabIndex = 2;
+            // 
+            // label168
+            // 
+            this.label168.Location = new System.Drawing.Point(3, 54);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(31, 20);
+            this.label168.TabIndex = 0;
+            this.label168.Text = "32#";
+            // 
+            // panel63
+            // 
+            this.panel63.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel63.Controls.Add(this.label167);
+            this.panel63.Controls.Add(this.myCircle3);
+            this.panel63.Controls.Add(this.label166);
+            this.panel63.Location = new System.Drawing.Point(1369, 675);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(75, 82);
+            this.panel63.TabIndex = 77;
+            // 
+            // label167
+            // 
+            this.label167.Location = new System.Drawing.Point(5, 3);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(65, 39);
+            this.label167.TabIndex = 0;
+            this.label167.Text = "轮轴支出测量选配";
             // 
             // myCircle3
             // 
@@ -5353,18 +5402,27 @@
             this.myCircle3.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle3.IconColor = System.Drawing.Color.Red;
             this.myCircle3.IsShowIcon = false;
-            this.myCircle3.Location = new System.Drawing.Point(40, 33);
+            this.myCircle3.Location = new System.Drawing.Point(40, 37);
             this.myCircle3.Name = "myCircle3";
-            this.myCircle3.Size = new System.Drawing.Size(30, 41);
+            this.myCircle3.Size = new System.Drawing.Size(25, 35);
             this.myCircle3.TabIndex = 2;
+            // 
+            // label166
+            // 
+            this.label166.Location = new System.Drawing.Point(3, 54);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(31, 20);
+            this.label166.TabIndex = 0;
+            this.label166.Text = "31#";
             // 
             // UserMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("宋体", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "UserMain";
-            this.Size = new System.Drawing.Size(1466, 884);
+            this.Size = new System.Drawing.Size(1462, 869);
             this.Load += new System.EventHandler(this.UserMain_Load);
             this.SizeChanged += new System.EventHandler(this.UserMain_SizeChanged);
             this.panel1.ResumeLayout(false);
@@ -5385,6 +5443,7 @@
             this.panel7.ResumeLayout(false);
             this.panel62.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
+            this.panel59.ResumeLayout(false);
             this.panel49.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
@@ -5564,7 +5623,6 @@
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label78;
@@ -5663,68 +5721,68 @@
         private System.Windows.Forms.Label label154;
         private System.Windows.Forms.Label label155;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private MyCircle myCircle1;
-        private MyCircle myCircle2;
-        private MyCircle myCircle3;
-        private MyCircle myCircle4;
-        private MyCircle myCircle5;
-        private MyCircle myCircle10;
-        private MyCircle myCircle8;
-        private MyCircle myCircle12;
-        private MyCircle myCircle6;
-        private MyCircle myCircle7;
-        private MyCircle myCircle11;
-        private MyCircle myCircle9;
-        private MyCircle myCircle13;
-        private MyCircle myCircle15;
-        private MyCircle myCircle14;
-        private MyCircle myCircle24;
-        private MyCircle myCircle20;
-        private MyCircle myCircle22;
-        private MyCircle myCircle18;
-        private MyCircle myCircle25;
-        private MyCircle myCircle23;
-        private MyCircle myCircle19;
-        private MyCircle myCircle21;
-        private MyCircle myCircle17;
-        private MyCircle myCircle16;
-        private MyCircle myCircle32;
-        private MyCircle myCircle31;
-        private MyCircle myCircle30;
-        private MyCircle myCircle29;
-        private MyCircle myCircle28;
-        private MyCircle myCircle27;
-        private MyCircle myCircle26;
-        private MyCircle myCircle38;
-        private MyCircle myCircle34;
-        private MyCircle myCircle42;
-        private MyCircle myCircle37;
-        private MyCircle myCircle44;
-        private MyCircle myCircle33;
-        private MyCircle myCircle40;
-        private MyCircle myCircle36;
-        private MyCircle myCircle43;
-        private MyCircle myCircle41;
-        private MyCircle myCircle39;
-        private MyCircle myCircle35;
-        private MyCircle myCircle57;
-        private MyCircle myCircle50;
-        private MyCircle myCircle61;
-        private MyCircle myCircle46;
-        private MyCircle myCircle58;
-        private MyCircle myCircle49;
-        private MyCircle myCircle62;
-        private MyCircle myCircle54;
-        private MyCircle myCircle55;
-        private MyCircle myCircle53;
-        private MyCircle myCircle45;
-        private MyCircle myCircle52;
-        private MyCircle myCircle59;
-        private MyCircle myCircle48;
-        private MyCircle myCircle56;
-        private MyCircle myCircle51;
-        private MyCircle myCircle60;
-        private MyCircle myCircle47;
+        private CMES.Controls.MyCircle myCircle1;
+        private CMES.Controls.MyCircle myCircle2;
+        private CMES.Controls.MyCircle myCircle3;
+        private CMES.Controls.MyCircle myCircle4;
+        private CMES.Controls.MyCircle myCircle5;
+        private CMES.Controls.MyCircle myCircle10;
+        private CMES.Controls.MyCircle myCircle8;
+        private CMES.Controls.MyCircle myCircle12;
+        private CMES.Controls.MyCircle myCircle6;
+        private CMES.Controls.MyCircle myCircle7;
+        private CMES.Controls.MyCircle myCircle11;
+        private CMES.Controls.MyCircle myCircle9;
+        private CMES.Controls.MyCircle myCircle13;
+        private CMES.Controls.MyCircle myCircle15;
+        private CMES.Controls.MyCircle myCircle14;
+        private CMES.Controls.MyCircle myCircle24;
+        private CMES.Controls.MyCircle myCircle20;
+        private CMES.Controls.MyCircle myCircle22;
+        private CMES.Controls.MyCircle myCircle18;
+        private CMES.Controls.MyCircle myCircle25;
+        private CMES.Controls.MyCircle myCircle23;
+        private CMES.Controls.MyCircle myCircle19;
+        private CMES.Controls.MyCircle myCircle21;
+        private CMES.Controls.MyCircle myCircle17;
+        private CMES.Controls.MyCircle myCircle16;
+        private CMES.Controls.MyCircle myCircle32;
+        private CMES.Controls.MyCircle myCircle31;
+        private CMES.Controls.MyCircle myCircle30;
+        private CMES.Controls.MyCircle myCircle29;
+        private CMES.Controls.MyCircle myCircle28;
+        private CMES.Controls.MyCircle myCircle27;
+        private CMES.Controls.MyCircle myCircle26;
+        private CMES.Controls.MyCircle myCircle38;
+        private CMES.Controls.MyCircle myCircle34;
+        private CMES.Controls.MyCircle myCircle42;
+        private CMES.Controls.MyCircle myCircle37;
+        private CMES.Controls.MyCircle myCircle44;
+        private CMES.Controls.MyCircle myCircle33;
+        private CMES.Controls.MyCircle myCircle40;
+        private CMES.Controls.MyCircle myCircle36;
+        private CMES.Controls.MyCircle myCircle43;
+        private CMES.Controls.MyCircle myCircle41;
+        private CMES.Controls.MyCircle myCircle39;
+        private CMES.Controls.MyCircle myCircle35;
+        private CMES.Controls.MyCircle myCircle57;
+        private CMES.Controls.MyCircle myCircle50;
+        private CMES.Controls.MyCircle myCircle61;
+        private CMES.Controls.MyCircle myCircle46;
+        private CMES.Controls.MyCircle myCircle58;
+        private CMES.Controls.MyCircle myCircle49;
+        private CMES.Controls.MyCircle myCircle62;
+        private CMES.Controls.MyCircle myCircle54;
+        private CMES.Controls.MyCircle myCircle55;
+        private CMES.Controls.MyCircle myCircle53;
+        private CMES.Controls.MyCircle myCircle45;
+        private CMES.Controls.MyCircle myCircle52;
+        private CMES.Controls.MyCircle myCircle59;
+        private CMES.Controls.MyCircle myCircle48;
+        private CMES.Controls.MyCircle myCircle56;
+        private CMES.Controls.MyCircle myCircle51;
+        private CMES.Controls.MyCircle myCircle60;
+        private CMES.Controls.MyCircle myCircle47;
         private TestControls.ArrowLine arrowLine6;
         private TestControls.ArrowLine arrowLine5;
         private TestControls.ArrowLine arrowLine4;
@@ -5806,7 +5864,9 @@
         private TestControls.ArrowLine arrowLine81;
         private TestControls.ArrowLine arrowLine80;
         private TestControls.ArrowLine arrowLine76;
-
-
+        private System.Windows.Forms.Panel panel59;
+        private CMES.Controls.MyCircle myCircle63;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label19;
     }
 }

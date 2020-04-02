@@ -69,7 +69,6 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 87);
             this.panel1.Name = "panel1";
@@ -111,7 +110,7 @@
             // 开启自动切换ToolStripMenuItem
             // 
             this.开启自动切换ToolStripMenuItem.Name = "开启自动切换ToolStripMenuItem";
-            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
             this.开启自动切换ToolStripMenuItem.Text = "开启自动切换";
             this.开启自动切换ToolStripMenuItem.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem_Click);
             // 
@@ -264,14 +263,14 @@
             // 记事本ToolStripMenuItem
             // 
             this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.记事本ToolStripMenuItem.Text = "记事本";
             this.记事本ToolStripMenuItem.Click += new System.EventHandler(this.记事本ToolStripMenuItem_Click);
             // 
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.计算器ToolStripMenuItem.Text = "计算器";
             this.计算器ToolStripMenuItem.Click += new System.EventHandler(this.计算器ToolStripMenuItem_Click);
             // 
@@ -287,14 +286,14 @@
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(138, 32);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(138, 32);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -338,6 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1262, 675);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);

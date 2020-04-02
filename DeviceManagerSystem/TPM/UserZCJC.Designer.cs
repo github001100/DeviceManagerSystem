@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -40,9 +40,9 @@
             this.序号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.轴承编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.新旧轴承 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.轴承厂家 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.轴承打码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.轴承除锈 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.厂家 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.打码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.除锈 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.外观检查 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.滚子探伤 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.内圈探伤 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,7 +63,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -71,54 +71,51 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // panel1
             // 
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1166, 688);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "轴承车间轴承检修进度监控";
+            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1166, 688);
+            this.panel1.TabIndex = 0;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.chart1);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.groupBox4.Location = new System.Drawing.Point(3, 232);
+            this.groupBox4.Location = new System.Drawing.Point(0, 222);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1160, 453);
-            this.groupBox4.TabIndex = 2;
+            this.groupBox4.Size = new System.Drawing.Size(1166, 466);
+            this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "轴承检修各工序数量监控";
             // 
             // chart1
             // 
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea4.AxisX.Title = "工序名称";
-            chartArea4.AxisX.TitleAlignment = System.Drawing.StringAlignment.Far;
-            chartArea4.AxisX.TitleForeColor = System.Drawing.Color.Crimson;
-            chartArea4.AxisY.Title = "完成数量(套)";
-            chartArea4.AxisY.TitleAlignment = System.Drawing.StringAlignment.Far;
-            chartArea4.AxisY.TitleForeColor = System.Drawing.Color.Brown;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
+            chartArea1.AxisX.Interval = 1D;
+            chartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea1.AxisX.Title = "工序名称";
+            chartArea1.AxisX.TitleAlignment = System.Drawing.StringAlignment.Far;
+            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.Crimson;
+            chartArea1.AxisY.Title = "完成数量(套)";
+            chartArea1.AxisY.TitleAlignment = System.Drawing.StringAlignment.Far;
+            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.Brown;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(3, 30);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "工序";
-            this.chart1.Series.Add(series4);
-            this.chart1.Size = new System.Drawing.Size(1154, 420);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "工序";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(1160, 433);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -127,10 +124,10 @@
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.groupBox3.Location = new System.Drawing.Point(3, 76);
+            this.groupBox3.Location = new System.Drawing.Point(0, 63);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1160, 156);
-            this.groupBox3.TabIndex = 1;
+            this.groupBox3.Size = new System.Drawing.Size(1166, 159);
+            this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "轴承进度计划监控表";
             // 
@@ -138,23 +135,24 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Chartreuse;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Chartreuse;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeight = 52;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.序号,
             this.轴承编号,
             this.新旧轴承,
-            this.轴承厂家,
-            this.轴承打码,
-            this.轴承除锈,
+            this.厂家,
+            this.打码,
+            this.除锈,
             this.外观检查,
             this.滚子探伤,
             this.内圈探伤,
@@ -168,9 +166,10 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 39;
-            this.dataGridView1.Size = new System.Drawing.Size(1154, 123);
+            this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(1160, 126);
             this.dataGridView1.TabIndex = 0;
             // 
             // 序号
@@ -184,7 +183,7 @@
             // 轴承编号
             // 
             this.轴承编号.FillWeight = 101.0229F;
-            this.轴承编号.HeaderText = "轴承编号";
+            this.轴承编号.HeaderText = "轴号";
             this.轴承编号.MinimumWidth = 6;
             this.轴承编号.Name = "轴承编号";
             this.轴承编号.ReadOnly = true;
@@ -197,29 +196,29 @@
             this.新旧轴承.Name = "新旧轴承";
             this.新旧轴承.ReadOnly = true;
             // 
-            // 轴承厂家
+            // 厂家
             // 
-            this.轴承厂家.FillWeight = 100.5954F;
-            this.轴承厂家.HeaderText = "轴承厂家";
-            this.轴承厂家.MinimumWidth = 6;
-            this.轴承厂家.Name = "轴承厂家";
-            this.轴承厂家.ReadOnly = true;
+            this.厂家.FillWeight = 100.5954F;
+            this.厂家.HeaderText = "轴承厂家";
+            this.厂家.MinimumWidth = 6;
+            this.厂家.Name = "厂家";
+            this.厂家.ReadOnly = true;
             // 
-            // 轴承打码
+            // 打码
             // 
-            this.轴承打码.FillWeight = 100.403F;
-            this.轴承打码.HeaderText = "轴承打码";
-            this.轴承打码.MinimumWidth = 6;
-            this.轴承打码.Name = "轴承打码";
-            this.轴承打码.ReadOnly = true;
+            this.打码.FillWeight = 100.403F;
+            this.打码.HeaderText = "轴承打码";
+            this.打码.MinimumWidth = 6;
+            this.打码.Name = "打码";
+            this.打码.ReadOnly = true;
             // 
-            // 轴承除锈
+            // 除锈
             // 
-            this.轴承除锈.FillWeight = 100.2237F;
-            this.轴承除锈.HeaderText = "轴承除锈";
-            this.轴承除锈.MinimumWidth = 6;
-            this.轴承除锈.Name = "轴承除锈";
-            this.轴承除锈.ReadOnly = true;
+            this.除锈.FillWeight = 100.2237F;
+            this.除锈.HeaderText = "轴承除锈";
+            this.除锈.MinimumWidth = 6;
+            this.除锈.Name = "除锈";
+            this.除锈.ReadOnly = true;
             // 
             // 外观检查
             // 
@@ -307,17 +306,17 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 27);
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1160, 49);
-            this.groupBox2.TabIndex = 0;
+            this.groupBox2.Size = new System.Drawing.Size(1166, 63);
+            this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "轴承检修计划";
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(885, 16);
+            this.textBox5.Location = new System.Drawing.Point(909, 22);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(82, 34);
@@ -327,7 +326,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(695, 16);
+            this.textBox4.Location = new System.Drawing.Point(719, 22);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(82, 34);
@@ -337,7 +336,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(502, 16);
+            this.textBox3.Location = new System.Drawing.Point(526, 22);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(82, 34);
@@ -347,7 +346,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(312, 16);
+            this.textBox2.Location = new System.Drawing.Point(336, 22);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(82, 34);
@@ -357,7 +356,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(124, 16);
+            this.textBox1.Location = new System.Drawing.Point(148, 22);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(82, 34);
@@ -367,7 +366,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(791, 19);
+            this.label5.Location = new System.Drawing.Point(815, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 27);
             this.label5.TabIndex = 0;
@@ -376,7 +375,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(597, 19);
+            this.label4.Location = new System.Drawing.Point(621, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 27);
             this.label4.TabIndex = 0;
@@ -385,7 +384,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(424, 19);
+            this.label3.Location = new System.Drawing.Point(448, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 27);
             this.label3.TabIndex = 0;
@@ -394,7 +393,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(234, 19);
+            this.label2.Location = new System.Drawing.Point(258, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 27);
             this.label2.TabIndex = 0;
@@ -403,7 +402,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Location = new System.Drawing.Point(30, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 27);
             this.label1.TabIndex = 0;
@@ -414,12 +413,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "UserZCJC";
             this.Size = new System.Drawing.Size(1166, 688);
             this.Load += new System.EventHandler(this.UserZCJC_Load);
             this.SizeChanged += new System.EventHandler(this.UserZCJC_SizeChanged);
-            this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -431,29 +430,28 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
         private System.Windows.Forms.DataGridViewTextBoxColumn 轴承编号;
         private System.Windows.Forms.DataGridViewTextBoxColumn 新旧轴承;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承厂家;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承打码;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承除锈;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 厂家;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 打码;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 除锈;
         private System.Windows.Forms.DataGridViewTextBoxColumn 外观检查;
         private System.Windows.Forms.DataGridViewTextBoxColumn 滚子探伤;
         private System.Windows.Forms.DataGridViewTextBoxColumn 内圈探伤;

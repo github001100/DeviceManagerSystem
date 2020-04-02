@@ -45,7 +45,10 @@ namespace DeviceManagerSystem
             //列标题居中
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE);
+            dataGridView1.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("微软雅黑", 10);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
@@ -96,7 +99,10 @@ namespace DeviceManagerSystem
             //列标题居中
             dataGridView2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView2.EnableHeadersVisualStyles = false;
-            dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+            dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE);
+            dataGridView2.RowsDefaultCellStyle.Font = new Font("微软雅黑", 10);
+            dataGridView2.ColumnHeadersDefaultCellStyle.Font = new Font("微软雅黑", 10);
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView2.Columns)
             {

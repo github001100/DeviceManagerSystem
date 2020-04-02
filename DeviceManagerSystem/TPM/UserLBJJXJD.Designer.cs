@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.circleProgramBar = new CMES.Controls.CircleProgramBar();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -55,6 +59,10 @@
             this.合格率 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -77,9 +85,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.circleProgramBar);
-            this.groupBox4.Controls.Add(this.chart1);
+            this.groupBox4.Controls.Add(this.panel2);
+            this.groupBox4.Controls.Add(this.panel1);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.groupBox4.Location = new System.Drawing.Point(3, 351);
@@ -89,57 +96,95 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "轮轴零部件检修各工序数量监控";
             // 
-            // label1
+            // panel2
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1166, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 26);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "整体进度";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1089, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(265, 358);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.circleProgramBar);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(265, 279);
+            this.panel4.TabIndex = 4;
             // 
             // circleProgramBar
             // 
             this.circleProgramBar.BackColor = System.Drawing.Color.White;
             this.circleProgramBar.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.circleProgramBar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.circleProgramBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.circleProgramBar.FinishedColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(179)))), ((int)(((byte)(63)))));
-            this.circleProgramBar.Font = new System.Drawing.Font("微软雅黑", 24F);
-            this.circleProgramBar.Location = new System.Drawing.Point(1055, 30);
+            this.circleProgramBar.Font = new System.Drawing.Font("微软雅黑", 20F);
+            this.circleProgramBar.Location = new System.Drawing.Point(0, 0);
             this.circleProgramBar.MaxValue = 100;
             this.circleProgramBar.Name = "circleProgramBar";
             this.circleProgramBar.Progress = 50;
-            this.circleProgramBar.Size = new System.Drawing.Size(299, 358);
-            this.circleProgramBar.TabIndex = 1;
-            this.circleProgramBar.Text = "circleProgramBar1";
+            this.circleProgramBar.Size = new System.Drawing.Size(265, 279);
+            this.circleProgramBar.TabIndex = 6;
+            this.circleProgramBar.Text = "整体进度";
             this.circleProgramBar.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(179)))), ((int)(((byte)(63)))));
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 279);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(265, 79);
+            this.panel3.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(265, 38);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "整体进度";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.chart1);
+            this.panel1.Location = new System.Drawing.Point(6, 33);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1057, 352);
+            this.panel1.TabIndex = 3;
             // 
             // chart1
             // 
             this.chart1.BorderlineColor = System.Drawing.SystemColors.Control;
-            chartArea11.AxisX.Title = "工序名称";
-            chartArea11.AxisY.Title = "完工数量";
-            chartArea11.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea11);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Left;
-            legend11.Name = "Legend1";
-            this.chart1.Legends.Add(legend11);
-            this.chart1.Location = new System.Drawing.Point(3, 30);
+            chartArea2.AxisX.Title = "工序名称";
+            chartArea2.AxisY.Title = "完工数量";
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series21.ChartArea = "ChartArea1";
-            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series21.Legend = "Legend1";
-            series21.Name = "合格数";
-            series21.YValuesPerPoint = 6;
-            series22.ChartArea = "ChartArea1";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series22.Legend = "Legend1";
-            series22.Name = "不合格";
-            this.chart1.Series.Add(series21);
-            this.chart1.Series.Add(series22);
-            this.chart1.Size = new System.Drawing.Size(1049, 358);
-            this.chart1.TabIndex = 0;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series3.Legend = "Legend1";
+            series3.Name = "合格数";
+            series3.YValuesPerPoint = 6;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series4.Legend = "Legend1";
+            series4.Name = "不合格";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(1057, 352);
+            this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             // 
             // groupBox3
@@ -157,6 +202,7 @@
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -171,8 +217,9 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 30);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 37;
+            this.dataGridView2.RowTemplate.Height = 27;
             this.dataGridView2.Size = new System.Drawing.Size(1351, 130);
             this.dataGridView2.TabIndex = 0;
             // 
@@ -233,6 +280,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -247,8 +295,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 37;
+            this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(1351, 132);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -308,6 +357,10 @@
             this.SizeChanged += new System.EventHandler(this.UserLBJJXJD_SizeChanged);
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -325,7 +378,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 检修项目;
         private System.Windows.Forms.DataGridViewTextBoxColumn 检修任务计划量;
         private System.Windows.Forms.DataGridViewTextBoxColumn 待检修数;
@@ -338,8 +390,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 外观检查;
         private System.Windows.Forms.DataGridViewTextBoxColumn 尺寸测量;
         private System.Windows.Forms.DataGridViewTextBoxColumn 入库;
-        //private Controls.CircleProgramBar circleProgramBar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
         private CMES.Controls.CircleProgramBar circleProgramBar;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
     }
 }

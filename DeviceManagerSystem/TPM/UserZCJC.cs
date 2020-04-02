@@ -61,6 +61,8 @@ namespace DeviceManagerSystem.TPM
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
+            dataGridView1.Columns[1].Width = 180;
+
             //单元格内容居中
             foreach (DataGridViewColumn item in this.dataGridView1.Columns)
             {
@@ -181,7 +183,7 @@ namespace DeviceManagerSystem.TPM
         }
         private void UserZCJC_Load(object sender, EventArgs e)
         {
-            this.Font = new Font("微软雅黑", 16);
+            this.Font = new Font("微软雅黑", 10);
 
             InitDataTable();
             //添加的两组Test数据
@@ -203,8 +205,8 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineColor = Color.Blue;
             chart1.ChartAreas[0].Axes[1].MajorGrid.LineWidth = 3;
             chart1.ChartAreas[0].BackColor = System.Drawing.Color.Transparent; //设置区域内背景透明
-            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 14);
-            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 14);
+            chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("微软雅黑", 10);
+            chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 10);
             chart1.ChartAreas[0].AxisY.Minimum = 0;//设定y轴的最小值
             //chart1.ChartAreas[0].AxisY.Maximum = 1000;//设定y轴的最大值
             chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = false;   //设置是否交错显示,比如数据多的时间分成两行来显示 
@@ -265,5 +267,6 @@ namespace DeviceManagerSystem.TPM
             //asc.controlAutoSize(this);
 
         }
+       
     }
 }

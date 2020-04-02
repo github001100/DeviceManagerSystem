@@ -58,11 +58,11 @@ namespace DeviceManagerSystem.Others
             this.label2.Parent = this.pictureBox1;
             this.label2.BackColor = Color.Transparent;
             this.label3.Parent = this.pictureBox1;
-
             this.label3.BackColor = Color.Transparent;
+
+            this.label4.Parent = this.label3;
             this.label4.BackColor = Color.Transparent;
             this.label4.ForeColor = Color.Red;
-            this.label4.Parent = this.panel1;
 
             Dbsqlite = dbsqliteIn;
             #region 窗体缩放
@@ -131,10 +131,12 @@ namespace DeviceManagerSystem.Others
         /// </summary>
         private void FormOpen(EmployeeApi opeUse, DatabaseSQLite dbsqlite)
         {
-            MainHome fm = new MainHome(dbsqlite)
-            {
-                Tag = opeUse
-            };
+            //MainHome fm = new MainHome(dbsqlite)
+            //{
+            //    Tag = opeUse
+            //};
+            MainHome fm = MainHome.CreateInstrance(dbsqlite);//创建单例窗体2020.3.24
+            Tag = opeUse;
             ulogin.SetUserXML(opeUse);
             //Thread.Sleep(100);
             fm.Show();
@@ -205,9 +207,9 @@ namespace DeviceManagerSystem.Others
                                 flagGetDataOver = true;
                                 this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "添加系统日志" });
                             }
-                            catch (Exception ee)
+                            catch (Exception e)
                             {
-                                ErrorLogMsg.CreateErrLog("登录异常", "201", ee.ToString());
+                                ErrorLogMsg.CreateErrLog("登录异常", "201", e.ToString());
                             }
                             #endregion
                         }
@@ -240,7 +242,7 @@ namespace DeviceManagerSystem.Others
                 //Thread.Sleep(100);
                 ////QueryStop();
                 this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：正在登录系统......" });
-                Thread.Sleep(3000);
+                Thread.Sleep(100);
 
                 this.BeginInvoke(new OKsign(FormOpen), new object[] { opeUser, Dbsqlite });
 
@@ -288,10 +290,9 @@ namespace DeviceManagerSystem.Others
             //int x = Screen.PrimaryScreen.WorkingArea.Right - this.Width;
             //int y = Screen.PrimaryScreen.WorkingArea.Bottom - this.Height;
             //this.Location = new Point(x, y);//设置窗体在屏幕右下角显示
-            AnimateWindow(this.Handle, 300, AW_SLIDE | AW_ACTIVE | AW_VER_NEGATIVE);
+            AnimateWindow(this.Handle, 300, AW_SLIDE | AW_ACTIVE | AW_VER_POSITIVE);
             this.toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
             loginName.Focus();
-
             loginPWD.Focus();
             //时间显示
             new Thread(() =>
