@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
-using System.Threading;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -21,6 +17,16 @@ namespace DeviceManagerSystem.TPM
         private DataTable dt = new DataTable();
 
         BindingSource bs = new BindingSource();
+        private static UserLBJJXJD frm = null;
+
+        public static UserLBJJXJD CreateInstrance()
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserLBJJXJD();
+            }
+            return frm;
+        }
         public UserLBJJXJD()
         {
             InitializeComponent();
@@ -69,14 +75,14 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index].Cells[2].Value = "40";
             this.dataGridView1.Rows[index].Cells[3].Value = "18";
             this.dataGridView1.Rows[index].Cells[4].Value = "2";
-            this.dataGridView1.Rows[index].Cells[5].Value = "90.0%"; 
+            this.dataGridView1.Rows[index].Cells[5].Value = "90.0%";
             int index2 = this.dataGridView1.Rows.Add();
             this.dataGridView1.Rows[index2].Cells[0].Value = "防尘挡圈";
             this.dataGridView1.Rows[index2].Cells[1].Value = "56";
             this.dataGridView1.Rows[index2].Cells[2].Value = "35";
             this.dataGridView1.Rows[index2].Cells[3].Value = "20";
             this.dataGridView1.Rows[index2].Cells[4].Value = "2";
-            this.dataGridView1.Rows[index2].Cells[5].Value = "95.0%"; 
+            this.dataGridView1.Rows[index2].Cells[5].Value = "95.0%";
             int index3 = this.dataGridView1.Rows.Add();
             this.dataGridView1.Rows[index3].Cells[0].Value = "端盖";
             this.dataGridView1.Rows[index3].Cells[1].Value = "52";
@@ -84,7 +90,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index3].Cells[3].Value = "24";
             this.dataGridView1.Rows[index3].Cells[4].Value = "0";
             this.dataGridView1.Rows[index3].Cells[5].Value = "100.0%";
-            dataGridView1.Rows[0].Selected = false; 
+            dataGridView1.Rows[0].Selected = false;
 
             //2
             //列标题居中
@@ -106,27 +112,27 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView2.Rows[index4].Cells[2].Value = "40";
             this.dataGridView2.Rows[index4].Cells[3].Value = "18";
             this.dataGridView2.Rows[index4].Cells[4].Value = "2";
-            this.dataGridView2.Rows[index4].Cells[5].Value = "90.0%";
+            this.dataGridView2.Rows[index4].Cells[5].Value = "32";
             int index5 = this.dataGridView2.Rows.Add();
             this.dataGridView2.Rows[index5].Cells[0].Value = "防尘挡圈";
             this.dataGridView2.Rows[index5].Cells[1].Value = "56";
             this.dataGridView2.Rows[index5].Cells[2].Value = "35";
             this.dataGridView2.Rows[index5].Cells[3].Value = "20";
             this.dataGridView2.Rows[index5].Cells[4].Value = "2";
-            this.dataGridView2.Rows[index5].Cells[5].Value = "95.0%";
+            this.dataGridView2.Rows[index5].Cells[5].Value = "22";
             int index6 = this.dataGridView2.Rows.Add();
             this.dataGridView2.Rows[index6].Cells[0].Value = "端盖";
             this.dataGridView2.Rows[index6].Cells[1].Value = "52";
             this.dataGridView2.Rows[index6].Cells[2].Value = "28";
             this.dataGridView2.Rows[index6].Cells[3].Value = "24";
             this.dataGridView2.Rows[index6].Cells[4].Value = "0";
-            this.dataGridView2.Rows[index6].Cells[5].Value = "100.0%";
+            this.dataGridView2.Rows[index6].Cells[5].Value = "20";
 
-            dataGridView2.Rows[0].Selected = false;
+            //dataGridView2.Rows[0].Selected = false;
             dataGridView1.Rows[index].DefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE);
             dataGridView1.Rows[index3].DefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE);
-            dataGridView2.Rows[index4].DefaultCellStyle.BackColor = Color.LawnGreen;
-            dataGridView2.Rows[index6].DefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE); 
+            //dataGridView2.Rows[index4].DefaultCellStyle.BackColor = Color.LawnGreen;
+            dataGridView2.Rows[index6].DefaultCellStyle.BackColor = Color.FromArgb(0xEE, 0xEE, 0xEE);
 
         }
         public override Font Font
@@ -204,16 +210,41 @@ namespace DeviceManagerSystem.TPM
                         circleProgramBar.Progress = i + 1;
                     }
                 }
-              
+
             })));
             thread.IsBackground = true;
-            thread.Start();
+            //thread.Start();
+            dataGridView2_CellClick(this, null);
+
         }
 
         private void UserLBJJXJD_SizeChanged(object sender, EventArgs e)
         {
             asc.controlAutoSize(this);
 
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView2.CurrentRow == null) return;
+            DataGridViewRow dgvr = dataGridView2.CurrentRow;
+            string val = dgvr.Cells[0].Value.ToString();
+            groupBox4.Text = "轮轴零部件各工序检修进度监控表" + "--------------------" + val;
+            switch (dataGridView2.CurrentRow.Index)
+            {
+                case 0:
+                    circleProgramBar.Progress = 68;
+                    break;
+                case 1:
+                    circleProgramBar.Progress = 39;
+                    break;
+                case 2:
+                    circleProgramBar.Progress = 58;
+                    break;
+                default:
+                    circleProgramBar.Progress = 48;
+                    break;
+            }
         }
     }
 }

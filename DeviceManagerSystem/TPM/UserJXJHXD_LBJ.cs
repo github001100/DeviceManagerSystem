@@ -17,7 +17,16 @@ namespace DeviceManagerSystem.TPM
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
         ZtjkController ztjk = new ZtjkController();//整体检修 业务逻辑2.0
+        private static UserJXJHXD_LBJ frm = null;
 
+        public static UserJXJHXD_LBJ CreateInstrance()
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserJXJHXD_LBJ();
+            }
+            return frm;
+        }
         public UserJXJHXD_LBJ()
         {
             InitializeComponent();

@@ -1,0 +1,131 @@
+﻿@page
+@model XL_OMS_WebClient.Pages.Plans.IndexModel
+
+@{
+    ViewData["Title"] = "计划监控";
+}
+<h4>总体计划监控</h4>
+<p>
+    <a asp-page="Create">新增计划</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].OverhaulDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].OverhaulCompany)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].ProcedureName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].PartsName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].TaskPlans)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Plan[0].OverhaulQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].QualifiedQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].UnqualifiedQuantity)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Plan[0].StartTime)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Plan[0].PassRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].SpeedOfProgress)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Plan[0].Others)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Plan[0].UpdateTime)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].WorkGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].NewCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plan[0].DepartCount)
+            </th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Plan)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SerialNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OverhaulDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OverhaulCompany)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProcedureName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PartsName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskPlans)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.OverhaulQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QualifiedQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnqualifiedQuantity)
+                </td>*@
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.StartTime)
+                </td>*@
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.PassRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SpeedOfProgress)
+                </td>*@
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.Others)
+                </td>*@
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.UpdateTime)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorkGroup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NewCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DepartCount)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">编辑</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">详情</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">删除</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

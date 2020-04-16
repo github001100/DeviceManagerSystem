@@ -1,0 +1,296 @@
+﻿@page
+@model XL_OMS_WebClient.Pages.Devces.IndexModel
+
+@{
+    ViewData["Title"] = "设备管理";
+}
+
+<h3>设备管理</h3>
+
+<p>
+    <a asp-page="Create">新增设备</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].RootNode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].FirstLevelNodes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].TwoLevelNode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].ThreeLevelNode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].DeviceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].DeviceType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].DeviceNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].Manufacturer)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Device[0].ManufacturingDate)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Device[0].ProcedureName)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Device[0].DeviceStatus)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.Device[0].PostalAddress)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Operator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Post)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].JobNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].CumulativeTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].TotalQualifiedProducts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].AccumulatedScrap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].NumberOfRepaired)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].NumberOfProcessesOnDuty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].NumberOfQualifiedProductsOnDuty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].NumberOfWasteProductsOnDuty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].NumberOfReworkedProductsOnDuty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Shifts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Oee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Mtbf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Mttr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Mttf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].Efr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].TotalRunningTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].NormalOperationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].TotalFailureTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].TotalMaintenanceTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].PlannedStartupTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].PlannedWarmUpTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].FailureTimes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].EquipmentStatusChangeTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].ShiftsStartTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].StartTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].TurnOnTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].StopTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].DataUpdateFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].DataSynchronizationFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Device[0].RecordCreationTime)
+        </th>*@
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Device) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RootNode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstLevelNodes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwoLevelNode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThreeLevelNode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeviceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeviceType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeviceNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeviceStatus)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.ManufacturingDate)
+        </td>*@
+            @*<td>
+            @Html.DisplayFor(modelItem => item.ProcedureName)
+        </td>*@
+            @*<td>
+            @Html.DisplayFor(modelItem => item.PostalAddress)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Operator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Post)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CumulativeTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalQualifiedProducts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccumulatedScrap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfRepaired)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfProcessesOnDuty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfQualifiedProductsOnDuty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfWasteProductsOnDuty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfReworkedProductsOnDuty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shifts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mtbf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mttr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mttf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Efr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalRunningTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NormalOperationTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalFailureTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalMaintenanceTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlannedStartupTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlannedWarmUpTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FailureTimes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EquipmentStatusChangeTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShiftsStartTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TurnOnTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StopTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataUpdateFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataSynchronizationFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecordCreationTime)
+        </td>*@
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

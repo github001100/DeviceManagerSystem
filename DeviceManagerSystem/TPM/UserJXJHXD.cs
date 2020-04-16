@@ -25,7 +25,16 @@ namespace DeviceManagerSystem.TPM
             asc.controllInitializeSize(this);
 
         }
+        private static UserJXJHXD frm = null;
 
+        public static UserJXJHXD CreateInstrance()
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserJXJHXD();
+            }
+            return frm;
+        }
         public int Press { get; set; }
 
         //进度条图片属性

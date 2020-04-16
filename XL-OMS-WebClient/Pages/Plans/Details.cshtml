@@ -1,0 +1,120 @@
+﻿@page
+@model XL_OMS_WebClient.Pages.Plans.DetailsModel
+
+@{
+    ViewData["Title"] = "计划详情";
+}
+
+
+<div>
+    <h4>计划详情</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.SerialNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.SerialNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.OverhaulDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.OverhaulDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.OverhaulCompany)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.OverhaulCompany)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.ProcedureName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.ProcedureName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.PartsName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.PartsName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.TaskPlans)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.TaskPlans)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.OverhaulQuantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.OverhaulQuantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.QualifiedQuantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.QualifiedQuantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.UnqualifiedQuantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.UnqualifiedQuantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.StartTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.StartTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.PassRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.PassRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.SpeedOfProgress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.SpeedOfProgress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.Others)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.Others)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.UpdateTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.UpdateTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.WorkGroup)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.WorkGroup)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.NewCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.NewCount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Plan.DepartCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Plan.DepartCount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Plan.Id">编辑</a> |
+    <a asp-page="./Index">返回列表</a>
+</div>

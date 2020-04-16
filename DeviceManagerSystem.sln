@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMES.Controller.SYS", "CMES
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMES.Controls", "CMES.Controls\CMES.Controls.csproj", "{A329A86B-2A8E-4FDD-B1FB-D73720375069}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XL-OMS-WebClient", "XL-OMS-WebClient\XL-OMS-WebClient.csproj", "{E8265623-A04A-4D94-A025-5881D1046CC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,18 @@ Global
 		{A329A86B-2A8E-4FDD-B1FB-D73720375069}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A329A86B-2A8E-4FDD-B1FB-D73720375069}.Release|x86.ActiveCfg = Release|Any CPU
 		{A329A86B-2A8E-4FDD-B1FB-D73720375069}.Release|x86.Build.0 = Release|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Debug|x86.Build.0 = Debug|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Release|x86.ActiveCfg = Release|Any CPU
+		{E8265623-A04A-4D94-A025-5881D1046CC8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

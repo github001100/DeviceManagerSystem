@@ -1,0 +1,281 @@
+﻿@page
+@model XL_OMS_WebClient.Pages.Devces.DetailsModel
+
+@{
+    ViewData["Title"] = "设备详情";
+}
+
+<div>
+    <h4>设备详情</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.RootNode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.RootNode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.FirstLevelNodes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.FirstLevelNodes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.TwoLevelNode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.TwoLevelNode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.ThreeLevelNode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.ThreeLevelNode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.DeviceName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.DeviceName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.DeviceType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.DeviceType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.DeviceNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.DeviceNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Manufacturer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Manufacturer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.ManufacturingDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.ManufacturingDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.ProcedureName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.ProcedureName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.PostalAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.PostalAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.DeviceStatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.DeviceStatus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Operator)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Operator)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Post)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Post)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.JobNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.JobNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.CumulativeTotal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.CumulativeTotal)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.TotalQualifiedProducts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.TotalQualifiedProducts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.AccumulatedScrap)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.AccumulatedScrap)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.NumberOfRepaired)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.NumberOfRepaired)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.NumberOfProcessesOnDuty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.NumberOfProcessesOnDuty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.NumberOfQualifiedProductsOnDuty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.NumberOfQualifiedProductsOnDuty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.NumberOfWasteProductsOnDuty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.NumberOfWasteProductsOnDuty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.NumberOfReworkedProductsOnDuty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.NumberOfReworkedProductsOnDuty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Shifts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Shifts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Oee)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Oee)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Mtbf)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Mtbf)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Mttr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Mttr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Mttf)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Mttf)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.Efr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.Efr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.TotalRunningTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.TotalRunningTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.NormalOperationTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.NormalOperationTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.TotalFailureTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.TotalFailureTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.TotalMaintenanceTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.TotalMaintenanceTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.PlannedStartupTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.PlannedStartupTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.PlannedWarmUpTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.PlannedWarmUpTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.FailureTimes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.FailureTimes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.EquipmentStatusChangeTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.EquipmentStatusChangeTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.ShiftsStartTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.ShiftsStartTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.StartTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.StartTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.TurnOnTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.TurnOnTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.StopTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.StopTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.DataUpdateFlag)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.DataUpdateFlag)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.DataSynchronizationFlag)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.DataSynchronizationFlag)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Device.RecordCreationTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Device.RecordCreationTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Device.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

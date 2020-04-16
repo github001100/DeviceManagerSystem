@@ -17,6 +17,7 @@ namespace DeviceManagerSystem.TPM
     public partial class UserJXJHJK : UserControl
     {
         ZtjkController ztjk = new ZtjkController();//整体检修 业务逻辑2.0
+        private static UserJXJHJK frm = null;
 
         /// <summary>
         /// 检修任务计划监控
@@ -24,6 +25,14 @@ namespace DeviceManagerSystem.TPM
         public UserJXJHJK()
         {
             InitializeComponent();
+        }
+        public static UserJXJHJK CreateInstrance( )
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserJXJHJK();
+            }
+            return frm;
         }
         string jsonStr2 = "";
         public void RefreshList()

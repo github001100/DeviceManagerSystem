@@ -17,7 +17,16 @@ namespace DeviceManagerSystem.TPM
     public partial class UserZCJC : UserControl
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
+        private static UserZCJC frm = null;
 
+        public static UserZCJC CreateInstrance()
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserZCJC();
+            }
+            return frm;
+        }
         public UserZCJC()
         {
             InitializeComponent();
@@ -71,7 +80,7 @@ namespace DeviceManagerSystem.TPM
 
             }
             int index = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index].Cells[0].Value = "1";//1,,,,,√,√,√,√,√,√,√,√,√,-
+            this.dataGridView1.Rows[index].Cells[0].Value = "1";
             this.dataGridView1.Rows[index].Cells[1].Value = "573-1708109";
             this.dataGridView1.Rows[index].Cells[2].Value = "旧";
             this.dataGridView1.Rows[index].Cells[3].Value = "LYC";
@@ -89,7 +98,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index].Cells[14].Value = "-";
 
             int index1 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index1].Cells[0].Value = "2";//1,,,,,√,√,√,√,√,√,√,√,√,-
+            this.dataGridView1.Rows[index1].Cells[0].Value = "2";
             this.dataGridView1.Rows[index1].Cells[1].Value = "573-1708110";
             this.dataGridView1.Rows[index1].Cells[2].Value = "旧";
             this.dataGridView1.Rows[index1].Cells[3].Value = "LYC";
@@ -107,7 +116,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index1].Cells[14].Value = "-";
 
             int index2 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index2].Cells[0].Value = "3";//1,,,,,√,√,√,√,√,√,√,√,√,-
+            this.dataGridView1.Rows[index2].Cells[0].Value = "3";
             this.dataGridView1.Rows[index2].Cells[1].Value = "175-1512223";
             this.dataGridView1.Rows[index2].Cells[2].Value = "旧";
             this.dataGridView1.Rows[index2].Cells[3].Value = "HRB";
@@ -125,7 +134,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index2].Cells[14].Value = "-";
 
             int index3 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index3].Cells[0].Value = "4";//1,,,,,√,√,√,√,√,√,√,√,√,-
+            this.dataGridView1.Rows[index3].Cells[0].Value = "4";
             this.dataGridView1.Rows[index3].Cells[1].Value = "175-1512224";
             this.dataGridView1.Rows[index3].Cells[2].Value = "旧";
             this.dataGridView1.Rows[index3].Cells[3].Value = "HRB";
@@ -143,7 +152,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index3].Cells[14].Value = "-";
 
             int index4 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index4].Cells[0].Value = "5";//1,,,,,√,√,√,√,√,√,√,√,√,-
+            this.dataGridView1.Rows[index4].Cells[0].Value = "5";
             this.dataGridView1.Rows[index4].Cells[1].Value = "573-2002007";
             this.dataGridView1.Rows[index4].Cells[2].Value = "新";
             this.dataGridView1.Rows[index4].Cells[3].Value = "SKF";
@@ -161,7 +170,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index4].Cells[14].Value = "-";
 
             int index5 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index5].Cells[0].Value = "6";//1,,,,,√,√,√,√,√,√,√,√,√,-
+            this.dataGridView1.Rows[index5].Cells[0].Value = "6";
             this.dataGridView1.Rows[index5].Cells[1].Value = "573-2002008";
             this.dataGridView1.Rows[index5].Cells[2].Value = "新";
             this.dataGridView1.Rows[index5].Cells[3].Value = "SKF";
@@ -209,8 +218,9 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 10);
             chart1.ChartAreas[0].AxisY.Minimum = 0;//设定y轴的最小值
             //chart1.ChartAreas[0].AxisY.Maximum = 1000;//设定y轴的最大值
-            chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = false;   //设置是否交错显示,比如数据多的时间分成两行来显示 
-            //chart1.ChartAreas[0].AxisX.Interval = 1;
+            chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = true;   //设置是否交错显示,比如数据多的时间分成两行来显示 
+            chart1.ChartAreas[0].AxisX.Interval = 1;
+            chart1.ChartAreas[0].AxisX.IntervalOffset = 1;
             //chart1.Series.Add(new Series()); //添加一个图表序列
             chart1.Series[0].XValueType = ChartValueType.String; //设置X轴上的值类型
             chart1.Series[0].Label = "#VAL"; //设置显示X Y的值

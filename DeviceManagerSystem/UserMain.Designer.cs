@@ -396,6 +396,7 @@
             this.label167 = new System.Windows.Forms.Label();
             this.myCircle3 = new CMES.Controls.MyCircle();
             this.label166 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -819,6 +820,7 @@
             this.groupBox1.Controls.Add(this.panel13);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel11);
+            this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1458, 643);
@@ -2492,7 +2494,7 @@
             this.groupBox2.Controls.Add(this.label52);
             this.groupBox2.Controls.Add(this.label50);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Font = new System.Drawing.Font("宋体", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.Location = new System.Drawing.Point(1272, 26);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(180, 250);
@@ -2661,15 +2663,18 @@
             this.myCircle57.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle57.DistanceToBorder = 4;
             this.myCircle57.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle57.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle57.IconColor = System.Drawing.Color.Red;
             this.myCircle57.IsShowIcon = false;
-            this.myCircle57.Location = new System.Drawing.Point(40, 37);
+            this.myCircle57.Location = new System.Drawing.Point(39, 37);
+            this.myCircle57.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle57.Name = "myCircle57";
-            this.myCircle57.Size = new System.Drawing.Size(25, 35);
+            this.myCircle57.Size = new System.Drawing.Size(30, 37);
             this.myCircle57.TabIndex = 1;
             // 
             // label92
             // 
+            this.label92.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label92.Location = new System.Drawing.Point(3, 54);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(31, 20);
@@ -2678,6 +2683,7 @@
             // 
             // label47
             // 
+            this.label47.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label47.Location = new System.Drawing.Point(5, 3);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(65, 27);
@@ -2698,6 +2704,7 @@
             // 
             // label35
             // 
+            this.label35.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label35.Location = new System.Drawing.Point(4, 1);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(65, 39);
@@ -2713,15 +2720,18 @@
             this.myCircle50.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle50.DistanceToBorder = 4;
             this.myCircle50.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle50.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle50.IconColor = System.Drawing.Color.Red;
             this.myCircle50.IsShowIcon = false;
-            this.myCircle50.Location = new System.Drawing.Point(40, 37);
+            this.myCircle50.Location = new System.Drawing.Point(39, 37);
+            this.myCircle50.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle50.Name = "myCircle50";
-            this.myCircle50.Size = new System.Drawing.Size(25, 35);
+            this.myCircle50.Size = new System.Drawing.Size(30, 37);
             this.myCircle50.TabIndex = 1;
             // 
             // label82
             // 
+            this.label82.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label82.Location = new System.Drawing.Point(3, 54);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(31, 20);
@@ -2742,6 +2752,7 @@
             // 
             // label8
             // 
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(4, 3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 27);
@@ -2757,15 +2768,18 @@
             this.myCircle38.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle38.DistanceToBorder = 4;
             this.myCircle38.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle38.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle38.IconColor = System.Drawing.Color.Red;
             this.myCircle38.IsShowIcon = false;
-            this.myCircle38.Location = new System.Drawing.Point(40, 37);
+            this.myCircle38.Location = new System.Drawing.Point(39, 37);
+            this.myCircle38.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle38.Name = "myCircle38";
-            this.myCircle38.Size = new System.Drawing.Size(25, 35);
+            this.myCircle38.Size = new System.Drawing.Size(30, 37);
             this.myCircle38.TabIndex = 1;
             // 
             // label65
             // 
+            this.label65.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label65.Location = new System.Drawing.Point(3, 54);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(31, 20);
@@ -2793,15 +2807,18 @@
             this.myCircle61.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle61.DistanceToBorder = 4;
             this.myCircle61.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle61.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle61.IconColor = System.Drawing.Color.Red;
             this.myCircle61.IsShowIcon = false;
-            this.myCircle61.Location = new System.Drawing.Point(40, 37);
+            this.myCircle61.Location = new System.Drawing.Point(39, 37);
+            this.myCircle61.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle61.Name = "myCircle61";
-            this.myCircle61.Size = new System.Drawing.Size(25, 35);
+            this.myCircle61.Size = new System.Drawing.Size(30, 37);
             this.myCircle61.TabIndex = 1;
             // 
             // label88
             // 
+            this.label88.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label88.Location = new System.Drawing.Point(3, 54);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(31, 20);
@@ -2810,6 +2827,7 @@
             // 
             // label46
             // 
+            this.label46.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label46.Location = new System.Drawing.Point(5, 3);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(65, 27);
@@ -2830,6 +2848,7 @@
             // 
             // label34
             // 
+            this.label34.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label34.Location = new System.Drawing.Point(4, 1);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(65, 39);
@@ -2845,15 +2864,20 @@
             this.myCircle46.ButtonCenterColorStart = System.Drawing.Color.Red;
             this.myCircle46.DistanceToBorder = 4;
             this.myCircle46.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle46.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle46.IconColor = System.Drawing.Color.Red;
             this.myCircle46.IsShowIcon = false;
-            this.myCircle46.Location = new System.Drawing.Point(40, 37);
+            this.myCircle46.Location = new System.Drawing.Point(39, 37);
+            this.myCircle46.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle46.Name = "myCircle46";
-            this.myCircle46.Size = new System.Drawing.Size(25, 35);
+            this.myCircle46.Size = new System.Drawing.Size(30, 37);
             this.myCircle46.TabIndex = 1;
+            this.myCircle46.Load += new System.EventHandler(this.myCircle46_Load);
+            this.myCircle46.Paint += new System.Windows.Forms.PaintEventHandler(this.myCircle46_Paint);
             // 
             // label78
             // 
+            this.label78.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label78.Location = new System.Drawing.Point(3, 54);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(31, 20);
@@ -2862,7 +2886,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.BackColor = System.Drawing.Color.Magenta;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.myCircle34);
@@ -2874,6 +2898,7 @@
             // 
             // label4
             // 
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(4, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 38);
@@ -2889,15 +2914,18 @@
             this.myCircle34.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle34.DistanceToBorder = 4;
             this.myCircle34.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle34.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle34.IconColor = System.Drawing.Color.Red;
             this.myCircle34.IsShowIcon = false;
-            this.myCircle34.Location = new System.Drawing.Point(40, 37);
+            this.myCircle34.Location = new System.Drawing.Point(39, 37);
+            this.myCircle34.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle34.Name = "myCircle34";
-            this.myCircle34.Size = new System.Drawing.Size(25, 35);
+            this.myCircle34.Size = new System.Drawing.Size(30, 37);
             this.myCircle34.TabIndex = 1;
             // 
             // label61
             // 
+            this.label61.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label61.Location = new System.Drawing.Point(3, 54);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(31, 20);
@@ -2915,6 +2943,7 @@
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(75, 82);
             this.panel44.TabIndex = 73;
+            this.panel44.Tag = "44";
             // 
             // myCircle58
             // 
@@ -2925,15 +2954,18 @@
             this.myCircle58.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle58.DistanceToBorder = 4;
             this.myCircle58.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle58.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle58.IconColor = System.Drawing.Color.Red;
             this.myCircle58.IsShowIcon = false;
-            this.myCircle58.Location = new System.Drawing.Point(40, 37);
+            this.myCircle58.Location = new System.Drawing.Point(39, 37);
+            this.myCircle58.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle58.Name = "myCircle58";
-            this.myCircle58.Size = new System.Drawing.Size(25, 35);
+            this.myCircle58.Size = new System.Drawing.Size(30, 37);
             this.myCircle58.TabIndex = 1;
             // 
             // label91
             // 
+            this.label91.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label91.Location = new System.Drawing.Point(3, 54);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(31, 20);
@@ -2942,6 +2974,7 @@
             // 
             // label44
             // 
+            this.label44.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label44.Location = new System.Drawing.Point(5, 3);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(65, 27);
@@ -2962,6 +2995,7 @@
             // 
             // label32
             // 
+            this.label32.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label32.Location = new System.Drawing.Point(4, 1);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(65, 39);
@@ -2977,15 +3011,18 @@
             this.myCircle49.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle49.DistanceToBorder = 4;
             this.myCircle49.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle49.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle49.IconColor = System.Drawing.Color.Red;
             this.myCircle49.IsShowIcon = false;
-            this.myCircle49.Location = new System.Drawing.Point(40, 37);
+            this.myCircle49.Location = new System.Drawing.Point(39, 37);
+            this.myCircle49.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle49.Name = "myCircle49";
-            this.myCircle49.Size = new System.Drawing.Size(25, 35);
+            this.myCircle49.Size = new System.Drawing.Size(30, 37);
             this.myCircle49.TabIndex = 1;
             // 
             // label81
             // 
+            this.label81.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label81.Location = new System.Drawing.Point(3, 54);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(31, 20);
@@ -3013,15 +3050,18 @@
             this.myCircle42.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle42.DistanceToBorder = 4;
             this.myCircle42.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle42.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle42.IconColor = System.Drawing.Color.Red;
             this.myCircle42.IsShowIcon = false;
-            this.myCircle42.Location = new System.Drawing.Point(40, 37);
+            this.myCircle42.Location = new System.Drawing.Point(39, 37);
+            this.myCircle42.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle42.Name = "myCircle42";
-            this.myCircle42.Size = new System.Drawing.Size(25, 35);
+            this.myCircle42.Size = new System.Drawing.Size(30, 37);
             this.myCircle42.TabIndex = 1;
             // 
             // label72
             // 
+            this.label72.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label72.Location = new System.Drawing.Point(3, 54);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(31, 20);
@@ -3030,6 +3070,7 @@
             // 
             // label20
             // 
+            this.label20.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label20.Location = new System.Drawing.Point(4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 39);
@@ -3050,6 +3091,7 @@
             // 
             // label7
             // 
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(4, 3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 39);
@@ -3065,15 +3107,18 @@
             this.myCircle37.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle37.DistanceToBorder = 4;
             this.myCircle37.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle37.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle37.IconColor = System.Drawing.Color.Red;
             this.myCircle37.IsShowIcon = false;
-            this.myCircle37.Location = new System.Drawing.Point(40, 37);
+            this.myCircle37.Location = new System.Drawing.Point(39, 37);
+            this.myCircle37.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle37.Name = "myCircle37";
-            this.myCircle37.Size = new System.Drawing.Size(25, 35);
+            this.myCircle37.Size = new System.Drawing.Size(30, 37);
             this.myCircle37.TabIndex = 1;
             // 
             // label64
             // 
+            this.label64.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label64.Location = new System.Drawing.Point(3, 54);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(31, 20);
@@ -3094,6 +3139,7 @@
             // 
             // label165
             // 
+            this.label165.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label165.Location = new System.Drawing.Point(5, 3);
             this.label165.Name = "label165";
             this.label165.Size = new System.Drawing.Size(65, 39);
@@ -3109,15 +3155,18 @@
             this.myCircle4.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle4.DistanceToBorder = 4;
             this.myCircle4.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle4.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle4.IconColor = System.Drawing.Color.Red;
             this.myCircle4.IsShowIcon = false;
-            this.myCircle4.Location = new System.Drawing.Point(40, 37);
+            this.myCircle4.Location = new System.Drawing.Point(39, 37);
+            this.myCircle4.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle4.Name = "myCircle4";
-            this.myCircle4.Size = new System.Drawing.Size(25, 35);
+            this.myCircle4.Size = new System.Drawing.Size(30, 37);
             this.myCircle4.TabIndex = 2;
             // 
             // label164
             // 
+            this.label164.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label164.Location = new System.Drawing.Point(3, 54);
             this.label164.Name = "label164";
             this.label164.Size = new System.Drawing.Size(31, 20);
@@ -3138,6 +3187,7 @@
             // 
             // label163
             // 
+            this.label163.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label163.Location = new System.Drawing.Point(5, 3);
             this.label163.Name = "label163";
             this.label163.Size = new System.Drawing.Size(65, 39);
@@ -3153,15 +3203,18 @@
             this.myCircle5.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle5.DistanceToBorder = 4;
             this.myCircle5.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle5.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle5.IconColor = System.Drawing.Color.Red;
             this.myCircle5.IsShowIcon = false;
-            this.myCircle5.Location = new System.Drawing.Point(40, 37);
+            this.myCircle5.Location = new System.Drawing.Point(39, 37);
+            this.myCircle5.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle5.Name = "myCircle5";
-            this.myCircle5.Size = new System.Drawing.Size(25, 35);
+            this.myCircle5.Size = new System.Drawing.Size(30, 37);
             this.myCircle5.TabIndex = 2;
             // 
             // label162
             // 
+            this.label162.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label162.Location = new System.Drawing.Point(3, 54);
             this.label162.Name = "label162";
             this.label162.Size = new System.Drawing.Size(31, 20);
@@ -3182,6 +3235,7 @@
             // 
             // label19
             // 
+            this.label19.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label19.Location = new System.Drawing.Point(5, 3);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(65, 39);
@@ -3197,15 +3251,18 @@
             this.myCircle63.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle63.DistanceToBorder = 4;
             this.myCircle63.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle63.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle63.IconColor = System.Drawing.Color.Red;
             this.myCircle63.IsShowIcon = false;
-            this.myCircle63.Location = new System.Drawing.Point(40, 37);
+            this.myCircle63.Location = new System.Drawing.Point(39, 37);
+            this.myCircle63.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle63.Name = "myCircle63";
-            this.myCircle63.Size = new System.Drawing.Size(25, 35);
+            this.myCircle63.Size = new System.Drawing.Size(30, 37);
             this.myCircle63.TabIndex = 2;
             // 
             // label17
             // 
+            this.label17.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label17.Location = new System.Drawing.Point(3, 54);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(31, 20);
@@ -3235,9 +3292,10 @@
             this.myCircle10.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle10.IconColor = System.Drawing.Color.Red;
             this.myCircle10.IsShowIcon = false;
-            this.myCircle10.Location = new System.Drawing.Point(40, 33);
+            this.myCircle10.Location = new System.Drawing.Point(30, 24);
+            this.myCircle10.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle10.Name = "myCircle10";
-            this.myCircle10.Size = new System.Drawing.Size(30, 41);
+            this.myCircle10.Size = new System.Drawing.Size(22, 30);
             this.myCircle10.TabIndex = 2;
             // 
             // label138
@@ -3270,6 +3328,7 @@
             // 
             // label153
             // 
+            this.label153.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label153.Location = new System.Drawing.Point(5, 3);
             this.label153.Name = "label153";
             this.label153.Size = new System.Drawing.Size(65, 39);
@@ -3285,15 +3344,18 @@
             this.myCircle8.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle8.DistanceToBorder = 4;
             this.myCircle8.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle8.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle8.IconColor = System.Drawing.Color.Red;
             this.myCircle8.IsShowIcon = false;
-            this.myCircle8.Location = new System.Drawing.Point(40, 37);
+            this.myCircle8.Location = new System.Drawing.Point(39, 37);
+            this.myCircle8.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle8.Name = "myCircle8";
-            this.myCircle8.Size = new System.Drawing.Size(25, 35);
+            this.myCircle8.Size = new System.Drawing.Size(30, 37);
             this.myCircle8.TabIndex = 2;
             // 
             // label152
             // 
+            this.label152.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label152.Location = new System.Drawing.Point(3, 54);
             this.label152.Name = "label152";
             this.label152.Size = new System.Drawing.Size(31, 20);
@@ -3314,6 +3376,7 @@
             // 
             // label131
             // 
+            this.label131.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label131.Location = new System.Drawing.Point(5, 3);
             this.label131.Name = "label131";
             this.label131.Size = new System.Drawing.Size(65, 39);
@@ -3329,15 +3392,18 @@
             this.myCircle12.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle12.DistanceToBorder = 4;
             this.myCircle12.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle12.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle12.IconColor = System.Drawing.Color.Red;
             this.myCircle12.IsShowIcon = false;
-            this.myCircle12.Location = new System.Drawing.Point(40, 37);
+            this.myCircle12.Location = new System.Drawing.Point(39, 37);
+            this.myCircle12.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle12.Name = "myCircle12";
-            this.myCircle12.Size = new System.Drawing.Size(25, 35);
+            this.myCircle12.Size = new System.Drawing.Size(30, 37);
             this.myCircle12.TabIndex = 2;
             // 
             // label130
             // 
+            this.label130.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label130.Location = new System.Drawing.Point(3, 54);
             this.label130.Name = "label130";
             this.label130.Size = new System.Drawing.Size(31, 20);
@@ -3358,6 +3424,7 @@
             // 
             // label161
             // 
+            this.label161.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label161.Location = new System.Drawing.Point(5, 3);
             this.label161.Name = "label161";
             this.label161.Size = new System.Drawing.Size(65, 39);
@@ -3373,15 +3440,18 @@
             this.myCircle6.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle6.DistanceToBorder = 4;
             this.myCircle6.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle6.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle6.IconColor = System.Drawing.Color.Red;
             this.myCircle6.IsShowIcon = false;
-            this.myCircle6.Location = new System.Drawing.Point(40, 37);
+            this.myCircle6.Location = new System.Drawing.Point(39, 37);
+            this.myCircle6.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle6.Name = "myCircle6";
-            this.myCircle6.Size = new System.Drawing.Size(25, 35);
+            this.myCircle6.Size = new System.Drawing.Size(30, 37);
             this.myCircle6.TabIndex = 2;
             // 
             // label160
             // 
+            this.label160.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label160.Location = new System.Drawing.Point(3, 54);
             this.label160.Name = "label160";
             this.label160.Size = new System.Drawing.Size(31, 20);
@@ -3402,6 +3472,7 @@
             // 
             // label151
             // 
+            this.label151.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label151.Location = new System.Drawing.Point(5, 3);
             this.label151.Name = "label151";
             this.label151.Size = new System.Drawing.Size(65, 39);
@@ -3417,15 +3488,18 @@
             this.myCircle7.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle7.DistanceToBorder = 4;
             this.myCircle7.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle7.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle7.IconColor = System.Drawing.Color.Red;
             this.myCircle7.IsShowIcon = false;
-            this.myCircle7.Location = new System.Drawing.Point(40, 37);
+            this.myCircle7.Location = new System.Drawing.Point(39, 37);
+            this.myCircle7.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle7.Name = "myCircle7";
-            this.myCircle7.Size = new System.Drawing.Size(25, 35);
+            this.myCircle7.Size = new System.Drawing.Size(30, 37);
             this.myCircle7.TabIndex = 2;
             // 
             // label150
             // 
+            this.label150.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label150.Location = new System.Drawing.Point(3, 54);
             this.label150.Name = "label150";
             this.label150.Size = new System.Drawing.Size(31, 20);
@@ -3446,6 +3520,7 @@
             // 
             // label137
             // 
+            this.label137.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label137.Location = new System.Drawing.Point(5, 3);
             this.label137.Name = "label137";
             this.label137.Size = new System.Drawing.Size(65, 39);
@@ -3461,15 +3536,18 @@
             this.myCircle11.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle11.DistanceToBorder = 4;
             this.myCircle11.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle11.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle11.IconColor = System.Drawing.Color.Red;
             this.myCircle11.IsShowIcon = false;
-            this.myCircle11.Location = new System.Drawing.Point(40, 37);
+            this.myCircle11.Location = new System.Drawing.Point(39, 37);
+            this.myCircle11.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle11.Name = "myCircle11";
-            this.myCircle11.Size = new System.Drawing.Size(25, 35);
+            this.myCircle11.Size = new System.Drawing.Size(30, 37);
             this.myCircle11.TabIndex = 2;
             // 
             // label136
             // 
+            this.label136.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label136.Location = new System.Drawing.Point(3, 54);
             this.label136.Name = "label136";
             this.label136.Size = new System.Drawing.Size(31, 20);
@@ -3490,6 +3568,7 @@
             // 
             // label149
             // 
+            this.label149.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label149.Location = new System.Drawing.Point(5, 3);
             this.label149.Name = "label149";
             this.label149.Size = new System.Drawing.Size(65, 39);
@@ -3505,15 +3584,18 @@
             this.myCircle9.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle9.DistanceToBorder = 4;
             this.myCircle9.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle9.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle9.IconColor = System.Drawing.Color.Red;
             this.myCircle9.IsShowIcon = false;
-            this.myCircle9.Location = new System.Drawing.Point(40, 37);
+            this.myCircle9.Location = new System.Drawing.Point(39, 37);
+            this.myCircle9.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle9.Name = "myCircle9";
-            this.myCircle9.Size = new System.Drawing.Size(25, 35);
+            this.myCircle9.Size = new System.Drawing.Size(30, 37);
             this.myCircle9.TabIndex = 2;
             // 
             // label148
             // 
+            this.label148.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label148.Location = new System.Drawing.Point(3, 54);
             this.label148.Name = "label148";
             this.label148.Size = new System.Drawing.Size(31, 20);
@@ -3534,6 +3616,7 @@
             // 
             // label127
             // 
+            this.label127.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label127.Location = new System.Drawing.Point(5, 3);
             this.label127.Name = "label127";
             this.label127.Size = new System.Drawing.Size(65, 39);
@@ -3549,15 +3632,18 @@
             this.myCircle13.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle13.DistanceToBorder = 4;
             this.myCircle13.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle13.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle13.IconColor = System.Drawing.Color.Red;
             this.myCircle13.IsShowIcon = false;
-            this.myCircle13.Location = new System.Drawing.Point(40, 37);
+            this.myCircle13.Location = new System.Drawing.Point(39, 37);
+            this.myCircle13.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle13.Name = "myCircle13";
-            this.myCircle13.Size = new System.Drawing.Size(25, 35);
+            this.myCircle13.Size = new System.Drawing.Size(30, 37);
             this.myCircle13.TabIndex = 2;
             // 
             // label126
             // 
+            this.label126.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label126.Location = new System.Drawing.Point(3, 54);
             this.label126.Name = "label126";
             this.label126.Size = new System.Drawing.Size(31, 20);
@@ -3578,6 +3664,7 @@
             // 
             // label43
             // 
+            this.label43.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label43.Location = new System.Drawing.Point(5, 3);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(65, 39);
@@ -3593,15 +3680,18 @@
             this.myCircle62.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle62.DistanceToBorder = 4;
             this.myCircle62.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle62.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle62.IconColor = System.Drawing.Color.Red;
             this.myCircle62.IsShowIcon = false;
-            this.myCircle62.Location = new System.Drawing.Point(40, 37);
+            this.myCircle62.Location = new System.Drawing.Point(39, 37);
+            this.myCircle62.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle62.Name = "myCircle62";
-            this.myCircle62.Size = new System.Drawing.Size(25, 35);
+            this.myCircle62.Size = new System.Drawing.Size(30, 37);
             this.myCircle62.TabIndex = 1;
             // 
             // label87
             // 
+            this.label87.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label87.Location = new System.Drawing.Point(3, 54);
             this.label87.Name = "label87";
             this.label87.Size = new System.Drawing.Size(31, 20);
@@ -3629,15 +3719,18 @@
             this.myCircle54.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle54.DistanceToBorder = 4;
             this.myCircle54.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle54.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle54.IconColor = System.Drawing.Color.Red;
             this.myCircle54.IsShowIcon = false;
-            this.myCircle54.Location = new System.Drawing.Point(40, 37);
+            this.myCircle54.Location = new System.Drawing.Point(39, 37);
+            this.myCircle54.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle54.Name = "myCircle54";
-            this.myCircle54.Size = new System.Drawing.Size(25, 35);
+            this.myCircle54.Size = new System.Drawing.Size(30, 37);
             this.myCircle54.TabIndex = 1;
             // 
             // label154
             // 
+            this.label154.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label154.Location = new System.Drawing.Point(3, 54);
             this.label154.Name = "label154";
             this.label154.Size = new System.Drawing.Size(31, 20);
@@ -3646,6 +3739,7 @@
             // 
             // label155
             // 
+            this.label155.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label155.Location = new System.Drawing.Point(1, 3);
             this.label155.Name = "label155";
             this.label155.Size = new System.Drawing.Size(65, 39);
@@ -3673,15 +3767,18 @@
             this.myCircle55.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle55.DistanceToBorder = 4;
             this.myCircle55.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle55.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle55.IconColor = System.Drawing.Color.Red;
             this.myCircle55.IsShowIcon = false;
-            this.myCircle55.Location = new System.Drawing.Point(40, 37);
+            this.myCircle55.Location = new System.Drawing.Point(39, 37);
+            this.myCircle55.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle55.Name = "myCircle55";
-            this.myCircle55.Size = new System.Drawing.Size(25, 35);
+            this.myCircle55.Size = new System.Drawing.Size(30, 37);
             this.myCircle55.TabIndex = 1;
             // 
             // label95
             // 
+            this.label95.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label95.Location = new System.Drawing.Point(3, 54);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(31, 20);
@@ -3690,6 +3787,7 @@
             // 
             // label24
             // 
+            this.label24.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label24.Location = new System.Drawing.Point(1, 3);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(65, 39);
@@ -3717,15 +3815,18 @@
             this.myCircle53.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle53.DistanceToBorder = 4;
             this.myCircle53.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle53.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle53.IconColor = System.Drawing.Color.Red;
             this.myCircle53.IsShowIcon = false;
-            this.myCircle53.Location = new System.Drawing.Point(40, 37);
+            this.myCircle53.Location = new System.Drawing.Point(39, 37);
+            this.myCircle53.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle53.Name = "myCircle53";
-            this.myCircle53.Size = new System.Drawing.Size(25, 35);
+            this.myCircle53.Size = new System.Drawing.Size(30, 37);
             this.myCircle53.TabIndex = 1;
             // 
             // label94
             // 
+            this.label94.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label94.Location = new System.Drawing.Point(3, 54);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(31, 20);
@@ -3734,6 +3835,7 @@
             // 
             // label42
             // 
+            this.label42.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label42.Location = new System.Drawing.Point(1, 4);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(65, 27);
@@ -3754,6 +3856,7 @@
             // 
             // label147
             // 
+            this.label147.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label147.Location = new System.Drawing.Point(4, 1);
             this.label147.Name = "label147";
             this.label147.Size = new System.Drawing.Size(65, 39);
@@ -3769,15 +3872,18 @@
             this.myCircle24.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle24.DistanceToBorder = 4;
             this.myCircle24.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle24.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle24.IconColor = System.Drawing.Color.Red;
             this.myCircle24.IsShowIcon = false;
-            this.myCircle24.Location = new System.Drawing.Point(40, 37);
+            this.myCircle24.Location = new System.Drawing.Point(39, 37);
+            this.myCircle24.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle24.Name = "myCircle24";
-            this.myCircle24.Size = new System.Drawing.Size(25, 35);
+            this.myCircle24.Size = new System.Drawing.Size(30, 37);
             this.myCircle24.TabIndex = 2;
             // 
             // label146
             // 
+            this.label146.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label146.Location = new System.Drawing.Point(3, 54);
             this.label146.Name = "label146";
             this.label146.Size = new System.Drawing.Size(31, 20);
@@ -3798,6 +3904,7 @@
             // 
             // label135
             // 
+            this.label135.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label135.Location = new System.Drawing.Point(4, 1);
             this.label135.Name = "label135";
             this.label135.Size = new System.Drawing.Size(65, 39);
@@ -3813,15 +3920,18 @@
             this.myCircle20.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle20.DistanceToBorder = 4;
             this.myCircle20.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle20.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle20.IconColor = System.Drawing.Color.Red;
             this.myCircle20.IsShowIcon = false;
-            this.myCircle20.Location = new System.Drawing.Point(40, 37);
+            this.myCircle20.Location = new System.Drawing.Point(39, 37);
+            this.myCircle20.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle20.Name = "myCircle20";
-            this.myCircle20.Size = new System.Drawing.Size(25, 35);
+            this.myCircle20.Size = new System.Drawing.Size(30, 37);
             this.myCircle20.TabIndex = 2;
             // 
             // label134
             // 
+            this.label134.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label134.Location = new System.Drawing.Point(3, 54);
             this.label134.Name = "label134";
             this.label134.Size = new System.Drawing.Size(31, 20);
@@ -3842,6 +3952,7 @@
             // 
             // label145
             // 
+            this.label145.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label145.Location = new System.Drawing.Point(4, 1);
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(65, 39);
@@ -3857,15 +3968,18 @@
             this.myCircle22.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle22.DistanceToBorder = 4;
             this.myCircle22.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle22.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle22.IconColor = System.Drawing.Color.Red;
             this.myCircle22.IsShowIcon = false;
-            this.myCircle22.Location = new System.Drawing.Point(40, 37);
+            this.myCircle22.Location = new System.Drawing.Point(39, 37);
+            this.myCircle22.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle22.Name = "myCircle22";
-            this.myCircle22.Size = new System.Drawing.Size(25, 35);
+            this.myCircle22.Size = new System.Drawing.Size(30, 37);
             this.myCircle22.TabIndex = 2;
             // 
             // label144
             // 
+            this.label144.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label144.Location = new System.Drawing.Point(3, 54);
             this.label144.Name = "label144";
             this.label144.Size = new System.Drawing.Size(31, 20);
@@ -3886,6 +4000,7 @@
             // 
             // label129
             // 
+            this.label129.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label129.Location = new System.Drawing.Point(4, 1);
             this.label129.Name = "label129";
             this.label129.Size = new System.Drawing.Size(65, 39);
@@ -3901,15 +4016,18 @@
             this.myCircle18.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle18.DistanceToBorder = 4;
             this.myCircle18.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle18.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle18.IconColor = System.Drawing.Color.Red;
             this.myCircle18.IsShowIcon = false;
-            this.myCircle18.Location = new System.Drawing.Point(40, 37);
+            this.myCircle18.Location = new System.Drawing.Point(39, 37);
+            this.myCircle18.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle18.Name = "myCircle18";
-            this.myCircle18.Size = new System.Drawing.Size(25, 35);
+            this.myCircle18.Size = new System.Drawing.Size(30, 37);
             this.myCircle18.TabIndex = 2;
             // 
             // label128
             // 
+            this.label128.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label128.Location = new System.Drawing.Point(3, 54);
             this.label128.Name = "label128";
             this.label128.Size = new System.Drawing.Size(31, 20);
@@ -3930,6 +4048,7 @@
             // 
             // label157
             // 
+            this.label157.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label157.Location = new System.Drawing.Point(4, 1);
             this.label157.Name = "label157";
             this.label157.Size = new System.Drawing.Size(65, 39);
@@ -3945,18 +4064,21 @@
             this.myCircle25.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle25.DistanceToBorder = 4;
             this.myCircle25.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle25.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle25.IconColor = System.Drawing.Color.Red;
             this.myCircle25.IsShowIcon = false;
-            this.myCircle25.Location = new System.Drawing.Point(40, 37);
+            this.myCircle25.Location = new System.Drawing.Point(39, 37);
+            this.myCircle25.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle25.Name = "myCircle25";
-            this.myCircle25.Size = new System.Drawing.Size(25, 35);
+            this.myCircle25.Size = new System.Drawing.Size(30, 37);
             this.myCircle25.TabIndex = 2;
             // 
             // label156
             // 
+            this.label156.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label156.Location = new System.Drawing.Point(3, 54);
             this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(44, 26);
+            this.label156.Size = new System.Drawing.Size(31, 20);
             this.label156.TabIndex = 0;
             this.label156.Text = "28#";
             // 
@@ -3974,6 +4096,7 @@
             // 
             // label143
             // 
+            this.label143.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label143.Location = new System.Drawing.Point(4, 1);
             this.label143.Name = "label143";
             this.label143.Size = new System.Drawing.Size(65, 39);
@@ -3989,15 +4112,18 @@
             this.myCircle23.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle23.DistanceToBorder = 4;
             this.myCircle23.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle23.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle23.IconColor = System.Drawing.Color.Red;
             this.myCircle23.IsShowIcon = false;
-            this.myCircle23.Location = new System.Drawing.Point(40, 37);
+            this.myCircle23.Location = new System.Drawing.Point(39, 37);
+            this.myCircle23.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle23.Name = "myCircle23";
-            this.myCircle23.Size = new System.Drawing.Size(25, 35);
+            this.myCircle23.Size = new System.Drawing.Size(30, 37);
             this.myCircle23.TabIndex = 2;
             // 
             // label142
             // 
+            this.label142.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label142.Location = new System.Drawing.Point(3, 54);
             this.label142.Name = "label142";
             this.label142.Size = new System.Drawing.Size(31, 20);
@@ -4018,6 +4144,7 @@
             // 
             // label133
             // 
+            this.label133.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label133.Location = new System.Drawing.Point(4, 1);
             this.label133.Name = "label133";
             this.label133.Size = new System.Drawing.Size(65, 39);
@@ -4033,15 +4160,18 @@
             this.myCircle19.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle19.DistanceToBorder = 4;
             this.myCircle19.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle19.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle19.IconColor = System.Drawing.Color.Red;
             this.myCircle19.IsShowIcon = false;
-            this.myCircle19.Location = new System.Drawing.Point(40, 37);
+            this.myCircle19.Location = new System.Drawing.Point(39, 37);
+            this.myCircle19.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle19.Name = "myCircle19";
-            this.myCircle19.Size = new System.Drawing.Size(25, 35);
+            this.myCircle19.Size = new System.Drawing.Size(30, 37);
             this.myCircle19.TabIndex = 2;
             // 
             // label132
             // 
+            this.label132.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label132.Location = new System.Drawing.Point(3, 54);
             this.label132.Name = "label132";
             this.label132.Size = new System.Drawing.Size(31, 20);
@@ -4062,6 +4192,7 @@
             // 
             // label141
             // 
+            this.label141.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label141.Location = new System.Drawing.Point(4, 1);
             this.label141.Name = "label141";
             this.label141.Size = new System.Drawing.Size(65, 39);
@@ -4077,15 +4208,18 @@
             this.myCircle21.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle21.DistanceToBorder = 4;
             this.myCircle21.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle21.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle21.IconColor = System.Drawing.Color.Red;
             this.myCircle21.IsShowIcon = false;
-            this.myCircle21.Location = new System.Drawing.Point(40, 37);
+            this.myCircle21.Location = new System.Drawing.Point(39, 37);
+            this.myCircle21.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle21.Name = "myCircle21";
-            this.myCircle21.Size = new System.Drawing.Size(25, 35);
+            this.myCircle21.Size = new System.Drawing.Size(30, 37);
             this.myCircle21.TabIndex = 2;
             // 
             // label140
             // 
+            this.label140.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label140.Location = new System.Drawing.Point(3, 54);
             this.label140.Name = "label140";
             this.label140.Size = new System.Drawing.Size(31, 20);
@@ -4106,6 +4240,7 @@
             // 
             // label125
             // 
+            this.label125.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label125.Location = new System.Drawing.Point(4, 1);
             this.label125.Name = "label125";
             this.label125.Size = new System.Drawing.Size(65, 39);
@@ -4121,15 +4256,18 @@
             this.myCircle17.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle17.DistanceToBorder = 4;
             this.myCircle17.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle17.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle17.IconColor = System.Drawing.Color.Red;
             this.myCircle17.IsShowIcon = false;
-            this.myCircle17.Location = new System.Drawing.Point(40, 37);
+            this.myCircle17.Location = new System.Drawing.Point(39, 37);
+            this.myCircle17.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle17.Name = "myCircle17";
-            this.myCircle17.Size = new System.Drawing.Size(25, 35);
+            this.myCircle17.Size = new System.Drawing.Size(30, 37);
             this.myCircle17.TabIndex = 2;
             // 
             // label124
             // 
+            this.label124.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label124.Location = new System.Drawing.Point(3, 54);
             this.label124.Name = "label124";
             this.label124.Size = new System.Drawing.Size(31, 20);
@@ -4150,6 +4288,7 @@
             // 
             // label31
             // 
+            this.label31.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label31.Location = new System.Drawing.Point(4, 1);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(65, 39);
@@ -4165,15 +4304,18 @@
             this.myCircle45.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle45.DistanceToBorder = 4;
             this.myCircle45.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle45.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle45.IconColor = System.Drawing.Color.Red;
             this.myCircle45.IsShowIcon = false;
-            this.myCircle45.Location = new System.Drawing.Point(40, 37);
+            this.myCircle45.Location = new System.Drawing.Point(39, 37);
+            this.myCircle45.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle45.Name = "myCircle45";
-            this.myCircle45.Size = new System.Drawing.Size(25, 35);
+            this.myCircle45.Size = new System.Drawing.Size(30, 37);
             this.myCircle45.TabIndex = 1;
             // 
             // label77
             // 
+            this.label77.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label77.Location = new System.Drawing.Point(3, 54);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(31, 20);
@@ -4194,6 +4336,7 @@
             // 
             // label30
             // 
+            this.label30.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label30.Location = new System.Drawing.Point(4, 4);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(65, 39);
@@ -4209,15 +4352,18 @@
             this.myCircle52.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle52.DistanceToBorder = 4;
             this.myCircle52.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle52.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle52.IconColor = System.Drawing.Color.Red;
             this.myCircle52.IsShowIcon = false;
-            this.myCircle52.Location = new System.Drawing.Point(40, 37);
+            this.myCircle52.Location = new System.Drawing.Point(39, 37);
+            this.myCircle52.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle52.Name = "myCircle52";
-            this.myCircle52.Size = new System.Drawing.Size(25, 35);
+            this.myCircle52.Size = new System.Drawing.Size(30, 37);
             this.myCircle52.TabIndex = 1;
             // 
             // label84
             // 
+            this.label84.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label84.Location = new System.Drawing.Point(3, 54);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(31, 20);
@@ -4245,15 +4391,18 @@
             this.myCircle59.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle59.DistanceToBorder = 4;
             this.myCircle59.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle59.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle59.IconColor = System.Drawing.Color.Red;
             this.myCircle59.IsShowIcon = false;
-            this.myCircle59.Location = new System.Drawing.Point(40, 37);
+            this.myCircle59.Location = new System.Drawing.Point(39, 37);
+            this.myCircle59.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle59.Name = "myCircle59";
-            this.myCircle59.Size = new System.Drawing.Size(25, 35);
+            this.myCircle59.Size = new System.Drawing.Size(30, 37);
             this.myCircle59.TabIndex = 1;
             // 
             // label90
             // 
+            this.label90.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label90.Location = new System.Drawing.Point(3, 54);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(31, 20);
@@ -4262,6 +4411,7 @@
             // 
             // label41
             // 
+            this.label41.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label41.Location = new System.Drawing.Point(5, 3);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(65, 39);
@@ -4289,15 +4439,18 @@
             this.myCircle44.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle44.DistanceToBorder = 4;
             this.myCircle44.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle44.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle44.IconColor = System.Drawing.Color.Red;
             this.myCircle44.IsShowIcon = false;
-            this.myCircle44.Location = new System.Drawing.Point(40, 37);
+            this.myCircle44.Location = new System.Drawing.Point(39, 37);
+            this.myCircle44.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle44.Name = "myCircle44";
-            this.myCircle44.Size = new System.Drawing.Size(25, 35);
+            this.myCircle44.Size = new System.Drawing.Size(30, 37);
             this.myCircle44.TabIndex = 1;
             // 
             // label74
             // 
+            this.label74.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label74.Location = new System.Drawing.Point(3, 54);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(31, 20);
@@ -4306,6 +4459,7 @@
             // 
             // label18
             // 
+            this.label18.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label18.Location = new System.Drawing.Point(4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(65, 39);
@@ -4326,6 +4480,7 @@
             // 
             // label29
             // 
+            this.label29.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label29.Location = new System.Drawing.Point(4, 1);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(65, 39);
@@ -4341,15 +4496,18 @@
             this.myCircle48.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle48.DistanceToBorder = 4;
             this.myCircle48.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle48.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle48.IconColor = System.Drawing.Color.Red;
             this.myCircle48.IsShowIcon = false;
-            this.myCircle48.Location = new System.Drawing.Point(40, 37);
+            this.myCircle48.Location = new System.Drawing.Point(39, 37);
+            this.myCircle48.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle48.Name = "myCircle48";
-            this.myCircle48.Size = new System.Drawing.Size(25, 35);
+            this.myCircle48.Size = new System.Drawing.Size(30, 37);
             this.myCircle48.TabIndex = 1;
             // 
             // label80
             // 
+            this.label80.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label80.Location = new System.Drawing.Point(3, 54);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(31, 20);
@@ -4358,7 +4516,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.myCircle33);
@@ -4370,6 +4528,7 @@
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(4, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 39);
@@ -4378,22 +4537,25 @@
             // 
             // myCircle33
             // 
-            this.myCircle33.BorderColor = System.Drawing.Color.YellowGreen;
+            this.myCircle33.BorderColor = System.Drawing.Color.LawnGreen;
             this.myCircle33.BorderTransparent = 255;
             this.myCircle33.BorderWidth = 0;
-            this.myCircle33.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle33.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle33.ButtonCenterColorEnd = System.Drawing.Color.LawnGreen;
+            this.myCircle33.ButtonCenterColorStart = System.Drawing.Color.LawnGreen;
             this.myCircle33.DistanceToBorder = 4;
             this.myCircle33.FocusBorderColor = System.Drawing.Color.Transparent;
+            this.myCircle33.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle33.IconColor = System.Drawing.Color.Red;
             this.myCircle33.IsShowIcon = false;
-            this.myCircle33.Location = new System.Drawing.Point(40, 37);
+            this.myCircle33.Location = new System.Drawing.Point(39, 37);
+            this.myCircle33.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle33.Name = "myCircle33";
-            this.myCircle33.Size = new System.Drawing.Size(25, 35);
+            this.myCircle33.Size = new System.Drawing.Size(30, 37);
             this.myCircle33.TabIndex = 1;
             // 
             // label60
             // 
+            this.label60.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label60.Location = new System.Drawing.Point(3, 54);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(31, 20);
@@ -4421,15 +4583,18 @@
             this.myCircle15.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle15.DistanceToBorder = 4;
             this.myCircle15.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle15.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle15.IconColor = System.Drawing.Color.Red;
             this.myCircle15.IsShowIcon = false;
-            this.myCircle15.Location = new System.Drawing.Point(40, 37);
+            this.myCircle15.Location = new System.Drawing.Point(39, 37);
+            this.myCircle15.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle15.Name = "myCircle15";
-            this.myCircle15.Size = new System.Drawing.Size(25, 35);
+            this.myCircle15.Size = new System.Drawing.Size(30, 37);
             this.myCircle15.TabIndex = 11;
             // 
             // label122
             // 
+            this.label122.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label122.Location = new System.Drawing.Point(3, 54);
             this.label122.Name = "label122";
             this.label122.Size = new System.Drawing.Size(31, 20);
@@ -4438,6 +4603,7 @@
             // 
             // label123
             // 
+            this.label123.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label123.Location = new System.Drawing.Point(5, 0);
             this.label123.Name = "label123";
             this.label123.Size = new System.Drawing.Size(65, 27);
@@ -4458,6 +4624,7 @@
             // 
             // label121
             // 
+            this.label121.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label121.Location = new System.Drawing.Point(5, 0);
             this.label121.Name = "label121";
             this.label121.Size = new System.Drawing.Size(65, 39);
@@ -4473,15 +4640,18 @@
             this.myCircle14.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle14.DistanceToBorder = 4;
             this.myCircle14.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle14.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle14.IconColor = System.Drawing.Color.Red;
             this.myCircle14.IsShowIcon = false;
-            this.myCircle14.Location = new System.Drawing.Point(40, 37);
+            this.myCircle14.Location = new System.Drawing.Point(39, 37);
+            this.myCircle14.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle14.Name = "myCircle14";
-            this.myCircle14.Size = new System.Drawing.Size(25, 35);
+            this.myCircle14.Size = new System.Drawing.Size(30, 37);
             this.myCircle14.TabIndex = 10;
             // 
             // label120
             // 
+            this.label120.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label120.Location = new System.Drawing.Point(3, 54);
             this.label120.Name = "label120";
             this.label120.Size = new System.Drawing.Size(31, 20);
@@ -4509,15 +4679,18 @@
             this.myCircle32.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle32.DistanceToBorder = 4;
             this.myCircle32.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle32.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle32.IconColor = System.Drawing.Color.Red;
             this.myCircle32.IsShowIcon = false;
-            this.myCircle32.Location = new System.Drawing.Point(40, 37);
+            this.myCircle32.Location = new System.Drawing.Point(39, 37);
+            this.myCircle32.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle32.Name = "myCircle32";
-            this.myCircle32.Size = new System.Drawing.Size(25, 35);
+            this.myCircle32.Size = new System.Drawing.Size(30, 37);
             this.myCircle32.TabIndex = 8;
             // 
             // label86
             // 
+            this.label86.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label86.Location = new System.Drawing.Point(3, 54);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(31, 20);
@@ -4526,6 +4699,7 @@
             // 
             // label40
             // 
+            this.label40.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label40.Location = new System.Drawing.Point(5, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(65, 27);
@@ -4546,6 +4720,7 @@
             // 
             // label119
             // 
+            this.label119.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label119.Location = new System.Drawing.Point(-1, -1);
             this.label119.Name = "label119";
             this.label119.Size = new System.Drawing.Size(65, 39);
@@ -4561,15 +4736,18 @@
             this.myCircle16.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle16.DistanceToBorder = 4;
             this.myCircle16.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle16.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle16.IconColor = System.Drawing.Color.Red;
             this.myCircle16.IsShowIcon = false;
-            this.myCircle16.Location = new System.Drawing.Point(40, 37);
+            this.myCircle16.Location = new System.Drawing.Point(39, 37);
+            this.myCircle16.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle16.Name = "myCircle16";
-            this.myCircle16.Size = new System.Drawing.Size(25, 35);
+            this.myCircle16.Size = new System.Drawing.Size(30, 37);
             this.myCircle16.TabIndex = 9;
             // 
             // label114
             // 
+            this.label114.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label114.Location = new System.Drawing.Point(3, 54);
             this.label114.Name = "label114";
             this.label114.Size = new System.Drawing.Size(31, 20);
@@ -4590,6 +4768,7 @@
             // 
             // label28
             // 
+            this.label28.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label28.Location = new System.Drawing.Point(4, 1);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(65, 39);
@@ -4605,15 +4784,18 @@
             this.myCircle31.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle31.DistanceToBorder = 4;
             this.myCircle31.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle31.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle31.IconColor = System.Drawing.Color.Red;
             this.myCircle31.IsShowIcon = false;
-            this.myCircle31.Location = new System.Drawing.Point(40, 37);
+            this.myCircle31.Location = new System.Drawing.Point(39, 37);
+            this.myCircle31.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle31.Name = "myCircle31";
-            this.myCircle31.Size = new System.Drawing.Size(25, 35);
+            this.myCircle31.Size = new System.Drawing.Size(30, 37);
             this.myCircle31.TabIndex = 7;
             // 
             // label76
             // 
+            this.label76.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label76.Location = new System.Drawing.Point(3, 54);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(31, 20);
@@ -4634,6 +4816,7 @@
             // 
             // label10
             // 
+            this.label10.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(4, 3);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 39);
@@ -4649,15 +4832,18 @@
             this.myCircle40.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle40.DistanceToBorder = 4;
             this.myCircle40.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle40.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle40.IconColor = System.Drawing.Color.Red;
             this.myCircle40.IsShowIcon = false;
-            this.myCircle40.Location = new System.Drawing.Point(40, 37);
+            this.myCircle40.Location = new System.Drawing.Point(39, 37);
+            this.myCircle40.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle40.Name = "myCircle40";
-            this.myCircle40.Size = new System.Drawing.Size(25, 35);
+            this.myCircle40.Size = new System.Drawing.Size(30, 37);
             this.myCircle40.TabIndex = 1;
             // 
             // label67
             // 
+            this.label67.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label67.Location = new System.Drawing.Point(3, 54);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(31, 20);
@@ -4685,15 +4871,18 @@
             this.myCircle56.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle56.DistanceToBorder = 4;
             this.myCircle56.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle56.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle56.IconColor = System.Drawing.Color.Red;
             this.myCircle56.IsShowIcon = false;
-            this.myCircle56.Location = new System.Drawing.Point(40, 37);
+            this.myCircle56.Location = new System.Drawing.Point(39, 37);
+            this.myCircle56.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle56.Name = "myCircle56";
-            this.myCircle56.Size = new System.Drawing.Size(25, 35);
+            this.myCircle56.Size = new System.Drawing.Size(30, 37);
             this.myCircle56.TabIndex = 1;
             // 
             // label93
             // 
+            this.label93.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label93.Location = new System.Drawing.Point(3, 54);
             this.label93.Name = "label93";
             this.label93.Size = new System.Drawing.Size(31, 20);
@@ -4702,6 +4891,7 @@
             // 
             // label39
             // 
+            this.label39.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label39.Location = new System.Drawing.Point(5, 3);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(65, 27);
@@ -4722,6 +4912,7 @@
             // 
             // label16
             // 
+            this.label16.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label16.Location = new System.Drawing.Point(4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(65, 39);
@@ -4737,15 +4928,18 @@
             this.myCircle30.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle30.DistanceToBorder = 4;
             this.myCircle30.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle30.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle30.IconColor = System.Drawing.Color.Red;
             this.myCircle30.IsShowIcon = false;
-            this.myCircle30.Location = new System.Drawing.Point(40, 37);
+            this.myCircle30.Location = new System.Drawing.Point(39, 37);
+            this.myCircle30.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle30.Name = "myCircle30";
-            this.myCircle30.Size = new System.Drawing.Size(25, 35);
+            this.myCircle30.Size = new System.Drawing.Size(30, 37);
             this.myCircle30.TabIndex = 6;
             // 
             // label69
             // 
+            this.label69.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label69.Location = new System.Drawing.Point(3, 54);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(31, 20);
@@ -4773,15 +4967,18 @@
             this.myCircle51.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle51.DistanceToBorder = 4;
             this.myCircle51.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle51.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle51.IconColor = System.Drawing.Color.Red;
             this.myCircle51.IsShowIcon = false;
-            this.myCircle51.Location = new System.Drawing.Point(40, 37);
+            this.myCircle51.Location = new System.Drawing.Point(39, 37);
+            this.myCircle51.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle51.Name = "myCircle51";
-            this.myCircle51.Size = new System.Drawing.Size(25, 35);
+            this.myCircle51.Size = new System.Drawing.Size(30, 37);
             this.myCircle51.TabIndex = 1;
             // 
             // label83
             // 
+            this.label83.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label83.Location = new System.Drawing.Point(3, 54);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(31, 20);
@@ -4790,6 +4987,7 @@
             // 
             // label27
             // 
+            this.label27.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label27.Location = new System.Drawing.Point(4, 1);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(65, 39);
@@ -4810,6 +5008,7 @@
             // 
             // label6
             // 
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(4, 3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 39);
@@ -4825,15 +5024,18 @@
             this.myCircle36.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle36.DistanceToBorder = 4;
             this.myCircle36.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle36.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle36.IconColor = System.Drawing.Color.Red;
             this.myCircle36.IsShowIcon = false;
-            this.myCircle36.Location = new System.Drawing.Point(40, 37);
+            this.myCircle36.Location = new System.Drawing.Point(39, 37);
+            this.myCircle36.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle36.Name = "myCircle36";
-            this.myCircle36.Size = new System.Drawing.Size(25, 35);
+            this.myCircle36.Size = new System.Drawing.Size(30, 37);
             this.myCircle36.TabIndex = 1;
             // 
             // label63
             // 
+            this.label63.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label63.Location = new System.Drawing.Point(3, 54);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(31, 20);
@@ -4861,15 +5063,18 @@
             this.myCircle60.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle60.DistanceToBorder = 4;
             this.myCircle60.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle60.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle60.IconColor = System.Drawing.Color.Red;
             this.myCircle60.IsShowIcon = false;
-            this.myCircle60.Location = new System.Drawing.Point(40, 37);
+            this.myCircle60.Location = new System.Drawing.Point(39, 37);
+            this.myCircle60.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle60.Name = "myCircle60";
-            this.myCircle60.Size = new System.Drawing.Size(25, 35);
+            this.myCircle60.Size = new System.Drawing.Size(30, 37);
             this.myCircle60.TabIndex = 1;
             // 
             // label89
             // 
+            this.label89.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label89.Location = new System.Drawing.Point(3, 54);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(31, 20);
@@ -4878,6 +5083,7 @@
             // 
             // label38
             // 
+            this.label38.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label38.Location = new System.Drawing.Point(5, 3);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(65, 39);
@@ -4905,15 +5111,18 @@
             this.myCircle43.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle43.DistanceToBorder = 4;
             this.myCircle43.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle43.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle43.IconColor = System.Drawing.Color.Red;
             this.myCircle43.IsShowIcon = false;
-            this.myCircle43.Location = new System.Drawing.Point(40, 37);
+            this.myCircle43.Location = new System.Drawing.Point(39, 37);
+            this.myCircle43.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle43.Name = "myCircle43";
-            this.myCircle43.Size = new System.Drawing.Size(25, 35);
+            this.myCircle43.Size = new System.Drawing.Size(30, 37);
             this.myCircle43.TabIndex = 1;
             // 
             // label73
             // 
+            this.label73.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label73.Location = new System.Drawing.Point(3, 54);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(31, 20);
@@ -4922,6 +5131,7 @@
             // 
             // label15
             // 
+            this.label15.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label15.Location = new System.Drawing.Point(4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 27);
@@ -4942,6 +5152,7 @@
             // 
             // label26
             // 
+            this.label26.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label26.Location = new System.Drawing.Point(4, 1);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(65, 39);
@@ -4957,15 +5168,18 @@
             this.myCircle47.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle47.DistanceToBorder = 4;
             this.myCircle47.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle47.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle47.IconColor = System.Drawing.Color.Red;
             this.myCircle47.IsShowIcon = false;
-            this.myCircle47.Location = new System.Drawing.Point(40, 37);
+            this.myCircle47.Location = new System.Drawing.Point(39, 37);
+            this.myCircle47.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle47.Name = "myCircle47";
-            this.myCircle47.Size = new System.Drawing.Size(25, 35);
+            this.myCircle47.Size = new System.Drawing.Size(30, 37);
             this.myCircle47.TabIndex = 1;
             // 
             // label79
             // 
+            this.label79.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label79.Location = new System.Drawing.Point(3, 54);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(31, 20);
@@ -4986,6 +5200,7 @@
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(4, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 39);
@@ -5001,17 +5216,20 @@
             this.myCircle1.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle1.DistanceToBorder = 4;
             this.myCircle1.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle1.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle1.IconColor = System.Drawing.Color.Red;
             this.myCircle1.IsShowIcon = false;
-            this.myCircle1.Location = new System.Drawing.Point(40, 37);
+            this.myCircle1.Location = new System.Drawing.Point(39, 37);
+            this.myCircle1.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle1.Name = "myCircle1";
-            this.myCircle1.Size = new System.Drawing.Size(25, 35);
+            this.myCircle1.Size = new System.Drawing.Size(30, 37);
             this.myCircle1.TabIndex = 5;
             this.myCircle1.Load += new System.EventHandler(this.myCircle1_Load);
             this.myCircle1.Click += new System.EventHandler(this.myCircle1_Click);
             // 
             // label59
             // 
+            this.label59.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label59.Location = new System.Drawing.Point(3, 54);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(31, 20);
@@ -5039,15 +5257,18 @@
             this.myCircle29.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle29.DistanceToBorder = 4;
             this.myCircle29.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle29.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle29.IconColor = System.Drawing.Color.Red;
             this.myCircle29.IsShowIcon = false;
-            this.myCircle29.Location = new System.Drawing.Point(40, 37);
+            this.myCircle29.Location = new System.Drawing.Point(39, 37);
+            this.myCircle29.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle29.Name = "myCircle29";
-            this.myCircle29.Size = new System.Drawing.Size(25, 35);
+            this.myCircle29.Size = new System.Drawing.Size(30, 37);
             this.myCircle29.TabIndex = 1;
             // 
             // label85
             // 
+            this.label85.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label85.Location = new System.Drawing.Point(3, 54);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(31, 20);
@@ -5056,6 +5277,7 @@
             // 
             // label37
             // 
+            this.label37.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label37.Location = new System.Drawing.Point(5, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(65, 27);
@@ -5083,15 +5305,18 @@
             this.myCircle41.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle41.DistanceToBorder = 4;
             this.myCircle41.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle41.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle41.IconColor = System.Drawing.Color.Red;
             this.myCircle41.IsShowIcon = false;
-            this.myCircle41.Location = new System.Drawing.Point(40, 37);
+            this.myCircle41.Location = new System.Drawing.Point(39, 37);
+            this.myCircle41.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle41.Name = "myCircle41";
-            this.myCircle41.Size = new System.Drawing.Size(25, 35);
+            this.myCircle41.Size = new System.Drawing.Size(30, 37);
             this.myCircle41.TabIndex = 1;
             // 
             // label71
             // 
+            this.label71.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label71.Location = new System.Drawing.Point(3, 54);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(31, 20);
@@ -5100,6 +5325,7 @@
             // 
             // label14
             // 
+            this.label14.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(3, 6);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 27);
@@ -5120,6 +5346,7 @@
             // 
             // label25
             // 
+            this.label25.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label25.Location = new System.Drawing.Point(3, 1);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(65, 39);
@@ -5135,15 +5362,18 @@
             this.myCircle28.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle28.DistanceToBorder = 4;
             this.myCircle28.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle28.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle28.IconColor = System.Drawing.Color.Red;
             this.myCircle28.IsShowIcon = false;
-            this.myCircle28.Location = new System.Drawing.Point(40, 37);
+            this.myCircle28.Location = new System.Drawing.Point(39, 37);
+            this.myCircle28.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle28.Name = "myCircle28";
-            this.myCircle28.Size = new System.Drawing.Size(25, 35);
+            this.myCircle28.Size = new System.Drawing.Size(30, 37);
             this.myCircle28.TabIndex = 2;
             // 
             // label75
             // 
+            this.label75.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label75.Location = new System.Drawing.Point(3, 54);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(31, 20);
@@ -5164,6 +5394,7 @@
             // 
             // label9
             // 
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(4, 3);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 27);
@@ -5179,15 +5410,18 @@
             this.myCircle39.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle39.DistanceToBorder = 4;
             this.myCircle39.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle39.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle39.IconColor = System.Drawing.Color.Red;
             this.myCircle39.IsShowIcon = false;
-            this.myCircle39.Location = new System.Drawing.Point(40, 37);
+            this.myCircle39.Location = new System.Drawing.Point(39, 37);
+            this.myCircle39.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle39.Name = "myCircle39";
-            this.myCircle39.Size = new System.Drawing.Size(25, 35);
+            this.myCircle39.Size = new System.Drawing.Size(30, 37);
             this.myCircle39.TabIndex = 1;
             // 
             // label66
             // 
+            this.label66.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label66.Location = new System.Drawing.Point(3, 54);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(31, 20);
@@ -5215,15 +5449,18 @@
             this.myCircle27.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle27.DistanceToBorder = 4;
             this.myCircle27.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle27.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle27.IconColor = System.Drawing.Color.Red;
             this.myCircle27.IsShowIcon = false;
-            this.myCircle27.Location = new System.Drawing.Point(40, 37);
+            this.myCircle27.Location = new System.Drawing.Point(39, 37);
+            this.myCircle27.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle27.Name = "myCircle27";
-            this.myCircle27.Size = new System.Drawing.Size(25, 35);
+            this.myCircle27.Size = new System.Drawing.Size(30, 37);
             this.myCircle27.TabIndex = 3;
             // 
             // label68
             // 
+            this.label68.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label68.Location = new System.Drawing.Point(3, 54);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(31, 20);
@@ -5232,6 +5469,7 @@
             // 
             // label13
             // 
+            this.label13.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label13.Location = new System.Drawing.Point(5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 27);
@@ -5252,6 +5490,7 @@
             // 
             // label5
             // 
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(4, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 27);
@@ -5267,15 +5506,18 @@
             this.myCircle35.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle35.DistanceToBorder = 4;
             this.myCircle35.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle35.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle35.IconColor = System.Drawing.Color.Red;
             this.myCircle35.IsShowIcon = false;
-            this.myCircle35.Location = new System.Drawing.Point(40, 37);
+            this.myCircle35.Location = new System.Drawing.Point(39, 37);
+            this.myCircle35.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle35.Name = "myCircle35";
-            this.myCircle35.Size = new System.Drawing.Size(25, 35);
+            this.myCircle35.Size = new System.Drawing.Size(30, 37);
             this.myCircle35.TabIndex = 1;
             // 
             // label62
             // 
+            this.label62.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label62.Location = new System.Drawing.Point(3, 54);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(31, 20);
@@ -5284,7 +5526,7 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel11.BackColor = System.Drawing.Color.Aqua;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.myCircle26);
@@ -5297,9 +5539,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(5, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 11);
+            this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "端盖清洗";
             // 
@@ -5312,15 +5555,18 @@
             this.myCircle26.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle26.DistanceToBorder = 4;
             this.myCircle26.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle26.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle26.IconColor = System.Drawing.Color.Red;
             this.myCircle26.IsShowIcon = false;
-            this.myCircle26.Location = new System.Drawing.Point(40, 37);
+            this.myCircle26.Location = new System.Drawing.Point(39, 37);
+            this.myCircle26.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle26.Name = "myCircle26";
-            this.myCircle26.Size = new System.Drawing.Size(25, 35);
+            this.myCircle26.Size = new System.Drawing.Size(30, 37);
             this.myCircle26.TabIndex = 4;
             // 
             // label58
             // 
+            this.label58.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label58.Location = new System.Drawing.Point(3, 54);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(31, 20);
@@ -5341,6 +5587,7 @@
             // 
             // label169
             // 
+            this.label169.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label169.Location = new System.Drawing.Point(5, 3);
             this.label169.Name = "label169";
             this.label169.Size = new System.Drawing.Size(65, 39);
@@ -5356,15 +5603,18 @@
             this.myCircle2.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle2.DistanceToBorder = 4;
             this.myCircle2.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle2.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle2.IconColor = System.Drawing.Color.Red;
             this.myCircle2.IsShowIcon = false;
-            this.myCircle2.Location = new System.Drawing.Point(40, 37);
+            this.myCircle2.Location = new System.Drawing.Point(39, 37);
+            this.myCircle2.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle2.Name = "myCircle2";
-            this.myCircle2.Size = new System.Drawing.Size(25, 35);
+            this.myCircle2.Size = new System.Drawing.Size(30, 37);
             this.myCircle2.TabIndex = 2;
             // 
             // label168
             // 
+            this.label168.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label168.Location = new System.Drawing.Point(3, 54);
             this.label168.Name = "label168";
             this.label168.Size = new System.Drawing.Size(31, 20);
@@ -5385,6 +5635,7 @@
             // 
             // label167
             // 
+            this.label167.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label167.Location = new System.Drawing.Point(5, 3);
             this.label167.Name = "label167";
             this.label167.Size = new System.Drawing.Size(65, 39);
@@ -5400,20 +5651,29 @@
             this.myCircle3.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle3.DistanceToBorder = 4;
             this.myCircle3.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle3.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle3.IconColor = System.Drawing.Color.Red;
             this.myCircle3.IsShowIcon = false;
-            this.myCircle3.Location = new System.Drawing.Point(40, 37);
+            this.myCircle3.Location = new System.Drawing.Point(39, 37);
+            this.myCircle3.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle3.Name = "myCircle3";
-            this.myCircle3.Size = new System.Drawing.Size(25, 35);
+            this.myCircle3.Size = new System.Drawing.Size(30, 37);
             this.myCircle3.TabIndex = 2;
             // 
             // label166
             // 
+            this.label166.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label166.Location = new System.Drawing.Point(3, 54);
             this.label166.Name = "label166";
             this.label166.Size = new System.Drawing.Size(31, 20);
             this.label166.TabIndex = 0;
             this.label166.Text = "31#";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserMain
             // 
@@ -5868,5 +6128,6 @@
         private CMES.Controls.MyCircle myCircle63;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Timer timer1;
     }
 }

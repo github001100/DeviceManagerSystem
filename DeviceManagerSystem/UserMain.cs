@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
+using System.Runtime.InteropServices;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 
 namespace DeviceManagerSystem
 {
@@ -20,7 +17,7 @@ namespace DeviceManagerSystem
     public partial class UserMain : UserControl
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
-        public static Color Opc ;
+        public static Color Opc;
         [DllImport("user32")]
         private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
 
@@ -34,6 +31,16 @@ namespace DeviceManagerSystem
         private const int AW_ACTIVE = 0x20000;//激活窗口，在使用了AW_HIDE标志后不要使用这个标志
         private const int AW_SLIDE = 0x40000;//使用滑动类型动画效果，默认为滚动动画类型，当使用AW_CENTER标志时，这个标志就被忽略
         private const int AW_BLEND = 0x80000;//使用淡入淡出效果
+        private static UserMain frm = null;
+
+        public static UserMain CreateInstrance()
+        {
+            if (frm == null||frm.IsDisposed)
+            {
+                frm = new UserMain();
+            }
+            return frm;
+        }
         public UserMain()
         {
             InitializeComponent();
@@ -139,72 +146,33 @@ namespace DeviceManagerSystem
             AnimateWindow(this.Handle, 1000, AW_SLIDE | AW_ACTIVE | AW_VER_NEGATIVE);
 
             InitDataTable();
-            foreach (var item in (this.groupBox1.Controls))
+            Panel[] ps = { panel31,panel34, panel26, panel29 , panel32 , panel35,panel38,panel60,panel45,
+                panel41, panel44, panel47, panel39, panel42,panel50, panel53,panel50,panel51,panel52,panel49 };
+            Panel[] ps2 = { panel23,panel24,panel36, panel48 , panel59 , panel54,
+                panel55, panel56,panel21,panel22 };
+            Panel[] ps3 = { panel11,panel2, panel3, panel4 , panel5 , panel6,
+                panel7, panel8, panel9, panel10, panel13,panel14, panel16,panel20,panel15,panel18,panel30 ,
+                panel57, panel58, panel33,panel46,panel43, panel61, panel62, panel63,panel12,panel17,panel27,panel19,panel40,
+                panel37, panel25, panel28,panel64 };
+
+            foreach (var item in (ps))
             {
                 if (item is Panel)
                 {
-                    (item as Panel).BackColor = Color.CornflowerBlue;
-                    switch ((item as Panel).Name)
-                    {
-                        case "panel11":
-                            foreach (var item1 in (this.panel11.Controls))
-                            {
-                                if (item1 is MyCircle)
-                                {
-                                    (item1 as MyCircle).ButtonCenterColorStart = Color.Red;
-                                    (item1 as MyCircle).ButtonCenterColorEnd = Color.Red;
-                                    (item1 as MyCircle).BorderColor = Color.Red;
+                    (item as Panel).BackColor = Color.Aqua;
 
-                                }
-                            }
-                            break;
-                        case "panel12":
-                            foreach (var item1 in (this.panel12.Controls))
-                            {
-                                if (item1 is MyCircle)
-                                {
-                                    (item1 as MyCircle).ButtonCenterColorStart = Color.Red;
-                                    (item1 as MyCircle).ButtonCenterColorEnd = Color.Red;
-                                    (item1 as MyCircle).BorderColor = Color.Red;
-
-                                }
-                            }
-                            break;
-                        case "panel13":
-                            foreach (var item1 in (this.panel13.Controls))
-                            {
-                                if (item1 is MyCircle)
-                                {
-                                    (item1 as MyCircle).ButtonCenterColorStart = Color.Red;
-                                    (item1 as MyCircle).ButtonCenterColorEnd = Color.Red;
-                                    (item1 as MyCircle).BorderColor = Color.Red;
-
-                                }
-                            }
-                            break;
-                        case "panel14":
-                            foreach (var item1 in (this.panel14.Controls))
-                            {
-                                if (item1 is MyCircle)
-                                {
-                                    (item1 as MyCircle).ButtonCenterColorStart = Color.Red;
-                                    (item1 as MyCircle).ButtonCenterColorEnd = Color.Red;
-                                    (item1 as MyCircle).BorderColor = Color.Red;
-
-                                }
-                            }
-                            break;
-                        default:
-                            break;
-                    }
                 }
             }
-            foreach (var item in (this.panel1.Controls))
+            foreach (var item in (ps2))
             {
                 if (item is Panel)
-                    (item as Panel).BackColor = Color.BlueViolet;
+                    (item as Panel).BackColor = Color.Magenta;//BlueViolet
             }
-
+            foreach (var item in (ps3))
+            {
+                if (item is Panel)
+                    (item as Panel).BackColor = Color.CornflowerBlue;//BlueViolet
+            }
             //foreach (var item in (this.panel11.Controls))
             //{
             //    if (item is MyCircle)
@@ -214,17 +182,18 @@ namespace DeviceManagerSystem
 
             //    }
             //}
-            //myCircle26.ButtonCenterColorStart = Color.Red;
-            //myCircle26.ButtonCenterColorEnd = Color.Red;
 
-            //myCircle27.ButtonCenterColorStart = Color.Red;
-            //myCircle27.ButtonCenterColorEnd = Color.Red;
+            Task.Factory.StartNew(() =>
+            {
+                while (!cancelltokenSource.IsCancellationRequested)
+                {
 
-            //myCircle28.ButtonCenterColorStart = Color.Red;
-            //myCircle28.ButtonCenterColorEnd = Color.Red;
+                    Task.Delay(1000).Wait();
+                    RefreshState();
+                    Refresh();
 
-            //myCircle29.ButtonCenterColorStart = Color.Red;
-            //myCircle29.ButtonCenterColorEnd = Color.Red;
+                }
+            }, cancelltokenSource.Token);
         }
 
         private void UserMain_SizeChanged(object sender, EventArgs e)
@@ -234,14 +203,15 @@ namespace DeviceManagerSystem
         }
         //声明为全局变量
         List<MyCircle> MyCircles = new List<MyCircle>();
+        List<CMES.Controls.MyCircle> MyCircles2 = new List<CMES.Controls.MyCircle>();
         //递归查找
         void FindChks(Control c)
         {
             if (c.HasChildren)
                 foreach (Control cc in c.Controls)
                     FindChks(cc);
-            else if (c is MyCircle)
-                MyCircles.Add(c as MyCircle);
+            else if (c is CMES.Controls.MyCircle)
+                MyCircles2.Add(c as CMES.Controls.MyCircle);
         }
         private void myCircle1_Click(object sender, EventArgs e)
         {
@@ -305,41 +275,97 @@ namespace DeviceManagerSystem
 
             //}
             Opc = Color.YellowGreen;
-
         }
 
         private void label56_DoubleClick(object sender, EventArgs e)
         {
-            //调用示例
-            //FindChks(this);
-            //foreach (MyCircle myCircle in MyCircles)
-            //{
-            //    myCircle.BorderColor = Color.Red;
-            //    myCircle.ButtonCenterColorStart = Color.Red;
-            //    myCircle.ButtonCenterColorEnd = Color.Red;
-            //    myCircle.FocusBorderColor = Color.Red;
 
-            //}
             Opc = Color.Red;
-
         }
 
         private void label50_DoubleClick(object sender, EventArgs e)
         {
-            //调用示例
-            //FindChks(this);
-            //foreach (MyCircle myCircle in MyCircles)
-            //{
 
-            //    myCircle.BorderColor = Color.Gray;
-            //    myCircle.ButtonCenterColorStart = Color.Gray;
-            //    myCircle.ButtonCenterColorEnd = Color.Gray;
-            //    myCircle.FocusBorderColor = Color.Gray;
-
-            //}
             Opc = Color.Gray;
+        }
+        public void setLight(CMES.Controls.MyCircle myCircle, Color Color)
+        {
 
+            myCircle.BorderColor = Color;
+            myCircle.ButtonCenterColorStart = Color;
+            myCircle.ButtonCenterColorEnd = Color;
+            myCircle.FocusBorderColor = Color;
+            myCircle.Refresh();
+        }
+        CancellationTokenSource cancelltokenSource = new CancellationTokenSource();
+
+        private void myCircle46_Load(object sender, EventArgs e)
+        {
+            FindChks(this);
+            foreach (CMES.Controls.MyCircle myCircle in MyCircles2)
+            {
+                myCircle.BorderColor = Color.Gray;
+                myCircle.ButtonCenterColorStart = Color.Gray;
+                myCircle.ButtonCenterColorEnd = Color.Gray;
+                myCircle.FocusBorderColor = Color.Gray;
+            }
+        }
+        private int m_iSt = 1;
+        private int m_iSt2 = 3;
+        private int m_iSt3 = 1;
+        private int m_iSt4 = 3;
+        private int m_iSt5 = 1;
+        private int m_iSt6 = 3;
+        private int m_iSt7 = 1;
+        private int m_iSt8 = 3;
+        private int m_iSt9 = 1;
+
+        public int Re(CMES.Controls.MyCircle myCircle, int iSt = 0)
+        {
+            int iRet = 1;
+            switch (iSt)
+            {
+                case 1:
+                    setLight(myCircle, Color.Red);
+                    iRet = 2;
+                    break;
+                case 2:
+                    setLight(myCircle, Color.Yellow);
+                    iRet = 3;
+                    break;
+                case 3:
+                    setLight(myCircle, Color.YellowGreen);
+                    iRet = 1;
+                    break;
+                default:
+                    setLight(myCircle, Color.Blue);
+                    break;
+            }
+
+            return iRet;
         }
 
+        private void myCircle46_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        public void RefreshState()
+        {
+            m_iSt = Re(myCircle46, m_iSt);
+            m_iSt2 = Re(myCircle48, m_iSt2);
+            m_iSt3 = Re(myCircle38, m_iSt3);
+            m_iSt4 = Re(myCircle57, m_iSt4);
+            m_iSt5 = Re(myCircle52, m_iSt5);
+            m_iSt6 = Re(myCircle39, m_iSt6);
+            m_iSt7 = Re(myCircle32, m_iSt7);
+            m_iSt8 = Re(myCircle34, m_iSt8);
+            m_iSt9 = Re(myCircle28, m_iSt9);
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            RefreshState();
+            //if (m_iSt == 0)
+            //{ m_iSt = 1; }
+        }
     }
 }

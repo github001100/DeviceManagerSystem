@@ -39,6 +39,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.UserComboBox = new System.Windows.Forms.ComboBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,14 +79,17 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "密码:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseDoubleClick);
             // 
             // loginName
             // 
-            this.loginName.Location = new System.Drawing.Point(723, 298);
+            this.loginName.Location = new System.Drawing.Point(721, 297);
             this.loginName.Name = "loginName";
             this.loginName.Size = new System.Drawing.Size(100, 27);
             this.loginName.TabIndex = 3;
             this.loginName.Text = "admin";
+            this.loginName.Visible = false;
             // 
             // loginPWD
             // 
@@ -93,13 +98,12 @@
             this.loginPWD.PasswordChar = '●';
             this.loginPWD.Size = new System.Drawing.Size(100, 27);
             this.loginPWD.TabIndex = 3;
-            this.loginPWD.Text = "kyjj";
             this.loginPWD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.loginPWD_KeyDown);
             // 
             // btn_login
             // 
             this.btn_login.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.btn_login.Location = new System.Drawing.Point(675, 425);
+            this.btn_login.Location = new System.Drawing.Point(750, 417);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(73, 36);
             this.btn_login.TabIndex = 4;
@@ -110,7 +114,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.button2.Location = new System.Drawing.Point(750, 425);
+            this.button2.Location = new System.Drawing.Point(675, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(73, 36);
             this.button2.TabIndex = 4;
@@ -147,6 +151,20 @@
             this.toolStripStatusLabel2.Text = "系统时间";
             this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // UserComboBox
+            // 
+            this.UserComboBox.FormattingEnabled = true;
+            this.UserComboBox.Location = new System.Drawing.Point(723, 297);
+            this.UserComboBox.Name = "UserComboBox";
+            this.UserComboBox.Size = new System.Drawing.Size(100, 28);
+            this.UserComboBox.TabIndex = 16;
+            this.UserComboBox.SelectedIndexChanged += new System.EventHandler(this.UserComboBox_SelectedIndexChanged);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // UserLoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -154,6 +172,7 @@
             this.BackgroundImage = global::DeviceManagerSystem.Properties.Resources.login3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(958, 571);
+            this.Controls.Add(this.UserComboBox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_login);
@@ -189,5 +208,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ComboBox UserComboBox;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

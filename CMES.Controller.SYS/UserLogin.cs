@@ -145,7 +145,6 @@ namespace CMES.Controller.SYS
                 return -1;
             }
 
-
         }
 
         public int UpdateUserPwdApi(EmployeeApi employeeApi)
@@ -197,7 +196,7 @@ namespace CMES.Controller.SYS
                                 ComboboxEx cbx = new ComboboxEx()
                                 {
                                     Id = item.AccountId,
-                                    Text = item.UserName + "(" + item.AccountId + ")"
+                                    Text = item.UserName /*+ "(" + item.AccountId + ")"*/
                                 };
                                 list.Add(cbx);
                             }

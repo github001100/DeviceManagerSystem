@@ -17,7 +17,16 @@ namespace DeviceManagerSystem.TPM
     public partial class UserLZZZ : UserControl
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
+        private static UserLZZZ frm = null;
 
+        public static UserLZZZ CreateInstrance()
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserLZZZ();
+            }
+            return frm;
+        }
         public UserLZZZ()
         {
             InitializeComponent();
@@ -132,7 +141,7 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index14].Cells[9].Value = "√";
             this.dataGridView1.Rows[index14].Cells[10].Value = "√";
             this.dataGridView1.Rows[index14].Cells[11].Value = "√";
-            this.dataGridView1.Rows[index14].Cells[12].Value = "√";
+            this.dataGridView1.Rows[index14].Cells[12].Value = "-";
             this.dataGridView1.Rows[index14].Cells[13].Value = "-";
             this.dataGridView1.Rows[index14].Cells[14].Value = "-";
             this.dataGridView1.Rows[index14].Cells[15].Value = "- ";
@@ -149,8 +158,8 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index15].Cells[8].Value = "√";
             this.dataGridView1.Rows[index15].Cells[9].Value = "√";
             this.dataGridView1.Rows[index15].Cells[10].Value = "√";
-            this.dataGridView1.Rows[index15].Cells[11].Value = "√";
-            this.dataGridView1.Rows[index15].Cells[12].Value = "√";
+            this.dataGridView1.Rows[index15].Cells[11].Value = "-";
+            this.dataGridView1.Rows[index15].Cells[12].Value = "-";
             this.dataGridView1.Rows[index15].Cells[13].Value = "-";
             this.dataGridView1.Rows[index15].Cells[14].Value = "-";
             this.dataGridView1.Rows[index15].Cells[15].Value = "- ";
@@ -165,15 +174,14 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index16].Cells[6].Value = "√";
             this.dataGridView1.Rows[index16].Cells[7].Value = "√";
             this.dataGridView1.Rows[index16].Cells[8].Value = "√";
-            this.dataGridView1.Rows[index16].Cells[9].Value = "√";
-            this.dataGridView1.Rows[index16].Cells[10].Value = "√";
-            this.dataGridView1.Rows[index16].Cells[11].Value = "√";
-            this.dataGridView1.Rows[index16].Cells[12].Value = "√";
+            this.dataGridView1.Rows[index16].Cells[9].Value = "-";
+            this.dataGridView1.Rows[index16].Cells[10].Value = "-";
+            this.dataGridView1.Rows[index16].Cells[11].Value = "-";
+            this.dataGridView1.Rows[index16].Cells[12].Value = "-";
             this.dataGridView1.Rows[index16].Cells[13].Value = "-";
             this.dataGridView1.Rows[index16].Cells[14].Value = "-";
             this.dataGridView1.Rows[index16].Cells[15].Value = "- ";
 
-            dataGridView1.Rows[0].Selected = false;
             //dataGridView1.Rows[index12].DefaultCellStyle.BackColor = Color.LawnGreen;
 
         }
@@ -226,7 +234,8 @@ namespace DeviceManagerSystem.TPM
 
             })));
             thread.IsBackground = true;
-            thread.Start();
+            //thread.Start();
+            dataGridView1_CellClick(this, null);
         }
 
         private void UserLZZZ_SizeChanged(object sender, EventArgs e)
@@ -242,8 +251,117 @@ namespace DeviceManagerSystem.TPM
             //textBox1.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();
             if (dataGridView1.CurrentRow == null) return;
             DataGridViewRow dgvr = dataGridView1.CurrentRow;
-            string val = dgvr.Cells[1].Value.ToString();
+            string val = dgvr.Cells[1].Value.ToString();//轴号
             textBox1.Text = val;
+            switch (dataGridView1.CurrentRow.Index)
+            {
+                case 0:
+                    circleProgramBar1.Progress = 30;
+                    break;
+                case 1:
+                    circleProgramBar1.Progress = 38;
+                    break;
+                case 2:
+                    circleProgramBar1.Progress = 58;
+                    break;
+                case 3:
+                    circleProgramBar1.Progress = 35;
+                    break;
+                case 4:
+                    circleProgramBar1.Progress = 59;
+                    break;
+                case 5:
+                    circleProgramBar1.Progress = 78;
+                    break;
+                default:
+                    circleProgramBar1.Progress = 69;
+                    break;
+            }
+            string val2 = dgvr.Cells[2].Value.ToString();
+            string val3 = dgvr.Cells[3].Value.ToString();
+            string val4 = dgvr.Cells[4].Value.ToString();
+            string val5 = dgvr.Cells[5].Value.ToString();
+            string val6 = dgvr.Cells[6].Value.ToString();
+            string val7 = dgvr.Cells[7].Value.ToString();
+            string val8 = dgvr.Cells[8].Value.ToString();
+            string val9 = dgvr.Cells[9].Value.ToString();
+            string val10 = dgvr.Cells[10].Value.ToString();
+            string val11 = dgvr.Cells[11].Value.ToString();
+            string val12 = dgvr.Cells[12].Value.ToString();
+            string val13 = dgvr.Cells[13].Value.ToString();
+            string val14 = dgvr.Cells[14].Value.ToString();
+            string val15 = dgvr.Cells[15].Value.ToString();
+            if (val2 == "√")
+                label3.BackColor = Color.LimeGreen;
+
+            else
+                label3.BackColor = Color.LightGray;
+            if (val3 == "√")
+                label4.BackColor = Color.LimeGreen;
+
+            else
+                label4.BackColor = Color.LightGray; 
+            if (val4 == "√")
+                label5.BackColor = Color.LimeGreen;
+
+            else
+                label5.BackColor = Color.LightGray;
+            if (val5 == "√")
+                label6.BackColor = Color.LimeGreen;
+
+            else
+                label6.BackColor = Color.LightGray;
+            if (val6 == "√")
+                label7.BackColor = Color.LimeGreen;
+
+            else
+                label7.BackColor = Color.LightGray;
+            if (val7 == "√")
+                label8.BackColor = Color.LimeGreen;
+
+            else
+                label8.BackColor = Color.LightGray;
+            if (val8 == "√")
+                label9.BackColor = Color.LimeGreen;
+
+            else
+                label9.BackColor = Color.LightGray;
+            if (val9 == "√")
+                label10.BackColor = Color.LimeGreen;
+
+            else
+                label10.BackColor = Color.LightGray;
+            if (val10 == "√")
+                label11.BackColor = Color.LimeGreen;
+
+            else
+                label11.BackColor = Color.LightGray;
+            if (val11 == "√")
+                label12.BackColor = Color.LimeGreen;
+
+            else
+                label12.BackColor = Color.LightGray;
+            if (val12 == "√")
+                label13.BackColor = Color.LimeGreen;
+
+            else
+                label13.BackColor = Color.LightGray;
+            if (val13 == "√")
+                label14.BackColor = Color.LimeGreen;
+
+            else
+                label14.BackColor = Color.LightGray;
+            if (val14 == "√")
+                label15.BackColor = Color.LimeGreen;
+
+            else
+                label15.BackColor = Color.LightGray;
+            if (val15 == "√")
+                label16.BackColor = Color.LimeGreen;
+
+            else
+                label16.BackColor = Color.LightGray;
+           
         }
     }
 }

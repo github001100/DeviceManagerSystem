@@ -4,9 +4,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CMES.Controller.SYS
 {
@@ -48,7 +45,7 @@ namespace CMES.Controller.SYS
             return mearResult;
         }
         public String UpdateZtjkInfoByProcedureNameToJson(string ProcedureName, string PartsName,
-            string NewCount,string DepartCount, string TaskPlans, string OverhaulDate, string UpdateTime)
+            string NewCount, string DepartCount, string TaskPlans, string OverhaulDate, string UpdateTime)
         {
             Table_JXJHZTJKEntity jxjhztjk = new Table_JXJHZTJKEntity();
             ApiResult apiresult = new ApiResult();
@@ -69,7 +66,7 @@ namespace CMES.Controller.SYS
                 if (apiresult.Code == 0 && apiresult.Data != null)
                 {
                     //jxjhztjk = JsonConvert.DeserializeObject<Table_JXJHZTJKEntity>(apiresult.Data.ToString());
-                  
+
                 }
             }
             return mearResult;

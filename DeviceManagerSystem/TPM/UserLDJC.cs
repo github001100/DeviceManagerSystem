@@ -16,6 +16,16 @@ namespace DeviceManagerSystem.TPM
 {
     public partial class UserLDJC : UserControl
     {
+        private static UserLDJC frm = null;
+
+        public static UserLDJC CreateInstrance()
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new UserLDJC();
+            }
+            return frm;
+        }
         public UserLDJC()
         {
             InitializeComponent();
@@ -226,8 +236,9 @@ namespace DeviceManagerSystem.TPM
             chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("微软雅黑", 10);
             chart1.ChartAreas[0].AxisY.Minimum = 0;//设定y轴的最小值
             //chart1.ChartAreas[0].AxisY.Maximum = 1000;//设定y轴的最大值
-            chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = false;   //设置是否交错显示,比如数据多的时间分成两行来显示 
-            //chart1.ChartAreas[0].AxisX.Interval = 1;
+            chart1.ChartAreas[0].AxisX.LabelStyle.IsStaggered = true;   //设置是否交错显示,比如数据多的时间分成两行来显示 
+            chart1.ChartAreas[0].AxisX.Interval = 1;
+            chart1.ChartAreas[0].AxisX.IntervalOffset = 1;
             //chart1.Series.Add(new Series()); //添加一个图表序列
             chart1.Series[0].XValueType = ChartValueType.String; //设置X轴上的值类型
             chart1.Series[0].Label = "#VAL"; //设置显示X Y的值

@@ -26,6 +26,16 @@ namespace DeviceManagerSystem.TPM
         List<Double> tyData2 = new List<Double>();
         List<String> txData2 = new List<String>() { "轮对", "轴承", "轮轴拆分", "轮轴组装", "轴箱", "前盖", "防尘挡圈" };
         private Queue<double> dataQueue = new Queue<double>(100);
+        private static UserZTJXJD frm = null;
+
+        public static UserZTJXJD CreateInstrance()
+        {
+            if (frm == null|| frm.IsDisposed)
+            {
+                frm = new UserZTJXJD();
+            }
+            return frm;
+        }
         public void RefreshList()
         {
             if (this.dataGridView1.Rows.Count > 0)
@@ -84,7 +94,7 @@ namespace DeviceManagerSystem.TPM
                 //ds = JsonToDataSet("date:{"+ json2 + "}");
                 dynamic model = JsonConvert.DeserializeObject(jsonStr2);
                 //this.dataGridView1.DataSource = null;
-                this.dataGridView1.DataSource = model.data;
+                this.dataGridView1.DataSource = model.data;//                        未包含data的定义 2020.4.03
                 //this.dataGridView1.Columns["SerialNumber"].Visible = false;
                 //this.dataGridView1.Columns["Others"].Visible = false;
                 //this.dataGridView1.Columns["OverhaulDate"].Visible = false;
@@ -327,7 +337,7 @@ namespace DeviceManagerSystem.TPM
                 while (!cancelltokenSource.IsCancellationRequested)
                 {
 
-                    Task.Delay(5000).Wait();
+                    //Task.Delay(5000).Wait();
                 }
             }, cancelltokenSource.Token);
         }
@@ -355,7 +365,7 @@ namespace DeviceManagerSystem.TPM
             {
                 //if (dpString.dTrim(e.Value) != "")
                 {
-                    e.Value = Convert.ToDouble(e.Value) / 10 + "%";
+                    e.Value = (Convert.ToDouble(e.Value) / 1000).ToString("0.0%");//
                 }
             }
             if (e.ColumnIndex == dataGridView1.Columns["工作进度"].Index)

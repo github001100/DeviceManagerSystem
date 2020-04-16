@@ -1,6 +1,5 @@
 ﻿using CMES.Controller.SYS;
 using CMES.Data;
-using CMES.Entity.SYS;
 using DeviceManagerSystem.TPM;
 using Newtonsoft.Json.Linq;
 using System;
@@ -152,8 +151,9 @@ namespace DeviceManagerSystem
                 {
                     try
                     {
-                        label2.BeginInvoke(new MethodInvoker(() =>
-                            label2.Text = "" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "    " + GetWeek()));//24h
+                        if (label2.IsHandleCreated)
+                            label2.BeginInvoke(new MethodInvoker(() =>
+                                label2.Text = "" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "    " + GetWeek()));//24h
                     }
                     catch { }
                     Thread.Sleep(1000);
@@ -234,15 +234,6 @@ namespace DeviceManagerSystem
             }
         }
         #region 自定义窗体显示界面
-        UserMain ucfl = new UserMain();
-        UserZCJC UserZCJC = new UserZCJC();
-        UserZTJXJD UserZTJXJD = new UserZTJXJD();
-        UserLBJJXJD UserLBJJXJD = new UserLBJJXJD();
-        UserLDJC UserLDJC = new UserLDJC();
-        UserLZZZ UserLZZZ = new UserLZZZ();
-        UserJXJHJK UserJXJHJK = new UserJXJHJK();
-        UserJXJHXD UserJXJHXD = new UserJXJHXD();
-        UserJXJHXD_LBJ UserJXJHXD_LBJ = new UserJXJHXD_LBJ();
         UserAbout UserAbout = new UserAbout();
         #endregion
         delegate void addDelegate();
@@ -264,6 +255,8 @@ namespace DeviceManagerSystem
 
         private void 轴承检修进度ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserZCJC UserZCJC = UserZCJC.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserZCJC);
         }
@@ -275,12 +268,16 @@ namespace DeviceManagerSystem
 
         private void 整体检修进度ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserZTJXJD UserZTJXJD = UserZTJXJD.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserZTJXJD);
         }
 
         private void 零部件检修进度ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserLBJJXJD UserLBJJXJD = UserLBJJXJD.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserLBJJXJD);
         }
@@ -303,18 +300,23 @@ namespace DeviceManagerSystem
 
         private void 轮对检修进度ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserLDJC UserLDJC = UserLDJC.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserLDJC);
         }
 
         private void 轮轴组装检修进度ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserLZZZ UserLZZZ = UserLZZZ.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserLZZZ);
         }
 
         private void 设备可视化大屏ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserMain ucfl = UserMain.CreateInstrance();
 
             this.panel1.Controls.Clear();
             AddUserControl(ucfl);
@@ -323,18 +325,24 @@ namespace DeviceManagerSystem
 
         private void 检修计划监控ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserJXJHJK UserJXJHJK = UserJXJHJK.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserJXJHJK);
         }
 
         private void 检修计划修订ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            UserJXJHXD UserJXJHXD = UserJXJHXD.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserJXJHXD);
         }
 
         private void 检修计划修订零部件ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UserJXJHXD_LBJ UserJXJHXD_LBJ = UserJXJHXD_LBJ.CreateInstrance();
+
             this.panel1.Controls.Clear();
             AddUserControl(UserJXJHXD_LBJ);
         }
@@ -547,40 +555,34 @@ namespace DeviceManagerSystem
                     //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
                     //MessageBox.Show(_Menu.Name);
                     整体检修进度ToolStripMenuItem_Click(this, null);
-
                     break;
                 case 1:
                     //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
                     //MessageBox.Show(_Menu.Name);
                     轴承检修进度ToolStripMenuItem_Click(this, null);
-
                     break;
                 case 2:
                     //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
                     //MessageBox.Show(_Menu.Name);
                     零部件检修进度ToolStripMenuItem_Click(this, null);
-
                     break;
                 case 3:
                     //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
                     //MessageBox.Show(_Menu.Name);
                     轮轴组装检修进度ToolStripMenuItem_Click(this, null);
-
                     break;
                 case 4:
                     //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
                     //MessageBox.Show(_Menu.Name);
                     检修计划监控ToolStripMenuItem_Click(this, null);
-
                     break;
                 case 6:
                     //MenuItem _Menu = (MenuItem)_List[i].GetValue(this);
                     //MessageBox.Show(_Menu.Name);
                     设备可视化大屏ToolStripMenuItem_Click(this, null);
-
                     break;
                 default:
-                    设备可视化大屏ToolStripMenuItem_Click(this, null);
+                    轴承检修进度ToolStripMenuItem_Click(this, null);
                     break;
             }
 
@@ -600,11 +602,13 @@ namespace DeviceManagerSystem
                 timer1.Enabled = true;
                 timer1.Interval = interval;
                 开启自动切换ToolStripMenuItem.Text = "关闭自动切换";
+                开启自动切换ToolStripMenuItem1.Text = "关闭自动切换";
             }
             else
             {
                 timer1.Enabled = false;
                 开启自动切换ToolStripMenuItem.Text = "开启自动切换";
+                开启自动切换ToolStripMenuItem1.Text = "开启自动切换";
 
             }
         }
@@ -678,6 +682,78 @@ namespace DeviceManagerSystem
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void 系统信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process vProcess = Process.Start("msinfo32.exe");
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            //menuStrip1.Visible = true;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            //menuStrip1.Visible = false;
+
+        }
+        private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+
+        }
+
+        private void 显示菜单栏ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //menuStrip1.Visible = true;
+            if (显示菜单栏ToolStripMenuItem.Text == "显示菜单栏")
+            {
+                label1.Top = 79;
+                label2.Top = 79;
+                显示菜单栏ToolStripMenuItem.Text = "隐藏菜单栏";
+                menuStrip1.Visible = true;
+                //this.FormBorderStyle = FormBorderStyle.Sizable;
+
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                label1.Top = 79 - 显示菜单栏ToolStripMenuItem.Height - 24;
+                label2.Top = 79 - 显示菜单栏ToolStripMenuItem.Height - 24;
+
+                显示菜单栏ToolStripMenuItem.Text = "显示菜单栏";
+                menuStrip1.Visible = false;
+                //this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+
+            }
+        }
+
+        private void 开启自动切换ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (开启自动切换ToolStripMenuItem1.Text == "开启自动切换")
+            {
+                timer1.Enabled = true;
+                timer1.Interval = interval;
+                开启自动切换ToolStripMenuItem1.Text = "关闭自动切换";
+                开启自动切换ToolStripMenuItem.Text = "关闭自动切换";
+            }
+            else
+            {
+                timer1.Enabled = false;
+                开启自动切换ToolStripMenuItem1.Text = "开启自动切换";
+                开启自动切换ToolStripMenuItem.Text = "开启自动切换";
+
+            }
+        }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            //WindowState = FormWindowState.Normal;
+            //label1.Top = 79 ;
+            //label2.Top = 79 ;
         }
     }
 }

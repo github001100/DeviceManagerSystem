@@ -1,0 +1,25 @@
+﻿body {
+}
+
+table {
+    /*table-layout: fixed;*/
+    border-style: groove;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+th {
+    word-wrap: break-word;
+    border-bottom-style: groove;
+    text-align: center;
+    background-color:lightgray;
+    /*border: 1px solid black;*/
+}
+
+td {
+    word-wrap: break-word;
+    border: 1px solid black;
+    text-align: center;
+    border-left-style: none;
+    border-right-style: none;
+}

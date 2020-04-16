@@ -1,0 +1,112 @@
+﻿@page
+@model XL_OMS_WebClient.Pages.Plans.CreateModel
+
+@{
+    ViewData["Title"] = "新增计划";
+}
+
+<h4>新增计划</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Plan.SerialNumber" class="control-label"></label>
+                <input asp-for="Plan.SerialNumber" class="form-control" />
+                <span asp-validation-for="Plan.SerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.OverhaulDate" class="control-label"></label>
+                <input asp-for="Plan.OverhaulDate" class="form-control" />
+                <span asp-validation-for="Plan.OverhaulDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.OverhaulCompany" class="control-label"></label>
+                <input asp-for="Plan.OverhaulCompany" class="form-control" />
+                <span asp-validation-for="Plan.OverhaulCompany" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.ProcedureName" class="control-label"></label>
+                <input asp-for="Plan.ProcedureName" class="form-control" />
+                <span asp-validation-for="Plan.ProcedureName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.PartsName" class="control-label"></label>
+                <input asp-for="Plan.PartsName" class="form-control" />
+                <span asp-validation-for="Plan.PartsName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.TaskPlans" class="control-label"></label>
+                <input asp-for="Plan.TaskPlans" class="form-control" />
+                <span asp-validation-for="Plan.TaskPlans" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.OverhaulQuantity" class="control-label"></label>
+                <input asp-for="Plan.OverhaulQuantity" class="form-control" />
+                <span asp-validation-for="Plan.OverhaulQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.QualifiedQuantity" class="control-label"></label>
+                <input asp-for="Plan.QualifiedQuantity" class="form-control" />
+                <span asp-validation-for="Plan.QualifiedQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.UnqualifiedQuantity" class="control-label"></label>
+                <input asp-for="Plan.UnqualifiedQuantity" class="form-control" />
+                <span asp-validation-for="Plan.UnqualifiedQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.StartTime" class="control-label"></label>
+                <input asp-for="Plan.StartTime" class="form-control" />
+                <span asp-validation-for="Plan.StartTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.PassRate" class="control-label"></label>
+                <input asp-for="Plan.PassRate" class="form-control" />
+                <span asp-validation-for="Plan.PassRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.SpeedOfProgress" class="control-label"></label>
+                <input asp-for="Plan.SpeedOfProgress" class="form-control" />
+                <span asp-validation-for="Plan.SpeedOfProgress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.Others" class="control-label"></label>
+                <input asp-for="Plan.Others" class="form-control" />
+                <span asp-validation-for="Plan.Others" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.UpdateTime" class="control-label"></label>
+                <input asp-for="Plan.UpdateTime" class="form-control" />
+                <span asp-validation-for="Plan.UpdateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.WorkGroup" class="control-label"></label>
+                <input asp-for="Plan.WorkGroup" class="form-control" />
+                <span asp-validation-for="Plan.WorkGroup" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.NewCount" class="control-label"></label>
+                <input asp-for="Plan.NewCount" class="form-control" />
+                <span asp-validation-for="Plan.NewCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plan.DepartCount" class="control-label"></label>
+                <input asp-for="Plan.DepartCount" class="form-control" />
+                <span asp-validation-for="Plan.DepartCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="创建" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回列表</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -38,6 +38,7 @@
             this.检修日期 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.工班组 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PartsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.检修工序 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OverhaulCompany = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OverhaulQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,6 +93,7 @@
             this.检修日期,
             this.工班组,
             this.SerialNumber,
+            this.PartsName,
             this.检修工序,
             this.OverhaulCompany,
             this.OverhaulQuantity,
@@ -157,9 +159,18 @@
             this.SerialNumber.ReadOnly = true;
             this.SerialNumber.Visible = false;
             // 
+            // PartsName
+            // 
+            this.PartsName.DataPropertyName = "PartsName";
+            this.PartsName.HeaderText = "PartsName";
+            this.PartsName.MinimumWidth = 6;
+            this.PartsName.Name = "PartsName";
+            this.PartsName.ReadOnly = true;
+            this.PartsName.Visible = false;
+            // 
             // 检修工序
             // 
-            this.检修工序.DataPropertyName = "PartsName";
+            this.检修工序.DataPropertyName = "ProcedureName";
             this.检修工序.HeaderText = "检修工序";
             this.检修工序.MinimumWidth = 6;
             this.检修工序.Name = "检修工序";
@@ -316,6 +327,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 检修日期;
         private System.Windows.Forms.DataGridViewTextBoxColumn 工班组;
         private System.Windows.Forms.DataGridViewTextBoxColumn SerialNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PartsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn 检修工序;
         private System.Windows.Forms.DataGridViewTextBoxColumn OverhaulCompany;
         private System.Windows.Forms.DataGridViewTextBoxColumn OverhaulQuantity;

@@ -2,12 +2,16 @@
 using CMES.Data;
 using CMES.Entity.SYS;
 using CMES.Utility;
+using Microsoft.Build.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -56,15 +60,28 @@ namespace DeviceManagerSystem.Others
         {
             InitializeComponent();
             Dbsqlite = dbsqliteIn;
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(Current_);
+        }
+        static void Current_(object sender, UnhandledExceptionEventArgs e)
+        {
+            Exception ex = (Exception)e.ExceptionObject;
+            string msg = e.IsTerminating ? "公共语言运行库" : "";
+            MessageBox.Show(msg);
 
         }
-
         private void UserLoginForm_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 300, AW_SLIDE | AW_ACTIVE | AW_VER_POSITIVE);
             this.toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
             loginName.Focus();
             loginPWD.Focus();
+            IEnumerable<ComboboxEx> list = ulogin.GetEmployeeCode();
+            this.UserComboBox.DataSource = list;
+            this.UserComboBox.DisplayMember = "text";
+            this.UserComboBox.ValueMember = "id";
+            this.UserComboBox.Text = "";
+            this.UserComboBox.SelectedIndex = 1;
+
             //时间显示
             new Thread(() =>
             {
@@ -72,7 +89,8 @@ namespace DeviceManagerSystem.Others
                 {
                     try
                     {
-                        statusStrip1.BeginInvoke(new MethodInvoker(() =>
+                        if (statusStrip1.IsHandleCreated)
+                            statusStrip1.BeginInvoke(new MethodInvoker(() =>
                             toolStripStatusLabel2.Text = "" + DateTime.Now.ToString()));
                     }
                     catch { }
@@ -112,10 +130,10 @@ namespace DeviceManagerSystem.Others
                         //DESEncrypt.Encrypt(userPwd, opeUser.SecretKey)
                         if (!opeUser.LoginPwd.Equals(userPwd))
                         {
-                            this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：登录失败," + "账号或密码错误！" });
+                            BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：登录失败," + "账号或密码错误！" });
                             flagGetDataOver = false;
                             //flagCancel = true;
-                            this.BeginInvoke(new PDelegate_Form(FormEnable), new object[] { true });
+                            BeginInvoke(new PDelegate_Form(FormEnable), new object[] { true });
                         }
                         else
                         {
@@ -123,21 +141,21 @@ namespace DeviceManagerSystem.Others
                             try
                             {
                                 flagGetDataOver = true;
-                                this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "添加系统日志" });
+                                BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "添加系统日志" });
                             }
                             catch (Exception e)
                             {
-                                ErrorLogMsg.CreateErrLog("登录异常", "201", e.ToString());
+                                ErrorLogMsg.CreateErrLog("登录异常", "2020", e.ToString());
                             }
                             #endregion
                         }
                     }
                     else
                     {
-                        this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：登录失败," + "账号或密码错误！" });
+                        BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：登录失败," + "账号或密码错误！" });
                         flagGetDataOver = false;
                         //flagCancel = true;
-                        this.BeginInvoke(new PDelegate_Form(FormEnable), new object[] { true });
+                        BeginInvoke(new PDelegate_Form(FormEnable), new object[] { true });
 
                     }
                 }
@@ -145,24 +163,32 @@ namespace DeviceManagerSystem.Others
             catch (Exception eee)
             {
                 messg = "网络延时 请重试:" + eee.Message + " Inf0:" + eee.StackTrace;
-                this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：" + "网络延时,请重试------请检查网络连接并启动服务!" });
+                BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：" + "网络延时,请重试------请检查网络连接并启动服务!" });
                 //isOK = false;
                 ErrorLogMsg.CreateErrLog("网络延时", "201", messg);
                 issingle = true;
             }
             if (flagGetDataOver)
             {
-                //Thread.Sleep(100);
+                try
+                {
+                    //Thread.Sleep(100);
 
-                ////窗口按钮可用
-                this.BeginInvoke(new PDelegate_Form(FormEnable), new object[] { false });
+                    ////窗口按钮可用
+                    BeginInvoke(new PDelegate_Form(FormEnable), new object[] { false });
 
-                //Thread.Sleep(100);
-                ////QueryStop();
-                this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：正在登录系统......" });
-                Thread.Sleep(100);
-
-                this.BeginInvoke(new OKsign(FormOpen), new object[] { opeUser, Dbsqlite });
+                    //Thread.Sleep(100);
+                    ////QueryStop();
+                    BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：正在登录系统......" });
+                    Thread.Sleep(100);
+                    if (this.IsHandleCreated)
+                        BeginInvoke(new OKsign(FormOpen), new object[] { opeUser, Dbsqlite });
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //throw;
+                }
 
             }
             else if (issingle)
@@ -170,12 +196,12 @@ namespace DeviceManagerSystem.Others
                 //Thread.Sleep(100);
 
                 ////窗口按钮可用
-                this.BeginInvoke(new PDelegate_Form(FormEnable), new object[] { false });
+                BeginInvoke(new PDelegate_Form(FormEnable), new object[] { false });
 
-                this.BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：当前为单机运行模式" });
-                Thread.Sleep(3000);
+                BeginInvoke(new PDelegate(ShowInfoTxt), new object[] { "状态提示：当前为单机运行模式" });
+                //Thread.Sleep(3000);
                 ////QueryStop();
-                this.BeginInvoke(new OKsign(FormOpen), new object[] { opeUser, Dbsqlite });
+                BeginInvoke(new OKsign(FormOpen), new object[] { opeUser, Dbsqlite });
 
             }
         }
@@ -186,7 +212,7 @@ namespace DeviceManagerSystem.Others
 
             flagGetDataOver = false;
             //获取用户输入的信息           
-            getloginName = this.loginName.Text;
+            getloginName = this.UserComboBox.Text;
             getloginPWD = this.loginPWD.Text;
             try
             {
@@ -210,6 +236,7 @@ namespace DeviceManagerSystem.Others
             }
             this.Hide();
         }
+        MainHome fm;
         /// <summary>
         /// 新窗口打开
         /// </summary>
@@ -219,12 +246,13 @@ namespace DeviceManagerSystem.Others
             //{
             //    Tag = opeUse
             //};
-            MainHome fm = MainHome.CreateInstrance(dbsqlite);//创建单例窗体2020.3.24
+            BeginInvoke(new PDelegate_Close(FormClose));
+
+            fm = MainHome.CreateInstrance(dbsqlite);//创建单例窗体2020.3.24
             Tag = opeUse;
             ulogin.SetUserXML(opeUse);
-            //Thread.Sleep(100);
             fm.Show();
-            this.BeginInvoke(new PDelegate_Close(FormClose));
+
         }
         /// <summary>
         ///  进程查询提示
@@ -239,7 +267,7 @@ namespace DeviceManagerSystem.Others
         /// </summary>
         private void FormEnable(bool isOK)
         {
-            this.loginName.Enabled = isOK;
+            this.UserComboBox.Enabled = isOK;
             this.loginPWD.Enabled = isOK;
             this.btn_login.Enabled = isOK;
             this.button2.Enabled = isOK;
@@ -259,12 +287,23 @@ namespace DeviceManagerSystem.Others
         }
         private void btn_login_Click(object sender, EventArgs e)
         {
-            string userName = loginName.Text.Trim();
+            string userName = UserComboBox.Text.Trim();
             string Pwd = loginPWD.Text;
             if (CheckLogin(userName, Pwd) == "True")
             {
-                GoLogin();
+                //GoLogin();
+                try
+                {
+                    backgroundWorker1.RunWorkerAsync();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("202");
+                }
+                finally
+                {
 
+                }
             }
             else
             {
@@ -284,6 +323,32 @@ namespace DeviceManagerSystem.Others
             {
                 this.btn_login_Click(sender, e);//触发button事件
             }
+        }
+
+        private void UserComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            GoLogin();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //GoLogin();
+        }
+
+        private void label3_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase)+ "\\TabTip.exe";//0sk
+            Process vProcess = Process.Start(path);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
