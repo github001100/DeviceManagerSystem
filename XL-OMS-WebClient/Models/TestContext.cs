@@ -24,8 +24,10 @@ namespace XL_OMS_WebClient.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
+#pragma warning disable CS1030 // #warning 指令
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=FUSANJIE\\SQLSERVER2012;Database=Test;User ID=sa;Password=kyjj1234;");
+                optionsBuilder.UseSqlServer("Server=FUSANJIE\\SQLSERVER2012;Database=Test;User ID=sa;Password=kyjj123456789;");
+#pragma warning restore CS1030 // #warning 指令
             }
         }
 

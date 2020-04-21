@@ -256,25 +256,25 @@ namespace DeviceManagerSystem.TPM
             switch (dataGridView1.CurrentRow.Index)
             {
                 case 0:
-                    circleProgramBar1.Progress = 30;
+                    circleProgramBar1.Progress = 39;
                     break;
                 case 1:
-                    circleProgramBar1.Progress = 38;
+                    circleProgramBar1.Progress = 45;
                     break;
                 case 2:
                     circleProgramBar1.Progress = 58;
                     break;
                 case 3:
-                    circleProgramBar1.Progress = 35;
+                    circleProgramBar1.Progress = 62;
                     break;
                 case 4:
-                    circleProgramBar1.Progress = 59;
+                    circleProgramBar1.Progress = 69;
                     break;
                 case 5:
                     circleProgramBar1.Progress = 78;
                     break;
                 default:
-                    circleProgramBar1.Progress = 69;
+                    circleProgramBar1.Progress = 39;
                     break;
             }
             string val2 = dgvr.Cells[2].Value.ToString();

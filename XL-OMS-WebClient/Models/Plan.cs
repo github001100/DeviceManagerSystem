@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace XL_OMS_WebClient.Models
 {
@@ -12,7 +13,8 @@ namespace XL_OMS_WebClient.Models
             SerialNumber = "序号";
         }
         public int Id { get; set; }
-
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         [DisplayName("序号")]
         public string SerialNumber { get; set; }
         [DisplayName("检修日期")]

@@ -14,6 +14,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Device[0].Id)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Device[0].RootNode)
             </th>
             <th>
@@ -38,11 +41,11 @@
                 @Html.DisplayNameFor(model => model.Device[0].Manufacturer)
             </th>
             @*<th>
-                @Html.DisplayNameFor(model => model.Device[0].ManufacturingDate)
-            </th>*@
+            @Html.DisplayNameFor(model => model.Device[0].ManufacturingDate)
+        </th>*@
             @*<th>
-                @Html.DisplayNameFor(model => model.Device[0].ProcedureName)
-            </th>*@
+            @Html.DisplayNameFor(model => model.Device[0].ProcedureName)
+        </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Device[0].DeviceStatus)
             </th>
@@ -152,6 +155,9 @@
     <tbody>
         @foreach (var item in Model.Device) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.RootNode)
             </td>
