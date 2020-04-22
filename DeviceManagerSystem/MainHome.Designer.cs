@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.开启自动切换ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.显示菜单栏ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.开启自动切换ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -91,6 +91,13 @@
             this.退出系统ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(169, 76);
+            // 
+            // 开启自动切换ToolStripMenuItem1
+            // 
+            this.开启自动切换ToolStripMenuItem1.Name = "开启自动切换ToolStripMenuItem1";
+            this.开启自动切换ToolStripMenuItem1.Size = new System.Drawing.Size(168, 24);
+            this.开启自动切换ToolStripMenuItem1.Text = "开启自动切换";
+            this.开启自动切换ToolStripMenuItem1.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem1_Click);
             // 
             // 显示菜单栏ToolStripMenuItem
             // 
@@ -144,7 +151,7 @@
             // 开启自动切换ToolStripMenuItem
             // 
             this.开启自动切换ToolStripMenuItem.Name = "开启自动切换ToolStripMenuItem";
-            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.开启自动切换ToolStripMenuItem.Size = new System.Drawing.Size(196, 28);
             this.开启自动切换ToolStripMenuItem.Text = "开启自动切换";
             this.开启自动切换ToolStripMenuItem.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem_Click);
             // 
@@ -351,10 +358,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统设置检修信息数据报表数据分析可视化管理工具帮助ToolStripMenuItem,
             this.检修信息ToolStripMenuItem,
+            this.工具ToolStripMenuItem,
             this.数据报表ToolStripMenuItem,
             this.数据分析ToolStripMenuItem,
             this.可视化管理ToolStripMenuItem,
-            this.工具ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -378,13 +385,6 @@
             // 
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // 开启自动切换ToolStripMenuItem1
-            // 
-            this.开启自动切换ToolStripMenuItem1.Name = "开启自动切换ToolStripMenuItem1";
-            this.开启自动切换ToolStripMenuItem1.Size = new System.Drawing.Size(168, 24);
-            this.开启自动切换ToolStripMenuItem1.Text = "开启自动切换";
-            this.开启自动切换ToolStripMenuItem1.Click += new System.EventHandler(this.开启自动切换ToolStripMenuItem1_Click);
             // 
             // MainHome
             // 

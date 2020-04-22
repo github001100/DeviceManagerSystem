@@ -1,6 +1,11 @@
-﻿using System;
+﻿using CMES.Controller.SYS;
+using CMES.Entity.SYS;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,7 +25,6 @@ namespace DeviceManagerSystem
         public static Color Opc;
         [DllImport("user32")]
         private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
-
         //下面是可用的常量，根据不同的动画效果声明自己需要的
         private const int AW_HOR_POSITIVE = 0x0001;//自左向右显示窗口，该标志可以在滚动动画和滑动动画中使用。使用AW_CENTER标志时忽略该标志
         private const int AW_HOR_NEGATIVE = 0x0002;//自右向左显示窗口，该标志可以在滚动动画和滑动动画中使用。使用AW_CENTER标志时忽略该标志
@@ -35,7 +39,7 @@ namespace DeviceManagerSystem
 
         public static UserMain CreateInstrance()
         {
-            if (frm == null||frm.IsDisposed)
+            if (frm == null || frm.IsDisposed)
             {
                 frm = new UserMain();
             }
@@ -47,8 +51,106 @@ namespace DeviceManagerSystem
             asc.controllInitializeSize(this);
 
         }
+        Int32[] num = { 0, 0, 0, 0 };
+        int s_T_num_1 = 0;//停机数
+        int s_T_num_2 = 0;//故障
+        int s_T_num_3 = 0;//维修
+        int s_T_num_4 = 0;//维修
+        int s_T_num_5 = 0;//维修
+
+        public void CountMyCircle(Panel[] panels, int row)
+        {
+
+            for (int i = 0; i < panels.Length; i++)
+            {
+                foreach (var item in (panels[i].Controls))
+                {
+                    if (item is CMES.Controls.MyCircle)
+                    {
+                        //for (int j = 0; j < num.Length; j++)
+                        {
+                            if ((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.Gray)
+                            {
+                                s_T_num_1 = s_T_num_1 + 1;
+
+                            }
+                            else if ((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.Red)
+                            {
+                                s_T_num_2 = s_T_num_2 + 1;
+
+                            }
+                            else if (((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.Yellow))
+                            {
+                                s_T_num_3 = s_T_num_3 + 1;
+
+                            }
+                            else if ((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.Aqua)
+                            {
+                                s_T_num_4 = s_T_num_4 + 1;
+
+                            }
+                            else if ((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.YellowGreen)
+                            {
+                                s_T_num_5 = s_T_num_5 + 1;
+
+                            }
+
+                        }
+                        //(item as CMES.Controls.MyCircle).ButtonCenterColorStart = color;
+
+                    }
+                }
+
+            }
+            this.dataGridView1.Rows[row].Cells[2].Value = s_T_num_5;//ps
+            this.dataGridView1.Rows[row].Cells[3].Value = s_T_num_1;//ps
+            this.dataGridView1.Rows[row].Cells[4].Value = s_T_num_2;//ps
+            this.dataGridView1.Rows[row].Cells[5].Value = s_T_num_3;//ps
+            this.dataGridView1.Rows[row].Cells[6].Value = s_T_num_4;//ps
+            this.dataGridView1.Rows[0].Cells[2].Value = Convert.ToInt32(this.dataGridView1.Rows[1].Cells[2].Value) + Convert.ToInt32(this.dataGridView1.Rows[2].Cells[2].Value) + Convert.ToInt32(this.dataGridView1.Rows[3].Cells[2].Value);
+            this.dataGridView1.Rows[0].Cells[3].Value = Convert.ToInt32(this.dataGridView1.Rows[1].Cells[3].Value) + Convert.ToInt32(this.dataGridView1.Rows[2].Cells[3].Value) + Convert.ToInt32(this.dataGridView1.Rows[3].Cells[3].Value);
+            this.dataGridView1.Rows[0].Cells[4].Value = Convert.ToInt32(this.dataGridView1.Rows[1].Cells[4].Value) + Convert.ToInt32(this.dataGridView1.Rows[2].Cells[4].Value) + Convert.ToInt32(this.dataGridView1.Rows[3].Cells[4].Value);
+            this.dataGridView1.Rows[0].Cells[5].Value = Convert.ToInt32(this.dataGridView1.Rows[1].Cells[5].Value) + Convert.ToInt32(this.dataGridView1.Rows[2].Cells[5].Value) + Convert.ToInt32(this.dataGridView1.Rows[3].Cells[5].Value);
+            this.dataGridView1.Rows[0].Cells[6].Value = Convert.ToInt32(this.dataGridView1.Rows[1].Cells[6].Value) + Convert.ToInt32(this.dataGridView1.Rows[2].Cells[6].Value) + Convert.ToInt32(this.dataGridView1.Rows[3].Cells[6].Value);
+            s_T_num_1 = 0;
+            s_T_num_2 = 0;
+            s_T_num_3 = 0;
+            s_T_num_4 = 0;
+            s_T_num_5 = 0;
+
+            //MessageBox.Show(num[0].ToString());
+        }
+        Panel[] ps, ps2, ps3;
         public void InitDataTable()
         {
+            ps = new Panel[] { panel31, panel34, panel26, panel29, panel32, panel35, panel38, panel60, panel45, panel41, panel44, panel47, panel39, panel42, panel50, panel53, panel51, panel52 };
+
+            ps2 = new Panel[]{ panel23,panel24,panel36, panel48 , panel59 , panel54,
+                panel55, panel56,panel21,panel22 };
+
+            ps3 = new Panel[]{ panel11,panel2, panel3, panel4 , panel5 , panel6,
+                panel7, panel8, panel9, panel10, panel13,panel14, panel16,panel20,panel15,panel18,panel30 ,
+                panel57, panel58, panel33,panel46,panel43, panel61, panel62, panel63,panel12,panel17,panel27,panel19,panel40,
+                panel37, panel25, panel28,panel64 };
+            foreach (var item in (ps))
+            {
+                if (item is Panel)
+                {
+                    (item as Panel).BackColor = Color.Thistle;
+
+                }
+            }
+            foreach (var item in (ps2))
+            {
+                if (item is Panel)
+                    (item as Panel).BackColor = Color.Magenta;//BlueViolet
+            }
+            foreach (var item in (ps3))
+            {
+                if (item is Panel)
+                    (item as Panel).BackColor = Color.CornflowerBlue;//BlueViolet
+            }
+
             //列标题居中
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.EnableHeadersVisualStyles = false;
@@ -66,7 +168,7 @@ namespace DeviceManagerSystem
 
             int index = this.dataGridView1.Rows.Add();
             this.dataGridView1.Rows[index].Cells[0].Value = "轮轴车间";
-            this.dataGridView1.Rows[index].Cells[1].Value = "62";
+            this.dataGridView1.Rows[index].Cells[1].Value = (ps.Count() + ps2.Count() + ps3.Count());
             this.dataGridView1.Rows[index].Cells[2].Value = "58";
             this.dataGridView1.Rows[index].Cells[3].Value = "4";
             this.dataGridView1.Rows[index].Cells[4].Value = "0";
@@ -74,26 +176,26 @@ namespace DeviceManagerSystem
             this.dataGridView1.Rows[index].Cells[6].Value = "0";
             this.dataGridView1.Rows[index].Cells[7].Value = "01:33:29";
             int index2 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index2].Cells[0].Value = "轮对工班";
-            this.dataGridView1.Rows[index2].Cells[1].Value = "33";
-            this.dataGridView1.Rows[index2].Cells[2].Value = "4";
-            this.dataGridView1.Rows[index2].Cells[3].Value = "29";
+            this.dataGridView1.Rows[index2].Cells[0].Value = "轮对工班";//ps3
+            this.dataGridView1.Rows[index2].Cells[1].Value = ps3.Count();
+            this.dataGridView1.Rows[index2].Cells[2].Value = "30";
+            this.dataGridView1.Rows[index2].Cells[3].Value = "4";
             this.dataGridView1.Rows[index2].Cells[4].Value = "0";
             this.dataGridView1.Rows[index2].Cells[5].Value = "0";
             this.dataGridView1.Rows[index2].Cells[6].Value = "0";
             this.dataGridView1.Rows[index2].Cells[7].Value = "01:18:36";
             int index3 = this.dataGridView1.Rows.Add();
             this.dataGridView1.Rows[index3].Cells[0].Value = "轴承工班";
-            this.dataGridView1.Rows[index3].Cells[1].Value = "19";
+            this.dataGridView1.Rows[index3].Cells[1].Value = ps.Count();
             this.dataGridView1.Rows[index3].Cells[2].Value = "17";
-            this.dataGridView1.Rows[index3].Cells[3].Value = "2";
+            this.dataGridView1.Rows[index3].Cells[3].Value = "1";//ps
             this.dataGridView1.Rows[index3].Cells[4].Value = "0";
             this.dataGridView1.Rows[index3].Cells[5].Value = "0";
             this.dataGridView1.Rows[index3].Cells[6].Value = "0";
             this.dataGridView1.Rows[index3].Cells[7].Value = "01:08:10";
             int index4 = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index4].Cells[0].Value = "组装工班";
-            this.dataGridView1.Rows[index4].Cells[1].Value = "10";
+            this.dataGridView1.Rows[index4].Cells[0].Value = "组装工班";//ps2
+            this.dataGridView1.Rows[index4].Cells[1].Value = ps2.Count();
             this.dataGridView1.Rows[index4].Cells[2].Value = "8";
             this.dataGridView1.Rows[index4].Cells[3].Value = "2";
             this.dataGridView1.Rows[index4].Cells[4].Value = "0";
@@ -144,44 +246,7 @@ namespace DeviceManagerSystem
         private void UserMain_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 1000, AW_SLIDE | AW_ACTIVE | AW_VER_NEGATIVE);
-
             InitDataTable();
-            Panel[] ps = { panel31,panel34, panel26, panel29 , panel32 , panel35,panel38,panel60,panel45,
-                panel41, panel44, panel47, panel39, panel42,panel50, panel53,panel50,panel51,panel52,panel49 };
-            Panel[] ps2 = { panel23,panel24,panel36, panel48 , panel59 , panel54,
-                panel55, panel56,panel21,panel22 };
-            Panel[] ps3 = { panel11,panel2, panel3, panel4 , panel5 , panel6,
-                panel7, panel8, panel9, panel10, panel13,panel14, panel16,panel20,panel15,panel18,panel30 ,
-                panel57, panel58, panel33,panel46,panel43, panel61, panel62, panel63,panel12,panel17,panel27,panel19,panel40,
-                panel37, panel25, panel28,panel64 };
-
-            foreach (var item in (ps))
-            {
-                if (item is Panel)
-                {
-                    (item as Panel).BackColor = Color.Aqua;
-
-                }
-            }
-            foreach (var item in (ps2))
-            {
-                if (item is Panel)
-                    (item as Panel).BackColor = Color.Magenta;//BlueViolet
-            }
-            foreach (var item in (ps3))
-            {
-                if (item is Panel)
-                    (item as Panel).BackColor = Color.CornflowerBlue;//BlueViolet
-            }
-            //foreach (var item in (this.panel11.Controls))
-            //{
-            //    if (item is MyCircle)
-            //    {
-            //        (item as MyCircle).ButtonCenterColorStart = Color.Red;
-            //        (item as MyCircle).ButtonCenterColorEnd = Color.Red;
-
-            //    }
-            //}
 
             Task.Factory.StartNew(() =>
             {
@@ -199,7 +264,6 @@ namespace DeviceManagerSystem
         private void UserMain_SizeChanged(object sender, EventArgs e)
         {
             asc.controlAutoSize(this);
-
         }
         //声明为全局变量
         List<MyCircle> MyCircles = new List<MyCircle>();
@@ -210,6 +274,14 @@ namespace DeviceManagerSystem
             if (c.HasChildren)
                 foreach (Control cc in c.Controls)
                     FindChks(cc);
+            else if (c is CMES.Controls.MyCircle)
+                MyCircles2.Add(c as CMES.Controls.MyCircle);
+        }
+        void FindChks(Control c, Panel[] panels)
+        {
+            if (c.HasChildren)
+                foreach (Control cc in (panels))
+                    FindChks(cc, panels);
             else if (c is CMES.Controls.MyCircle)
                 MyCircles2.Add(c as CMES.Controls.MyCircle);
         }
@@ -288,62 +360,302 @@ namespace DeviceManagerSystem
 
             Opc = Color.Gray;
         }
-        public void setLight(CMES.Controls.MyCircle myCircle, Color Color)
+        public void setLight(CMES.Controls.MyCircle myCircle, int Colo)
         {
 
-            myCircle.BorderColor = Color;
-            myCircle.ButtonCenterColorStart = Color;
-            myCircle.ButtonCenterColorEnd = Color;
-            myCircle.FocusBorderColor = Color;
+            //myCircle.BorderColor = Color;
+            //myCircle.ButtonCenterColorStart = Color;
+            //myCircle.ButtonCenterColorEnd = Color;
+            //myCircle.FocusBorderColor = Color;
+            switch (Colo)
+            {
+                case 1:
+                    myCircle.BorderColor = Color.Gray;
+                    myCircle.ButtonCenterColorStart = Color.Gray;
+                    myCircle.ButtonCenterColorEnd = Color.Gray;
+                    myCircle.FocusBorderColor = Color.Gray;
+                    break;
+                case 2:
+                    myCircle.BorderColor = Color.YellowGreen;
+                    myCircle.ButtonCenterColorStart = Color.YellowGreen;
+                    myCircle.ButtonCenterColorEnd = Color.YellowGreen;
+                    myCircle.FocusBorderColor = Color.YellowGreen;
+                    break;
+                case 3:
+                    myCircle.BorderColor = Color.RoyalBlue;
+                    myCircle.ButtonCenterColorStart = Color.RoyalBlue;
+                    myCircle.ButtonCenterColorEnd = Color.RoyalBlue;
+                    myCircle.FocusBorderColor = Color.RoyalBlue;
+                    break;
+                case 4:
+                    myCircle.BorderColor = Color.LightGray;
+                    myCircle.ButtonCenterColorStart = Color.LightGray;
+                    myCircle.ButtonCenterColorEnd = Color.LightGray;
+                    myCircle.FocusBorderColor = Color.LightGray;
+                    break;
+                case 5:
+                    myCircle.BorderColor = Color.Yellow;
+                    myCircle.ButtonCenterColorStart = Color.Yellow;
+                    myCircle.ButtonCenterColorEnd = Color.Yellow;
+                    myCircle.FocusBorderColor = Color.Yellow;
+                    break;
+                case 6:
+                    myCircle.BorderColor = Color.Aqua;
+                    myCircle.ButtonCenterColorStart = Color.Aqua;
+                    myCircle.ButtonCenterColorEnd = Color.Aqua;
+                    myCircle.FocusBorderColor = Color.Aqua;
+                    break;
+                case 7:
+                    myCircle.BorderColor = Color.Red;
+                    myCircle.ButtonCenterColorStart = Color.Red;
+                    myCircle.ButtonCenterColorEnd = Color.Red;
+                    myCircle.FocusBorderColor = Color.Red;
+                    break;
+                case 8:
+                    myCircle.BorderColor = Color.Turquoise;
+                    myCircle.ButtonCenterColorStart = Color.Turquoise;
+                    myCircle.ButtonCenterColorEnd = Color.Turquoise;
+                    myCircle.FocusBorderColor = Color.Turquoise;
+                    break;
+                default:
+                    myCircle.BorderColor = Color.Gray;
+                    myCircle.ButtonCenterColorStart = Color.Gray;
+                    myCircle.ButtonCenterColorEnd = Color.Gray;
+                    myCircle.FocusBorderColor = Color.Gray;
+                    break;
+            }
             myCircle.Refresh();
         }
         CancellationTokenSource cancelltokenSource = new CancellationTokenSource();
 
         private void myCircle46_Load(object sender, EventArgs e)
         {
-            FindChks(this);
-            foreach (CMES.Controls.MyCircle myCircle in MyCircles2)
-            {
-                myCircle.BorderColor = Color.Gray;
-                myCircle.ButtonCenterColorStart = Color.Gray;
-                myCircle.ButtonCenterColorEnd = Color.Gray;
-                myCircle.FocusBorderColor = Color.Gray;
-            }
+            //FindChks(this);
+            //foreach (CMES.Controls.MyCircle myCircle in MyCircles2)
+            //{
+            //    myCircle.BorderColor = Color.Gray;
+            //    myCircle.ButtonCenterColorStart = Color.Gray;
+            //    myCircle.ButtonCenterColorEnd = Color.Gray;
+            //    myCircle.FocusBorderColor = Color.Gray;
+            //}
         }
         private int m_iSt = 1;
-        private int m_iSt2 = 3;
+        private int m_iSt2 = 1;
         private int m_iSt3 = 1;
-        private int m_iSt4 = 3;
+        private int m_iSt4 = 1;
         private int m_iSt5 = 1;
-        private int m_iSt6 = 3;
+        private int m_iSt6 = 1;
         private int m_iSt7 = 1;
-        private int m_iSt8 = 3;
+        private int m_iSt8 = 1;
         private int m_iSt9 = 1;
 
-        public int Re(CMES.Controls.MyCircle myCircle, int iSt = 0)
+        public int Re(string myCircle, int iSt)//Re(CMES.Controls.MyCircle myCircle, int iSt)
         {
-            int iRet = 1;
-            switch (iSt)
+            //int iRet = 1;
+            switch (myCircle)
             {
-                case 1:
-                    setLight(myCircle, Color.Red);
-                    iRet = 2;
+                case "myCircle46":
+                    setLight(myCircle46, iSt);
+                    //iRet = 2;
                     break;
-                case 2:
-                    setLight(myCircle, Color.Yellow);
-                    iRet = 3;
+                case "myCircle47":
+                    setLight(myCircle47, iSt);
+                    //iRet = 3;
                     break;
-                case 3:
-                    setLight(myCircle, Color.YellowGreen);
-                    iRet = 1;
+                case "myCircle48":
+                    setLight(myCircle48, iSt);
+                    //iRet = 1;
+                    break;
+                case "myCircle49":
+                    setLight(myCircle49, iSt);
+                    //iRet = 1;
+                    break;
+                case "myCircle50":
+                    setLight(myCircle50, iSt);
+                    //iRet = 1;
+                    break;
+                case "myCircle51":
+                    setLight(myCircle51, iSt);
+                    break;
+                case "myCircle52":
+                    setLight(myCircle52, iSt);
+                    break;
+                case "myCircle53":
+                    setLight(myCircle53, iSt);
+                    break;
+                case "myCircle54":
+                    setLight(myCircle54, iSt);
+                    break;
+                case "myCircle55":
+                    setLight(myCircle55, iSt);
+                    break;
+                case "myCircle56":
+                    setLight(myCircle56, iSt);
+                    break;
+                case "myCircle57":
+                    setLight(myCircle57, iSt);
+                    break;
+                case "myCircle58":
+                    setLight(myCircle58, iSt);
+                    break;
+                case "myCircle59":
+                    setLight(myCircle59, iSt);
+                    break;
+                case "myCircle60":
+                    setLight(myCircle60, iSt);
+                    break;
+                case "myCircle61":
+                    setLight(myCircle61, iSt);
+                    break;
+                case "myCircle62":
+                    setLight(myCircle62, iSt);
+                    break;
+                case "myCircle63":
+                    setLight(myCircle10, iSt);
+                    break;
+                case "myCircle26":
+                    setLight(myCircle26, iSt);
+                    break;
+                case "myCircle27":
+                    setLight(myCircle27, iSt);
+                    break;
+                case "myCircle28":
+                    setLight(myCircle28, iSt);
+                    break;
+                case "myCircle29":
+                    setLight(myCircle29, iSt);
+                    break;
+                case "myCircle30":
+                    setLight(myCircle30, iSt);
+                    break;
+                case "myCircle31":
+                    setLight(myCircle31, iSt);
+                    break;
+                case "myCircle32":
+                    setLight(myCircle32, iSt);
+                    break;
+                case "myCircle33":
+                    setLight(myCircle33, iSt);
+                    break;
+                case "myCircle34":
+                    setLight(myCircle34, iSt);
+                    break;
+                case "myCircle35":
+                    setLight(myCircle35, iSt);
+                    break;
+                case "myCircle36":
+                    setLight(myCircle36, iSt);
+                    break;
+                case "myCircle37":
+                    setLight(myCircle37, iSt);
+                    break;
+                case "myCircle38":
+                    setLight(myCircle38, iSt);
+                    break;
+                case "myCircle39":
+                    setLight(myCircle39, iSt);
+                    break;
+                case "myCircle40":
+                    setLight(myCircle40, iSt);
+                    break;
+                case "myCircle41":
+                    setLight(myCircle41, iSt);
+                    break;
+                case "myCircle42":
+                    setLight(myCircle42, iSt);
+                    break;
+                case "myCircle43":
+                    setLight(myCircle43, iSt);
+                    break;
+                case "myCircle44":
+                    setLight(myCircle44, iSt);
+                    break;
+                case "myCircle45":
+                    setLight(myCircle45, iSt);
+                    break;
+                case "myCircle25":
+                    setLight(myCircle25, iSt);
+                    break;
+                case "myCircle24":
+                    setLight(myCircle24, iSt);
+                    break;
+                case "myCircle23":
+                    setLight(myCircle23, iSt);
+                    break;
+                case "myCircle22":
+                    setLight(myCircle22, iSt);
+                    break;
+                case "myCircle21":
+                    setLight(myCircle21, iSt);
+                    break;
+                case "myCircle20":
+                    setLight(myCircle20, iSt);
+                    break;
+                case "myCircle19":
+                    setLight(myCircle19, iSt);
+                    break;
+                case "myCircle18":
+                    setLight(myCircle18, iSt);
+                    break;
+                case "myCircle17":
+                    setLight(myCircle17, iSt);
+                    break;
+                case "myCircle16":
+                    setLight(myCircle16, iSt);
+                    break;
+                case "myCircle15":
+                    setLight(myCircle15, iSt);
+                    break;
+                case "myCircle14":
+                    setLight(myCircle14, iSt);
+                    break;
+                case "myCircle13":
+                    setLight(myCircle13, iSt);
+                    break;
+                case "myCircle12":
+                    setLight(myCircle12, iSt);
+                    break;
+                case "myCircle11":
+                    setLight(myCircle11, iSt);
+                    break;
+                case "myCircle10":
+                    setLight(myCircle10, iSt);
+                    break;
+                case "myCircle9":
+                    setLight(myCircle9, iSt);
+                    break;
+                case "myCircle8":
+                    setLight(myCircle8, iSt);
+                    break;
+                case "myCircle7":
+                    setLight(myCircle7, iSt);
+                    break;
+                case "myCircle6":
+                    setLight(myCircle6, iSt);
+                    break;
+                case "myCircle5":
+                    setLight(myCircle5, iSt);
+                    break;
+                case "myCircle4":
+                    setLight(myCircle4, iSt);
+                    break;
+                case "myCircle3":
+                    setLight(myCircle3, iSt);
+                    break;
+                case "myCircle2":
+                    setLight(myCircle2, iSt);
+                    break;
+                case "myCircle1":
+                    setLight(myCircle1, iSt);
                     break;
                 default:
-                    setLight(myCircle, Color.Blue);
+                    setLight(myCircle1, iSt);
                     break;
             }
 
-            return iRet;
+            return 0;
         }
+        DeviceController device = new DeviceController();
 
         private void myCircle46_Paint(object sender, PaintEventArgs e)
         {
@@ -351,21 +663,51 @@ namespace DeviceManagerSystem
         }
         public void RefreshState()
         {
-            m_iSt = Re(myCircle46, m_iSt);
-            m_iSt2 = Re(myCircle48, m_iSt2);
-            m_iSt3 = Re(myCircle38, m_iSt3);
-            m_iSt4 = Re(myCircle57, m_iSt4);
-            m_iSt5 = Re(myCircle52, m_iSt5);
-            m_iSt6 = Re(myCircle39, m_iSt6);
-            m_iSt7 = Re(myCircle32, m_iSt7);
-            m_iSt8 = Re(myCircle34, m_iSt8);
-            m_iSt9 = Re(myCircle28, m_iSt9);
+            //m_iSt = Re(myCircle46, m_iSt);
+            //m_iSt2 = Re(myCircle48, m_iSt2);
+            //m_iSt3 = Re(myCircle38, m_iSt3);
+            //m_iSt4 = Re(myCircle57, m_iSt4);
+            //m_iSt5 = Re(myCircle52, m_iSt5);
+            //m_iSt6 = Re(myCircle39, m_iSt6);
+            //m_iSt7 = Re(myCircle32, m_iSt7);
+            //m_iSt8 = Re(myCircle34, m_iSt8);
+            //m_iSt9 = Re(myCircle28, m_iSt9);
         }
+        List<shebeiguanlijichuxinxi_TableEntity> personList = new List<shebeiguanlijichuxinxi_TableEntity>();
         private void timer1_Tick(object sender, EventArgs e)
         {
             RefreshState();
             //if (m_iSt == 0)
             //{ m_iSt = 1; }
+            JObject jsonobj2 = null;
+
+            string jsonStr22 = device.GetDeviceInfoToJson("DeviceName", "DeviceNumber");
+            JObject o2 = JObject.Parse(jsonStr22);
+
+            JArray json2 = (JArray)o2["data"];
+            //var belongAct = json2["data"]
+            //    .Where(a => (a["DeviceStatus"].Select(c => c["DeviceStatus"].ToString().Contains("1")).First()))
+            //    .FirstOrDefault();
+
+            for (int j = 0; j < json2.Count; j++)
+            {
+                jsonobj2 = (JObject)json2[j];
+                //MessageBox.Show(jsonobj2["MyCircle"].ToString() + "|" + jsonobj2["DeviceState"].ToString(), json2.Count + "共");
+                Re(jsonobj2["MyCircle"].ToString(), Convert.ToInt32(jsonobj2["DeviceStatus"]));
+            }
+            var groupList = personList.GroupBy(m => new { m.DeviceStatus, m.DeviceNumber }).
+                      Select(a => new
+                      {
+                          DeviceStatus = a.Key.DeviceStatus,
+                          Salary = a.Sum(c => c.id)
+                      }).ToList();
+            foreach (var item in groupList)
+            {
+                Console.WriteLine("Name:{0}--Salary:{1}", item.DeviceStatus, item.Salary);
+            }
+            CountMyCircle(ps, 2);
+            CountMyCircle(ps2, 3);
+            CountMyCircle(ps3, 1);
         }
     }
 }

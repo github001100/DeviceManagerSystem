@@ -1,10 +1,9 @@
-﻿using System;
+﻿using CMES.Utility;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Xml.Linq;
-using CMES.Utility;
 namespace CMES.NET
 {
     public class HttpHelper

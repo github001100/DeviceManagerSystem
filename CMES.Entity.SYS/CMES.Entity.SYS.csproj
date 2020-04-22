@@ -50,6 +50,7 @@
     <Compile Include="JXJHZTJKEntity.cs" />
     <Compile Include="ldkpApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shebeiguanlijichuxinxi_TableEntity.cs" />
     <Compile Include="Sys_frequency.cs" />
     <Compile Include="S_UserInfo.cs" />
     <Compile Include="Table_JXJHZTJKEntity.cs" />

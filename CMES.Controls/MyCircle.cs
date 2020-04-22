@@ -370,8 +370,9 @@ namespace CMES.Controls
 
         private void MyCircle_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            MessageBox.Show(this.Name);
             //base.OnMouseDoubleClick(e);
-            buttonClicked = !buttonClicked;
+            //buttonClicked = !buttonClicked;
             //this.BorderColor = UserMain.Opc;
             //this.ButtonCenterColorStart = UserMain.Opc;
             //this.ButtonCenterColorEnd = UserMain.Opc;

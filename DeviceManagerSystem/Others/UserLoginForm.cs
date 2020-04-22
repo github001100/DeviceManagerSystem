@@ -75,13 +75,21 @@ namespace DeviceManagerSystem.Others
             this.toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
             loginName.Focus();
             loginPWD.Focus();
-            IEnumerable<ComboboxEx> list = ulogin.GetEmployeeCode();
-            this.UserComboBox.DataSource = list;
-            this.UserComboBox.DisplayMember = "text";
-            this.UserComboBox.ValueMember = "id";
-            this.UserComboBox.Text = "";
-            this.UserComboBox.SelectedIndex = 1;
+            try
+            {
+                IEnumerable<ComboboxEx> list = ulogin.GetEmployeeCode();
+                this.UserComboBox.DataSource = list;
+                this.UserComboBox.DisplayMember = "text";
+                this.UserComboBox.ValueMember = "id";
+                this.UserComboBox.Text = "";
+                this.UserComboBox.SelectedIndex = 1;
+            }
+            catch (Exception)
+            {
 
+                this.UserComboBox.Text = "Failing";
+            }
+          
             //时间显示
             new Thread(() =>
             {

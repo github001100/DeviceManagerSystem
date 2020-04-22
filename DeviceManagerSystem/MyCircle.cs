@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using Newtonsoft.Json.Linq;
 
 namespace DeviceManagerSystem
 {
@@ -376,6 +377,11 @@ namespace DeviceManagerSystem
             this.ButtonCenterColorStart = UserMain.Opc;
             this.ButtonCenterColorEnd = UserMain.Opc;
             this.FocusBorderColor = UserMain.Opc;
+        }
+
+        public static explicit operator MyCircle(JToken v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

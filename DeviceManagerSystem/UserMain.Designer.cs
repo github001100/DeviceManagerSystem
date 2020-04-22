@@ -38,14 +38,6 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.设备分布 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.总数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.开机数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.停机数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.故障数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.维修数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.保养数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.运行时长 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrowLine37 = new TestControls.ArrowLine(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.arrowLine17 = new TestControls.ArrowLine(this.components);
@@ -194,12 +186,8 @@
             this.label162 = new System.Windows.Forms.Label();
             this.panel59 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.myCircle63 = new CMES.Controls.MyCircle();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel49 = new System.Windows.Forms.Panel();
             this.myCircle10 = new CMES.Controls.MyCircle();
-            this.label138 = new System.Windows.Forms.Label();
-            this.label139 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel56 = new System.Windows.Forms.Panel();
             this.label153 = new System.Windows.Forms.Label();
             this.myCircle8 = new CMES.Controls.MyCircle();
@@ -397,6 +385,14 @@
             this.myCircle3 = new CMES.Controls.MyCircle();
             this.label166 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.设备分布 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.总数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.运行数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.停机数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.故障数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.维修数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.保养数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.运行时长 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -416,7 +412,6 @@
             this.panel62.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel59.SuspendLayout();
-            this.panel49.SuspendLayout();
             this.panel56.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel60.SuspendLayout();
@@ -584,7 +579,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.设备分布,
             this.总数,
-            this.开机数,
+            this.运行数,
             this.停机数,
             this.故障数,
             this.维修数,
@@ -598,62 +593,6 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(852, 200);
             this.dataGridView1.TabIndex = 88;
-            // 
-            // 设备分布
-            // 
-            this.设备分布.HeaderText = "设备分布";
-            this.设备分布.MinimumWidth = 6;
-            this.设备分布.Name = "设备分布";
-            this.设备分布.ReadOnly = true;
-            // 
-            // 总数
-            // 
-            this.总数.HeaderText = "总数";
-            this.总数.MinimumWidth = 6;
-            this.总数.Name = "总数";
-            this.总数.ReadOnly = true;
-            // 
-            // 开机数
-            // 
-            this.开机数.HeaderText = "开机数";
-            this.开机数.MinimumWidth = 6;
-            this.开机数.Name = "开机数";
-            this.开机数.ReadOnly = true;
-            // 
-            // 停机数
-            // 
-            this.停机数.HeaderText = "停机数";
-            this.停机数.MinimumWidth = 6;
-            this.停机数.Name = "停机数";
-            this.停机数.ReadOnly = true;
-            // 
-            // 故障数
-            // 
-            this.故障数.HeaderText = "故障数";
-            this.故障数.MinimumWidth = 6;
-            this.故障数.Name = "故障数";
-            this.故障数.ReadOnly = true;
-            // 
-            // 维修数
-            // 
-            this.维修数.HeaderText = "维修数";
-            this.维修数.MinimumWidth = 6;
-            this.维修数.Name = "维修数";
-            this.维修数.ReadOnly = true;
-            // 
-            // 保养数
-            // 
-            this.保养数.HeaderText = "保养数";
-            this.保养数.MinimumWidth = 6;
-            this.保养数.Name = "保养数";
-            this.保养数.ReadOnly = true;
-            // 
-            // 运行时长
-            // 
-            this.运行时长.HeaderText = "运行时长";
-            this.运行时长.MinimumWidth = 6;
-            this.运行时长.Name = "运行时长";
-            this.运行时长.ReadOnly = true;
             // 
             // arrowLine37
             // 
@@ -772,7 +711,6 @@
             this.groupBox1.Controls.Add(this.panel62);
             this.groupBox1.Controls.Add(this.panel61);
             this.groupBox1.Controls.Add(this.panel59);
-            this.groupBox1.Controls.Add(this.panel49);
             this.groupBox1.Controls.Add(this.panel56);
             this.groupBox1.Controls.Add(this.panel24);
             this.groupBox1.Controls.Add(this.panel60);
@@ -2578,7 +2516,7 @@
             // 
             // label53
             // 
-            this.label53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label53.BackColor = System.Drawing.Color.LightGray;
             this.label53.Location = new System.Drawing.Point(104, 116);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(29, 15);
@@ -3226,7 +3164,7 @@
             this.panel59.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel59.Controls.Add(this.label19);
-            this.panel59.Controls.Add(this.myCircle63);
+            this.panel59.Controls.Add(this.myCircle10);
             this.panel59.Controls.Add(this.label17);
             this.panel59.Location = new System.Drawing.Point(709, 555);
             this.panel59.Name = "panel59";
@@ -3242,45 +3180,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "轴箱注脂";
             // 
-            // myCircle63
-            // 
-            this.myCircle63.BorderColor = System.Drawing.Color.YellowGreen;
-            this.myCircle63.BorderTransparent = 255;
-            this.myCircle63.BorderWidth = 0;
-            this.myCircle63.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle63.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
-            this.myCircle63.DistanceToBorder = 4;
-            this.myCircle63.FocusBorderColor = System.Drawing.Color.Empty;
-            this.myCircle63.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.myCircle63.IconColor = System.Drawing.Color.Red;
-            this.myCircle63.IsShowIcon = false;
-            this.myCircle63.Location = new System.Drawing.Point(39, 37);
-            this.myCircle63.Margin = new System.Windows.Forms.Padding(2);
-            this.myCircle63.Name = "myCircle63";
-            this.myCircle63.Size = new System.Drawing.Size(30, 37);
-            this.myCircle63.TabIndex = 2;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(3, 54);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(31, 20);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "54#";
-            // 
-            // panel49
-            // 
-            this.panel49.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel49.Controls.Add(this.myCircle10);
-            this.panel49.Controls.Add(this.label138);
-            this.panel49.Controls.Add(this.label139);
-            this.panel49.Location = new System.Drawing.Point(709, 555);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(75, 82);
-            this.panel49.TabIndex = 77;
-            // 
             // myCircle10
             // 
             this.myCircle10.BorderColor = System.Drawing.Color.YellowGreen;
@@ -3290,29 +3189,23 @@
             this.myCircle10.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
             this.myCircle10.DistanceToBorder = 4;
             this.myCircle10.FocusBorderColor = System.Drawing.Color.Empty;
+            this.myCircle10.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.myCircle10.IconColor = System.Drawing.Color.Red;
             this.myCircle10.IsShowIcon = false;
-            this.myCircle10.Location = new System.Drawing.Point(30, 24);
+            this.myCircle10.Location = new System.Drawing.Point(39, 37);
             this.myCircle10.Margin = new System.Windows.Forms.Padding(2);
             this.myCircle10.Name = "myCircle10";
-            this.myCircle10.Size = new System.Drawing.Size(22, 30);
+            this.myCircle10.Size = new System.Drawing.Size(30, 37);
             this.myCircle10.TabIndex = 2;
             // 
-            // label138
+            // label17
             // 
-            this.label138.Location = new System.Drawing.Point(3, 54);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(44, 26);
-            this.label138.TabIndex = 0;
-            this.label138.Text = "54#";
-            // 
-            // label139
-            // 
-            this.label139.Location = new System.Drawing.Point(5, 3);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(71, 46);
-            this.label139.TabIndex = 0;
-            this.label139.Text = "轴箱注脂";
+            this.label17.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(3, 54);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(31, 20);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "54#";
             // 
             // panel56
             // 
@@ -5526,7 +5419,7 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.Aqua;
+            this.panel11.BackColor = System.Drawing.Color.Thistle;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.myCircle26);
@@ -5542,7 +5435,7 @@
             this.label1.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(5, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "端盖清洗";
             // 
@@ -5672,8 +5565,64 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // 设备分布
+            // 
+            this.设备分布.HeaderText = "设备分布";
+            this.设备分布.MinimumWidth = 6;
+            this.设备分布.Name = "设备分布";
+            this.设备分布.ReadOnly = true;
+            // 
+            // 总数
+            // 
+            this.总数.HeaderText = "总数";
+            this.总数.MinimumWidth = 6;
+            this.总数.Name = "总数";
+            this.总数.ReadOnly = true;
+            // 
+            // 运行数
+            // 
+            this.运行数.HeaderText = "运行数";
+            this.运行数.MinimumWidth = 6;
+            this.运行数.Name = "运行数";
+            this.运行数.ReadOnly = true;
+            // 
+            // 停机数
+            // 
+            this.停机数.HeaderText = "停机数";
+            this.停机数.MinimumWidth = 6;
+            this.停机数.Name = "停机数";
+            this.停机数.ReadOnly = true;
+            // 
+            // 故障数
+            // 
+            this.故障数.HeaderText = "故障数";
+            this.故障数.MinimumWidth = 6;
+            this.故障数.Name = "故障数";
+            this.故障数.ReadOnly = true;
+            // 
+            // 维修数
+            // 
+            this.维修数.HeaderText = "维修数";
+            this.维修数.MinimumWidth = 6;
+            this.维修数.Name = "维修数";
+            this.维修数.ReadOnly = true;
+            // 
+            // 保养数
+            // 
+            this.保养数.HeaderText = "保养数";
+            this.保养数.MinimumWidth = 6;
+            this.保养数.Name = "保养数";
+            this.保养数.ReadOnly = true;
+            // 
+            // 运行时长
+            // 
+            this.运行时长.HeaderText = "运行时长";
+            this.运行时长.MinimumWidth = 6;
+            this.运行时长.Name = "运行时长";
+            this.运行时长.ReadOnly = true;
             // 
             // UserMain
             // 
@@ -5704,7 +5653,6 @@
             this.panel62.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
             this.panel59.ResumeLayout(false);
-            this.panel49.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
             this.panel60.ResumeLayout(false);
@@ -5843,14 +5791,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 设备分布;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 总数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 开机数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 停机数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 故障数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 维修数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 保养数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 运行时长;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label48;
@@ -5926,9 +5866,6 @@
         private System.Windows.Forms.Panel panel61;
         private System.Windows.Forms.Label label162;
         private System.Windows.Forms.Label label163;
-        private System.Windows.Forms.Panel panel49;
-        private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.Label label139;
         private System.Windows.Forms.Panel panel56;
         private System.Windows.Forms.Label label152;
         private System.Windows.Forms.Label label153;
@@ -5986,7 +5923,6 @@
         private CMES.Controls.MyCircle myCircle3;
         private CMES.Controls.MyCircle myCircle4;
         private CMES.Controls.MyCircle myCircle5;
-        private CMES.Controls.MyCircle myCircle10;
         private CMES.Controls.MyCircle myCircle8;
         private CMES.Controls.MyCircle myCircle12;
         private CMES.Controls.MyCircle myCircle6;
@@ -6125,9 +6061,17 @@
         private TestControls.ArrowLine arrowLine80;
         private TestControls.ArrowLine arrowLine76;
         private System.Windows.Forms.Panel panel59;
-        private CMES.Controls.MyCircle myCircle63;
+        private CMES.Controls.MyCircle myCircle10;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 设备分布;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 总数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 运行数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 停机数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 故障数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 维修数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 保养数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 运行时长;
     }
 }

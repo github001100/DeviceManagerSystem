@@ -24,6 +24,7 @@ namespace DeviceManagerSystem
     {
         LdkpController ldkp = new LdkpController();
         ZtjkController ztjk = new ZtjkController();
+        DeviceController device = new DeviceController();
 
         private static MainHome frm = null;
         AutoSizeFormClass asc = new AutoSizeFormClass();
@@ -473,14 +474,16 @@ namespace DeviceManagerSystem
             //}
             //2整体检修
             JObject jsonobj2 = null;
-            string jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");//轮对检修
-            JObject o2 = JObject.Parse(jsonStr2);
+            //string jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");//轮对检修
+            string jsonStr22 = device.GetDeviceInfoToJson("DeviceName","DeviceNumber");
+            JObject o2 = JObject.Parse(jsonStr22);
 
             JArray json2 = (JArray)o2["data"];
             for (int j = 0; j < json2.Count; j++)
             {
                 jsonobj2 = (JObject)json2[j];
-                MessageBox.Show(jsonobj2["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+
+                Console.WriteLine(jsonobj2["DeviceStatus"].ToString(), json2.Count + "共");
 
             }
             //PostTest("", "");//请求方式二 Http  Post To Json

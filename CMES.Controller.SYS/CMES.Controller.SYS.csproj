@@ -58,6 +58,7 @@
     <Compile Include="UserLogin.cs" />
     <Compile Include="UserRoleServer.cs" />
     <Compile Include="UserSynchronization.cs" />
+    <Compile Include="DeviceController.cs" />
     <Compile Include="ZtjkController.cs" />
   </ItemGroup>
   <ItemGroup>
