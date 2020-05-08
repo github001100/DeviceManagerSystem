@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -63,6 +64,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -389,6 +391,7 @@
             this.label3.Size = new System.Drawing.Size(72, 27);
             this.label3.TabIndex = 0;
             this.label3.Text = "合格数";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -407,6 +410,11 @@
             this.label1.Size = new System.Drawing.Size(112, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "日检修计划";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserZCJC
             // 
@@ -461,5 +469,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 尺寸测量2;
         private System.Windows.Forms.DataGridViewTextBoxColumn 轴承入库;
         private System.Windows.Forms.DataGridViewTextBoxColumn 选配出库;
+        private System.Windows.Forms.Timer timer1;
     }
 }

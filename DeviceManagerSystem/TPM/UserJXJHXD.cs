@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -185,7 +179,7 @@ namespace DeviceManagerSystem.TPM
 
             })));
             thread.IsBackground = true;
-            thread.Start();
+            //thread.Start();
         }
         public override Font Font
         {

@@ -51,6 +51,7 @@
             this.合格率 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.工作进度 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Others = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UpdateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OverhaulDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,9 +85,9 @@
             this.groupBox3.Controls.Add(this.chart1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.groupBox3.Location = new System.Drawing.Point(3, 240);
+            this.groupBox3.Location = new System.Drawing.Point(3, 263);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1363, 478);
+            this.groupBox3.Size = new System.Drawing.Size(1363, 455);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "检修计划进度监控柱状图";
@@ -105,7 +106,7 @@
             series1.Legend = "Legend1";
             series1.Name = "百分比(%)";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1357, 445);
+            this.chart1.Size = new System.Drawing.Size(1357, 422);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -116,7 +117,7 @@
             this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.groupBox2.Location = new System.Drawing.Point(3, 31);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1363, 209);
+            this.groupBox2.Size = new System.Drawing.Size(1363, 232);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "检修进度计划监控表";
@@ -149,6 +150,7 @@
             this.合格率,
             this.工作进度,
             this.Others,
+            this.id,
             this.UpdateTime,
             this.SerialNumber,
             this.OverhaulDate,
@@ -162,7 +164,7 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1357, 176);
+            this.dataGridView1.Size = new System.Drawing.Size(1357, 199);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -174,7 +176,7 @@
             // 
             // 序号
             // 
-            this.序号.DataPropertyName = "id";
+            this.序号.DataPropertyName = "SerialNumber";
             this.序号.HeaderText = "序号";
             this.序号.MinimumWidth = 6;
             this.序号.Name = "序号";
@@ -268,6 +270,15 @@
             this.Others.Name = "Others";
             this.Others.ReadOnly = true;
             this.Others.Visible = false;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
             // 
             // UpdateTime
             // 
@@ -363,6 +374,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 合格率;
         private System.Windows.Forms.DataGridViewTextBoxColumn 工作进度;
         private System.Windows.Forms.DataGridViewTextBoxColumn Others;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn UpdateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn SerialNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn OverhaulDate;

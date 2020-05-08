@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CMES.Controller.SYS;
-using Newtonsoft.Json.Linq;
+﻿using CMES.Controller.SYS;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -64,7 +58,7 @@ namespace DeviceManagerSystem.TPM
             catch (Exception ex)
             {
                 //timer1.Enabled = false;
-
+                Console.WriteLine(ex.Message);
                 //throw;
             }
 
@@ -229,7 +223,7 @@ namespace DeviceManagerSystem.TPM
             //SysVar.lz_SN_1 = textBox1.Text.Trim();
             ztjk.UpdateZtjkInfoByProcedureNameToJson("轮对检修", "轮对", textBox1.Text, textBox2.Text,
                 "" + (Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text))
-                ,DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString());
+                , DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString());
             JObject o2 = JObject.Parse(jsonStr2);
             JArray json2 = (JArray)o2["data"];
             //ds = JsonToDataSet("date:{"+ json2 + "}");
@@ -256,7 +250,7 @@ namespace DeviceManagerSystem.TPM
 
         private void button6_Click(object sender, EventArgs e)
         {
-            ztjk.UpdateZtjkInfoByProcedureNameToJson("零部件检修", "轴箱", textBox6.Text, textBox5.Text, 
+            ztjk.UpdateZtjkInfoByProcedureNameToJson("零部件检修", "轴箱", textBox6.Text, textBox5.Text,
                 "" + (Convert.ToInt32(textBox5.Text) + Convert.ToInt32(textBox6.Text))
                  , DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString());
 
@@ -272,7 +266,7 @@ namespace DeviceManagerSystem.TPM
 
         private void button10_Click(object sender, EventArgs e)
         {
-            ztjk.UpdateZtjkInfoByProcedureNameToJson("零部件检修", "前盖", textBox10.Text, textBox9.Text, 
+            ztjk.UpdateZtjkInfoByProcedureNameToJson("零部件检修", "前盖", textBox10.Text, textBox9.Text,
                 "" + (Convert.ToInt32(textBox10.Text) + Convert.ToInt32(textBox9.Text))
                  , DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString());
 
@@ -292,7 +286,7 @@ namespace DeviceManagerSystem.TPM
 
         private void button12_Click(object sender, EventArgs e)
         {
-            ztjk.UpdateZtjkInfoByProcedureNameToJson("轮轴拆分", "轮轴", textBox12.Text, textBox11.Text, 
+            ztjk.UpdateZtjkInfoByProcedureNameToJson("轮轴拆分", "轮轴", textBox12.Text, textBox11.Text,
                 "" + (Convert.ToInt32(textBox11.Text) + Convert.ToInt32(textBox12.Text)), DateTime.Now.ToShortDateString()
                 , DateTime.Now.ToLongTimeString());
 
@@ -308,12 +302,12 @@ namespace DeviceManagerSystem.TPM
 
         private void dataGridView4_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-           
+
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-           
+
         }
 
         //public override Font Font

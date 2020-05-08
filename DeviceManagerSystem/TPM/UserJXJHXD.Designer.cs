@@ -437,7 +437,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Others.DataGridViewProgressBarColumn dataGridViewProgressBarColumn1;
+        //private Others.DataGridViewProgressBarColumn dataGridViewProgressBarColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 序号1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 组装日期;
         private System.Windows.Forms.DataGridViewTextBoxColumn 车种车型车号1;

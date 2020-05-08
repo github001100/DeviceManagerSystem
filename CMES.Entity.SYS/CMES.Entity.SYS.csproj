@@ -48,12 +48,16 @@
     <Compile Include="EmployeeApi.cs" />
     <Compile Include="Faces.cs" />
     <Compile Include="JXJHZTJKEntity.cs" />
+    <Compile Include="LDJXEntityEntity.cs" />
     <Compile Include="ldkpApi.cs" />
+    <Compile Include="PartsEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="shebeiguanlijichuxinxi_TableEntity.cs" />
     <Compile Include="Sys_frequency.cs" />
     <Compile Include="S_UserInfo.cs" />
     <Compile Include="Table_JXJHZTJKEntity.cs" />
+    <Compile Include="ZCJXEntity.cs" />
+    <Compile Include="ZZGXEntity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

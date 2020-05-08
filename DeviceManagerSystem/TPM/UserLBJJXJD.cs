@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CMES.Controller.SYS;
+using CMES.NET;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -15,6 +18,7 @@ namespace DeviceManagerSystem.TPM
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
         private DataTable dt = new DataTable();
+        ZtjkController ztjk = new ZtjkController();//整体检修 业务逻辑2.0
 
         BindingSource bs = new BindingSource();
         private static UserLBJJXJD frm = null;
@@ -163,15 +167,32 @@ namespace DeviceManagerSystem.TPM
                 }
             }
         }
+        //添加的两组Test数据
+        List<String> txData2 = new List<String>() { "除锈清洗", "二维码喷码", "外观检查", "尺寸测量", "管理入库" };
+        List<int> tyData2 = new List<int>() { 87, 96, 87, 84, 95 };
+        List<int> tyData3 = new List<int>() { 0, 1, 0, 0, 0 };
+        public void RefreshList(int row)
+        {
+            if (this.dataGridView2.Rows.Count > 0)
+            {
+                tyData2.Clear();
+                tyData2.Add(Convert.ToInt16(this.dataGridView2.Rows[row].Cells[1].Value));
+                tyData2.Add(Convert.ToInt16(this.dataGridView2.Rows[row].Cells[2].Value));
+                tyData2.Add(Convert.ToInt16(this.dataGridView2.Rows[row].Cells[3].Value));
+                tyData2.Add(Convert.ToInt16(this.dataGridView2.Rows[row].Cells[4].Value));
+                tyData2.Add(Convert.ToInt16(this.dataGridView2.Rows[row].Cells[5].Value));
+            }
+            else
+            {
+                tyData2 = new List<int>() { 5, 7, 9, 3, 8 };
+            }
+            chart1.Series[0].Points.DataBindXY(txData2, tyData2);
+        }
         private void UserLBJJXJD_Load(object sender, EventArgs e)
         {
             this.Font = new Font("微软雅黑", 10);
 
             InitDataTable();
-            //添加的两组Test数据
-            List<String> txData2 = new List<String>() { "除锈清洗", "二维码喷码", "外观检查", "尺寸测量", "管理入库" };
-            List<int> tyData2 = new List<int>() { 87, 96, 87, 84, 95 };
-            List<int> tyData3 = new List<int>() { 5, 7, 9, 3, 8 };
 
             chart1.ChartAreas[0].Axes[0].MajorGrid.Enabled = false; //X轴上网格
             chart1.ChartAreas[0].Axes[1].MajorGrid.Enabled = false; //y轴上网格
@@ -214,6 +235,26 @@ namespace DeviceManagerSystem.TPM
             })));
             thread.IsBackground = true;
             //thread.Start();
+            string jsonStr22 = ztjk.GetZtjkInfoByProcedureNameToJson("'轴箱检修','前盖检修','防尘挡圈检修'", "'轴箱','前盖','防尘挡圈'");
+            JObject o2 = JObject.Parse(jsonStr22);
+            //JObject jsonobj2 = null;
+
+            JArray json2 = (JArray)o2["data"];
+            //ToDataTableTwo(json2.ToString());
+            DataTable dt = Json.ToTable(json2.ToString());
+            for (int j = 0; j < dt.Rows.Count; j++)
+            {
+                //jsonobj2 = (JObject)json2[j];
+                //MessageBox.Show(jsonobj2[0]["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+                this.dataGridView1.Rows[j].Cells[1].Value = dt.Rows[j]["TaskPlans"].ToString();
+                this.dataGridView1.Rows[j].Cells[2].Value = dt.Rows[j]["OverhaulQuantity"].ToString();
+                this.dataGridView1.Rows[j].Cells[3].Value = dt.Rows[j]["QualifiedQuantity"].ToString();
+                this.dataGridView1.Rows[j].Cells[4].Value = dt.Rows[j]["UnqualifiedQuantity"].ToString();
+                this.dataGridView1.Rows[j].Cells[5].Value = Convert.ToDouble(dt.Rows[j]["PassRate"].ToString()) / 10 + "%";
+
+            }
+            //DataSet ds = Json.ToDataSet(json2.ToJson().ToString());
+            //this.dataGridView1.DataSource = dt;
             dataGridView2_CellClick(this, null);
 
         }
@@ -233,18 +274,78 @@ namespace DeviceManagerSystem.TPM
             switch (dataGridView2.CurrentRow.Index)
             {
                 case 0:
-                    circleProgramBar.Progress = 68;
+                    RefreshList(0);
+                    circleProgramBar.Progress = 100 * (Convert.ToInt16(this.dataGridView1.Rows[0].Cells[3].Value) + Convert.ToInt16(this.dataGridView1.Rows[0].Cells[4].Value)) / Convert.ToInt16(this.dataGridView1.Rows[0].Cells[1].Value);
                     break;
                 case 1:
-                    circleProgramBar.Progress = 39;
+                    RefreshList(1);
+                    circleProgramBar.Progress = 100 * (Convert.ToInt16(this.dataGridView1.Rows[1].Cells[3].Value) + Convert.ToInt16(this.dataGridView1.Rows[1].Cells[4].Value)) / Convert.ToInt16(this.dataGridView1.Rows[1].Cells[1].Value);
                     break;
                 case 2:
-                    circleProgramBar.Progress = 58;
+                    RefreshList(2);
+                    circleProgramBar.Progress = 100 * (Convert.ToInt16(this.dataGridView1.Rows[2].Cells[3].Value) + Convert.ToInt16(this.dataGridView1.Rows[2].Cells[4].Value)) / Convert.ToInt16(this.dataGridView1.Rows[2].Cells[1].Value);
                     break;
                 default:
-                    circleProgramBar.Progress = 48;
+                    RefreshList(0);
+                    circleProgramBar.Progress = 100 * (Convert.ToInt16(this.dataGridView1.Rows[0].Cells[3].Value) + Convert.ToInt16(this.dataGridView1.Rows[0].Cells[4].Value)) / Convert.ToInt16(this.dataGridView1.Rows[0].Cells[1].Value);
                     break;
             }
+        }
+        PartsController partsController = new PartsController();
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string jsonStr22 = ztjk.GetZtjkInfoByProcedureNameToJson("'轴箱检修','前盖检修','防尘挡圈检修'", "'轴箱','前盖','防尘挡圈'");
+            string jsonStr23 = partsController.GetPartsInfoToJson("ALL", "ALL");
+            JObject o2 = JObject.Parse(jsonStr22);
+            JObject o3 = JObject.Parse(jsonStr23);
+            //JObject jsonobj2 = null;
+
+            JArray json2 = (JArray)o2["data"];
+            JArray json3 = (JArray)o3["data"];
+            //ToDataTableTwo(json2.ToString());
+            DataTable dt = Json.ToTable(json2.ToString());
+            DataTable dt1 = Json.ToTable(json3.ToString());
+            for (int j = 0; j < dt.Rows.Count; j++)
+            {
+                //jsonobj2 = (JObject)json2[j];
+                //MessageBox.Show(jsonobj2[0]["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+                this.dataGridView1.Rows[j].Cells[1].Value = dt.Rows[j]["TaskPlans"].ToString();
+                this.dataGridView1.Rows[j].Cells[2].Value = dt.Rows[j]["OverhaulQuantity"].ToString();
+                this.dataGridView1.Rows[j].Cells[3].Value = dt.Rows[j]["QualifiedQuantity"].ToString();
+                this.dataGridView1.Rows[j].Cells[4].Value = dt.Rows[j]["UnqualifiedQuantity"].ToString();
+                this.dataGridView1.Rows[j].Cells[5].Value = Convert.ToDouble(dt.Rows[j]["PassRate"].ToString()) / 10 + "%";
+
+            }
+            for (int j = 0; j < dt1.Rows.Count; j++)
+            {
+                this.dataGridView2.Rows[j].Cells[1].Value = dt1.Rows[j]["CXQX"].ToString();
+                this.dataGridView2.Rows[j].Cells[2].Value = dt1.Rows[j]["QrCode"].ToString();
+                this.dataGridView2.Rows[j].Cells[3].Value = dt1.Rows[j]["WGJC"].ToString();
+                this.dataGridView2.Rows[j].Cells[4].Value = dt1.Rows[j]["CCCL"].ToString();
+                this.dataGridView2.Rows[j].Cells[5].Value = dt1.Rows[j]["RK"].ToString();
+
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //if (dataGridView2.CurrentRow == null) return;
+            //DataGridViewRow dgvr = dataGridView2.CurrentRow;
+            //switch (dataGridView2.CurrentRow.Index)
+            //{
+            //    case 0:
+            //        circleProgramBar.Progress = 68;
+            //        break;
+            //    case 1:
+            //        circleProgramBar.Progress = 39;
+            //        break;
+            //    case 2:
+            //        circleProgramBar.Progress = 58;
+            //        break;
+            //    default:
+            //        circleProgramBar.Progress = 48;
+            //        break;
+            //}
         }
     }
 }

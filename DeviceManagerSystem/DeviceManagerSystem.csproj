@@ -158,6 +158,12 @@
     <Compile Include="Others\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Others\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Others\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Others\UserLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     <EmbeddedResource Include="Others\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Others\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Others\UserLoginForm.resx">
       <DependentUpon>UserLoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +361,10 @@
     <ProjectReference Include="..\CMES.Entity.SYS\CMES.Entity.SYS.csproj">
       <Project>{ddb23bba-4211-4004-b6c0-67eeffb78559}</Project>
       <Name>CMES.Entity.SYS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMES.NET\CMES.NET.csproj">
+      <Project>{456F47CD-4443-4F79-AA70-75EF2BC0841B}</Project>
+      <Name>CMES.NET</Name>
     </ProjectReference>
     <ProjectReference Include="..\CMES.Utility\CMES.Utility.csproj">
       <Project>{a8312d5d-7f91-4a1f-9a60-baeb954f20c5}</Project>

@@ -2,20 +2,15 @@
 using CMES.Data;
 using CMES.Entity.SYS;
 using CMES.Utility;
-using Microsoft.Build.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DeviceManagerSystem.Others
@@ -89,7 +84,7 @@ namespace DeviceManagerSystem.Others
 
                 this.UserComboBox.Text = "Failing";
             }
-          
+
             //时间显示
             new Thread(() =>
             {
@@ -306,6 +301,7 @@ namespace DeviceManagerSystem.Others
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     MessageBox.Show("202");
                 }
                 finally
@@ -350,7 +346,7 @@ namespace DeviceManagerSystem.Others
 
         private void label3_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase)+ "\\TabTip.exe";//0sk
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase) + "\\TabTip.exe";//0sk
             Process vProcess = Process.Start(path);
         }
 

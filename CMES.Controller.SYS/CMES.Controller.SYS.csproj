@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseNodeController.cs" />
+    <Compile Include="PartsController .cs" />
+    <Compile Include="ZZGXController.cs" />
+    <Compile Include="LDJXController.cs" />
     <Compile Include="FrequencyServer.cs" />
     <Compile Include="LdkpController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

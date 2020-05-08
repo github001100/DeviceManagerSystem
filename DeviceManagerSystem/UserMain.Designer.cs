@@ -38,6 +38,14 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.设备分布 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.总数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.运行数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.停机数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.故障数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.维修数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.保养数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.运行时长 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrowLine37 = new TestControls.ArrowLine(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.arrowLine17 = new TestControls.ArrowLine(this.components);
@@ -385,14 +393,6 @@
             this.myCircle3 = new CMES.Controls.MyCircle();
             this.label166 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.设备分布 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.总数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.运行数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.停机数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.故障数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.维修数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.保养数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.运行时长 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -593,6 +593,62 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(852, 200);
             this.dataGridView1.TabIndex = 88;
+            // 
+            // 设备分布
+            // 
+            this.设备分布.HeaderText = "设备分布";
+            this.设备分布.MinimumWidth = 6;
+            this.设备分布.Name = "设备分布";
+            this.设备分布.ReadOnly = true;
+            // 
+            // 总数
+            // 
+            this.总数.HeaderText = "总数";
+            this.总数.MinimumWidth = 6;
+            this.总数.Name = "总数";
+            this.总数.ReadOnly = true;
+            // 
+            // 运行数
+            // 
+            this.运行数.HeaderText = "运行数";
+            this.运行数.MinimumWidth = 6;
+            this.运行数.Name = "运行数";
+            this.运行数.ReadOnly = true;
+            // 
+            // 停机数
+            // 
+            this.停机数.HeaderText = "停机数";
+            this.停机数.MinimumWidth = 6;
+            this.停机数.Name = "停机数";
+            this.停机数.ReadOnly = true;
+            // 
+            // 故障数
+            // 
+            this.故障数.HeaderText = "故障数";
+            this.故障数.MinimumWidth = 6;
+            this.故障数.Name = "故障数";
+            this.故障数.ReadOnly = true;
+            // 
+            // 维修数
+            // 
+            this.维修数.HeaderText = "维修数";
+            this.维修数.MinimumWidth = 6;
+            this.维修数.Name = "维修数";
+            this.维修数.ReadOnly = true;
+            // 
+            // 保养数
+            // 
+            this.保养数.HeaderText = "保养数";
+            this.保养数.MinimumWidth = 6;
+            this.保养数.Name = "保养数";
+            this.保养数.ReadOnly = true;
+            // 
+            // 运行时长
+            // 
+            this.运行时长.HeaderText = "运行时长";
+            this.运行时长.MinimumWidth = 6;
+            this.运行时长.Name = "运行时长";
+            this.运行时长.ReadOnly = true;
             // 
             // arrowLine37
             // 
@@ -2525,7 +2581,7 @@
             // 
             // label51
             // 
-            this.label51.BackColor = System.Drawing.Color.YellowGreen;
+            this.label51.BackColor = System.Drawing.Color.Lime;
             this.label51.Location = new System.Drawing.Point(104, 63);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(29, 15);
@@ -5395,8 +5451,8 @@
             this.myCircle35.BorderColor = System.Drawing.Color.YellowGreen;
             this.myCircle35.BorderTransparent = 255;
             this.myCircle35.BorderWidth = 0;
-            this.myCircle35.ButtonCenterColorEnd = System.Drawing.Color.YellowGreen;
-            this.myCircle35.ButtonCenterColorStart = System.Drawing.Color.YellowGreen;
+            this.myCircle35.ButtonCenterColorEnd = System.Drawing.Color.Lime;
+            this.myCircle35.ButtonCenterColorStart = System.Drawing.Color.Lime;
             this.myCircle35.DistanceToBorder = 4;
             this.myCircle35.FocusBorderColor = System.Drawing.Color.Empty;
             this.myCircle35.Font = new System.Drawing.Font("微软雅黑", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -5567,62 +5623,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // 设备分布
-            // 
-            this.设备分布.HeaderText = "设备分布";
-            this.设备分布.MinimumWidth = 6;
-            this.设备分布.Name = "设备分布";
-            this.设备分布.ReadOnly = true;
-            // 
-            // 总数
-            // 
-            this.总数.HeaderText = "总数";
-            this.总数.MinimumWidth = 6;
-            this.总数.Name = "总数";
-            this.总数.ReadOnly = true;
-            // 
-            // 运行数
-            // 
-            this.运行数.HeaderText = "运行数";
-            this.运行数.MinimumWidth = 6;
-            this.运行数.Name = "运行数";
-            this.运行数.ReadOnly = true;
-            // 
-            // 停机数
-            // 
-            this.停机数.HeaderText = "停机数";
-            this.停机数.MinimumWidth = 6;
-            this.停机数.Name = "停机数";
-            this.停机数.ReadOnly = true;
-            // 
-            // 故障数
-            // 
-            this.故障数.HeaderText = "故障数";
-            this.故障数.MinimumWidth = 6;
-            this.故障数.Name = "故障数";
-            this.故障数.ReadOnly = true;
-            // 
-            // 维修数
-            // 
-            this.维修数.HeaderText = "维修数";
-            this.维修数.MinimumWidth = 6;
-            this.维修数.Name = "维修数";
-            this.维修数.ReadOnly = true;
-            // 
-            // 保养数
-            // 
-            this.保养数.HeaderText = "保养数";
-            this.保养数.MinimumWidth = 6;
-            this.保养数.Name = "保养数";
-            this.保养数.ReadOnly = true;
-            // 
-            // 运行时长
-            // 
-            this.运行时长.HeaderText = "运行时长";
-            this.运行时长.MinimumWidth = 6;
-            this.运行时长.Name = "运行时长";
-            this.运行时长.ReadOnly = true;
             // 
             // UserMain
             // 

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using CMES.Controller.SYS;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CMES.Controller.SYS;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
-using System.Threading;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -26,7 +21,7 @@ namespace DeviceManagerSystem.TPM
         {
             InitializeComponent();
         }
-        public static UserJXJHJK CreateInstrance( )
+        public static UserJXJHJK CreateInstrance()
         {
             if (frm == null || frm.IsDisposed)
             {
@@ -49,14 +44,14 @@ namespace DeviceManagerSystem.TPM
             {
                 //轮轴检修计划表
                 //JObject jsonobj2 = null;
-                jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL","ALL");
+                jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");
                 JObject o2 = JObject.Parse(jsonStr2);
                 JArray json2 = (JArray)o2["data"];
                 //ds = JsonToDataSet("date:{"+ json2 + "}");
                 dynamic model = JsonConvert.DeserializeObject(jsonStr2);
                 //this.dataGridView1.DataSource = null;
                 this.dataGridView1.DataSource = model.data;
-             
+
                 this.dataGridView1.Refresh();
                 this.dataGridView1.Update();
                 this.dataGridView1.EndEdit();
@@ -67,6 +62,7 @@ namespace DeviceManagerSystem.TPM
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 timer1.Enabled = false;
 
                 //throw;
@@ -158,7 +154,7 @@ namespace DeviceManagerSystem.TPM
             {
                 while (!cancelltokenSource.IsCancellationRequested)
                 {
-                   
+
                     Task.Delay(5000).Wait();
                 }
             }, cancelltokenSource.Token);

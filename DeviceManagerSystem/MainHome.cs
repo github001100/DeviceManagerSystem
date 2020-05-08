@@ -25,6 +25,8 @@ namespace DeviceManagerSystem
         LdkpController ldkp = new LdkpController();
         ZtjkController ztjk = new ZtjkController();
         DeviceController device = new DeviceController();
+        LDJXController ldjx = new LDJXController();
+        ZZGXController zzgx = new ZZGXController();
 
         private static MainHome frm = null;
         AutoSizeFormClass asc = new AutoSizeFormClass();
@@ -75,7 +77,6 @@ namespace DeviceManagerSystem
             }
             catch (Exception)
             {
-
                 //throw;
             }
 
@@ -446,7 +447,7 @@ namespace DeviceManagerSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("服务未响应");
+                MessageBox.Show("服务未响应" + ex.Message);
             }
             finally
             {
@@ -475,7 +476,8 @@ namespace DeviceManagerSystem
             //2整体检修
             JObject jsonobj2 = null;
             //string jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");//轮对检修
-            string jsonStr22 = device.GetDeviceInfoToJson("DeviceName","DeviceNumber");
+            //string jsonStr22 = device.GetDeviceInfoToJson("DeviceName", "DeviceNumber");
+            string jsonStr22 = zzgx.GetZZGXInfoToJson("ALL", "DeviceNumber");
             JObject o2 = JObject.Parse(jsonStr22);
 
             JArray json2 = (JArray)o2["data"];
@@ -483,7 +485,7 @@ namespace DeviceManagerSystem
             {
                 jsonobj2 = (JObject)json2[j];
 
-                Console.WriteLine(jsonobj2["DeviceStatus"].ToString(), json2.Count + "共");
+                //Console.WriteLine(jsonobj2["DeviceStatus"].ToString(), json2.Count + "共");
 
             }
             //PostTest("", "");//请求方式二 Http  Post To Json
@@ -585,7 +587,7 @@ namespace DeviceManagerSystem
                     设备可视化大屏ToolStripMenuItem_Click(this, null);
                     break;
                 default:
-                    轴承检修进度ToolStripMenuItem_Click(this, null);
+                    轮轴组装检修进度ToolStripMenuItem_Click(this, null);
                     break;
             }
 
@@ -593,9 +595,7 @@ namespace DeviceManagerSystem
 
             if (i == 7)
             {
-
                 i = 0;
-
             }
         }
         private void 开启自动切换ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -757,6 +757,11 @@ namespace DeviceManagerSystem
             //WindowState = FormWindowState.Normal;
             //label1.Top = 79 ;
             //label2.Top = 79 ;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using CMES.Controller.SYS;
 using CMES.Entity.SYS;
+using CMES.NET;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -22,6 +24,8 @@ namespace DeviceManagerSystem
     public partial class UserMain : UserControl
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
+        ZtjkController ztjk = new ZtjkController();//整体检修 业务逻辑2.0
+
         public static Color Opc;
         [DllImport("user32")]
         private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
@@ -89,7 +93,7 @@ namespace DeviceManagerSystem
                                 s_T_num_4 = s_T_num_4 + 1;
 
                             }
-                            else if ((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.YellowGreen)
+                            else if ((item as CMES.Controls.MyCircle).ButtonCenterColorEnd == Color.Lime)
                             {
                                 s_T_num_5 = s_T_num_5 + 1;
 
@@ -243,6 +247,46 @@ namespace DeviceManagerSystem
             dataGridView2.Rows[0].Selected = false;
 
         }
+        string jsonStr2 = "";
+
+        public void SetTable()
+        {
+            try
+            {
+                //整体检修进度表
+                //JObject jsonobj2 = null;
+                jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");//获取所以信息
+                JObject o2 = JObject.Parse(jsonStr2);
+                JArray json2 = (JArray)o2["data"];
+                //ds = JsonToDataSet("date:{"+ json2 + "}");
+                //dynamic model = JsonConvert.DeserializeObject(jsonStr2);
+                //this.dataGridView1.DataSource = model.data;
+                DataTable dt = Json.ToTable(json2.ToString());
+                //轮轴拆
+                this.dataGridView2.Rows[0].Cells[1].Value = dt.Rows[0]["TaskPlans"].ToString();
+                this.dataGridView2.Rows[0].Cells[2].Value = dt.Rows[0]["OverhaulQuantity"].ToString();
+                this.dataGridView2.Rows[0].Cells[3].Value = Convert.ToInt32(dt.Rows[0]["QualifiedQuantity"].ToString()) + Convert.ToInt32(dt.Rows[0]["UnqualifiedQuantity"].ToString());
+                //轴承
+                this.dataGridView2.Rows[1].Cells[1].Value = dt.Rows[1]["TaskPlans"].ToString();
+                this.dataGridView2.Rows[1].Cells[2].Value = dt.Rows[1]["OverhaulQuantity"].ToString();
+                this.dataGridView2.Rows[1].Cells[3].Value = Convert.ToInt32(dt.Rows[1]["QualifiedQuantity"].ToString()) + Convert.ToInt32(dt.Rows[1]["UnqualifiedQuantity"].ToString());
+                //轮对
+                this.dataGridView2.Rows[2].Cells[1].Value = dt.Rows[2]["TaskPlans"].ToString();
+                this.dataGridView2.Rows[2].Cells[2].Value = dt.Rows[2]["OverhaulQuantity"].ToString();
+                this.dataGridView2.Rows[2].Cells[3].Value = Convert.ToInt32(dt.Rows[2]["QualifiedQuantity"].ToString())+ Convert.ToInt32(dt.Rows[2]["UnqualifiedQuantity"].ToString());
+                //组装
+                this.dataGridView2.Rows[3].Cells[1].Value = dt.Rows[3]["TaskPlans"].ToString();
+                this.dataGridView2.Rows[3].Cells[2].Value = dt.Rows[3]["OverhaulQuantity"].ToString();
+                this.dataGridView2.Rows[3].Cells[3].Value = Convert.ToInt32(dt.Rows[3]["QualifiedQuantity"].ToString()) + Convert.ToInt32(dt.Rows[3]["UnqualifiedQuantity"].ToString());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                timer1.Enabled = false;
+                //throw;
+            }
+
+        }
         private void UserMain_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 1000, AW_SLIDE | AW_ACTIVE | AW_VER_NEGATIVE);
@@ -253,10 +297,10 @@ namespace DeviceManagerSystem
                 while (!cancelltokenSource.IsCancellationRequested)
                 {
 
-                    Task.Delay(1000).Wait();
+                    Task.Delay(3000).Wait();
                     RefreshState();
                     Refresh();
-
+                    SetTable();
                 }
             }, cancelltokenSource.Token);
         }
@@ -376,10 +420,10 @@ namespace DeviceManagerSystem
                     myCircle.FocusBorderColor = Color.Gray;
                     break;
                 case 2:
-                    myCircle.BorderColor = Color.YellowGreen;
-                    myCircle.ButtonCenterColorStart = Color.YellowGreen;
-                    myCircle.ButtonCenterColorEnd = Color.YellowGreen;
-                    myCircle.FocusBorderColor = Color.YellowGreen;
+                    myCircle.BorderColor = Color.Lime;
+                    myCircle.ButtonCenterColorStart = Color.Lime;
+                    myCircle.ButtonCenterColorEnd = Color.Lime;
+                    myCircle.FocusBorderColor = Color.Lime;
                     break;
                 case 3:
                     myCircle.BorderColor = Color.RoyalBlue;
@@ -439,15 +483,15 @@ namespace DeviceManagerSystem
             //    myCircle.FocusBorderColor = Color.Gray;
             //}
         }
-        private int m_iSt = 1;
-        private int m_iSt2 = 1;
-        private int m_iSt3 = 1;
-        private int m_iSt4 = 1;
-        private int m_iSt5 = 1;
-        private int m_iSt6 = 1;
-        private int m_iSt7 = 1;
-        private int m_iSt8 = 1;
-        private int m_iSt9 = 1;
+        //private int m_iSt = 1;
+        //private int m_iSt2 = 1;
+        //private int m_iSt3 = 1;
+        //private int m_iSt4 = 1;
+        //private int m_iSt5 = 1;
+        //private int m_iSt6 = 1;
+        //private int m_iSt7 = 1;
+        //private int m_iSt8 = 1;
+        //private int m_iSt9 = 1;
 
         public int Re(string myCircle, int iSt)//Re(CMES.Controls.MyCircle myCircle, int iSt)
         {

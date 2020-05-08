@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
+﻿using CMES.Controller.SYS;
+using CMES.NET;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -18,6 +16,7 @@ namespace DeviceManagerSystem.TPM
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
         private static UserLZZZ frm = null;
+        ZZGXController zzgx = new ZZGXController();
 
         public static UserLZZZ CreateInstrance()
         {
@@ -235,6 +234,14 @@ namespace DeviceManagerSystem.TPM
             })));
             thread.IsBackground = true;
             //thread.Start();
+            string jsonStr22 = zzgx.GetZZGXInfoToJson("ALL", "DeviceNumber");
+            JObject o2 = JObject.Parse(jsonStr22);
+
+            JArray json2 = (JArray)o2["data"];
+            //ToDataTableTwo(json2.ToString());
+            DataTable dt = Json.ToTable(json2.ToString());
+            //DataSet ds = Json.ToDataSet(json2.ToJson().ToString());
+            this.dataGridView1.DataSource = dt;
             dataGridView1_CellClick(this, null);
         }
 
@@ -253,28 +260,38 @@ namespace DeviceManagerSystem.TPM
             DataGridViewRow dgvr = dataGridView1.CurrentRow;
             string val = dgvr.Cells[1].Value.ToString();//轴号
             textBox1.Text = val;
+            int num = 0;
+            int Count = this.dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells.Count - 5;
+            for (int i = 0; i < this.dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells.Count; i++)
+            {
+                if (this.dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[i].Value.ToString() == "√")
+                {
+                    num = num + 1;
+                }
+            }
+            int Progress = Convert.ToInt32((num * 100 / Count) * 1);
             switch (dataGridView1.CurrentRow.Index)
             {
                 case 0:
-                    circleProgramBar1.Progress = 39;
+                    circleProgramBar1.Progress = Progress;
                     break;
                 case 1:
-                    circleProgramBar1.Progress = 45;
+                    circleProgramBar1.Progress = Progress;
                     break;
                 case 2:
-                    circleProgramBar1.Progress = 58;
+                    circleProgramBar1.Progress = Progress;
                     break;
                 case 3:
-                    circleProgramBar1.Progress = 62;
+                    circleProgramBar1.Progress = Progress;
                     break;
                 case 4:
-                    circleProgramBar1.Progress = 69;
+                    circleProgramBar1.Progress = Progress;
                     break;
                 case 5:
-                    circleProgramBar1.Progress = 78;
+                    circleProgramBar1.Progress = Progress;
                     break;
                 default:
-                    circleProgramBar1.Progress = 39;
+                    circleProgramBar1.Progress = Progress;
                     break;
             }
             string val2 = dgvr.Cells[2].Value.ToString();
@@ -300,7 +317,7 @@ namespace DeviceManagerSystem.TPM
                 label4.BackColor = Color.LimeGreen;
 
             else
-                label4.BackColor = Color.LightGray; 
+                label4.BackColor = Color.LightGray;
             if (val4 == "√")
                 label5.BackColor = Color.LimeGreen;
 
@@ -361,7 +378,19 @@ namespace DeviceManagerSystem.TPM
 
             else
                 label16.BackColor = Color.LightGray;
-           
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string jsonStr22 = zzgx.GetZZGXInfoToJson("ALL", "DeviceNumber");
+            JObject o2 = JObject.Parse(jsonStr22);
+
+            JArray json2 = (JArray)o2["data"];
+            //ToDataTableTwo(json2.ToString());
+            DataTable dt = Json.ToTable(json2.ToString());
+            //DataSet ds = Json.ToDataSet(json2.ToJson().ToString());
+            this.dataGridView1.DataSource = dt;
         }
     }
 }

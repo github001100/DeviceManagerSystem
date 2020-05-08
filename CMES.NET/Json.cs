@@ -42,6 +42,10 @@ namespace CMES.NET
         {
             return Json == null ? JObject.Parse("{}") : JObject.Parse(Json.Replace("&nbsp;", ""));
         }
+        public static DataSet ToDataSet(this string Json)
+        {
+            return Json == null ? null : JsonConvert.DeserializeObject<DataSet>(Json);
+        }
     }
 
 
@@ -111,7 +115,5 @@ namespace CMES.NET
             return t;
         }
     }
-
-
 
 }

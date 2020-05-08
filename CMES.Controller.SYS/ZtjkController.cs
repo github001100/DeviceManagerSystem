@@ -1,5 +1,6 @@
 ﻿using CMES.Entity.SYS;
 using CMES.NET;
+using KYJJ.MES.Entity.BaseManage;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -26,6 +27,36 @@ namespace CMES.Controller.SYS
             };
 
             string mearResult = HttpHelper.DOPOST("ZTJK", "ZTJK/PostZTJKInfoByProcedureName", listpair);//Api未开启，报异常
+            if (mearResult != null && !mearResult.Equals(string.Empty))
+            {
+                apiresult = JsonConvert.DeserializeObject<ApiResult>(mearResult);//ApiResult
+                if (apiresult.Code == 0 && apiresult.Data != null)
+                {
+                    //jxjhztjk = JsonConvert.DeserializeObject<Table_JXJHZTJKEntity>(apiresult.Data.ToString());
+
+                    JObject o = JObject.Parse(mearResult);
+
+                    JArray json = (JArray)o["data"];
+                    for (int j = 0; j < json.Count; j++)
+                    {
+                        jsonobj = (JObject)json[j];
+                    }
+                }
+            }
+            return mearResult;
+        }
+        public String GetZtjkInfoToJson(string bh, string zccj)
+        {
+            ZCJXEntity jxjhztjk = new ZCJXEntity();
+            List<ZCJXEntity> lists = new List<ZCJXEntity>();
+            JObject jsonobj = null;
+            ApiResult apiresult = new ApiResult();
+            List<KeyValuePair<string, string>> listpair = new List<KeyValuePair<string, string>>() {
+                 new KeyValuePair<string, string>("bh",bh),
+                 new KeyValuePair<string, string>("zccj",zccj)
+            };
+
+            string mearResult = HttpHelper.DOPOST("ZTJK", "ZCJX/PostZCJXInfo", listpair);//Api未开启，报异常
             if (mearResult != null && !mearResult.Equals(string.Empty))
             {
                 apiresult = JsonConvert.DeserializeObject<ApiResult>(mearResult);//ApiResult

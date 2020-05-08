@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CMES.Controller.SYS;
+using CMES.NET;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
+using System.Drawing;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -18,6 +19,8 @@ namespace DeviceManagerSystem.TPM
     {
         AutoSizeFormClass asc = new AutoSizeFormClass();
         private static UserZCJC frm = null;
+        List<int> tyData2 = new List<int>() { 87, 96, 87, 84, 95, 74, 89, 87, 58, 78, 4 };
+        List<String> txData2 = new List<String>() { "轴承打码", "轴承除锈", "外观检查", "滚子探伤", "内圈探伤", "外圈探伤", "轴承清洗", "尺寸测量1", "尺寸测量2", "轴承入库", "轴承报废" };
 
         public static UserZCJC CreateInstrance()
         {
@@ -59,7 +62,109 @@ namespace DeviceManagerSystem.TPM
                 get { return _time; }
                 set { _time = value; }
             }
+        }
+        ZtjkController ztjk = new ZtjkController();
 
+        public void Test()
+        {
+
+            JObject jsonobj2 = null;
+            string jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("'轴承检修'", "'轴承'");
+            JObject o2 = JObject.Parse(jsonStr2);
+
+            JArray json2 = (JArray)o2["data"];
+            for (int j = 0; j < json2.Count; j++)
+            {
+                jsonobj2 = (JObject)json2[j];
+                //MessageBox.Show(jsonobj2["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+                textBox1.Text = jsonobj2["TaskPlans"].ToString();
+                textBox2.Text = Convert.ToInt32(jsonobj2["TaskPlans"]) - (Convert.ToInt32(jsonobj2["QualifiedQuantity"]) + Convert.ToInt32(jsonobj2["UnqualifiedQuantity"])) + "";//待检数
+                textBox3.Text = jsonobj2["QualifiedQuantity"].ToString();
+                textBox4.Text = jsonobj2["UnqualifiedQuantity"].ToString();
+                textBox5.Text = Convert.ToDouble(jsonobj2["PassRate"]) / 10 + "%";
+            }
+
+        }
+        DataTable dt; DataSet ds;
+        public void flashTableDataGridView()
+        {
+            try
+            {
+                string jsonStr22 = ztjk.GetZtjkInfoToJson("ALL", "ALL");
+                JObject o2 = JObject.Parse(jsonStr22);
+                //JObject jsonobj2 = null;
+
+                JArray json2 = (JArray)o2["data"];
+                //ToDataTableTwo(json2.ToString());
+                dt = Json.ToTable(json2.ToString());
+                //ds = Json.ToDataSet(json2.ToString());
+                //dt = ds.Tables["Temp"];
+                for (int j = 0; j < dt.Rows.Count; j++)
+                {
+                    //jsonobj2 = (JObject)json2[j];
+                    //MessageBox.Show(jsonobj2[0]["id"].ToString() + "|" + jsonobj2["ProcedureName"].ToString(), json2.Count + "共");
+                    this.dataGridView1.Rows[j].Cells[0].Value = dt.Rows[j]["id"].ToString();
+                    this.dataGridView1.Rows[j].Cells[1].Value = dt.Rows[j]["bh"].ToString();
+                    this.dataGridView1.Rows[j].Cells[2].Value = dt.Rows[j]["xjzc"].ToString();
+                    this.dataGridView1.Rows[j].Cells[3].Value = dt.Rows[j]["zccj"].ToString();
+                    this.dataGridView1.Rows[j].Cells[4].Value = dt.Rows[j]["zcdm"].ToString();
+                    this.dataGridView1.Rows[j].Cells[5].Value = dt.Rows[j]["zccx"].ToString();
+                    this.dataGridView1.Rows[j].Cells[6].Value = dt.Rows[j]["wgWaiquan"].ToString();
+                    this.dataGridView1.Rows[j].Cells[7].Value = dt.Rows[j]["tsGunzi"].ToString();
+                    this.dataGridView1.Rows[j].Cells[8].Value = dt.Rows[j]["tsNeiquan"].ToString();
+                    this.dataGridView1.Rows[j].Cells[9].Value = dt.Rows[j]["tsWaiquan"].ToString();
+                    this.dataGridView1.Rows[j].Cells[10].Value = dt.Rows[j]["tsGunziShengci"].ToString();//实际为轴承清洗
+
+                    this.dataGridView1.Rows[j].Cells[11].Value = dt.Rows[j]["Measurement1ScrapMark"].ToString();
+                    this.dataGridView1.Rows[j].Cells[12].Value = dt.Rows[j]["Measurement2ScrapMark"].ToString();
+                    this.dataGridView1.Rows[j].Cells[13].Value = dt.Rows[j]["s_inTime"] != null ? "√" : "";//Convert.ToDateTime(dt.Rows[j]["s_inTime"]).ToString("yyyy-MM-dd")
+                    this.dataGridView1.Rows[j].Cells[14].Value = dt.Rows[j]["s_outTime"] != null ? "√" : "";//Convert.ToDateTime(dt.Rows[j]["s_outTime"]).ToString("yyyy-MM-dd")
+
+                }
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    for (int O = 0; O < dataGridView1.Rows[i].Cells.Count; O++)
+                    {
+                        if (this.dataGridView1.Rows[i].Cells[O].Value != null)
+                        {
+                            if (this.dataGridView1.Rows[i].Cells[O].Value.ToString() == "×")
+                            {
+                                this.dataGridView1.Rows[i].Cells[O].Style.BackColor = Color.Red;
+                            }
+                            if (this.dataGridView1.Rows[i].Cells[O].Value.ToString() == "√")
+                            {
+                                this.dataGridView1.Rows[i].Cells[O].Style.BackColor = Color.White;
+
+                            }
+                        }
+
+                    }
+                    //foreach (DataRow dr in dt.Rows)
+                    //{
+                    //    Num_[0] += int.Parse(dr["累加字段"].ToString());
+                    //}
+
+                }
+                RefreshList();
+                object test = dt.Compute("Count(zcdm)", "zcdm='√'");
+                Console.WriteLine("测试====================================" + test);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+        private void ComputeBySalesSalesID(DataSet dataSet)
+        {
+            // Presumes a DataTable named "Orders" that has a column named "Total."
+            DataTable table;
+            table = dataSet.Tables["temp"];
+
+            // Declare an object variable.
+            object sumObject;
+            sumObject = table.Compute("Count(zcdm)", "cItem = '√'");
         }
         /// <summary>
         /// 初始化DataTable
@@ -188,16 +293,64 @@ namespace DeviceManagerSystem.TPM
             this.dataGridView1.Rows[index5].Cells[14].Value = "-";
 
             dataGridView1.Rows[0].Selected = false;
-            this.dataGridView1.Rows[index1].Cells[6].Style.BackColor = Color.Red;
         }
+        public void RefreshList()
+        {
+            int zcbfCount = 0;
+
+            if (this.dataGridView1.Rows.Count > 0)
+            {
+                zcbfCount = Convert.ToInt32(dt.Compute("Count(zcdm)", "zcdm='×'")) + Convert.ToInt32(dt.Compute("Count(zccx)", "zccx='×'"))
+               + Convert.ToInt32(dt.Compute("Count(wgWaiquan)", "wgWaiquan='×'")) + Convert.ToInt32(dt.Compute("Count(tsGunzi)", "tsGunzi='×'"))
+               + Convert.ToInt32(dt.Compute("Count(tsNeiquan)", "tsNeiquan='×'")) + Convert.ToInt32(dt.Compute("Count(tsWaiquan)", "tsWaiquan='×'"))
+               + Convert.ToInt32(dt.Compute("Count(tsGunziShengci)", "tsGunziShengci='×'")) + Convert.ToInt32(dt.Compute("Count(Measurement1ScrapMark)", "Measurement1ScrapMark='×'"))
+               + Convert.ToInt32(dt.Compute("Count(Measurement2ScrapMark)", "Measurement2ScrapMark='×'"));
+                tyData2.Clear();
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(zcdm)", "zcdm='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(zccx)", "zccx='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(wgWaiquan)", "wgWaiquan='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(tsGunzi)", "tsGunzi='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(tsNeiquan)", "tsNeiquan='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(tsWaiquan)", "tsWaiquan='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(tsGunziShengci)", "tsGunziShengci='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(Measurement1ScrapMark)", "Measurement1ScrapMark='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(Measurement2ScrapMark)", "Measurement2ScrapMark='√'")));
+                tyData2.Add(Convert.ToInt32(dt.Compute("Count(s_inTime)", "s_inTime<>''")));
+                //tyData2.Add(Convert.ToInt32(dt.Compute("Count(s_outTime)", "s_outTime<>''")));
+                tyData2.Add(zcbfCount);
+            }
+            else
+            {
+                tyData2 = new List<int>() { 87, 96, 87, 84, 95, 74, 89, 87, 58, 78, 4 };
+            }
+            //tyData2.Reverse();
+
+            chart1.Series[0].Points.DataBindXY(txData2, tyData2);
+
+        }
+        CancellationTokenSource cancelltokenSource = new CancellationTokenSource();
+
         private void UserZCJC_Load(object sender, EventArgs e)
         {
             this.Font = new Font("微软雅黑", 10);
+            for (int i = 2; i < 13; i++)
+            {
+                //this.dataGridView1.Columns[i].Width = 85;
 
+            }
+            //this.dataGridView1.Columns[13].Width = 210;
+            //this.dataGridView1.Columns[14].Width = 210;
+            Task.Factory.StartNew(() =>
+            {
+                while (!cancelltokenSource.IsCancellationRequested)
+                {
+                    Test();
+                    flashTableDataGridView();
+                    Task.Delay(1000).Wait();
+                }
+            }, cancelltokenSource.Token);
             InitDataTable();
             //添加的两组Test数据
-            List<String> txData2 = new List<String>() { "轴承打码", "轴承除锈", "外观检查", "滚子探伤", "内圈探伤", "外圈探伤", "轴承清洗", "尺寸测量1", "尺寸测量2", "轴承入库", "轴承报废" };
-            List<int> tyData2 = new List<int>() { 87, 96, 87, 84, 95, 74, 89, 87, 58, 78, 4 };
             List<int> txData3 = new List<int>() { 2012 };
             List<int> tyData3 = new List<int>() { 7 };
             //chart1.ChartAreas.Add(new ChartArea() { Name = "ca1" }); //背景框
@@ -277,6 +430,24 @@ namespace DeviceManagerSystem.TPM
             //asc.controlAutoSize(this);
 
         }
-       
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+            }
+            catch (Exception)
+            {
+
+                timer1.Enabled = false;
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            RefreshList();
+        }
     }
 }

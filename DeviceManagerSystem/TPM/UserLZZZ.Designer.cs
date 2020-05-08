@@ -31,6 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.arrowLine12 = new TestControls.ArrowLine(this.components);
+            this.arrowLine11 = new TestControls.ArrowLine(this.components);
+            this.arrowLine10 = new TestControls.ArrowLine(this.components);
+            this.arrowLine9 = new TestControls.ArrowLine(this.components);
+            this.arrowLine8 = new TestControls.ArrowLine(this.components);
+            this.arrowLine7 = new TestControls.ArrowLine(this.components);
+            this.arrowLine6 = new TestControls.ArrowLine(this.components);
+            this.arrowLine5 = new TestControls.ArrowLine(this.components);
+            this.arrowLine4 = new TestControls.ArrowLine(this.components);
+            this.arrowLine3 = new TestControls.ArrowLine(this.components);
+            this.arrowLine2 = new TestControls.ArrowLine(this.components);
+            this.arrowLine1 = new TestControls.ArrowLine(this.components);
+            this.arrowLine71 = new TestControls.ArrowLine(this.components);
             this.label17 = new System.Windows.Forms.Label();
             this.circleProgramBar1 = new CMES.Controls.CircleProgramBar();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -63,12 +76,15 @@
             this.内圈外滚道直径1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.轴箱组装后盖间隙1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.压板组装1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.轴向游隙1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.径向游隙1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.轴向游隙1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.轴承注脂1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.轴箱前盖组装测量1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.轴箱窜动量1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.磨合试验1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Other1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Other2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Other3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.日组装任务计划数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,19 +102,7 @@
             this.轴箱前盖组装测量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.轴箱窜动量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.磨合试验 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrowLine71 = new TestControls.ArrowLine(this.components);
-            this.arrowLine1 = new TestControls.ArrowLine(this.components);
-            this.arrowLine2 = new TestControls.ArrowLine(this.components);
-            this.arrowLine3 = new TestControls.ArrowLine(this.components);
-            this.arrowLine4 = new TestControls.ArrowLine(this.components);
-            this.arrowLine5 = new TestControls.ArrowLine(this.components);
-            this.arrowLine6 = new TestControls.ArrowLine(this.components);
-            this.arrowLine7 = new TestControls.ArrowLine(this.components);
-            this.arrowLine8 = new TestControls.ArrowLine(this.components);
-            this.arrowLine9 = new TestControls.ArrowLine(this.components);
-            this.arrowLine10 = new TestControls.ArrowLine(this.components);
-            this.arrowLine12 = new TestControls.ArrowLine(this.components);
-            this.arrowLine11 = new TestControls.ArrowLine(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -164,6 +168,279 @@
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "轮轴组装工序流程监控";
+            // 
+            // arrowLine12
+            // 
+            this.arrowLine12.AntiAlias = false;
+            this.arrowLine12.ArrowBodyWidth = 6F;
+            this.arrowLine12.ArrowLength = 8F;
+            this.arrowLine12.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine12.BackColor = System.Drawing.Color.White;
+            this.arrowLine12.BowHeight = 2F;
+            this.arrowLine12.BowWidth = 2F;
+            this.arrowLine12.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine12.FrameEnabled = false;
+            this.arrowLine12.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine12.LinearGradientUsingClient = true;
+            this.arrowLine12.Location = new System.Drawing.Point(1154, 213);
+            this.arrowLine12.Name = "arrowLine12";
+            this.arrowLine12.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine12.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine12.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine12.TabIndex = 95;
+            this.arrowLine12.Text = "arrowLine1";
+            // 
+            // arrowLine11
+            // 
+            this.arrowLine11.AntiAlias = false;
+            this.arrowLine11.ArrowBodyWidth = 6F;
+            this.arrowLine11.ArrowLength = 8F;
+            this.arrowLine11.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine11.BackColor = System.Drawing.Color.White;
+            this.arrowLine11.BowHeight = 2F;
+            this.arrowLine11.BowWidth = 2F;
+            this.arrowLine11.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine11.FrameEnabled = false;
+            this.arrowLine11.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine11.LinearGradientUsingClient = true;
+            this.arrowLine11.Location = new System.Drawing.Point(1064, 213);
+            this.arrowLine11.Name = "arrowLine11";
+            this.arrowLine11.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine11.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine11.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine11.TabIndex = 95;
+            this.arrowLine11.Text = "arrowLine1";
+            // 
+            // arrowLine10
+            // 
+            this.arrowLine10.AntiAlias = false;
+            this.arrowLine10.ArrowBodyWidth = 6F;
+            this.arrowLine10.ArrowLength = 8F;
+            this.arrowLine10.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine10.BackColor = System.Drawing.Color.White;
+            this.arrowLine10.BowHeight = 2F;
+            this.arrowLine10.BowWidth = 2F;
+            this.arrowLine10.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine10.FrameEnabled = false;
+            this.arrowLine10.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine10.LinearGradientUsingClient = true;
+            this.arrowLine10.Location = new System.Drawing.Point(976, 213);
+            this.arrowLine10.Name = "arrowLine10";
+            this.arrowLine10.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine10.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine10.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine10.TabIndex = 95;
+            this.arrowLine10.Text = "arrowLine1";
+            // 
+            // arrowLine9
+            // 
+            this.arrowLine9.AntiAlias = false;
+            this.arrowLine9.ArrowBodyWidth = 6F;
+            this.arrowLine9.ArrowLength = 8F;
+            this.arrowLine9.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine9.BackColor = System.Drawing.Color.White;
+            this.arrowLine9.BowHeight = 2F;
+            this.arrowLine9.BowWidth = 2F;
+            this.arrowLine9.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine9.FrameEnabled = false;
+            this.arrowLine9.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine9.LinearGradientUsingClient = true;
+            this.arrowLine9.Location = new System.Drawing.Point(886, 213);
+            this.arrowLine9.Name = "arrowLine9";
+            this.arrowLine9.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine9.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine9.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine9.TabIndex = 95;
+            this.arrowLine9.Text = "arrowLine1";
+            // 
+            // arrowLine8
+            // 
+            this.arrowLine8.AntiAlias = false;
+            this.arrowLine8.ArrowBodyWidth = 6F;
+            this.arrowLine8.ArrowLength = 8F;
+            this.arrowLine8.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine8.BackColor = System.Drawing.Color.White;
+            this.arrowLine8.BowHeight = 2F;
+            this.arrowLine8.BowWidth = 2F;
+            this.arrowLine8.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine8.FrameEnabled = false;
+            this.arrowLine8.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine8.LinearGradientUsingClient = true;
+            this.arrowLine8.Location = new System.Drawing.Point(799, 213);
+            this.arrowLine8.Name = "arrowLine8";
+            this.arrowLine8.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine8.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine8.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine8.TabIndex = 95;
+            this.arrowLine8.Text = "arrowLine1";
+            // 
+            // arrowLine7
+            // 
+            this.arrowLine7.AntiAlias = false;
+            this.arrowLine7.ArrowBodyWidth = 6F;
+            this.arrowLine7.ArrowLength = 8F;
+            this.arrowLine7.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine7.BackColor = System.Drawing.Color.White;
+            this.arrowLine7.BowHeight = 2F;
+            this.arrowLine7.BowWidth = 2F;
+            this.arrowLine7.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine7.FrameEnabled = false;
+            this.arrowLine7.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine7.LinearGradientUsingClient = true;
+            this.arrowLine7.Location = new System.Drawing.Point(710, 213);
+            this.arrowLine7.Name = "arrowLine7";
+            this.arrowLine7.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine7.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine7.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine7.TabIndex = 95;
+            this.arrowLine7.Text = "arrowLine1";
+            // 
+            // arrowLine6
+            // 
+            this.arrowLine6.AntiAlias = false;
+            this.arrowLine6.ArrowBodyWidth = 6F;
+            this.arrowLine6.ArrowLength = 8F;
+            this.arrowLine6.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine6.BackColor = System.Drawing.Color.White;
+            this.arrowLine6.BowHeight = 2F;
+            this.arrowLine6.BowWidth = 2F;
+            this.arrowLine6.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine6.FrameEnabled = false;
+            this.arrowLine6.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine6.LinearGradientUsingClient = true;
+            this.arrowLine6.Location = new System.Drawing.Point(620, 213);
+            this.arrowLine6.Name = "arrowLine6";
+            this.arrowLine6.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine6.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine6.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine6.TabIndex = 95;
+            this.arrowLine6.Text = "arrowLine1";
+            // 
+            // arrowLine5
+            // 
+            this.arrowLine5.AntiAlias = false;
+            this.arrowLine5.ArrowBodyWidth = 6F;
+            this.arrowLine5.ArrowLength = 8F;
+            this.arrowLine5.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine5.BackColor = System.Drawing.Color.White;
+            this.arrowLine5.BowHeight = 2F;
+            this.arrowLine5.BowWidth = 2F;
+            this.arrowLine5.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine5.FrameEnabled = false;
+            this.arrowLine5.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine5.LinearGradientUsingClient = true;
+            this.arrowLine5.Location = new System.Drawing.Point(531, 213);
+            this.arrowLine5.Name = "arrowLine5";
+            this.arrowLine5.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine5.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine5.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine5.TabIndex = 95;
+            this.arrowLine5.Text = "arrowLine1";
+            // 
+            // arrowLine4
+            // 
+            this.arrowLine4.AntiAlias = false;
+            this.arrowLine4.ArrowBodyWidth = 6F;
+            this.arrowLine4.ArrowLength = 8F;
+            this.arrowLine4.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine4.BackColor = System.Drawing.Color.White;
+            this.arrowLine4.BowHeight = 2F;
+            this.arrowLine4.BowWidth = 2F;
+            this.arrowLine4.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine4.FrameEnabled = false;
+            this.arrowLine4.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine4.LinearGradientUsingClient = true;
+            this.arrowLine4.Location = new System.Drawing.Point(442, 213);
+            this.arrowLine4.Name = "arrowLine4";
+            this.arrowLine4.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine4.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine4.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine4.TabIndex = 95;
+            this.arrowLine4.Text = "arrowLine1";
+            // 
+            // arrowLine3
+            // 
+            this.arrowLine3.AntiAlias = false;
+            this.arrowLine3.ArrowBodyWidth = 6F;
+            this.arrowLine3.ArrowLength = 8F;
+            this.arrowLine3.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine3.BackColor = System.Drawing.Color.White;
+            this.arrowLine3.BowHeight = 2F;
+            this.arrowLine3.BowWidth = 2F;
+            this.arrowLine3.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine3.FrameEnabled = false;
+            this.arrowLine3.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine3.LinearGradientUsingClient = true;
+            this.arrowLine3.Location = new System.Drawing.Point(353, 213);
+            this.arrowLine3.Name = "arrowLine3";
+            this.arrowLine3.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine3.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine3.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine3.TabIndex = 95;
+            this.arrowLine3.Text = "arrowLine1";
+            // 
+            // arrowLine2
+            // 
+            this.arrowLine2.AntiAlias = false;
+            this.arrowLine2.ArrowBodyWidth = 6F;
+            this.arrowLine2.ArrowLength = 8F;
+            this.arrowLine2.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine2.BackColor = System.Drawing.Color.White;
+            this.arrowLine2.BowHeight = 2F;
+            this.arrowLine2.BowWidth = 2F;
+            this.arrowLine2.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine2.FrameEnabled = false;
+            this.arrowLine2.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine2.LinearGradientUsingClient = true;
+            this.arrowLine2.Location = new System.Drawing.Point(265, 213);
+            this.arrowLine2.Name = "arrowLine2";
+            this.arrowLine2.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine2.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine2.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine2.TabIndex = 95;
+            this.arrowLine2.Text = "arrowLine1";
+            // 
+            // arrowLine1
+            // 
+            this.arrowLine1.AntiAlias = false;
+            this.arrowLine1.ArrowBodyWidth = 6F;
+            this.arrowLine1.ArrowLength = 8F;
+            this.arrowLine1.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine1.BackColor = System.Drawing.Color.White;
+            this.arrowLine1.BowHeight = 2F;
+            this.arrowLine1.BowWidth = 2F;
+            this.arrowLine1.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine1.FrameEnabled = false;
+            this.arrowLine1.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine1.LinearGradientUsingClient = true;
+            this.arrowLine1.Location = new System.Drawing.Point(176, 213);
+            this.arrowLine1.Name = "arrowLine1";
+            this.arrowLine1.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine1.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine1.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine1.TabIndex = 95;
+            this.arrowLine1.Text = "arrowLine1";
+            // 
+            // arrowLine71
+            // 
+            this.arrowLine71.AntiAlias = false;
+            this.arrowLine71.ArrowBodyWidth = 6F;
+            this.arrowLine71.ArrowLength = 8F;
+            this.arrowLine71.ArrowStyle = TestControls.ArrowStyleType.Right;
+            this.arrowLine71.BackColor = System.Drawing.Color.White;
+            this.arrowLine71.BowHeight = 2F;
+            this.arrowLine71.BowWidth = 2F;
+            this.arrowLine71.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
+            this.arrowLine71.FrameEnabled = false;
+            this.arrowLine71.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
+            this.arrowLine71.LinearGradientUsingClient = true;
+            this.arrowLine71.Location = new System.Drawing.Point(85, 213);
+            this.arrowLine71.Name = "arrowLine71";
+            this.arrowLine71.NormalEndColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine71.NormalStartColor = System.Drawing.Color.RoyalBlue;
+            this.arrowLine71.Size = new System.Drawing.Size(18, 38);
+            this.arrowLine71.TabIndex = 95;
+            this.arrowLine71.Text = "arrowLine1";
             // 
             // label17
             // 
@@ -414,12 +691,15 @@
             this.内圈外滚道直径1,
             this.轴箱组装后盖间隙1,
             this.压板组装1,
-            this.轴向游隙1,
             this.径向游隙1,
+            this.轴向游隙1,
             this.轴承注脂1,
             this.轴箱前盖组装测量1,
             this.轴箱窜动量1,
-            this.磨合试验1});
+            this.磨合试验1,
+            this.Other1,
+            this.Other2,
+            this.Other3});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
@@ -435,6 +715,7 @@
             // 
             // 序号
             // 
+            this.序号.DataPropertyName = "id";
             this.序号.HeaderText = "序号";
             this.序号.MinimumWidth = 6;
             this.序号.Name = "序号";
@@ -442,6 +723,7 @@
             // 
             // 轴号
             // 
+            this.轴号.DataPropertyName = "ZH";
             this.轴号.HeaderText = "轴号";
             this.轴号.MinimumWidth = 6;
             this.轴号.Name = "轴号";
@@ -449,6 +731,7 @@
             // 
             // 轴颈防尘板座测量1
             // 
+            this.轴颈防尘板座测量1.DataPropertyName = "ZJFCBZCL";
             this.轴颈防尘板座测量1.HeaderText = "轴颈防尘板座测量";
             this.轴颈防尘板座测量1.MinimumWidth = 6;
             this.轴颈防尘板座测量1.Name = "轴颈防尘板座测量1";
@@ -456,6 +739,7 @@
             // 
             // 轴箱测量1
             // 
+            this.轴箱测量1.DataPropertyName = "ZXCL";
             this.轴箱测量1.HeaderText = "轴箱测量";
             this.轴箱测量1.MinimumWidth = 6;
             this.轴箱测量1.Name = "轴箱测量1";
@@ -463,6 +747,7 @@
             // 
             // 轴承选配组装1
             // 
+            this.轴承选配组装1.DataPropertyName = "ZCXPZZ";
             this.轴承选配组装1.HeaderText = "轴承选配组装";
             this.轴承选配组装1.MinimumWidth = 6;
             this.轴承选配组装1.Name = "轴承选配组装1";
@@ -470,6 +755,7 @@
             // 
             // 防尘挡圈选配组装1
             // 
+            this.防尘挡圈选配组装1.DataPropertyName = "FCDQXPZZ";
             this.防尘挡圈选配组装1.HeaderText = "防尘挡圈选配组装";
             this.防尘挡圈选配组装1.MinimumWidth = 6;
             this.防尘挡圈选配组装1.Name = "防尘挡圈选配组装1";
@@ -477,6 +763,7 @@
             // 
             // 载荷中心距1
             // 
+            this.载荷中心距1.DataPropertyName = "ZHZXJ";
             this.载荷中心距1.HeaderText = "载荷中心距";
             this.载荷中心距1.MinimumWidth = 6;
             this.载荷中心距1.Name = "载荷中心距1";
@@ -484,6 +771,7 @@
             // 
             // 内圈外滚道直径1
             // 
+            this.内圈外滚道直径1.DataPropertyName = "NQWGDZJ";
             this.内圈外滚道直径1.HeaderText = "内圈外滚道直径";
             this.内圈外滚道直径1.MinimumWidth = 6;
             this.内圈外滚道直径1.Name = "内圈外滚道直径1";
@@ -491,6 +779,7 @@
             // 
             // 轴箱组装后盖间隙1
             // 
+            this.轴箱组装后盖间隙1.DataPropertyName = "ZXZZHGJX";
             this.轴箱组装后盖间隙1.HeaderText = "轴箱组装后盖间隙";
             this.轴箱组装后盖间隙1.MinimumWidth = 6;
             this.轴箱组装后盖间隙1.Name = "轴箱组装后盖间隙1";
@@ -498,27 +787,31 @@
             // 
             // 压板组装1
             // 
+            this.压板组装1.DataPropertyName = "YBZZ";
             this.压板组装1.HeaderText = "压板组装";
             this.压板组装1.MinimumWidth = 6;
             this.压板组装1.Name = "压板组装1";
             this.压板组装1.ReadOnly = true;
             // 
-            // 轴向游隙1
-            // 
-            this.轴向游隙1.HeaderText = "轴向游隙";
-            this.轴向游隙1.MinimumWidth = 6;
-            this.轴向游隙1.Name = "轴向游隙1";
-            this.轴向游隙1.ReadOnly = true;
-            // 
             // 径向游隙1
             // 
+            this.径向游隙1.DataPropertyName = "JXYX";
             this.径向游隙1.HeaderText = "径向游隙";
             this.径向游隙1.MinimumWidth = 6;
             this.径向游隙1.Name = "径向游隙1";
             this.径向游隙1.ReadOnly = true;
             // 
+            // 轴向游隙1
+            // 
+            this.轴向游隙1.DataPropertyName = "ZXYX";
+            this.轴向游隙1.HeaderText = "轴向游隙";
+            this.轴向游隙1.MinimumWidth = 6;
+            this.轴向游隙1.Name = "轴向游隙1";
+            this.轴向游隙1.ReadOnly = true;
+            // 
             // 轴承注脂1
             // 
+            this.轴承注脂1.DataPropertyName = "ZCZZ";
             this.轴承注脂1.HeaderText = "轴承注脂";
             this.轴承注脂1.MinimumWidth = 6;
             this.轴承注脂1.Name = "轴承注脂1";
@@ -526,6 +819,7 @@
             // 
             // 轴箱前盖组装测量1
             // 
+            this.轴箱前盖组装测量1.DataPropertyName = "ZXQGZZCL";
             this.轴箱前盖组装测量1.HeaderText = "轴箱前盖组装测量";
             this.轴箱前盖组装测量1.MinimumWidth = 6;
             this.轴箱前盖组装测量1.Name = "轴箱前盖组装测量1";
@@ -533,6 +827,7 @@
             // 
             // 轴箱窜动量1
             // 
+            this.轴箱窜动量1.DataPropertyName = "ZXCDL";
             this.轴箱窜动量1.HeaderText = "轴箱窜动量";
             this.轴箱窜动量1.MinimumWidth = 6;
             this.轴箱窜动量1.Name = "轴箱窜动量1";
@@ -540,10 +835,38 @@
             // 
             // 磨合试验1
             // 
+            this.磨合试验1.DataPropertyName = "MHSY";
             this.磨合试验1.HeaderText = "磨合试验";
             this.磨合试验1.MinimumWidth = 6;
             this.磨合试验1.Name = "磨合试验1";
             this.磨合试验1.ReadOnly = true;
+            // 
+            // Other1
+            // 
+            this.Other1.DataPropertyName = "Other1";
+            this.Other1.HeaderText = "Other1";
+            this.Other1.MinimumWidth = 6;
+            this.Other1.Name = "Other1";
+            this.Other1.ReadOnly = true;
+            this.Other1.Visible = false;
+            // 
+            // Other2
+            // 
+            this.Other2.DataPropertyName = "Other2";
+            this.Other2.HeaderText = "Other2";
+            this.Other2.MinimumWidth = 6;
+            this.Other2.Name = "Other2";
+            this.Other2.ReadOnly = true;
+            this.Other2.Visible = false;
+            // 
+            // Other3
+            // 
+            this.Other3.DataPropertyName = "Other3";
+            this.Other3.HeaderText = "Other3";
+            this.Other3.MinimumWidth = 6;
+            this.Other3.Name = "Other3";
+            this.Other3.ReadOnly = true;
+            this.Other3.Visible = false;
             // 
             // groupBox2
             // 
@@ -694,278 +1017,11 @@
             this.磨合试验.Name = "磨合试验";
             this.磨合试验.ReadOnly = true;
             // 
-            // arrowLine71
+            // timer1
             // 
-            this.arrowLine71.AntiAlias = false;
-            this.arrowLine71.ArrowBodyWidth = 6F;
-            this.arrowLine71.ArrowLength = 8F;
-            this.arrowLine71.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine71.BackColor = System.Drawing.Color.White;
-            this.arrowLine71.BowHeight = 2F;
-            this.arrowLine71.BowWidth = 2F;
-            this.arrowLine71.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine71.FrameEnabled = false;
-            this.arrowLine71.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine71.LinearGradientUsingClient = true;
-            this.arrowLine71.Location = new System.Drawing.Point(85, 213);
-            this.arrowLine71.Name = "arrowLine71";
-            this.arrowLine71.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine71.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine71.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine71.TabIndex = 95;
-            this.arrowLine71.Text = "arrowLine1";
-            // 
-            // arrowLine1
-            // 
-            this.arrowLine1.AntiAlias = false;
-            this.arrowLine1.ArrowBodyWidth = 6F;
-            this.arrowLine1.ArrowLength = 8F;
-            this.arrowLine1.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine1.BackColor = System.Drawing.Color.White;
-            this.arrowLine1.BowHeight = 2F;
-            this.arrowLine1.BowWidth = 2F;
-            this.arrowLine1.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine1.FrameEnabled = false;
-            this.arrowLine1.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine1.LinearGradientUsingClient = true;
-            this.arrowLine1.Location = new System.Drawing.Point(176, 213);
-            this.arrowLine1.Name = "arrowLine1";
-            this.arrowLine1.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine1.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine1.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine1.TabIndex = 95;
-            this.arrowLine1.Text = "arrowLine1";
-            // 
-            // arrowLine2
-            // 
-            this.arrowLine2.AntiAlias = false;
-            this.arrowLine2.ArrowBodyWidth = 6F;
-            this.arrowLine2.ArrowLength = 8F;
-            this.arrowLine2.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine2.BackColor = System.Drawing.Color.White;
-            this.arrowLine2.BowHeight = 2F;
-            this.arrowLine2.BowWidth = 2F;
-            this.arrowLine2.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine2.FrameEnabled = false;
-            this.arrowLine2.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine2.LinearGradientUsingClient = true;
-            this.arrowLine2.Location = new System.Drawing.Point(265, 213);
-            this.arrowLine2.Name = "arrowLine2";
-            this.arrowLine2.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine2.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine2.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine2.TabIndex = 95;
-            this.arrowLine2.Text = "arrowLine1";
-            // 
-            // arrowLine3
-            // 
-            this.arrowLine3.AntiAlias = false;
-            this.arrowLine3.ArrowBodyWidth = 6F;
-            this.arrowLine3.ArrowLength = 8F;
-            this.arrowLine3.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine3.BackColor = System.Drawing.Color.White;
-            this.arrowLine3.BowHeight = 2F;
-            this.arrowLine3.BowWidth = 2F;
-            this.arrowLine3.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine3.FrameEnabled = false;
-            this.arrowLine3.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine3.LinearGradientUsingClient = true;
-            this.arrowLine3.Location = new System.Drawing.Point(353, 213);
-            this.arrowLine3.Name = "arrowLine3";
-            this.arrowLine3.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine3.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine3.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine3.TabIndex = 95;
-            this.arrowLine3.Text = "arrowLine1";
-            // 
-            // arrowLine4
-            // 
-            this.arrowLine4.AntiAlias = false;
-            this.arrowLine4.ArrowBodyWidth = 6F;
-            this.arrowLine4.ArrowLength = 8F;
-            this.arrowLine4.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine4.BackColor = System.Drawing.Color.White;
-            this.arrowLine4.BowHeight = 2F;
-            this.arrowLine4.BowWidth = 2F;
-            this.arrowLine4.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine4.FrameEnabled = false;
-            this.arrowLine4.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine4.LinearGradientUsingClient = true;
-            this.arrowLine4.Location = new System.Drawing.Point(442, 213);
-            this.arrowLine4.Name = "arrowLine4";
-            this.arrowLine4.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine4.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine4.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine4.TabIndex = 95;
-            this.arrowLine4.Text = "arrowLine1";
-            // 
-            // arrowLine5
-            // 
-            this.arrowLine5.AntiAlias = false;
-            this.arrowLine5.ArrowBodyWidth = 6F;
-            this.arrowLine5.ArrowLength = 8F;
-            this.arrowLine5.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine5.BackColor = System.Drawing.Color.White;
-            this.arrowLine5.BowHeight = 2F;
-            this.arrowLine5.BowWidth = 2F;
-            this.arrowLine5.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine5.FrameEnabled = false;
-            this.arrowLine5.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine5.LinearGradientUsingClient = true;
-            this.arrowLine5.Location = new System.Drawing.Point(531, 213);
-            this.arrowLine5.Name = "arrowLine5";
-            this.arrowLine5.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine5.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine5.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine5.TabIndex = 95;
-            this.arrowLine5.Text = "arrowLine1";
-            // 
-            // arrowLine6
-            // 
-            this.arrowLine6.AntiAlias = false;
-            this.arrowLine6.ArrowBodyWidth = 6F;
-            this.arrowLine6.ArrowLength = 8F;
-            this.arrowLine6.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine6.BackColor = System.Drawing.Color.White;
-            this.arrowLine6.BowHeight = 2F;
-            this.arrowLine6.BowWidth = 2F;
-            this.arrowLine6.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine6.FrameEnabled = false;
-            this.arrowLine6.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine6.LinearGradientUsingClient = true;
-            this.arrowLine6.Location = new System.Drawing.Point(620, 213);
-            this.arrowLine6.Name = "arrowLine6";
-            this.arrowLine6.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine6.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine6.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine6.TabIndex = 95;
-            this.arrowLine6.Text = "arrowLine1";
-            // 
-            // arrowLine7
-            // 
-            this.arrowLine7.AntiAlias = false;
-            this.arrowLine7.ArrowBodyWidth = 6F;
-            this.arrowLine7.ArrowLength = 8F;
-            this.arrowLine7.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine7.BackColor = System.Drawing.Color.White;
-            this.arrowLine7.BowHeight = 2F;
-            this.arrowLine7.BowWidth = 2F;
-            this.arrowLine7.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine7.FrameEnabled = false;
-            this.arrowLine7.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine7.LinearGradientUsingClient = true;
-            this.arrowLine7.Location = new System.Drawing.Point(710, 213);
-            this.arrowLine7.Name = "arrowLine7";
-            this.arrowLine7.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine7.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine7.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine7.TabIndex = 95;
-            this.arrowLine7.Text = "arrowLine1";
-            // 
-            // arrowLine8
-            // 
-            this.arrowLine8.AntiAlias = false;
-            this.arrowLine8.ArrowBodyWidth = 6F;
-            this.arrowLine8.ArrowLength = 8F;
-            this.arrowLine8.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine8.BackColor = System.Drawing.Color.White;
-            this.arrowLine8.BowHeight = 2F;
-            this.arrowLine8.BowWidth = 2F;
-            this.arrowLine8.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine8.FrameEnabled = false;
-            this.arrowLine8.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine8.LinearGradientUsingClient = true;
-            this.arrowLine8.Location = new System.Drawing.Point(799, 213);
-            this.arrowLine8.Name = "arrowLine8";
-            this.arrowLine8.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine8.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine8.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine8.TabIndex = 95;
-            this.arrowLine8.Text = "arrowLine1";
-            // 
-            // arrowLine9
-            // 
-            this.arrowLine9.AntiAlias = false;
-            this.arrowLine9.ArrowBodyWidth = 6F;
-            this.arrowLine9.ArrowLength = 8F;
-            this.arrowLine9.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine9.BackColor = System.Drawing.Color.White;
-            this.arrowLine9.BowHeight = 2F;
-            this.arrowLine9.BowWidth = 2F;
-            this.arrowLine9.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine9.FrameEnabled = false;
-            this.arrowLine9.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine9.LinearGradientUsingClient = true;
-            this.arrowLine9.Location = new System.Drawing.Point(886, 213);
-            this.arrowLine9.Name = "arrowLine9";
-            this.arrowLine9.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine9.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine9.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine9.TabIndex = 95;
-            this.arrowLine9.Text = "arrowLine1";
-            // 
-            // arrowLine10
-            // 
-            this.arrowLine10.AntiAlias = false;
-            this.arrowLine10.ArrowBodyWidth = 6F;
-            this.arrowLine10.ArrowLength = 8F;
-            this.arrowLine10.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine10.BackColor = System.Drawing.Color.White;
-            this.arrowLine10.BowHeight = 2F;
-            this.arrowLine10.BowWidth = 2F;
-            this.arrowLine10.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine10.FrameEnabled = false;
-            this.arrowLine10.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine10.LinearGradientUsingClient = true;
-            this.arrowLine10.Location = new System.Drawing.Point(976, 213);
-            this.arrowLine10.Name = "arrowLine10";
-            this.arrowLine10.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine10.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine10.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine10.TabIndex = 95;
-            this.arrowLine10.Text = "arrowLine1";
-            // 
-            // arrowLine12
-            // 
-            this.arrowLine12.AntiAlias = false;
-            this.arrowLine12.ArrowBodyWidth = 6F;
-            this.arrowLine12.ArrowLength = 8F;
-            this.arrowLine12.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine12.BackColor = System.Drawing.Color.White;
-            this.arrowLine12.BowHeight = 2F;
-            this.arrowLine12.BowWidth = 2F;
-            this.arrowLine12.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine12.FrameEnabled = false;
-            this.arrowLine12.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine12.LinearGradientUsingClient = true;
-            this.arrowLine12.Location = new System.Drawing.Point(1154, 213);
-            this.arrowLine12.Name = "arrowLine12";
-            this.arrowLine12.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine12.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine12.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine12.TabIndex = 95;
-            this.arrowLine12.Text = "arrowLine1";
-            // 
-            // arrowLine11
-            // 
-            this.arrowLine11.AntiAlias = false;
-            this.arrowLine11.ArrowBodyWidth = 6F;
-            this.arrowLine11.ArrowLength = 8F;
-            this.arrowLine11.ArrowStyle = TestControls.ArrowStyleType.Right;
-            this.arrowLine11.BackColor = System.Drawing.Color.White;
-            this.arrowLine11.BowHeight = 2F;
-            this.arrowLine11.BowWidth = 2F;
-            this.arrowLine11.ColorLinearDirection = TestControls.LinearGradientDirection.Horizontal;
-            this.arrowLine11.FrameEnabled = false;
-            this.arrowLine11.LinearGradientRect = new System.Drawing.Rectangle(0, 0, 48, 48);
-            this.arrowLine11.LinearGradientUsingClient = true;
-            this.arrowLine11.Location = new System.Drawing.Point(1064, 213);
-            this.arrowLine11.Name = "arrowLine11";
-            this.arrowLine11.NormalEndColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine11.NormalStartColor = System.Drawing.Color.RoyalBlue;
-            this.arrowLine11.Size = new System.Drawing.Size(18, 38);
-            this.arrowLine11.TabIndex = 95;
-            this.arrowLine11.Text = "arrowLine1";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserLZZZ
             // 
@@ -1033,22 +1089,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱前盖组装测量;
         private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱窜动量;
         private System.Windows.Forms.DataGridViewTextBoxColumn 磨合试验;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴颈防尘板座测量1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱测量1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承选配组装1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 防尘挡圈选配组装1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 载荷中心距1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 内圈外滚道直径1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱组装后盖间隙1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 压板组装1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴向游隙1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 径向游隙1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承注脂1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱前盖组装测量1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱窜动量1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 磨合试验1;
         private TestControls.ArrowLine arrowLine12;
         private TestControls.ArrowLine arrowLine11;
         private TestControls.ArrowLine arrowLine10;
@@ -1062,5 +1102,25 @@
         private TestControls.ArrowLine arrowLine2;
         private TestControls.ArrowLine arrowLine1;
         private TestControls.ArrowLine arrowLine71;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴颈防尘板座测量1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱测量1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承选配组装1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 防尘挡圈选配组装1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 载荷中心距1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 内圈外滚道直径1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱组装后盖间隙1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 压板组装1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 径向游隙1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴向游隙1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴承注脂1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱前盖组装测量1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 轴箱窜动量1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 磨合试验1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Other1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Other2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Other3;
+        private System.Windows.Forms.Timer timer1;
     }
 }

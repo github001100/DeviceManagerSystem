@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -57,6 +58,7 @@
             this.合格品数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.不合品数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.合格率 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -302,6 +304,7 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(1351, 132);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // 检修项目
             // 
@@ -344,6 +347,12 @@
             this.合格率.MinimumWidth = 6;
             this.合格率.Name = "合格率";
             this.合格率.ReadOnly = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserLBJJXJD
             // 
@@ -399,5 +408,6 @@
         private CMES.Controls.CircleProgramBar circleProgramBar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

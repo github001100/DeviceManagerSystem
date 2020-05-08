@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
+﻿using CMES.Controller.SYS;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using CMES.Controller.SYS;
-using System.Web.Script.Serialization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
 using System.Threading;
+using System.Threading.Tasks;
+using System.Web.Script.Serialization;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace DeviceManagerSystem.TPM
 {
@@ -24,20 +21,22 @@ namespace DeviceManagerSystem.TPM
         ZtjkController ztjk = new ZtjkController();//整体检修 业务逻辑2.0
         public DataSet ds;
         List<Double> tyData2 = new List<Double>();
-        List<String> txData2 = new List<String>() { "轮对", "轴承", "轮轴拆分", "轮轴组装", "轴箱", "前盖", "防尘挡圈" };
+        List<String> txData2 = new List<String>() { "轮轴拆分", "轴承", "轮对", "轴箱", "前盖", "防尘挡圈", "轮轴组装" };
         private Queue<double> dataQueue = new Queue<double>(100);
         private static UserZTJXJD frm = null;
 
         public static UserZTJXJD CreateInstrance()
         {
-            if (frm == null|| frm.IsDisposed)
+            if (frm == null || frm.IsDisposed)
             {
                 frm = new UserZTJXJD();
             }
             return frm;
+
         }
         public void RefreshList()
         {
+
             if (this.dataGridView1.Rows.Count > 0)
             {
                 tyData2.Clear();
@@ -53,6 +52,8 @@ namespace DeviceManagerSystem.TPM
             {
                 tyData2 = new List<Double>() { 33.6, 39.6, 58.9, 48.6, 59.4, 58.4, 39.7 };
             }
+            tyData2.Reverse();
+
             chart1.Series[0].Points.DataBindXY(txData2, tyData2);
 
         }
@@ -85,10 +86,10 @@ namespace DeviceManagerSystem.TPM
         public void SetTable()
         {
             try
-            {               
+            {
                 //整体检修进度表
                 //JObject jsonobj2 = null;
-                jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL","ALL");//获取所以信息
+                jsonStr2 = ztjk.GetZtjkInfoByProcedureNameToJson("ALL", "ALL");//获取所以信息
                 JObject o2 = JObject.Parse(jsonStr2);
                 JArray json2 = (JArray)o2["data"];
                 //ds = JsonToDataSet("date:{"+ json2 + "}");
@@ -105,11 +106,12 @@ namespace DeviceManagerSystem.TPM
                 this.dataGridView1.EndEdit();
                 //DataTable dt = new DataTable();
                 //this.dataGridView1.DataSource = ds.Tables["ds"];
- 
+
                 RefreshList();
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 timer1.Enabled = false;
                 //throw;
             }
@@ -302,7 +304,8 @@ namespace DeviceManagerSystem.TPM
 
         private void UserZTJXJD_Load(object sender, EventArgs e)
         {
-            this.Font = new Font("微软雅黑", 10);
+            this.Font = new Font("微软雅黑", 10); txData2.Reverse(); tyData2.Reverse();
+
             //Thread t = new Thread(new ThreadStart(FullDataSource));
             //t.Start();
             //添加的两组Test数据
@@ -336,7 +339,6 @@ namespace DeviceManagerSystem.TPM
             {
                 while (!cancelltokenSource.IsCancellationRequested)
                 {
-
                     //Task.Delay(5000).Wait();
                 }
             }, cancelltokenSource.Token);
@@ -358,7 +360,7 @@ namespace DeviceManagerSystem.TPM
             {
                 //if (dpString.dTrim(e.Value) != "")
                 {
-                    e.Value = Convert.ToDateTime(e.Value).ToString("MM-dd-yyyy");
+                    e.Value = Convert.ToDateTime(e.Value).ToString("yyyy-MM-dd");
                 }
             }
             if (e.ColumnIndex == dataGridView1.Columns["合格率"].Index)
