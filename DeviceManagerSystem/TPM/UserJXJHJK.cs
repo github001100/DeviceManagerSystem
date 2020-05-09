@@ -33,8 +33,8 @@ namespace DeviceManagerSystem.TPM
         public void RefreshList()
         {
 
-            this.dataGridView1.Rows[2].Cells["检修工序"].Value = "轮轴拆分";
-            this.dataGridView1.Rows[3].Cells["检修工序"].Value = "轮轴组装";
+            //this.dataGridView1.Rows[2].Cells["检修工序"].Value = "轮轴拆分";
+            //this.dataGridView1.Rows[3].Cells["检修工序"].Value = "轮轴组装";
             //this.dataGridView1.Rows[0].Cells["新增数量"].Value = Convert.ToInt32(SysVar.lz_SN_1);
             //this.dataGridView1.Rows[0].Cells["任务计划"].Value = Convert.ToInt32(SysVar.lz_SN_1) + Convert.ToInt32(this.dataGridView1.Rows[0].Cells["检修数量"].Value)+"";
         }
